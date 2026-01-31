@@ -1,0 +1,2 @@
+This will contain the wrapper for the HAL called on by the application layer of the project!
+Thus, depending on the target device (either a host PC or STM32 microcontroller), we configure the header files in /platform/common/inc/ to USE the corresponding implementation (in either /platform/host/src/ OR /platform/stm32/src/) under the hood.

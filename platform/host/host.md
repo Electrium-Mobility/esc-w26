@@ -1,0 +1,2 @@
+This is where the "fake" implementation of the HAL wrapper functions will live. 
+Before flashing the project onto an STM32 (and thus using the STM32 HAL under the hood of the HAL wrappers) to test with real hardware, we must simulate the HAL on a host PC. 
