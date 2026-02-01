@@ -3,7 +3,7 @@
 /*******************************************************************************************************************************
  * @file   sample.h
  *
- * @brief  Header file for the sample class in the ESC - W26 project
+ * @brief  Header file for the sample class
  *
  * @date   2026-01-30
  * @author Leopoldo mendoza

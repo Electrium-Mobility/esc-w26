@@ -1,10 +1,10 @@
 /*******************************************************************************************************************************
- * @file   <module_name>.c
+ * @file   motor.c
  *
- * @brief  Source file for the <module_name> module
+ * @brief  Source file for the Motor storage class
  *
- * @date   YYYY-MM-DD
- * @author <Author Name>
+ * @date   2026-01-31
+ * @author Leopoldo Mendoza, 
  *******************************************************************************************************************************/
 
 /* Standard library Headers */
@@ -12,6 +12,7 @@
 /* Inter-component Headers */
 
 /* Intra-component Headers */
+#include "motor.h"
 
 /*******************************************************************************************************************************
  * Private Variables
