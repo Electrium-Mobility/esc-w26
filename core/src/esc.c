@@ -87,3 +87,40 @@ static void _esc_update_output(Esc_t *esc) {
 /*******************************************************************************************************************************
  * Public Function Definitions
  *******************************************************************************************************************************/
+
+ // TODO STARTS: Getters
+/**
+ * @brief   Get latest inverter command (enable/duty/comm step)
+ * @param   esc ESC instance
+ * @return  Current inverter command
+ */
+EscInverterCmd_t esc_get_inverter_cmd(const Esc_t *esc);
+
+/**
+ * @brief   Check whether ESC is faulted (any fault flag set)
+ * @param   esc ESC instance
+ * @return  true if faulted
+ */
+bool esc_is_faulted(const Esc_t *esc);
+
+/**
+ * @brief   Get current fault flags
+ * @param   esc ESC instance
+ * @return  Fault bitmask
+ */
+uint32_t esc_get_fault_flags(const Esc_t *esc);
+// TODO ENDS.
+
+// STARTS: Getters
+EscInverterCmd_t esc_get_inverter_cmd(const Esc_t *esc) {
+
+    if (esc == NULL || esc->is_initialized == false) {
+    {
+        EscInverterCmd_t invalid_cmd = {0};
+        return invalid_cmd;
+    }
+    
+    return esc->inverter_cmd;
+}
+
+// ENDS.
