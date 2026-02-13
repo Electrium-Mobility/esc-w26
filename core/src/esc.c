@@ -134,20 +134,35 @@ void esc_reset(Esc_t *esc) {
     esc->fault_flags = ESC_FAULT_NONE;
 }
 
+/* References preprocessor defined values, subject to change*/
 bool esc_config_is_valid(const EscConfig_t *cfg) {
-   /* References preprocessor defined values, subject to change*/
+    /* Checking EscControlMode_t enum invalidity*/
     if (cfg->control_mode < 0 || 
-        cfg->control_mode > 2 ||
-        cfg->commutation_method < 0 ||
-        cfg->commutation_method > 2 ||
-        cfg->feedback_mechanism < 0 ||
-        cfg->feedback_mechanism > 2 ||
-        cfg->limits.max_phase_current_A > MAX_PHASE_CURRENT || 
+        cfg->control_mode > NUM_ESC_CONTROL_MODES) {
+            return false;
+    }
+
+    /* Checking EscCommutationMethod_t enum invalidity */
+    if (cfg->commutation_method < 0 ||
+        cfg->commutation_method > NUM_ESC_COMMUTATION_METHODS) {
+            return false; 
+    }
+
+    /* Checking EscFeedbackMechanism_t enum invalidity */
+    if (cfg->feedback_mechanism < 0 ||
+        cfg->feedback_mechanism > NUM_ESC_FEEDBACK_MECHANISMS) {
+            return false;
+    }
+
+    /* Checking EscLimits_t invalidity */
+    if (cfg->limits.max_phase_current_A > MAX_PHASE_CURRENT || 
         cfg->limits.max_temp_C > OVERTEMP_THRESHOLD ||
         cfg->limits.vbus_uvlo_V < UNDERVOLT_LOCKOUT ||
         cfg->limits.vbus_ovlo_V > OVERVOLT_LOCKOUT ||
         cfg->limits.max_duty > MAX_PWM_DUTY) {
-        return false;
+            return false;
     }
+
+    /* Valid config, return true*/
     return true;
 }
