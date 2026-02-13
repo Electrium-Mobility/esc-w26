@@ -25,10 +25,10 @@
 
 /* Preprocessor definitions for config validity, subject to change. */
 /* Set to zero temporarily */
-#define MAX_PHASE_CURRENT 0 
-#define OVERTEMP_THRESHOLD 75 /*75 degrees celcius*/
-#define UNDERVOLT_LOCKOUT 0
-#define OVERVOLT_LOCKOUT 0
+#define MAX_PHASE_CURRENT 0.f 
+#define OVERTEMP_THRESHOLD 75.f /*75 degrees celcius*/
+#define UNDERVOLT_LOCKOUT 0.f
+#define OVERVOLT_LOCKOUT 0.f
 #define MAX_PWM_DUTY 2000 /*2000 microseconds*/
 
 

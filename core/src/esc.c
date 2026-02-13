@@ -87,18 +87,17 @@ static void _esc_update_output(Esc_t *esc) {
 /*******************************************************************************************************************************
  * Public Function Definitions
  *******************************************************************************************************************************/
-\
 
 bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
     /* Copying given cfg to ESC instance */
-    esc->config.control_mode = cfg->control_mode;
-    esc->config.commutation_method = cfg->commutation_method;
-    esc->config.feedback_mechanism = cfg->feedback_mechanism;
-    esc->config.limits = cfg->limits;
-    esc->config.motor_config = cfg->motor_config;
+    if (esc_config_is_valid(cfg)) {
+        esc->config = *cfg;
+    } else {
+        return false;
+    }
 
     /* Initialize ESC motor state to zero */
-    for(int i = 0; i < NUM_MOTOR_PHASES; ++i) {
+    for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
         esc->motor_state.phase_currents[i] = 0.f;
     }
     esc->motor_state.vbus_V = 0.f;
@@ -116,7 +115,7 @@ bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
     esc->velocity_setpoint_rpm = 0.f;
     esc->torque_setpoint_A = 0.f;
     esc->velocity_mech_rpm = 0.f;
-    esc->fault_flags = 0;
+    esc->fault_flags = ESC_FAULT_NONE;
     
     /* Is initialized, return */
     esc->is_initialized = true;
@@ -132,16 +131,22 @@ void esc_reset(Esc_t *esc) {
     esc->velocity_mech_rpm = 0.f;
 
     /* Set faults to zero */
-    esc->fault_flags = 0;
+    esc->fault_flags = ESC_FAULT_NONE;
 }
 
 bool esc_config_is_valid(const EscConfig_t *cfg) {
    /* References preprocessor defined values, subject to change*/
-    if(cfg->limits.max_phase_current_A > MAX_PHASE_CURRENT || 
-               cfg->limits.max_temp_C > OVERTEMP_THRESHOLD ||
-               cfg->limits.vbus_uvlo_V < UNDERVOLT_LOCKOUT ||
-                cfg->limits.vbus_ovlo_V > OVERVOLT_LOCKOUT ||
-                       cfg->limits.max_duty > MAX_PWM_DUTY) {
+    if (cfg->control_mode < 0 || 
+        cfg->control_mode > 2 ||
+        cfg->commutation_method < 0 ||
+        cfg->commutation_method > 2 ||
+        cfg->feedback_mechanism < 0 ||
+        cfg->feedback_mechanism > 2 ||
+        cfg->limits.max_phase_current_A > MAX_PHASE_CURRENT || 
+        cfg->limits.max_temp_C > OVERTEMP_THRESHOLD ||
+        cfg->limits.vbus_uvlo_V < UNDERVOLT_LOCKOUT ||
+        cfg->limits.vbus_ovlo_V > OVERVOLT_LOCKOUT ||
+        cfg->limits.max_duty > MAX_PWM_DUTY) {
         return false;
     }
     return true;
