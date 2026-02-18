@@ -101,3 +101,82 @@ void esc_step(Esc_t *esc, uint32_t dt_us)
     _esc_check_limits(esc);
     _esc_update_output(esc);
 }
+
+bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
+    /* Copying given cfg to ESC instance */
+    if (esc_config_is_valid(cfg)) {
+        esc->config = *cfg;
+    } else {
+        return false;
+    }
+
+    /* Initialize ESC motor state to zero */
+    for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
+        esc->motor_state.phase_currents[i] = 0.f;
+    }
+    esc->motor_state.vbus_V = 0.f;
+    esc->motor_state.temperature_C = 0.f;
+    esc->motor_state.hall_abc = 0;
+    esc->motor_state.hall_timestamp_us = 0;
+
+    /* Initialize ESC inverter */
+    esc->inverter_cmd.enable = false;
+    esc->inverter_cmd.duty = 0.f;
+    esc->inverter_cmd.commutation_step = 0;
+
+    /* Initialize variables */
+    esc->throttle_cmd = 0.f;
+    esc->velocity_setpoint_rpm = 0.f;
+    esc->torque_setpoint_A = 0.f;
+    esc->velocity_mech_rpm = 0.f;
+    esc->fault_flags = ESC_FAULT_NONE;
+    
+    /* Is initialized, return */
+    esc->is_initialized = true;
+
+    return true;
+}
+
+void esc_reset(Esc_t *esc) {
+    /* Resetting internal state during runtime variables */
+    esc->throttle_cmd = 0.f;
+    esc->velocity_setpoint_rpm = 0.f;
+    esc->torque_setpoint_A = 0.f;
+    esc->velocity_mech_rpm = 0.f;
+
+    /* Set faults to zero */
+    esc->fault_flags = ESC_FAULT_NONE;
+}
+
+/* References preprocessor defined values, subject to change*/
+bool esc_config_is_valid(const EscConfig_t *cfg) {
+    /* Checking EscControlMode_t enum invalidity*/
+    if (cfg->control_mode < 0 || 
+        cfg->control_mode > NUM_ESC_CONTROL_MODES) {
+            return false;
+    }
+
+    /* Checking EscCommutationMethod_t enum invalidity */
+    if (cfg->commutation_method < 0 ||
+        cfg->commutation_method > NUM_ESC_COMMUTATION_METHODS) {
+            return false; 
+    }
+
+    /* Checking EscFeedbackMechanism_t enum invalidity */
+    if (cfg->feedback_mechanism < 0 ||
+        cfg->feedback_mechanism > NUM_ESC_FEEDBACK_MECHANISMS) {
+            return false;
+    }
+
+    /* Checking EscLimits_t invalidity */
+    if (cfg->limits.max_phase_current_A > MAX_PHASE_CURRENT || 
+        cfg->limits.max_temp_C > OVERTEMP_THRESHOLD ||
+        cfg->limits.vbus_uvlo_V < UNDERVOLT_LOCKOUT ||
+        cfg->limits.vbus_ovlo_V > OVERVOLT_LOCKOUT ||
+        cfg->limits.max_duty > MAX_PWM_DUTY) {
+            return false;
+    }
+
+    /* Valid config, return true*/
+    return true;
+}
