@@ -170,23 +170,23 @@ void esc_set_motor_state(Esc_t *esc, const MotorState_t *state);
 /**
  * @brief   Get latest inverter command (enable/duty/comm step)
  * @param   esc ESC instance
- * @return  Current inverter command
+ * @return  Current inverter command or a safe default {0} if invalid esc
  */
 EscInverterCmd_t esc_get_inverter_cmd(const Esc_t *esc);
 
 /**
  * @brief   Check whether ESC is faulted (any fault flag set)
  * @param   esc ESC instance
- * @return  true if faulted
+ * @return  true if faulted or uninitialized esc, false if no faults
  */
 bool esc_is_faulted(const Esc_t *esc);
 
 /**
  * @brief   Get current fault flags
  * @param   esc ESC instance
- * @return  Fault bitmask
+ * @return  Fault bitmask, or ESC_FAULT_NONE if invalid or not initialized esc
  */
-uint32_t esc_get_fault_flags(const Esc_t *esc);
+EscFault_t esc_get_fault_flags(const Esc_t *esc);
 // TODO ENDS.
 
 /** @} */

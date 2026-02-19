@@ -88,33 +88,24 @@ static void _esc_update_output(Esc_t *esc) {
  * Public Function Definitions
  *******************************************************************************************************************************/
 
-// STARTS: Getters
 EscInverterCmd_t esc_get_inverter_cmd(const Esc_t *esc) {
-
-    if (esc == NULL || esc->is_initialized == false)
-    {
+    if (esc == NULL || esc->is_initialized == false){
         EscInverterCmd_t invalid_cmd = {0};
         return invalid_cmd;
-    }
-    
+    } 
     return esc->inverter_cmd;
 }
 
 bool esc_is_faulted(const Esc_t *esc) {
-
     if (esc == NULL){
         return true;
     }
-    
     return (esc->fault_flags != 0U);
 }
 
-uint32_t esc_get_fault_flags(const Esc_t *esc) {
-
+EscFault_t esc_get_fault_flags(const Esc_t *esc) {
     if (esc == NULL || esc->is_initialized == false){
-        return 0U; // No faults as it is uninitialized
+        return ESC_FAULT_NONE;
     }
-    
-    return esc->fault_flags;
+    return (EscFault_t)esc->fault_flags;
 }
-// ENDS.
