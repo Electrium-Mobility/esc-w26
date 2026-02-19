@@ -22,6 +22,8 @@
  * Private defines and enums
  *******************************************************************************************************************************/
 #define HALL_INVALID ((uint8_t)0xFFU)
+#define THROTTLE_CMD_MAX 1.0f
+#define THROTTLE_CMD_MIN -1.0f
 
 /**
  * @defgroup ESC ESC storage class

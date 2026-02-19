@@ -88,36 +88,25 @@ static void _esc_update_output(Esc_t *esc) {
  * Public Function Definitions
  *******************************************************************************************************************************/
 
-// STARTS: Setters
-void esc_set_throttle(Esc_t *esc, float throttle_cmd) {
-
-    // Validate esc input
-    if(esc == NULL || esc->is_initialized == false) {
+void esc_set_throttle(Esc_t *esc, const float throttle_cmd) {
+    /* Validate esc input */
+    if (esc == NULL || esc->is_initialized == false) {
         return;
     }
-
-    // Clamp throttle command to valid range [-1.0, 1.0]
-    if (throttle_cmd > 1.0f) 
-    {
-        throttle_cmd = 1.0f;
-    } else if (throttle_cmd < -1.0f) 
-    {
-        throttle_cmd = -1.0f;
-    } else
-    {
-        // No clamping needed
+    /* Clamp throttle command to valid range [THROTTLE_CMD_MIN, THROTTLE_CMD_MAX] */
+    if (throttle_cmd > THROTTLE_CMD_MAX) {
+        esc->throttle_cmd = THROTTLE_CMD_MAX;
+    } else if (throttle_cmd < THROTTLE_CMD_MIN) {
+        esc->throttle_cmd = THROTTLE_CMD_MIN;
+    } else {
+        esc->throttle_cmd = throttle_cmd;
     }
-
-    esc->throttle_cmd = throttle_cmd;
 }
 
 void esc_set_motor_state(Esc_t *esc, const MotorState_t *state) {
-
-    // Validate esc input
-    if(esc == NULL || esc->is_initialized == false || state == NULL) {
+    /* Validate esc input */
+    if (esc == NULL || esc->is_initialized == false || state == NULL) {
         return;
     }
-
     esc->motor_state = *state;
 }
-// ENDS.
