@@ -100,7 +100,7 @@ bool esc_is_faulted(const Esc_t *esc) {
     if (esc == NULL){
         return true;
     }
-    return (esc->fault_flags != 0U);
+    return (esc->fault_flags != ESC_FAULT_NONE);
 }
 
 EscFault_t esc_get_fault_flags(const Esc_t *esc) {
