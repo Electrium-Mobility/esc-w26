@@ -12,6 +12,7 @@
 /* Standard library Headers */
 #include <stdbool.h>
 #include <stdint.h>
+#include <math.h>
 
 /* Inter-component Headers */
 
@@ -25,11 +26,12 @@
 
 /* Preprocessor definitions for config validity, subject to change. */
 /* Set to zero temporarily */
-#define MAX_PHASE_CURRENT 0.f 
-#define OVERTEMP_THRESHOLD 75.f /*75 degrees celcius*/
-#define UNDERVOLT_LOCKOUT 0.f
-#define OVERVOLT_LOCKOUT 0.f
-#define MAX_PWM_DUTY 2000 /*2000 microseconds*/
+#define OVERTEMP_THRESHOLD 75.0f /*75 degrees celcius*/
+#define UNDERVOLT_LOCKOUT 0.0f
+#define OVERVOLT_LOCKOUT 0.0f
+#define MAX_PWM_DUTY 2000.0f /*2000 microseconds*/
+#define MAX_RPM 0.0f
+#define MAX_PHASE_CURRENT 0.0f 
 
 
 /**
