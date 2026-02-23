@@ -88,7 +88,6 @@ static void _esc_update_setpoint(Esc_t *esc) {
     }
 
     /* Calculating RPM & Torque from throttle */
-    /* Currently a linear mapping of throttle -> torque & throttle -> rpm */
     esc->torque_setpoint_A = throttle * MAX_PHASE_CURRENT;
     esc->velocity_setpoint_rpm = throttle * MAX_RPM;
     return;
