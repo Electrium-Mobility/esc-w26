@@ -21,9 +21,18 @@
 /*******************************************************************************************************************************
  * Private defines and enums
  *******************************************************************************************************************************/
+
+/* Preprocessor definitions for config validity, subject to change. */
+/* Set to zero temporarily */
+#define MAX_PHASE_CURRENT 0.f 
+#define OVERTEMP_THRESHOLD 75.f /*75 degrees celcius*/
+#define UNDERVOLT_LOCKOUT 0.f
+#define OVERVOLT_LOCKOUT 0.f
+#define MAX_PWM_DUTY 2000 /*2000 microseconds*/
 #define HALL_INVALID ((uint8_t)0xFFU)
 #define THROTTLE_CMD_MAX 1.0f
 #define THROTTLE_CMD_MIN -1.0f
+
 
 /**
  * @defgroup ESC ESC storage class
