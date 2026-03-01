@@ -66,7 +66,7 @@ static void _esc_update_commutation(Esc_t *esc) {
  * @brief   Update control target from throttle command
  */
 static void _esc_update_setpoint(Esc_t *esc) {
-    /* Check initialization & fault flags */
+    /* Check fault flags */
     if (esc->fault_flags != ESC_FAULT_NONE) {
         esc->velocity_setpoint_rpm = 0.0f;
         esc->torque_setpoint_A = 0.0f;
@@ -75,11 +75,11 @@ static void _esc_update_setpoint(Esc_t *esc) {
 
     /* Clamp throttle to max values */
     float throttle = esc->throttle_cmd;
-    if (throttle > 1.0f) {
-        throttle = 1.0f;
+    if (throttle > THROTTLE_CMD_MAX) {
+        throttle = THROTTLE_CMD_MAX;
     }
-    if (throttle < -1.0f) {
-        throttle = -1.0f;
+    if (throttle < THROTTLE_CMD_MIN) {
+        throttle = THROTTLE_CMD_MIN;
     }
 
     /* Deadband */
@@ -130,18 +130,18 @@ static void _esc_check_limits(Esc_t *esc) {
  * @brief   Update inverter command outputs
  */
 static void _esc_update_output(Esc_t *esc) {
-    /* Check initialization & fault flags */
+    /* Check fault flags */
     if (esc->fault_flags != ESC_FAULT_NONE) {
         return;
     }
 
     /* Clamp throttle to max values */
     float throttle = esc->throttle_cmd;
-    if (throttle > 1.0f) {
-        throttle = 1.0f;
+    if (throttle > THROTTLE_CMD_MAX) {
+        throttle = THROTTLE_CMD_MAX;
     }
-    if (throttle < -1.0f) {
-        throttle = -1.0f;
+    if (throttle < THROTTLE_CMD_MIN) {
+        throttle = THROTTLE_CMD_MIN;
     }
 
     /* Find direction based on throttle input */

@@ -36,7 +36,8 @@
 /* Preprocessor definitions for ESC deadbands, subject to change. */
 #define DEADBAND_THROTTLE 0.01f
 #define DEADBAND_DUTY 0.02f
-#define MAX_PHASE_CURRENT 0.f 
+
+/* Preprocessor definitions for max and min throttle values*/
 #define THROTTLE_CMD_MAX 1.0f
 #define THROTTLE_CMD_MIN -1.0f
 
