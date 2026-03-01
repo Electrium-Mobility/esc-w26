@@ -33,6 +33,9 @@
 #define MAX_RPM 0.0f
 #define MAX_PHASE_CURRENT 0.0f 
 
+/* Preprocessor definitions for ESC deadbands, subject to change. */
+#define DEADBAND_THROTTLE 0.01f
+#define DEADBAND_DUTY 0.02f
 
 /**
  * @defgroup ESC ESC storage class

@@ -67,7 +67,7 @@ static void _esc_update_commutation(Esc_t *esc) {
  */
 static void _esc_update_setpoint(Esc_t *esc) {
     /* Check initialization & fault flags */
-    if (!esc->is_initialized || esc->fault_flags != 0) {
+    if (esc->fault_flags != ESC_FAULT_NONE) {
         esc->velocity_setpoint_rpm = 0.0f;
         esc->torque_setpoint_A = 0.0f;
         return;
@@ -82,8 +82,8 @@ static void _esc_update_setpoint(Esc_t *esc) {
         throttle = -1.0f;
     }
 
-    /* Deadband*/
-    if (fabsf(throttle) < 0.01f) {
+    /* Deadband */
+    if (fabsf(throttle) < DEADBAND_THROTTLE) {
         throttle = 0.0f;
     }
 
@@ -97,39 +97,32 @@ static void _esc_update_setpoint(Esc_t *esc) {
  * @brief   Check safety limits and update fault state
  */
 static void _esc_check_limits(Esc_t *esc) {
-    /* Default state */
-    esc->fault_flags = ESC_FAULT_NONE;
-
     /* Check undervolt lockout */
     if (esc->motor_state.vbus_V < esc->config.limits.vbus_uvlo_V) {
-        esc->fault_flags = ESC_FAULT_UVLO;
-        return;
+        esc->fault_flags |= ESC_FAULT_UVLO;
     }
     /* Check overvolt lockout */
     if (esc->motor_state.vbus_V > esc->config.limits.vbus_ovlo_V) {
-        esc->fault_flags = ESC_FAULT_OVLO;
-        return;
+        esc->fault_flags |= ESC_FAULT_OVLO;
     }
     /* Check overtemp */
     if (esc->motor_state.temperature_C > esc->config.limits.max_temp_C) {
-        esc->fault_flags = ESC_FAULT_OVERTEMP;
-        return;
+        esc->fault_flags |= ESC_FAULT_OVERTEMP;
     }
     /* Check all phase currents against maximum and update fault flags*/
     for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
         if (esc->motor_state.phase_currents[i] > 
             esc->config.limits.max_phase_current_A) {
-            esc->fault_flags = ESC_FAULT_OVERCURRENT;
-            return;
+            esc->fault_flags |= ESC_FAULT_OVERCURRENT;
+            break;
         }
     }
     /* Check hall invalidity */
     if (esc->motor_state.hall_abc == HALL_INVALID) {
-        esc->fault_flags = ESC_FAULT_HALL_INVALID;
-        return;
+        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
     }   
 
-    /* Passed fault flag checks, return */
+    /* All fault flag checks complete, return */
     return;
 }
 
@@ -137,13 +130,8 @@ static void _esc_check_limits(Esc_t *esc) {
  * @brief   Update inverter command outputs
  */
 static void _esc_update_output(Esc_t *esc) {
-    /* Safe state */
-    esc->inverter_cmd.enable = false;
-    esc->inverter_cmd.duty = 0.0f;
-    esc->inverter_cmd.commutation_step = 0;
-
     /* Check initialization & fault flags */
-    if (!esc->is_initialized || esc->fault_flags != 0) {
+    if (esc->fault_flags != ESC_FAULT_NONE) {
         return;
     }
 
@@ -171,14 +159,13 @@ static void _esc_update_output(Esc_t *esc) {
     }
 
     /* Deadband */
-    if (duty < 0.02f) {
+    if (duty < DEADBAND_DUTY) {
         return;
     }
 
-    /* Update commutation & grab */
-    _esc_update_commutation(esc);
     uint8_t step = esc->inverter_cmd.commutation_step;
 
+    /* WARNING: Reverse handelling may change in future. */
     /* Update direction by 180 degree electrical shift */
     if (reverse) {
         step = (step + 3) % 6;
