@@ -190,3 +190,25 @@ bool esc_config_is_valid(const EscConfig_t *cfg) {
     /* Valid config, return true*/
     return true;
 }
+
+EscInverterCmd_t esc_get_inverter_cmd(const Esc_t *esc) {
+    if (esc == NULL || esc->is_initialized == false){
+        EscInverterCmd_t invalid_cmd = {0};
+        return invalid_cmd;
+    } 
+    return esc->inverter_cmd;
+}
+
+bool esc_is_faulted(const Esc_t *esc) {
+    if (esc == NULL){
+        return true;
+    }
+    return (esc->fault_flags != ESC_FAULT_NONE);
+}
+
+EscFault_t esc_get_fault_flags(const Esc_t *esc) {
+    if (esc == NULL || esc->is_initialized == false){
+        return ESC_FAULT_NONE;
+    }
+    return (EscFault_t)esc->fault_flags;
+}
