@@ -88,6 +88,30 @@ static void _esc_update_output(Esc_t *esc) {
  * Public Function Definitions
  *******************************************************************************************************************************/
 
+void esc_set_throttle(Esc_t *esc, const float throttle_cmd) {
+    /* Validate esc input */
+    if (esc == NULL || esc->is_initialized == false) {
+        return;
+    }
+    /* Clamp throttle command to valid range [THROTTLE_CMD_MIN, THROTTLE_CMD_MAX] */
+    if (throttle_cmd > THROTTLE_CMD_MAX) {
+        esc->throttle_cmd = THROTTLE_CMD_MAX;
+    } else if (throttle_cmd < THROTTLE_CMD_MIN) {
+        esc->throttle_cmd = THROTTLE_CMD_MIN;
+    } else {
+        esc->throttle_cmd = throttle_cmd;
+    }
+}
+
+void esc_set_motor_state(Esc_t *esc, const MotorState_t *state) {
+    /* Validate esc input */
+    if (esc == NULL || esc->is_initialized == false || state == NULL) {
+        return;
+    }
+    esc->motor_state = *state;
+}
+
+
 bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
     /* Copying given cfg to ESC instance */
     if (esc_config_is_valid(cfg)) {
