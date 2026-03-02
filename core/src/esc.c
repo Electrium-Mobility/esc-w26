@@ -66,6 +66,30 @@ static void _esc_update_commutation(Esc_t *esc) {
  * @brief   Update control target from throttle command
  */
 static void _esc_update_setpoint(Esc_t *esc) {
+    /* Check fault flags */
+    if (esc->fault_flags != ESC_FAULT_NONE) {
+        esc->velocity_setpoint_rpm = 0.0f;
+        esc->torque_setpoint_A = 0.0f;
+        return;
+    }
+
+    /* Clamp throttle to max values */
+    float throttle = esc->throttle_cmd;
+    if (throttle > THROTTLE_CMD_MAX) {
+        throttle = THROTTLE_CMD_MAX;
+    }
+    if (throttle < THROTTLE_CMD_MIN) {
+        throttle = THROTTLE_CMD_MIN;
+    }
+
+    /* Deadband */
+    if (fabsf(throttle) < DEADBAND_THROTTLE) {
+        throttle = 0.0f;
+    }
+
+    /* Calculating RPM & Torque from throttle */
+    esc->torque_setpoint_A = throttle * MAX_PHASE_CURRENT;
+    esc->velocity_setpoint_rpm = throttle * MAX_RPM;
     return;
 }
 
@@ -73,6 +97,32 @@ static void _esc_update_setpoint(Esc_t *esc) {
  * @brief   Check safety limits and update fault state
  */
 static void _esc_check_limits(Esc_t *esc) {
+    /* Check undervolt lockout */
+    if (esc->motor_state.vbus_V < esc->config.limits.vbus_uvlo_V) {
+        esc->fault_flags |= ESC_FAULT_UVLO;
+    }
+    /* Check overvolt lockout */
+    if (esc->motor_state.vbus_V > esc->config.limits.vbus_ovlo_V) {
+        esc->fault_flags |= ESC_FAULT_OVLO;
+    }
+    /* Check overtemp */
+    if (esc->motor_state.temperature_C > esc->config.limits.max_temp_C) {
+        esc->fault_flags |= ESC_FAULT_OVERTEMP;
+    }
+    /* Check all phase currents against maximum and update fault flags*/
+    for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
+        if (esc->motor_state.phase_currents[i] > 
+            esc->config.limits.max_phase_current_A) {
+            esc->fault_flags |= ESC_FAULT_OVERCURRENT;
+            break;
+        }
+    }
+    /* Check hall invalidity */
+    if (esc->motor_state.hall_abc == HALL_INVALID) {
+        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
+    }   
+
+    /* All fault flag checks complete, return */
     return;
 }
 
@@ -80,6 +130,52 @@ static void _esc_check_limits(Esc_t *esc) {
  * @brief   Update inverter command outputs
  */
 static void _esc_update_output(Esc_t *esc) {
+    /* Check fault flags */
+    if (esc->fault_flags != ESC_FAULT_NONE) {
+        return;
+    }
+
+    /* Clamp throttle to max values */
+    float throttle = esc->throttle_cmd;
+    if (throttle > THROTTLE_CMD_MAX) {
+        throttle = THROTTLE_CMD_MAX;
+    }
+    if (throttle < THROTTLE_CMD_MIN) {
+        throttle = THROTTLE_CMD_MIN;
+    }
+
+    /* Find direction based on throttle input */
+    bool reverse = 0;
+    if (throttle < 0.0f) {
+        reverse = 1;
+    }
+
+    /* Take duty as abs of throttle */
+    float duty;
+    if (throttle >= 0.0f) {
+        duty = throttle;
+    } else {
+        duty = -throttle; 
+    }
+
+    /* Deadband */
+    if (duty < DEADBAND_DUTY) {
+        return;
+    }
+
+    uint8_t step = esc->inverter_cmd.commutation_step;
+
+    /* WARNING: Reverse handelling may change in future. */
+    /* Update direction by 180 degree electrical shift */
+    if (reverse) {
+        step = (step + 3) % 6;
+    }
+
+    /* Update inverter_cmd */
+    esc->inverter_cmd.enable = true;
+    esc->inverter_cmd.duty = duty * MAX_PWM_DUTY; /* Scaling to MAX_PWM_DUTY */
+    esc->inverter_cmd.commutation_step = step;
+
     return;
 }
 // TODO ENDS.

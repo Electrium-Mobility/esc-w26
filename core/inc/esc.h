@@ -12,6 +12,7 @@
 /* Standard library Headers */
 #include <stdbool.h>
 #include <stdint.h>
+#include <math.h>
 
 /* Inter-component Headers */
 
@@ -21,18 +22,24 @@
 /*******************************************************************************************************************************
  * Private defines and enums
  *******************************************************************************************************************************/
+#define HALL_INVALID ((uint8_t)0xFFU)
 
 /* Preprocessor definitions for config validity, subject to change. */
 /* Set to zero temporarily */
-#define MAX_PHASE_CURRENT 0.f 
-#define OVERTEMP_THRESHOLD 75.f /*75 degrees celcius*/
-#define UNDERVOLT_LOCKOUT 0.f
-#define OVERVOLT_LOCKOUT 0.f
-#define MAX_PWM_DUTY 2000 /*2000 microseconds*/
-#define HALL_INVALID ((uint8_t)0xFFU)
+#define OVERTEMP_THRESHOLD 75.0f /*75 degrees celcius*/
+#define UNDERVOLT_LOCKOUT 0.0f
+#define OVERVOLT_LOCKOUT 0.0f
+#define MAX_PWM_DUTY 2000.0f /*2000 microseconds*/
+#define MAX_RPM 0.0f
+#define MAX_PHASE_CURRENT 0.0f 
+
+/* Preprocessor definitions for ESC deadbands, subject to change. */
+#define DEADBAND_THROTTLE 0.01f
+#define DEADBAND_DUTY 0.02f
+
+/* Preprocessor definitions for max and min throttle values*/
 #define THROTTLE_CMD_MAX 1.0f
 #define THROTTLE_CMD_MIN -1.0f
-
 
 /**
  * @defgroup ESC ESC storage class
