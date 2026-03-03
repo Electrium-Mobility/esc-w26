@@ -89,11 +89,18 @@ static void _esc_update_output(Esc_t *esc) {
  *******************************************************************************************************************************/
 void esc_step(Esc_t *esc, uint32_t dt_us)
 {
-    if (esc == NULL) return; //null pntr check
+    if (esc == NULL){
+        return; //null pntr check
+    }
 
-    if (!esc->is_initialized) return; //
+    if (!esc->is_initialized){
+        
+        return; 
+    }
 
-    if (dt_us == 0U) return;
+    if (dt_us == 0U){
+        return;
+    }
 
     _esc_update_feedback(esc, dt_us);
     _esc_update_setpoint(esc);
