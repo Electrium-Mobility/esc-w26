@@ -50,6 +50,34 @@ static const bool hall_valid[8] = {
  * @brief   Update feedback-derived estimates
  */
 static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us){
+    /* Check esc */
+    if (esc == NULL || esc->is_initialized == false) {
+        return;
+    }
+    /* Sensorless feedback mechanism not implemented yet */
+    if (esc->config.feedback_mechanism != ESC_FEEDBACK_MECHANISM_SENSORED) {
+        return;
+    }
+    /* Find number of pole pairs */
+    const uint8_t pole_pairs = esc->config.motor_config.num_pole_pairs;
+    if (pole_pairs == 0U) {
+        esc->velocity_mech_rpm = 0.0f;
+        return;
+    }
+    /* Mask first three bits and validate hall */
+    const uint8_t hall = esc->motor_state.hall_abc & 0x07U;
+    if(!hall_valid[hall]) {
+        esc->velocity_mech_rpm = 0.0f;
+        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
+        return;
+    }
+    /* Only update speed if time between hall transitions is valid or large enough */
+    if (dt_us == 0U || dt_us < 10U) {
+        return;
+    }
+    /* Calculate velocity in rpm */
+    const float one_mech_rev_us = (float)dt_us * HALL_TRANSITIONS_PER_ELECTRICAL_REVOLUTION * (float)pole_pairs;
+    esc->velocity_mech_rpm = MICROSECONDS_PER_MINUTE / one_mech_rev_us;
     return;
 }
 
@@ -57,6 +85,22 @@ static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us){
  * @brief   Update inverter commutation step
  */
 static void _esc_update_commutation(Esc_t *esc) {
+    /* Check esc */
+    if (esc == NULL || esc->is_initialized == false) {
+        return;
+    }
+    /* Check if hall state is valid, disable inverter if invalid */
+    if (!hall_valid[esc->motor_state.hall_abc]) {
+        esc->motor_state.hall_abc = HALL_INVALID;
+        esc->inverter_cmd.enable = false;
+        return;
+    }
+     /* FOC not implemented yet */
+    if (esc->config.commutation_method != ESC_COMMUTATION_METHOD_TRAP) {
+        return;
+    }
+    /* Update commutation step */
+    esc->inverter_cmd.commutation_step = hall_to_step[esc->motor_state.hall_abc];
     return;
 }
 // TODO ENDS.
