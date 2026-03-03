@@ -41,6 +41,10 @@
 #define THROTTLE_CMD_MAX 1.0f
 #define THROTTLE_CMD_MIN -1.0f
 
+/* Preprocessor definitions for useful constants */
+#define HALL_TRANSITIONS_PER_ELECTRICAL_REVOLUTION 6.0f
+#define MICROSECONDS_PER_MINUTE 60000000.0f
+
 /**
  * @defgroup ESC ESC storage class
  * @brief    Electronic speed controller storage class
