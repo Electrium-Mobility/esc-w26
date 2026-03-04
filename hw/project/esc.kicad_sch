@@ -165,9 +165,39 @@
 				(justify left top)
 			)
 		)
-		(pin "EXAMPLE_HIERARCHICAL_LABEL_FOR_INPUT" input
-			(at 120.015 101.6 180)
-			(uuid "b5de5333-693f-46e8-bd81-02dd1d0b12b5")
+		(pin "MOTOR_A" output
+			(at 178.435 101.6 0)
+			(uuid "0e3a5495-893d-4416-baa8-5f8e5d0420f2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTOR_B" output
+			(at 178.435 106.68 0)
+			(uuid "64d98674-e03a-4559-8912-4e844e605001")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "MOTOR_C" output
+			(at 178.435 111.76 0)
+			(uuid "0630b807-9a3c-448f-a784-b03ec3c1736e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VBUS" input
+			(at 120.015 109.22 180)
+			(uuid "05b2c3f8-15bd-4de1-b999-48f769e1919f")
 			(effects
 				(font
 					(size 1.27 1.27)
