@@ -44,6 +44,7 @@
 /* Preprocessor definitions for useful constants */
 #define HALL_TRANSITIONS_PER_ELECTRICAL_REVOLUTION 6.0f
 #define MICROSECONDS_PER_MINUTE 60000000.0f
+#define MIN_PERIOD_BETWEEN_HALL_TRANSITIONS_US 10U /*10 microseconds*/
 
 /**
  * @defgroup ESC ESC storage class

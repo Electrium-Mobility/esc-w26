@@ -72,7 +72,7 @@ static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us){
         return;
     }
     /* Only update speed if time between hall transitions is valid or large enough */
-    if (dt_us == 0U || dt_us < 10U) {
+    if (dt_us == 0U || dt_us < MIN_PERIOD_BETWEEN_HALL_TRANSITIONS_US) {
         return;
     }
     /* Calculate velocity in rpm */
@@ -91,7 +91,7 @@ static void _esc_update_commutation(Esc_t *esc) {
     }
     /* Check if hall state is valid, disable inverter if invalid */
     if (!hall_valid[esc->motor_state.hall_abc]) {
-        esc->motor_state.hall_abc = HALL_INVALID;
+        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
         esc->inverter_cmd.enable = false;
         return;
     }
