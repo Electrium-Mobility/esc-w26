@@ -227,6 +227,27 @@ static void _esc_update_output(Esc_t *esc) {
 /*******************************************************************************************************************************
  * Public Function Definitions
  *******************************************************************************************************************************/
+void esc_step(Esc_t *esc, uint32_t dt_us)
+{
+    if (esc == NULL){
+        return; //null pntr check
+    }
+
+    if (!esc->is_initialized){
+        
+        return; 
+    }
+
+    if (dt_us == 0U){
+        return;
+    }
+
+    _esc_update_feedback(esc, dt_us);
+    _esc_update_setpoint(esc);
+    _esc_update_commutation(esc);
+    _esc_check_limits(esc);
+    _esc_update_output(esc);
+}
 
 void esc_set_throttle(Esc_t *esc, const float throttle_cmd) {
     /* Validate esc input */
