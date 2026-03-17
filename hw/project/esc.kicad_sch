@@ -132,8 +132,8 @@
 		)
 	)
 	(sheet
-		(at 120.015 87.63)
-		(size 58.42 43.815)
+		(at 120.65 82.55)
+		(size 58.42 42.545)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -148,7 +148,7 @@
 		)
 		(uuid "f702d253-729e-40c3-ac6b-420be83d0138")
 		(property "Sheetname" "Drive"
-			(at 120.015 86.9184 0)
+			(at 120.65 81.8384 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -157,7 +157,7 @@
 			)
 		)
 		(property "Sheetfile" "drive.kicad_sch"
-			(at 120.015 132.0296 0)
+			(at 120.65 125.6796 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -165,39 +165,99 @@
 				(justify left top)
 			)
 		)
-		(pin "MOTOR_A" output
-			(at 178.435 101.6 0)
-			(uuid "0e3a5495-893d-4416-baa8-5f8e5d0420f2")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MOTOR_B" output
-			(at 178.435 106.68 0)
-			(uuid "64d98674-e03a-4559-8912-4e844e605001")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "MOTOR_C" output
-			(at 178.435 111.76 0)
-			(uuid "0630b807-9a3c-448f-a784-b03ec3c1736e")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "VBUS" input
-			(at 120.015 109.22 180)
+			(at 120.65 107.95 180)
 			(uuid "05b2c3f8-15bd-4de1-b999-48f769e1919f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS_C" input
+			(at 120.65 101.6 180)
+			(uuid "11c68a5c-029a-4708-aa18-303c910e39d1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PHASE_C" output
+			(at 179.07 107.95 0)
+			(uuid "63f46ff0-6305-43c0-b82c-ce1dc052bc45")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GHS_A" input
+			(at 120.65 88.9 180)
+			(uuid "71dc0407-e2b2-434f-982c-8487dd9fb64c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GLS_A" input
+			(at 120.65 91.44 180)
+			(uuid "13b8848e-32c5-4ae7-8ee0-2e229cb9614d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PHASE_B" output
+			(at 179.07 101.6 0)
+			(uuid "b3762379-8dbd-47b2-85bb-741199037076")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PHASE_A" output
+			(at 179.07 95.25 0)
+			(uuid "cedcb9be-2eb9-4ca9-aa44-d114cff030c0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GLS_C" input
+			(at 120.65 104.14 180)
+			(uuid "09b684df-e60f-49c7-a09e-30a8ca2294f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS_B" input
+			(at 120.65 95.25 180)
+			(uuid "0aa4d5c2-d6e2-44d3-8d2c-009dcf97f1a2")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GLS_B" input
+			(at 120.65 97.79 180)
+			(uuid "3c5e9c3a-c4ab-423d-8f4f-73522b1acffa")
 			(effects
 				(font
 					(size 1.27 1.27)
