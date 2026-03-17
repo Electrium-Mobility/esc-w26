@@ -165,29 +165,9 @@
 				(justify left top)
 			)
 		)
-		(pin "VBUS" input
-			(at 120.65 107.95 180)
-			(uuid "05b2c3f8-15bd-4de1-b999-48f769e1919f")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "GHS_C" input
-			(at 120.65 101.6 180)
-			(uuid "11c68a5c-029a-4708-aa18-303c910e39d1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "PHASE_C" output
-			(at 179.07 107.95 0)
-			(uuid "63f46ff0-6305-43c0-b82c-ce1dc052bc45")
+		(pin "MOTOR_C" output
+			(at 179.07 88.9 0)
+			(uuid "35019c4f-72df-4386-b3d3-39643972b7ad")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -195,9 +175,9 @@
 				(justify right)
 			)
 		)
-		(pin "GHS_A" input
-			(at 120.65 88.9 180)
-			(uuid "71dc0407-e2b2-434f-982c-8487dd9fb64c")
+		(pin "GLS3" input
+			(at 120.65 102.87 180)
+			(uuid "255750b8-b6ac-4454-8d2c-e3f1e73fd569")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -205,9 +185,9 @@
 				(justify left)
 			)
 		)
-		(pin "GLS_A" input
-			(at 120.65 91.44 180)
-			(uuid "13b8848e-32c5-4ae7-8ee0-2e229cb9614d")
+		(pin "GHS2" input
+			(at 120.65 93.98 180)
+			(uuid "311f6a63-76ed-4c32-9f56-b88990f4025f")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -215,9 +195,39 @@
 				(justify left)
 			)
 		)
-		(pin "PHASE_B" output
-			(at 179.07 101.6 0)
-			(uuid "b3762379-8dbd-47b2-85bb-741199037076")
+		(pin "VM" input
+			(at 120.65 83.82 180)
+			(uuid "f4d1bc63-4ae9-4631-add9-da92e253be6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS1" input
+			(at 120.65 87.63 180)
+			(uuid "59a77201-f042-469c-97a6-ff1ab00eed24")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS3" input
+			(at 120.65 100.33 180)
+			(uuid "642ebdb5-97b4-4272-b15c-8a3bd1656392")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR_A" output
+			(at 179.07 83.82 0)
+			(uuid "377081a0-540c-4351-9ee1-440c82a0af19")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -225,9 +235,99 @@
 				(justify right)
 			)
 		)
-		(pin "PHASE_A" output
+		(pin "GLS2" input
+			(at 120.65 96.52 180)
+			(uuid "7e56dfe7-9077-4be3-b02c-eb7dc264aee3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR_B" output
+			(at 179.07 86.36 0)
+			(uuid "124d1052-4df8-4257-bd59-6b129c40ecc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT2" input
+			(at 120.65 118.11 180)
+			(uuid "4fdf0bc9-2ce0-4f92-9296-45cecee70fdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT3" input
+			(at 120.65 111.76 180)
+			(uuid "a1e03f4e-bc7f-4deb-bfba-2c9bd0bd309b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT1" input
+			(at 120.65 115.57 180)
+			(uuid "333bb079-2fe2-4976-9fcc-16694ab6892b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT1" input
+			(at 120.65 106.68 180)
+			(uuid "6aa70c28-7ed3-4ce5-a6de-431f7ba14be8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT3" input
+			(at 120.65 120.65 180)
+			(uuid "740dd5c6-d9c5-4d22-8f30-aabf84a5f97c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT2" input
+			(at 120.65 109.22 180)
+			(uuid "1251b00b-7ffe-43af-b516-9be2ad6267d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GLS1" input
+			(at 120.65 90.17 180)
+			(uuid "03a434f0-0c51-4336-af93-573c661fd1db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OPN_A" output
 			(at 179.07 95.25 0)
-			(uuid "cedcb9be-2eb9-4ca9-aa44-d114cff030c0")
+			(uuid "a5968e82-2522-4b5c-94e7-08a62273d0e1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -235,34 +335,84 @@
 				(justify right)
 			)
 		)
-		(pin "GLS_C" input
-			(at 120.65 104.14 180)
-			(uuid "09b684df-e60f-49c7-a09e-30a8ca2294f5")
+		(pin "OPO_A" output
+			(at 179.07 97.79 0)
+			(uuid "db604f67-e6cd-4bf9-b16b-8b9acb9fedf9")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "GHS_B" input
-			(at 120.65 95.25 180)
-			(uuid "0aa4d5c2-d6e2-44d3-8d2c-009dcf97f1a2")
+		(pin "OPO_B" output
+			(at 179.07 106.68 0)
+			(uuid "4200bf0f-2cac-48b4-b40e-468925c355fb")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(pin "GLS_B" input
-			(at 120.65 97.79 180)
-			(uuid "3c5e9c3a-c4ab-423d-8f4f-73522b1acffa")
+		(pin "OPP_A" output
+			(at 179.07 92.71 0)
+			(uuid "3c8723cc-1c19-4362-9548-03dfb8f9e210")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
+			)
+		)
+		(pin "OPO_C" output
+			(at 179.07 115.57 0)
+			(uuid "78a4fabf-1a51-46c5-a2a4-b27562ffa928")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_B" output
+			(at 179.07 104.14 0)
+			(uuid "61efea68-c32e-4079-8906-6bc37fc107b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_B" output
+			(at 179.07 101.6 0)
+			(uuid "11c71504-797b-4d0b-93b9-a7962d074eaa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_C" output
+			(at 179.07 113.03 0)
+			(uuid "1d6c6b3d-eb68-468d-b8ba-0572e40dacf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_C" output
+			(at 179.07 110.49 0)
+			(uuid "1431ccf0-65b5-40b4-bf30-c10f095c5cd8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
