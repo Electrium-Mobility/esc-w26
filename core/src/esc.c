@@ -155,7 +155,7 @@ static void _esc_check_limits(Esc_t *esc) {
     }
     /* Check all phase currents against maximum and update fault flags*/
     for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
-        if (esc->motor_state.phase_currents[i] > 
+        if (esc->motor_state.phase_currents_A[i] > 
             esc->config.limits.max_phase_current_A) {
             esc->fault_flags |= ESC_FAULT_OVERCURRENT;
             break;
@@ -283,7 +283,7 @@ bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
 
     /* Initialize ESC motor state to zero */
     for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
-        esc->motor_state.phase_currents[i] = 0.f;
+        esc->motor_state.phase_currents_A[i] = 0.f;
     }
     esc->motor_state.vbus_V = 0.f;
     esc->motor_state.temperature_C = 0.f;

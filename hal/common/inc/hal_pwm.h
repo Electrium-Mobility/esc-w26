@@ -1,55 +1,27 @@
 #pragma once
 
 /*******************************************************************************************************************************
- * @file   motor.h
+ * @file   hal_pwm.h
  *
- * @brief  Header file for the Motor storage class
+ * @brief  Header file for the HAL PWM module
  *
- * @date   2026-01-31
+ * @date   2026-03-18
  * @author Leopoldo Mendoza
  *******************************************************************************************************************************/
 
 /* Standard library Headers */
-#include <stdint.h>
+#include <stdbool.h>
 
 /* Inter-component Headers */
+#include "esc.h"
 
 /* Intra-component Headers */
 
 /**
- * @defgroup Motor Motor storage class
- * @brief    Brushless DC motor storage class
+ * @defgroup HalPwm HAL PWM module
+ * @brief    Hardware abstraction layer interface for inverter output control
  * @{
  */
-
-/**
- * @brief   Motor phases
- */
-typedef enum {
-    MOTOR_PHASE_A, /**< Motor Phase A */
-    MOTOR_PHASE_B, /**< Motor Phase B */
-    MOTOR_PHASE_C, /**< Motor Phase C */
-    NUM_MOTOR_PHASES
-} MotorPhase_t;
-
-/**
- * @brief   Motor state class
- */
-typedef struct {
-    float phase_currents_A[NUM_MOTOR_PHASES];   /**< Phase Currents */
-    float vbus_V;                               /**< DC Voltage from Battery Pack */
-    float temperature_C;                        /**< Motor temperature */
-
-    uint8_t hall_abc;                           /**< 3-bit Hall State */
-    uint32_t hall_timestamp_us;                 /**< Timestamp of Last Hall Transition */
-} MotorState_t;
-
-/**
- * @brief   Motor configuration class
- */
-typedef struct {
-    uint8_t num_pole_pairs;  /**< Number of Pole Pairs */
-} MotorConfig_t;
 
 /*******************************************************************************************************************************
  * Private defines and enums
@@ -62,5 +34,27 @@ typedef struct {
 /*******************************************************************************************************************************
  * Function declarations
  *******************************************************************************************************************************/
+
+/**
+ * @brief   Initializes the PWM abstraction layer
+ */
+void hal_pwm_init(void);
+
+/**
+ * @brief   Applies an ESC inverter command to the platform PWM outputs
+ * @param   cmd Inverter command to apply
+ */
+void hal_pwm_apply_inverter_cmd(const EscInverterCmd_t *cmd);
+
+/**
+ * @brief   Disables all inverter PWM outputs
+ */
+void hal_pwm_disable_outputs(void);
+
+/**
+ * @brief   Returns whether inverter PWM outputs are currently enabled
+ * @return  True if outputs are enabled, false otherwise
+ */
+bool hal_pwm_outputs_enabled(void);
 
 /** @} */
