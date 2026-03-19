@@ -2405,7 +2405,7 @@
 	)
 	(text_box "VBUS Sensing (not totally necessar since we can assume it's constant, but it's nice to have)\n\nUse a voltage divider to scale the voltage down to an ADC-able range:\nVBUS = Vadc * (R1 + R2) / R2\n\n\nDO IN CONTROL STAGE"
 		(exclude_from_sim no)
-		(at 128.905 142.875 0)
+		(at 258.445 132.08 0)
 		(size 58.42 28.575)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2425,7 +2425,7 @@
 	)
 	(text_box "Motor Phase Current -> Shunt Resistor -> Current Amplifier -> ADC -> FW, with\nIphase = Vadc / (Gain × Rshunt), where V_shunt = Vadc / Gain\n-> Note that Vadc comes from the op amp AFTER it amplifies the signal\n\nThe result from an OPAMP will be fed into an ADC, then current is calculated. \nADC must be timer triggered, so sampling happens when the mosfet is conducting\n\nFor each phase, need:\n- 1 shunt resistor\n- 2 traces for current sense (OPAMP+ and OPAMP-) [also called Kelvin sense connections]"
 		(exclude_from_sim no)
-		(at 50.165 139.065 0)
+		(at 16.51 132.715 0)
 		(size 69.215 39.37)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2525,7 +2525,7 @@
 	)
 	(text_box "To-add:\n- Bootstrap Caps (BOOTx to OUTx)\n- (Local) Bus Decoupling Caps\n- Current Shunts (Internal Op Amps + ADC), unliuke SPx/SNx\n\n- VCC Bypass Caoacutir -> CONTROL STAGE\n- Bus Voltage Sensing (ADC Input, ST shows example) -> CONTROL STAGE\n- Protection for MOSFET Faults (SCREF for VDS protection?) -> CONSTROL STAGE"
 		(exclude_from_sim no)
-		(at 194.31 12.065 0)
+		(at 251.46 12.7 0)
 		(size 65.405 27.94)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
