@@ -1,9 +1,9 @@
 #pragma once
 
 /*******************************************************************************************************************************
- * @file   hal_gpio.h
+ * @file   pwm.h
  *
- * @brief  Header file for the HAL GPIO module
+ * @brief  Header file for the HAL PWM module
  *
  * @date   2026-03-18
  * @author Leopoldo Mendoza
@@ -11,15 +11,15 @@
 
 /* Standard library Headers */
 #include <stdbool.h>
-#include <stdint.h>
 
 /* Inter-component Headers */
+#include "esc.h"
 
 /* Intra-component Headers */
 
 /**
- * @defgroup HalGpio HAL GPIO module
- * @brief    Hardware abstraction layer interface for digital input collection
+ * @defgroup HalPwm HAL PWM module
+ * @brief    Hardware abstraction layer interface for inverter output control
  * @{
  */
 
@@ -36,20 +36,25 @@
  *******************************************************************************************************************************/
 
 /**
- * @brief   Initializes the GPIO abstraction layer
+ * @brief   Initializes the PWM abstraction layer
  */
-void hal_gpio_init(void);
+void hal_pwm_init(void);
 
 /**
- * @brief   Gets the current Hall sensor state
- * @return  Three-bit Hall sensor state
+ * @brief   Applies an ESC inverter command to the platform PWM outputs
+ * @param   cmd Inverter command to apply
  */
-uint8_t hal_gpio_get_hall_state(void);
+void hal_pwm_apply_inverter_cmd(const EscInverterCmd_t *cmd);
 
 /**
- * @brief   Gets the timestamp of the most recent Hall transition
- * @return  Timestamp in microseconds
+ * @brief   Disables all inverter PWM outputs
  */
-uint32_t hal_gpio_get_hall_timestamp_us(void);
+void hal_pwm_disable_outputs(void);
+
+/**
+ * @brief   Returns whether inverter PWM outputs are currently enabled
+ * @return  True if outputs are enabled, false otherwise
+ */
+bool hal_pwm_outputs_enabled(void);
 
 /** @} */

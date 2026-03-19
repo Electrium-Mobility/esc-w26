@@ -1,25 +1,24 @@
 #pragma once
 
 /*******************************************************************************************************************************
- * @file   hal_pwm.h
+ * @file   time.h
  *
- * @brief  Header file for the HAL PWM module
+ * @brief  Header file for the HAL time module
  *
  * @date   2026-03-18
  * @author Leopoldo Mendoza
  *******************************************************************************************************************************/
 
 /* Standard library Headers */
-#include <stdbool.h>
+#include <stdint.h>
 
 /* Inter-component Headers */
-#include "esc.h"
 
 /* Intra-component Headers */
 
 /**
- * @defgroup HalPwm HAL PWM module
- * @brief    Hardware abstraction layer interface for inverter output control
+ * @defgroup HalTime HAL time module
+ * @brief    Hardware abstraction layer interface for system timekeeping
  * @{
  */
 
@@ -36,25 +35,26 @@
  *******************************************************************************************************************************/
 
 /**
- * @brief   Initializes the PWM abstraction layer
+ * @brief   Initializes the time abstraction layer
  */
-void hal_pwm_init(void);
+void hal_time_init(void);
 
 /**
- * @brief   Applies an ESC inverter command to the platform PWM outputs
- * @param   cmd Inverter command to apply
+ * @brief   Gets the current system time in milliseconds
+ * @return  Current time in milliseconds
  */
-void hal_pwm_apply_inverter_cmd(const EscInverterCmd_t *cmd);
+uint32_t hal_time_get_ms(void);
 
 /**
- * @brief   Disables all inverter PWM outputs
+ * @brief   Gets the current system time in microseconds
+ * @return  Current time in microseconds
  */
-void hal_pwm_disable_outputs(void);
+uint32_t hal_time_get_us(void);
 
 /**
- * @brief   Returns whether inverter PWM outputs are currently enabled
- * @return  True if outputs are enabled, false otherwise
+ * @brief   Delays execution for the specified number of milliseconds
+ * @param   delay_ms Delay duration in milliseconds
  */
-bool hal_pwm_outputs_enabled(void);
+void hal_time_delay_ms(uint32_t delay_ms);
 
 /** @} */

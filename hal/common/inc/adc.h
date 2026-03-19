@@ -1,9 +1,9 @@
 #pragma once
 
 /*******************************************************************************************************************************
- * @file   hal_fault.h
+ * @file   adc.h
  *
- * @brief  Header file for the HAL fault module
+ * @brief  Header file for the HAL ADC module
  *
  * @date   2026-03-18
  * @author Leopoldo Mendoza
@@ -11,32 +11,21 @@
 
 /* Standard library Headers */
 #include <stdbool.h>
-#include <stdint.h>
 
 /* Inter-component Headers */
+#include "motor.h"
 
 /* Intra-component Headers */
 
 /**
- * @defgroup HalFault HAL fault module
- * @brief    Hardware abstraction layer interface for platform fault monitoring
+ * @defgroup HalAdc HAL ADC module
+ * @brief    Hardware abstraction layer interface for analog measurement acquisition
  * @{
  */
 
 /*******************************************************************************************************************************
  * Private defines and enums
  *******************************************************************************************************************************/
-
-/**
- * @brief   Platform fault definitions
- */
-typedef enum {
-    HAL_FAULT_NONE = 0,          /**< No active fault */
-    HAL_FAULT_RESET,             /**< Device reset condition reported */
-    HAL_FAULT_VDS_PROTECTION,    /**< VDS monitoring protection triggered */
-    HAL_FAULT_THERMAL_SHUTDOWN,  /**< Thermal shutdown detected */
-    HAL_FAULT_VCC_UVLO           /**< VCC undervoltage lockout detected */
-} HalFault_t;
 
 /*******************************************************************************************************************************
  * Variables
@@ -47,31 +36,29 @@ typedef enum {
  *******************************************************************************************************************************/
 
 /**
- * @brief   Initializes the fault abstraction layer
+ * @brief   Initializes the ADC abstraction layer
  */
-void hal_fault_init(void);
+void hal_adc_init(void);
 
 /**
- * @brief   Checks whether the nFAULT condition is currently active
- * @return  True if a fault is active, false otherwise
+ * @brief   Gets the latest measured phase currents
+ * @param   phase_currents_A Output array of phase currents in amperes
+ * @return  True if the measurement is valid, false otherwise
  */
-bool hal_fault_is_active(void);
+bool hal_adc_get_phase_currents(float phase_currents_A[NUM_MOTOR_PHASES]);
 
 /**
- * @brief   Gets the currently active platform fault, if known
- * @return  Current fault type
+ * @brief   Gets the latest measured DC bus voltage
+ * @param   bus_voltage_V Pointer to output bus voltage in volts
+ * @return  True if the measurement is valid, false otherwise
  */
-HalFault_t hal_fault_get(void);
+bool hal_adc_get_bus_voltage(float *bus_voltage_V);
 
 /**
- * @brief   Clears the currently active platform fault
+ * @brief   Gets the latest measured temperature
+ * @param   temperature_C Pointer to output temperature in degrees Celsius
+ * @return  True if the measurement is valid, false otherwise
  */
-void hal_fault_clear(void);
-
-/**
- * @brief   Checks whether the power stage is ready to drive the external MOSFETs
- * @return  True if the device is ready, false otherwise
- */
-bool hal_fault_is_ready(void);
+bool hal_adc_get_temperature(float *temperature_C);
 
 /** @} */
