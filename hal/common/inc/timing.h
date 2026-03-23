@@ -11,6 +11,7 @@
 
 /* Standard library Headers */
 #include <stdint.h>
+#include <stdbool.h>
 
 /* Inter-component Headers */
 
@@ -36,8 +37,9 @@
 
 /**
  * @brief   Initializes the time abstraction layer
+ * @return  True if processor time is successfully acquired, false otherwise.
  */
-void hal_time_init(void);
+bool hal_time_init(void);
 
 /**
  * @brief   Gets the current system time in milliseconds
