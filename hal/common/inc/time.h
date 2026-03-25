@@ -39,7 +39,7 @@
  * @brief   Initializes the time abstraction layer
  * @return  True if processor time is successfully acquired, false otherwise.
  */
-bool hal_time_init(void);
+void hal_time_init(void);
 
 /**
  * @brief   Gets the current system time in milliseconds

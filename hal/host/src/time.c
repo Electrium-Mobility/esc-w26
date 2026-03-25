@@ -9,50 +9,35 @@
 
 /* Standard library Headers */
 #include <stdint.h>
-#include <stdbool.h>
-#include <time.h>
 
 /* Inter-component Headers */
 #include "host_state.h"
 
 /* Intra-component Headers */
-#include "timing.h"
+#include "time.h"
 
 /*******************************************************************************************************************************
  * Private Variables
  *******************************************************************************************************************************/
-static uint32_t boot_time;
 
 /*******************************************************************************************************************************
  * Function Definitions
  *******************************************************************************************************************************/
 
-bool hal_time_init(void) {
-    /* clock() returns -1 in the caes of failure. */
-    /* very rare, but worth the check */
-    if(clock() == -1) {
-        return false; 
-    }
-    hal_host_state.time_us = clock();
-    return true;
-
-
+void hal_time_init(void) {
+    hal_host_state.time_us = 0U;
 }
 
 uint32_t hal_time_get_ms(void) {
     /* Grabbing milliseconds */
-    uint32_t milliseconds = (hal_host_state.time_us / CLOCKS_PER_SEC) * 1000;
-    return milliseconds;
+    return hal_host_state.time_us / 1000;
 }
 
 uint32_t hal_time_get_us(void) {
-    /* Grabbing microseconds, depends on hal_time_get_ms() */
-    uint32_t microseconds = hal_time_get_ms() * 1000;
-    return microseconds;
+    /* Grabbing microseconds */
+    return hal_host_state.time_us;
 }
 
 void hal_time_delay_ms(uint32_t delay_ms) {
-    uint32_t start = hal_time_get_ms();
-    /* Loop until time has elapsed */
-    while(hal_get_time_ms() - start < delay_ms) { } 
+    hal_host_state.time_us += delay_ms * 1000;
 }
