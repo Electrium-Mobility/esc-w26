@@ -1,0 +1,462 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "86a17c4d-db96-42a1-af84-d43fe593f4e6")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 13.335 15.875)
+		(size 93.345 81.28)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "50f7e8ea-49d2-4d3d-890c-dc3d94742dd9")
+		(property "Sheetname" "Control"
+			(at 13.335 15.1634 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "control.kicad_sch"
+			(at 13.335 97.7396 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30.48 115.57)
+		(size 62.865 65.405)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5338eeb3-4021-4459-b70f-dab93d7c7a1a")
+		(property "Sheetname" "Power"
+			(at 30.48 114.8584 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 30.48 181.5596 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VBAT" input
+			(at 30.48 129.54 180)
+			(uuid "da162706-ed2f-4062-9a40-37a431692792")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "3V3_BUS" output
+			(at 93.345 133.35 0)
+			(uuid "50059c85-f243-406a-bff0-6c34bf20bc02")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V_BUS" output
+			(at 93.345 137.16 0)
+			(uuid "70b0450d-5585-43a0-b379-ce994323b68d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 135.255 24.765)
+		(size 35.56 40.64)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "84ea8536-46c8-4cae-8743-a6718dee2882")
+		(property "Sheetname" "Peripherals"
+			(at 135.255 24.0534 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "peripherals.kicad_sch"
+			(at 135.255 65.9896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 120.65 82.55)
+		(size 58.42 42.545)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f702d253-729e-40c3-ac6b-420be83d0138")
+		(property "Sheetname" "Drive"
+			(at 120.65 81.8384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "drive.kicad_sch"
+			(at 120.65 125.6796 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "MOTOR_C" output
+			(at 179.07 88.9 0)
+			(uuid "35019c4f-72df-4386-b3d3-39643972b7ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GLS3" input
+			(at 120.65 102.87 180)
+			(uuid "255750b8-b6ac-4454-8d2c-e3f1e73fd569")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS2" input
+			(at 120.65 93.98 180)
+			(uuid "311f6a63-76ed-4c32-9f56-b88990f4025f")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VM" input
+			(at 120.65 83.82 180)
+			(uuid "f4d1bc63-4ae9-4631-add9-da92e253be6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS1" input
+			(at 120.65 87.63 180)
+			(uuid "59a77201-f042-469c-97a6-ff1ab00eed24")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GHS3" input
+			(at 120.65 100.33 180)
+			(uuid "642ebdb5-97b4-4272-b15c-8a3bd1656392")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR_A" output
+			(at 179.07 83.82 0)
+			(uuid "377081a0-540c-4351-9ee1-440c82a0af19")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GLS2" input
+			(at 120.65 96.52 180)
+			(uuid "7e56dfe7-9077-4be3-b02c-eb7dc264aee3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "MOTOR_B" output
+			(at 179.07 86.36 0)
+			(uuid "124d1052-4df8-4257-bd59-6b129c40ecc1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OUT2" input
+			(at 120.65 118.11 180)
+			(uuid "4fdf0bc9-2ce0-4f92-9296-45cecee70fdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT3" input
+			(at 120.65 111.76 180)
+			(uuid "a1e03f4e-bc7f-4deb-bfba-2c9bd0bd309b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT1" input
+			(at 120.65 115.57 180)
+			(uuid "333bb079-2fe2-4976-9fcc-16694ab6892b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT1" input
+			(at 120.65 106.68 180)
+			(uuid "6aa70c28-7ed3-4ce5-a6de-431f7ba14be8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OUT3" input
+			(at 120.65 120.65 180)
+			(uuid "740dd5c6-d9c5-4d22-8f30-aabf84a5f97c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BOOT2" input
+			(at 120.65 109.22 180)
+			(uuid "1251b00b-7ffe-43af-b516-9be2ad6267d0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "GLS1" input
+			(at 120.65 90.17 180)
+			(uuid "03a434f0-0c51-4336-af93-573c661fd1db")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "OPN_A" output
+			(at 179.07 95.25 0)
+			(uuid "a5968e82-2522-4b5c-94e7-08a62273d0e1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPO_A" output
+			(at 179.07 97.79 0)
+			(uuid "db604f67-e6cd-4bf9-b16b-8b9acb9fedf9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPO_B" output
+			(at 179.07 106.68 0)
+			(uuid "4200bf0f-2cac-48b4-b40e-468925c355fb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_A" output
+			(at 179.07 92.71 0)
+			(uuid "3c8723cc-1c19-4362-9548-03dfb8f9e210")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPO_C" output
+			(at 179.07 115.57 0)
+			(uuid "78a4fabf-1a51-46c5-a2a4-b27562ffa928")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_B" output
+			(at 179.07 104.14 0)
+			(uuid "61efea68-c32e-4079-8906-6bc37fc107b4")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_B" output
+			(at 179.07 101.6 0)
+			(uuid "11c71504-797b-4d0b-93b9-a7962d074eaa")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_C" output
+			(at 179.07 113.03 0)
+			(uuid "1d6c6b3d-eb68-468d-b8ba-0572e40dacf6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_C" output
+			(at 179.07 110.49 0)
+			(uuid "1431ccf0-65b5-40b4-bf30-c10f095c5cd8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

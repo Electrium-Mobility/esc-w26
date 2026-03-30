@@ -1,0 +1,3 @@
+This is where MATLAB and Simulink stuff will live.
+For future reference, note that simulation (using close-to motor data) will happen on MATLAB/Simulink. 
+This is in contrast to simple unit testing (not tryna model the system, but just if the application works as intended, with the the fake plaftorm functions subbed in for the real STM32 HAL functions), which will happen in the tests/ folder using the fake HAL implementations in platform/host/src/

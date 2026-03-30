@@ -1,0 +1,1 @@
+All the junk (not actually, they're quite important auto-generated files) that the STM32CubeIDE will eventually go here (when we get there)

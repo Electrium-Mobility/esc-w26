@@ -1,0 +1,215 @@
+(footprint "LMR54410DBVR-SOT95P280X145-6N"
+	(version 20241229)
+	(generator "pcbnew")
+	(generator_version "9.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 1.07 -3.335 0)
+		(layer "F.SilkS")
+		(uuid "08e473ef-67c0-4732-b22b-39af84e6f1ee")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "SOT95P280X145-6N"
+		(at 8.055 3.335 0)
+		(layer "F.Fab")
+		(uuid "b1ccab37-47b1-4e6c-bb1b-788cb415de9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "78869ad7-5aaa-490c-8a17-27c2a34e8113")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "56b2cd05-f35c-4925-81c3-d7cb7b2e466e")
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr smd)
+	(fp_circle
+		(center -2.675 -0.95)
+		(end -2.575 -0.95)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.SilkS")
+		(uuid "7dcc6a56-6d21-4201-9af5-c31a85cf9db0")
+	)
+	(fp_line
+		(start -2.105 -1.7)
+		(end -2.105 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "62301c4f-1840-498c-8979-12eec354efba")
+	)
+	(fp_line
+		(start -2.105 1.7)
+		(end 2.105 1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "69fd0dce-a0ea-43ee-b171-032295bb306c")
+	)
+	(fp_line
+		(start 2.105 -1.7)
+		(end -2.105 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "78e9be53-8c2f-4952-a3f7-2718ea603e23")
+	)
+	(fp_line
+		(start 2.105 1.7)
+		(end 2.105 -1.7)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "675feaa6-93fd-4fc8-b1dc-eed24e16715d")
+	)
+	(fp_line
+		(start -0.8125 -1.45)
+		(end -0.8125 1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "09fc5a54-8da8-4ee6-9250-d9f853903952")
+	)
+	(fp_line
+		(start -0.8125 -1.45)
+		(end 0.8125 -1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "01177748-5b50-4bd6-8d57-e551c67dd19f")
+	)
+	(fp_line
+		(start -0.8125 1.45)
+		(end 0.8125 1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "00c47269-d2df-45ea-9dcd-c9c75b92060c")
+	)
+	(fp_line
+		(start 0.8125 -1.45)
+		(end 0.8125 1.45)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "341b8b76-cfd1-4883-8cca-623ffa18aed3")
+	)
+	(fp_circle
+		(center -2.675 -0.95)
+		(end -2.575 -0.95)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill no)
+		(layer "F.Fab")
+		(uuid "e3ad4311-7825-47f4-9d1d-70f1014d1147")
+	)
+	(pad "1" smd roundrect
+		(at -1.175 -0.95)
+		(size 1.36 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "5d73df15-f3bf-4237-a9c5-e8407f001bad")
+	)
+	(pad "2" smd roundrect
+		(at -1.175 0)
+		(size 1.36 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "07df73fb-209f-4e43-ab46-ee258e001c42")
+	)
+	(pad "3" smd roundrect
+		(at -1.175 0.95)
+		(size 1.36 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "fc10df0d-ec8b-4cf8-a074-a7d93d141b27")
+	)
+	(pad "4" smd roundrect
+		(at 1.175 0.95)
+		(size 1.36 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "413e581a-2367-4cc6-ae42-305ca83ebb80")
+	)
+	(pad "5" smd roundrect
+		(at 1.175 0)
+		(size 1.36 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "8768a3b5-bfe5-441a-a6aa-8812d3e139fd")
+	)
+	(pad "6" smd roundrect
+		(at 1.175 -0.95)
+		(size 1.36 0.6)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(roundrect_rratio 0.125)
+		(solder_mask_margin 0.102)
+		(uuid "d41d831f-b1de-4d0f-8983-5f0199f2b571")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../libs/3dmodels/LMR54410DBVR.step"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)
