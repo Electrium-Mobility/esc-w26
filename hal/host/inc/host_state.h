@@ -63,4 +63,51 @@ typedef struct {
 
 extern HalHostState_t hal_host_state;
 
+/*******************************************************************************************************************************
+ * Function declarations
+ *******************************************************************************************************************************/
+
+/**
+ * @brief   Sets phase currents in mock hal_host_state struct
+ * @param   currents array to fill into struct
+ */
+void HalHostState_SetPhaseCurrents(float currents[NUM_MOTOR_PHASES]);
+
+/**
+ * @brief   Sets bus voltage in mock hal_host_state struct
+ * @param   voltage float to insert into struct
+ */
+void HalHostState_SetBusVoltage(float voltage);
+
+/**
+ * @brief   Sets temperature in mock hal_host_state struct
+ * @param   temp float to insert into struct
+ */
+void HalHostState_SetTemperature(float temp);
+
+/**
+ * @brief   Sets hall state in mock hal_host_state struct
+ * @param   hall_abc uint8_t to insert into struct
+ * @param   timestamp_us uint32_5 to insert into struct
+ */
+void HalHostState_SetHallState(uint8_t hall_abc, uint32_t timestamp_us);
+
+/**
+ * @brief   Sets fault state in mock hal_host_state struct
+ * @param   fault HalFault_t to insert into struct
+ */
+void HalHostState_SetFault(HalFault_t fault);
+
+/**
+ * @brief   Sets ready state in mock hal_host_state struct
+ * @param   ready bool to insert into struct
+ */
+void HalHostState_SetReady(bool ready);
+
+/**
+ * @brief   Sets time in mock hal_host_state struct
+ * @param   time_us uint32_t to insert into struct
+ */
+void HalHostState_SetTime(uint32_t time_us);
+
 /** @} */
