@@ -1,11 +1,11 @@
 #pragma once
 
 /*******************************************************************************************************************************
- * @file   motor.h
+ * @file   time.h
  *
- * @brief  Header file for the Motor storage class
+ * @brief  Header file for the HAL time module
  *
- * @date   2026-01-31
+ * @date   2026-03-18
  * @author Leopoldo Mendoza
  *******************************************************************************************************************************/
 
@@ -17,39 +17,10 @@
 /* Intra-component Headers */
 
 /**
- * @defgroup Motor Motor storage class
- * @brief    Brushless DC motor storage class
+ * @defgroup HalTime HAL time module
+ * @brief    Hardware abstraction layer interface for system timekeeping
  * @{
  */
-
-/**
- * @brief   Motor phases
- */
-typedef enum {
-    MOTOR_PHASE_A, /**< Motor Phase A */
-    MOTOR_PHASE_B, /**< Motor Phase B */
-    MOTOR_PHASE_C, /**< Motor Phase C */
-    NUM_MOTOR_PHASES
-} MotorPhase_t;
-
-/**
- * @brief   Motor state class
- */
-typedef struct {
-    float phase_currents_A[NUM_MOTOR_PHASES];   /**< Phase Currents */
-    float vbus_V;                               /**< DC Voltage from Battery Pack */
-    float temperature_C;                        /**< Motor temperature */
-
-    uint8_t hall_abc;                           /**< 3-bit Hall State */
-    uint32_t hall_timestamp_us;                 /**< Timestamp of Last Hall Transition */
-} MotorState_t;
-
-/**
- * @brief   Motor configuration class
- */
-typedef struct {
-    uint8_t num_pole_pairs;  /**< Number of Pole Pairs */
-} MotorConfig_t;
 
 /*******************************************************************************************************************************
  * Private defines and enums
@@ -62,5 +33,28 @@ typedef struct {
 /*******************************************************************************************************************************
  * Function declarations
  *******************************************************************************************************************************/
+
+/**
+ * @brief   Initializes the time abstraction layer
+ */
+void hal_time_init(void);
+
+/**
+ * @brief   Gets the current system time in milliseconds
+ * @return  Current time in milliseconds
+ */
+uint32_t hal_time_get_ms(void);
+
+/**
+ * @brief   Gets the current system time in microseconds
+ * @return  Current time in microseconds
+ */
+uint32_t hal_time_get_us(void);
+
+/**
+ * @brief   Delays execution for the specified number of milliseconds
+ * @param   delay_ms Delay duration in milliseconds
+ */
+void hal_time_delay_ms(uint32_t delay_ms);
 
 /** @} */

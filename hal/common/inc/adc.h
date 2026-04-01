@@ -1,55 +1,27 @@
 #pragma once
 
 /*******************************************************************************************************************************
- * @file   motor.h
+ * @file   adc.h
  *
- * @brief  Header file for the Motor storage class
+ * @brief  Header file for the HAL ADC module
  *
- * @date   2026-01-31
+ * @date   2026-03-18
  * @author Leopoldo Mendoza
  *******************************************************************************************************************************/
 
 /* Standard library Headers */
-#include <stdint.h>
+#include <stdbool.h>
 
 /* Inter-component Headers */
+#include "motor.h"
 
 /* Intra-component Headers */
 
 /**
- * @defgroup Motor Motor storage class
- * @brief    Brushless DC motor storage class
+ * @defgroup HalAdc HAL ADC module
+ * @brief    Hardware abstraction layer interface for analog measurement acquisition
  * @{
  */
-
-/**
- * @brief   Motor phases
- */
-typedef enum {
-    MOTOR_PHASE_A, /**< Motor Phase A */
-    MOTOR_PHASE_B, /**< Motor Phase B */
-    MOTOR_PHASE_C, /**< Motor Phase C */
-    NUM_MOTOR_PHASES
-} MotorPhase_t;
-
-/**
- * @brief   Motor state class
- */
-typedef struct {
-    float phase_currents_A[NUM_MOTOR_PHASES];   /**< Phase Currents */
-    float vbus_V;                               /**< DC Voltage from Battery Pack */
-    float temperature_C;                        /**< Motor temperature */
-
-    uint8_t hall_abc;                           /**< 3-bit Hall State */
-    uint32_t hall_timestamp_us;                 /**< Timestamp of Last Hall Transition */
-} MotorState_t;
-
-/**
- * @brief   Motor configuration class
- */
-typedef struct {
-    uint8_t num_pole_pairs;  /**< Number of Pole Pairs */
-} MotorConfig_t;
 
 /*******************************************************************************************************************************
  * Private defines and enums
@@ -62,5 +34,31 @@ typedef struct {
 /*******************************************************************************************************************************
  * Function declarations
  *******************************************************************************************************************************/
+
+/**
+ * @brief   Initializes the ADC abstraction layer
+ */
+void hal_adc_init(void);
+
+/**
+ * @brief   Gets the latest measured phase currents
+ * @param   phase_currents_A Output array of phase currents in amperes
+ * @return  True if the measurement is valid, false otherwise
+ */
+bool hal_adc_get_phase_currents(float phase_currents_A[NUM_MOTOR_PHASES]);
+
+/**
+ * @brief   Gets the latest measured DC bus voltage
+ * @param   bus_voltage_V Pointer to output bus voltage in volts
+ * @return  True if the measurement is valid, false otherwise
+ */
+bool hal_adc_get_bus_voltage(float *bus_voltage_V);
+
+/**
+ * @brief   Gets the latest measured temperature
+ * @param   temperature_C Pointer to output temperature in degrees Celsius
+ * @return  True if the measurement is valid, false otherwise
+ */
+bool hal_adc_get_temperature(float *temperature_C);
 
 /** @} */
