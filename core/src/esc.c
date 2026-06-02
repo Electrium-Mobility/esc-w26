@@ -14,6 +14,8 @@
 
 /* Intra-component Headers */
 #include "esc.h"
+#include "esc_command.h"
+#include "esc_feedback.h"
 
 /*******************************************************************************************************************************
  * Private Variables
@@ -121,8 +123,8 @@ void esc_step(Esc_t *esc, uint32_t dt_us)
     esc_fault_manager_update(esc);
     esc_state_machine_update(esc);
 
-    _esc_update_feedback(esc, dt_us);
-    _esc_update_setpoint(esc);
+    esc_feedback_update(esc, dt_us);
+    esc_command_update(esc, dt_us);
 
     if (esc->state == ESC_STATE_RUNNING) {
         trapezoidal_update(esc);
