@@ -18,19 +18,7 @@
 /*******************************************************************************************************************************
  * Private Variables
  *******************************************************************************************************************************/
-// NOTE: THIS MAPPING MIGHT CHANGE LATER!
-static const uint8_t hall_to_step[8] = {
-    HALL_INVALID, // 000
-    2,            // 001
-    4,            // 010
-    3,            // 011
-    0,            // 100
-    1,            // 101
-    5,            // 110
-    HALL_INVALID  // 111
-};
-
-static const bool hall_valid[8] = {
+const bool hall_valid[8] = {
     false,  /* 000 */ 
     true,   /* 001 */ 
     true,   /* 010 */ 
@@ -81,30 +69,6 @@ static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us){
     return;
 }
 
-/**
- * @brief   Update inverter commutation step
- */
-static void _esc_update_commutation(Esc_t *esc) {
-    /* Check esc */
-    if (esc == NULL || esc->is_initialized == false) {
-        return;
-    }
-    /* Check if hall state is valid, disable inverter if invalid */
-    if (!hall_valid[esc->motor_state.hall_abc]) {
-        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
-        esc->inverter_cmd.enable = false;
-        return;
-    }
-     /* FOC not implemented yet */
-    if (esc->config.commutation_method != ESC_COMMUTATION_METHOD_TRAP) {
-        return;
-    }
-    /* Update commutation step */
-    esc->inverter_cmd.commutation_step = hall_to_step[esc->motor_state.hall_abc];
-    return;
-}
-// TODO ENDS.
-
 // TODO STARTS: Control and Output Helpers
 /**
  * @brief   Update control target from throttle command
@@ -137,93 +101,6 @@ static void _esc_update_setpoint(Esc_t *esc) {
     return;
 }
 
-/**
- * @brief   Check safety limits and update fault state
- */
-static void _esc_check_limits(Esc_t *esc) {
-    /* Check undervolt lockout */
-    if (esc->motor_state.vbus_V < esc->config.limits.vbus_uvlo_V) {
-        esc->fault_flags |= ESC_FAULT_UVLO;
-    }
-    /* Check overvolt lockout */
-    if (esc->motor_state.vbus_V > esc->config.limits.vbus_ovlo_V) {
-        esc->fault_flags |= ESC_FAULT_OVLO;
-    }
-    /* Check overtemp */
-    if (esc->motor_state.temperature_C > esc->config.limits.max_temp_C) {
-        esc->fault_flags |= ESC_FAULT_OVERTEMP;
-    }
-    /* Check all phase currents against maximum and update fault flags*/
-    for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
-        if (esc->motor_state.phase_currents_A[i] > 
-            esc->config.limits.max_phase_current_A) {
-            esc->fault_flags |= ESC_FAULT_OVERCURRENT;
-            break;
-        }
-    }
-    /* Check hall invalidity */
-    if (esc->motor_state.hall_abc == HALL_INVALID) {
-        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
-    }   
-
-    /* All fault flag checks complete, return */
-    return;
-}
-
-/**
- * @brief   Update inverter command outputs
- */
-static void _esc_update_output(Esc_t *esc) {
-    /* Check fault flags */
-    if (esc->fault_flags != ESC_FAULT_NONE) {
-        return;
-    }
-
-    /* Clamp throttle to max values */
-    float throttle = esc->throttle_cmd;
-    if (throttle > THROTTLE_CMD_MAX) {
-        throttle = THROTTLE_CMD_MAX;
-    }
-    if (throttle < THROTTLE_CMD_MIN) {
-        throttle = THROTTLE_CMD_MIN;
-    }
-
-    /* Find direction based on throttle input */
-    bool reverse = 0;
-    if (throttle < 0.0f) {
-        reverse = 1;
-    }
-
-    /* Take duty as abs of throttle */
-    float duty;
-    if (throttle >= 0.0f) {
-        duty = throttle;
-    } else {
-        duty = -throttle; 
-    }
-
-    /* Deadband */
-    if (duty < DEADBAND_DUTY) {
-        return;
-    }
-
-    uint8_t step = esc->inverter_cmd.commutation_step;
-
-    /* WARNING: Reverse handelling may change in future. */
-    /* Update direction by 180 degree electrical shift */
-    if (reverse) {
-        step = (step + 3) % 6;
-    }
-
-    /* Update inverter_cmd */
-    esc->inverter_cmd.enable = true;
-    esc->inverter_cmd.duty = duty * MAX_PWM_DUTY; /* Scaling to MAX_PWM_DUTY */
-    esc->inverter_cmd.commutation_step = step;
-
-    return;
-}
-// TODO ENDS.
-
 /*******************************************************************************************************************************
  * Public Function Definitions
  *******************************************************************************************************************************/
@@ -234,7 +111,6 @@ void esc_step(Esc_t *esc, uint32_t dt_us)
     }
 
     if (!esc->is_initialized){
-        
         return; 
     }
 
@@ -242,11 +118,18 @@ void esc_step(Esc_t *esc, uint32_t dt_us)
         return;
     }
 
+    esc_fault_manager_update(esc);
+    esc_state_machine_update(esc);
+
     _esc_update_feedback(esc, dt_us);
     _esc_update_setpoint(esc);
-    _esc_update_commutation(esc);
-    _esc_check_limits(esc);
-    _esc_update_output(esc);
+
+    if (esc->state == ESC_STATE_RUNNING) {
+        trapezoidal_update(esc);
+    } else {
+        esc->inverter_cmd.enable = false;
+        esc->inverter_cmd.duty = 0.0f;
+    }
 }
 
 void esc_set_throttle(Esc_t *esc, const float throttle_cmd) {
@@ -301,6 +184,7 @@ bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
     esc->torque_setpoint_A = 0.f;
     esc->velocity_mech_rpm = 0.f;
     esc->fault_flags = ESC_FAULT_NONE;
+    esc->state = ESC_STATE_INIT;
     
     /* Is initialized, return */
     esc->is_initialized = true;

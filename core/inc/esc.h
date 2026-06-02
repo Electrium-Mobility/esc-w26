@@ -18,6 +18,14 @@
 
 /* Intra-component Headers */
 #include "motor.h"
+#include "esc_state_machine.h"
+#include "esc_fault_manager.h"
+#include "trapezoidal.h"
+
+/*******************************************************************************************************************************
+ * Exports
+ *******************************************************************************************************************************/
+extern const bool hall_valid[8];
 
 /*******************************************************************************************************************************
  * Private defines and enums
@@ -51,6 +59,16 @@
  * @brief    Electronic speed controller storage class
  * @{
  */
+
+/**
+ * @brief   ESC states
+ */
+typedef enum {
+    ESC_STATE_INIT = 0,
+    ESC_STATE_IDLE,
+    ESC_STATE_RUNNING,
+    ESC_STATE_FAULT
+} EscState_t;
 
 /**
  * @brief   ESC control modes
@@ -123,6 +141,7 @@ typedef struct {
  */
 typedef struct {
     EscConfig_t config;            /**< ESC configuration */
+    EscState_t state;              /**< Current ESC operational state */
 
     MotorState_t motor_state;      /**< Motor measured state */
     EscInverterCmd_t inverter_cmd; /**< Inverter command output */
