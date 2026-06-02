@@ -2403,9 +2403,9 @@
 		)
 		(uuid "10dc809b-c166-4dab-b09a-699ce9b6da8d")
 	)
-	(text_box "VBUS Sensing (not totally necessar since we can assume it's constant, but it's nice to have)\n\nUse a voltage divider to scale the voltage down to an ADC-able range:\nVBUS = Vadc * (R1 + R2) / R2\n\n\nDO IN CONTROL STAGE"
+	(text_box "VBUS Sensing (not totally necessar since we can assume it's constant, but it's nice to have)\n\nUse a voltage divider to scale the voltage down to an ADC-able range:\nVBUS = Vadc * (R1 + R2) / R2\n\n\nNOTE: DO IN CONTROL STAGE"
 		(exclude_from_sim no)
-		(at 258.445 132.08 0)
+		(at 252.095 57.15 0)
 		(size 58.42 28.575)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2523,7 +2523,7 @@
 		)
 		(uuid "957bcbcd-96e4-4642-b79b-87685580a5d1")
 	)
-	(text_box "To-add:\n- Bootstrap Caps (BOOTx to OUTx)\n- (Local) Bus Decoupling Caps\n- Current Shunts (Internal Op Amps + ADC), unliuke SPx/SNx\n\n- VCC Bypass Caoacutir -> CONTROL STAGE\n- Bus Voltage Sensing (ADC Input, ST shows example) -> CONTROL STAGE\n- Protection for MOSFET Faults (SCREF for VDS protection?) -> CONSTROL STAGE"
+	(text_box "Values to drop in:\n- Bootstrap Caps (BOOTx to OUTx)\n- (Local) Bus Decoupling Caps\n- Current Shunts (Internal Op Amps + ADC), unliuke SPx/SNx\n\nOther stuff to add elsewhere:\n- VCC Bypass Caoacutir -> CONTROL STAGE\n- Bus Voltage Sensing (ADC Input, ST shows example) -> CONTROL STAGE\n- Protection for MOSFET Faults (SCREF for VDS protection?) -> CONSTROL STAGE"
 		(exclude_from_sim no)
 		(at 251.46 12.7 0)
 		(size 65.405 27.94)
