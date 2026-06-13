@@ -19,7 +19,7 @@
 #include "motor.h"
 
 /**
- * @defgroup Trapezoidal Trapezoidal commutation module
+ * @defgroup TrapezoidalCommutation Trapezoidal commutation module
  * @brief    6-step commutation method module for ESC trapezoidal mode
  * @{
  */

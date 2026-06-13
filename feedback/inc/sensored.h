@@ -20,7 +20,7 @@
 
 /**
  * @defgroup SensoredFeedback Sensored feedback module
- * @brief    Hall-based feedback for ESC applications
+ * @brief    Hall-based feedback module for ESC sensored mode
  * @{
  */
 
