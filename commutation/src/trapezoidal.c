@@ -1,11 +1,9 @@
-#pragma once
-
 /*******************************************************************************************************************************
- * @file   esc_fault_manager.h
+ * @file   trapezoidal.c
  *
- * @brief  Header file for the esc_fault_manager module
+ * @brief  Source file for the trapezoidal commutation module
  *
- * @date   2026-06-02
+ * @date   2026-06-13
  * @author Leopoldo Mendoza
  *******************************************************************************************************************************/
 
@@ -14,30 +12,33 @@
 /* Inter-component Headers */
 
 /* Intra-component Headers */
-#include "esc.h"
-
-/**
- * @defgroup ESCFaultManager ESC Fault Manager
- * @brief    Handles fault limit checking for the ESC
- * @{
- */
+#include "trapezoidal.h"
 
 /*******************************************************************************************************************************
- * Private defines and enums
+ * Private Variables
  *******************************************************************************************************************************/
+static const uint8_t hall_to_step[8] = {
+    0xFFU, /* 000 */
+    2U,    /* 001 */
+    4U,    /* 010 */
+    3U,    /* 011 */
+    0U,    /* 100 */
+    1U,    /* 101 */
+    5U,    /* 110 */
+    0xFFU  /* 111 */
+};
 
 /*******************************************************************************************************************************
- * Variables
+ * Function Definitions
  *******************************************************************************************************************************/
 
-/*******************************************************************************************************************************
- * Function declarations
- *******************************************************************************************************************************/
+bool trapezoidal_init(const MotorConfig_t *cfg)
+{
+    (void)cfg;
+    return cfg != NULL;
+}
 
-/**
- * @brief   Check safety limits and update fault state
- * @param   esc ESC instance
- */
-void esc_fault_manager_update(Esc_t *esc);
-
-/** @} */
+uint8_t trapezoidal_hall_to_step(uint8_t hall)
+{
+    return hall < 8U ? hall_to_step[hall] : 0xFFU;
+}

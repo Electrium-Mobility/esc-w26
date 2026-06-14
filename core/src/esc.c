@@ -8,28 +8,14 @@
  *******************************************************************************************************************************/
 
 /* Standard library Headers */
-#include <string.h>
 
 /* Inter-component Headers */
 
 /* Intra-component Headers */
 #include "esc.h"
-#include "esc_command.h"
-#include "esc_feedback.h"
 
-/*******************************************************************************************************************************
- * Private Variables
- *******************************************************************************************************************************/
-const bool hall_valid[8] = {
-    false,  /* 000 */ 
-    true,   /* 001 */ 
-    true,   /* 010 */ 
-    true,   /* 011 */ 
-    true,   /* 100 */ 
-    true,   /* 101 */ 
-    true,   /* 110 */ 
-    false   /* 111 */ 
-};
+#include "trapezoidal.h"
+#include "sensored.h"
 
 /*******************************************************************************************************************************
  * Private Function Definitions
@@ -39,37 +25,49 @@ const bool hall_valid[8] = {
 /**
  * @brief   Update feedback-derived estimates
  */
-static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us){
-    /* Check esc */
+static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us)
+{
     if (esc == NULL || esc->is_initialized == false) {
         return;
     }
-    /* Sensorless feedback mechanism not implemented yet */
-    if (esc->config.feedback_mechanism != ESC_FEEDBACK_MECHANISM_SENSORED) {
-        return;
+
+    switch (esc->config.feedback_mechanism) {
+        case ESC_FEEDBACK_MECHANISM_SENSORED:
+            sensored_update_feedback(esc, dt_us);
+            break;
+
+        case ESC_FEEDBACK_MECHANISM_SENSORLESS:
+            /* Sensorless feedback is not implemented yet. */
+            break;
+
+        default:
+            break;
     }
-    /* Find number of pole pairs */
-    const uint8_t pole_pairs = esc->config.motor_config.num_pole_pairs;
-    if (pole_pairs == 0U) {
-        esc->velocity_mech_rpm = 0.0f;
-        return;
-    }
-    /* Mask first three bits and validate hall */
-    const uint8_t hall = esc->motor_state.hall_abc & 0x07U;
-    if(!hall_valid[hall]) {
-        esc->velocity_mech_rpm = 0.0f;
-        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
-        return;
-    }
-    /* Only update speed if time between hall transitions is valid or large enough */
-    if (dt_us == 0U || dt_us < MIN_PERIOD_BETWEEN_HALL_TRANSITIONS_US) {
-        return;
-    }
-    /* Calculate velocity in rpm */
-    const float one_mech_rev_us = (float)dt_us * HALL_TRANSITIONS_PER_ELECTRICAL_REVOLUTION * (float)pole_pairs;
-    esc->velocity_mech_rpm = MICROSECONDS_PER_MINUTE / one_mech_rev_us;
-    return;
 }
+
+/**
+ * @brief   Update inverter commutation step
+ */
+static void _esc_update_commutation(Esc_t *esc)
+{
+    if (esc == NULL || esc->is_initialized == false) {
+        return;
+    }
+
+    switch (esc->config.commutation_method) {
+        case ESC_COMMUTATION_METHOD_TRAP:
+            esc->inverter_cmd.commutation_step = trapezoidal_hall_to_step(esc->motor_state.hall_abc & 0x07U);
+            break;
+
+        case ESC_COMMUTATION_METHOD_FOC:
+            /* FOC commutation not implemented yet. */
+            break;
+
+        default:
+            break;
+    }
+}
+// TODO ENDS.
 
 // TODO STARTS: Control and Output Helpers
 /**
@@ -103,6 +101,90 @@ static void _esc_update_setpoint(Esc_t *esc) {
     return;
 }
 
+/**
+ * @brief   Check safety limits and update fault state
+ */
+static void _esc_check_limits(Esc_t *esc) {
+    /* Check undervolt lockout */
+    if (esc->motor_state.vbus_V < esc->config.limits.vbus_uvlo_V) {
+        esc->fault_flags |= ESC_FAULT_UVLO;
+    }
+    /* Check overvolt lockout */
+    if (esc->motor_state.vbus_V > esc->config.limits.vbus_ovlo_V) {
+        esc->fault_flags |= ESC_FAULT_OVLO;
+    }
+    /* Check overtemp */
+    if (esc->motor_state.temperature_C > esc->config.limits.max_temp_C) {
+        esc->fault_flags |= ESC_FAULT_OVERTEMP;
+    }
+    /* Check all phase currents against maximum and update fault flags*/
+    for (int i = 0; i < NUM_MOTOR_PHASES; ++i) {
+        if (esc->motor_state.phase_currents_A[i] > 
+            esc->config.limits.max_phase_current_A) {
+            esc->fault_flags |= ESC_FAULT_OVERCURRENT;
+            break;
+        }
+    }
+    /* Hall invalidity is detected by the selected feedback mechanism. */
+
+    /* All fault flag checks complete, return */
+    return;
+}
+
+/**
+ * @brief   Update inverter command outputs
+ */
+static void _esc_update_output(Esc_t *esc) {
+    /* Check fault flags */
+    if (esc->fault_flags != ESC_FAULT_NONE) {
+        return;
+    }
+
+    /* Clamp throttle to max values */
+    float throttle = esc->throttle_cmd;
+    if (throttle > THROTTLE_CMD_MAX) {
+        throttle = THROTTLE_CMD_MAX;
+    }
+    if (throttle < THROTTLE_CMD_MIN) {
+        throttle = THROTTLE_CMD_MIN;
+    }
+
+    /* Find direction based on throttle input */
+    bool reverse = 0;
+    if (throttle < 0.0f) {
+        reverse = 1;
+    }
+
+    /* Take duty as abs of throttle */
+    float duty;
+    if (throttle >= 0.0f) {
+        duty = throttle;
+    } else {
+        duty = -throttle; 
+    }
+
+    /* Deadband */
+    if (duty < DEADBAND_DUTY) {
+        return;
+    }
+
+    uint8_t step = esc->inverter_cmd.commutation_step;
+
+    /* WARNING: Reverse handelling may change in future. */
+    /* Update direction by 180 degree electrical shift */
+    if (reverse) {
+        step = (step + 3) % 6;
+    }
+
+    /* Update inverter_cmd */
+    esc->inverter_cmd.enable = true;
+    esc->inverter_cmd.duty = duty * MAX_PWM_DUTY; /* Scaling to MAX_PWM_DUTY */
+    esc->inverter_cmd.commutation_step = step;
+
+    return;
+}
+// TODO ENDS.
+
 /*******************************************************************************************************************************
  * Public Function Definitions
  *******************************************************************************************************************************/
@@ -113,6 +195,7 @@ void esc_step(Esc_t *esc, uint32_t dt_us)
     }
 
     if (!esc->is_initialized){
+        
         return; 
     }
 
@@ -120,18 +203,11 @@ void esc_step(Esc_t *esc, uint32_t dt_us)
         return;
     }
 
-    esc_fault_manager_update(esc);
-    esc_state_machine_update(esc);
-
-    esc_feedback_update(esc, dt_us);
-    esc_command_update(esc, dt_us);
-
-    if (esc->state == ESC_STATE_RUNNING) {
-        trapezoidal_update(esc);
-    } else {
-        esc->inverter_cmd.enable = false;
-        esc->inverter_cmd.duty = 0.0f;
-    }
+    _esc_update_feedback(esc, dt_us);
+    _esc_update_setpoint(esc);
+    _esc_update_commutation(esc);
+    _esc_check_limits(esc);
+    _esc_update_output(esc);
 }
 
 void esc_set_throttle(Esc_t *esc, const float throttle_cmd) {
@@ -159,11 +235,18 @@ void esc_set_motor_state(Esc_t *esc, const MotorState_t *state) {
 
 
 bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
-    /* Copying given cfg to ESC instance */
+    if (esc == NULL || cfg == NULL) {
+        return false;
+    }
+
     if (esc_config_is_valid(cfg)) {
         esc->config = *cfg;
     } else {
         return false;
+    }
+
+    if (esc->config.feedback_mechanism == ESC_FEEDBACK_MECHANISM_SENSORED) {
+        sensored_init(&esc->config.motor_config);
     }
 
     /* Initialize ESC motor state to zero */
@@ -186,7 +269,6 @@ bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
     esc->torque_setpoint_A = 0.f;
     esc->velocity_mech_rpm = 0.f;
     esc->fault_flags = ESC_FAULT_NONE;
-    esc->state = ESC_STATE_INIT;
     
     /* Is initialized, return */
     esc->is_initialized = true;
@@ -207,6 +289,10 @@ void esc_reset(Esc_t *esc) {
 
 /* References preprocessor defined values, subject to change*/
 bool esc_config_is_valid(const EscConfig_t *cfg) {
+    if (cfg == NULL) {
+        return false;
+    }
+
     /* Checking EscControlMode_t enum invalidity*/
     if (cfg->control_mode < 0 || 
         cfg->control_mode > NUM_ESC_CONTROL_MODES) {
