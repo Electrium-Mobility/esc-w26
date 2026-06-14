@@ -31,7 +31,7 @@
 
 void hal_host_test_utils_reset(void) {
     for (int i = 0; i < NUM_MOTOR_PHASES; i++) {
-        hal_host_state.phase_currents_A = 0.0f;
+        hal_host_state.phase_currents_A[i] = 0.0f;
     }
     hal_host_state.bus_voltage_V = 0.0f;
     hal_host_state.temperature_C = 0.0f;
