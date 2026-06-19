@@ -7,6 +7,7 @@
 
 #### Firmware Subteam
 - VS Code
+- MSYS2 (to build)
 - LATER, but not yet: STM32CubeIDE (latest)
 
 #### Electrical Subteam
@@ -33,3 +34,20 @@ cd esc-w26
     ```bash
     git push origin <subteam>-<task>
 6. Open a pull request (PR) on GitHub and wait for it to be reviewed and merged!
+
+## Building
+
+### Setup
+1. Open the MSYS2 UCRT64 shell
+2. Install the toolchain and cmake packages:
+    ```bash
+    pacman -Syu
+    pacman -S mingw-w64-ucrt-x86_64-toolchain mingw-w64-ucrt-x86_64-cmake
+
+### Build
+1. Configure (while in the MSYS2 UCRT64 shell)
+    ```bash
+    cmake -S . -B build
+2. Build
+    ```bash
+    cmake --build build

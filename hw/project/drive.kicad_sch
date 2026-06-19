@@ -2528,7 +2528,7 @@
 		)
 		(uuid "10dc809b-c166-4dab-b09a-699ce9b6da8d")
 	)
-	(text_box "VBUS Sensing (not totally necessar since we can assume it's constant, but it's nice to have)\n\nUse a voltage divider to scale the voltage down to an ADC-able range:\nVBUS = Vadc * (R1 + R2) / R2\n\n\nDO IN CONTROL STAGE"
+	(text_box "VBUS Sensing (not totally necessar since we can assume it's constant, but it's nice to have)\n\nUse a voltage divider to scale the voltage down to an ADC-able range:\nVBUS = Vadc * (R1 + R2) / R2\n\n\nNOTE: DO IN CONTROL STAGE"
 		(exclude_from_sim no)
 		(at 223.52 130.81 0)
 		(size 58.42 28.575)

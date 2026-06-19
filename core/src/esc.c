@@ -8,38 +8,14 @@
  *******************************************************************************************************************************/
 
 /* Standard library Headers */
-#include <string.h>
 
 /* Inter-component Headers */
 
 /* Intra-component Headers */
 #include "esc.h"
 
-/*******************************************************************************************************************************
- * Private Variables
- *******************************************************************************************************************************/
-// NOTE: THIS MAPPING MIGHT CHANGE LATER!
-static const uint8_t hall_to_step[8] = {
-    HALL_INVALID, // 000
-    2,            // 001
-    4,            // 010
-    3,            // 011
-    0,            // 100
-    1,            // 101
-    5,            // 110
-    HALL_INVALID  // 111
-};
-
-static const bool hall_valid[8] = {
-    false,  /* 000 */ 
-    true,   /* 001 */ 
-    true,   /* 010 */ 
-    true,   /* 011 */ 
-    true,   /* 100 */ 
-    true,   /* 101 */ 
-    true,   /* 110 */ 
-    false   /* 111 */ 
-};
+#include "trapezoidal.h"
+#include "sensored.h"
 
 /*******************************************************************************************************************************
  * Private Function Definitions
@@ -49,59 +25,47 @@ static const bool hall_valid[8] = {
 /**
  * @brief   Update feedback-derived estimates
  */
-static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us){
-    /* Check esc */
+static void _esc_update_feedback(Esc_t *esc, uint32_t dt_us)
+{
     if (esc == NULL || esc->is_initialized == false) {
         return;
     }
-    /* Sensorless feedback mechanism not implemented yet */
-    if (esc->config.feedback_mechanism != ESC_FEEDBACK_MECHANISM_SENSORED) {
-        return;
+
+    switch (esc->config.feedback_mechanism) {
+        case ESC_FEEDBACK_MECHANISM_SENSORED:
+            sensored_update_feedback(esc, dt_us);
+            break;
+
+        case ESC_FEEDBACK_MECHANISM_SENSORLESS:
+            /* Sensorless feedback is not implemented yet. */
+            break;
+
+        default:
+            break;
     }
-    /* Find number of pole pairs */
-    const uint8_t pole_pairs = esc->config.motor_config.num_pole_pairs;
-    if (pole_pairs == 0U) {
-        esc->velocity_mech_rpm = 0.0f;
-        return;
-    }
-    /* Mask first three bits and validate hall */
-    const uint8_t hall = esc->motor_state.hall_abc & 0x07U;
-    if(!hall_valid[hall]) {
-        esc->velocity_mech_rpm = 0.0f;
-        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
-        return;
-    }
-    /* Only update speed if time between hall transitions is valid or large enough */
-    if (dt_us == 0U || dt_us < MIN_PERIOD_BETWEEN_HALL_TRANSITIONS_US) {
-        return;
-    }
-    /* Calculate velocity in rpm */
-    const float one_mech_rev_us = (float)dt_us * HALL_TRANSITIONS_PER_ELECTRICAL_REVOLUTION * (float)pole_pairs;
-    esc->velocity_mech_rpm = MICROSECONDS_PER_MINUTE / one_mech_rev_us;
-    return;
 }
 
 /**
  * @brief   Update inverter commutation step
  */
-static void _esc_update_commutation(Esc_t *esc) {
-    /* Check esc */
+static void _esc_update_commutation(Esc_t *esc)
+{
     if (esc == NULL || esc->is_initialized == false) {
         return;
     }
-    /* Check if hall state is valid, disable inverter if invalid */
-    if (!hall_valid[esc->motor_state.hall_abc]) {
-        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
-        esc->inverter_cmd.enable = false;
-        return;
+
+    switch (esc->config.commutation_method) {
+        case ESC_COMMUTATION_METHOD_TRAP:
+            esc->inverter_cmd.commutation_step = trapezoidal_hall_to_step(esc->motor_state.hall_abc & 0x07U);
+            break;
+
+        case ESC_COMMUTATION_METHOD_FOC:
+            /* FOC commutation not implemented yet. */
+            break;
+
+        default:
+            break;
     }
-     /* FOC not implemented yet */
-    if (esc->config.commutation_method != ESC_COMMUTATION_METHOD_TRAP) {
-        return;
-    }
-    /* Update commutation step */
-    esc->inverter_cmd.commutation_step = hall_to_step[esc->motor_state.hall_abc];
-    return;
 }
 // TODO ENDS.
 
@@ -161,10 +125,7 @@ static void _esc_check_limits(Esc_t *esc) {
             break;
         }
     }
-    /* Check hall invalidity */
-    if (esc->motor_state.hall_abc == HALL_INVALID) {
-        esc->fault_flags |= ESC_FAULT_HALL_INVALID;
-    }   
+    /* Hall invalidity is detected by the selected feedback mechanism. */
 
     /* All fault flag checks complete, return */
     return;
@@ -274,11 +235,18 @@ void esc_set_motor_state(Esc_t *esc, const MotorState_t *state) {
 
 
 bool esc_init(Esc_t *esc, const EscConfig_t *cfg) {
-    /* Copying given cfg to ESC instance */
+    if (esc == NULL || cfg == NULL) {
+        return false;
+    }
+
     if (esc_config_is_valid(cfg)) {
         esc->config = *cfg;
     } else {
         return false;
+    }
+
+    if (esc->config.feedback_mechanism == ESC_FEEDBACK_MECHANISM_SENSORED) {
+        sensored_init(&esc->config.motor_config);
     }
 
     /* Initialize ESC motor state to zero */
@@ -321,6 +289,10 @@ void esc_reset(Esc_t *esc) {
 
 /* References preprocessor defined values, subject to change*/
 bool esc_config_is_valid(const EscConfig_t *cfg) {
+    if (cfg == NULL) {
+        return false;
+    }
+
     /* Checking EscControlMode_t enum invalidity*/
     if (cfg->control_mode < 0 || 
         cfg->control_mode > NUM_ESC_CONTROL_MODES) {
