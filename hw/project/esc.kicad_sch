@@ -43,6 +43,16 @@
 				(justify left top)
 			)
 		)
+		(pin "VM" input
+			(at 13.335 20.32 180)
+			(uuid "9ec04788-5b41-4724-b9a5-9129b6bc782b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
@@ -89,34 +99,44 @@
 				(justify left top)
 			)
 		)
-		(pin "VBAT" input
-			(at 30.48 129.54 180)
-			(uuid "da162706-ed2f-4062-9a40-37a431692792")
+		(pin "3V3" output
+			(at 93.345 135.89 0)
+			(uuid "93eed892-8f90-4a05-9088-ff0c6fee07c1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "5V" output
+			(at 93.345 142.24 0)
+			(uuid "991389e5-8972-4df5-92ba-4eeadbf65578")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VM" output
+			(at 93.345 151.13 0)
+			(uuid "69a4d35a-5476-496d-91a6-cf73171eddcc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "VM_IN" input
+			(at 30.48 146.05 180)
+			(uuid "93c7fb6b-8995-4383-839d-a59158a8dea1")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "3V3_BUS" output
-			(at 93.345 133.35 0)
-			(uuid "50059c85-f243-406a-bff0-6c34bf20bc02")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "5V_BUS" output
-			(at 93.345 137.16 0)
-			(uuid "70b0450d-5585-43a0-b379-ce994323b68d")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(instances

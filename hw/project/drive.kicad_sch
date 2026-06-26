@@ -2894,6 +2894,27 @@
 		)
 		(uuid "10dc809b-c166-4dab-b09a-699ce9b6da8d")
 	)
+	(text_box "TO-DO: \nSHEETIFY EACH HALF BRIDGE????"
+		(exclude_from_sim no)
+		(at 146.05 -6.35 0)
+		(size 82.55 15.875)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type color)
+			(color 237 0 255 1)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "1d21e724-6c2c-4e6c-acf8-6f123d80d2f6")
+	)
 	(text_box "(Notes from Leo Before Task Assignment)\nVBUS Sensing (not totally necessar since we can assume it's constant, but it's nice to have)\n\nUse a voltage divider to scale the voltage down to an ADC-able range:\nVBUS = Vadc * (R1 + R2) / R2\n\n\nNOTE: DO IN CONTROL STAGE"
 		(exclude_from_sim no)
 		(at 262.255 129.54 0)
