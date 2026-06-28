@@ -44,13 +44,23 @@
 			)
 		)
 		(pin "VM" input
-			(at 13.335 20.32 180)
-			(uuid "9ec04788-5b41-4724-b9a5-9129b6bc782b")
+			(at 13.335 39.37 180)
+			(uuid "3cbb9562-acb1-4d87-a34d-6deea822e806")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "VREF+" output
+			(at 106.68 39.37 0)
+			(uuid "d1b245bb-c1a2-4f19-9e30-8b31198044b1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
@@ -479,6 +489,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "VREF+" input
+			(at 120.65 123.19 180)
+			(uuid "da76ef61-de65-47b0-a633-7a4add3c9df8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
