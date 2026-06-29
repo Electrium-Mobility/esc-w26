@@ -241,16 +241,6 @@
 				(justify left top)
 			)
 		)
-		(pin "MOTOR_C" output
-			(at 179.07 88.9 0)
-			(uuid "35019c4f-72df-4386-b3d3-39643972b7ad")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GLS3" input
 			(at 120.65 102.87 180)
 			(uuid "255750b8-b6ac-4454-8d2c-e3f1e73fd569")
@@ -301,16 +291,6 @@
 				(justify left)
 			)
 		)
-		(pin "MOTOR_A" output
-			(at 179.07 83.82 0)
-			(uuid "377081a0-540c-4351-9ee1-440c82a0af19")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "GLS2" input
 			(at 120.65 96.52 180)
 			(uuid "7e56dfe7-9077-4be3-b02c-eb7dc264aee3")
@@ -319,16 +299,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-			)
-		)
-		(pin "MOTOR_B" output
-			(at 179.07 86.36 0)
-			(uuid "124d1052-4df8-4257-bd59-6b129c40ecc1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 			)
 		)
 		(pin "OUT2" input
@@ -401,96 +371,6 @@
 				(justify left)
 			)
 		)
-		(pin "OPN_A" output
-			(at 179.07 95.25 0)
-			(uuid "a5968e82-2522-4b5c-94e7-08a62273d0e1")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPO_A" output
-			(at 179.07 97.79 0)
-			(uuid "db604f67-e6cd-4bf9-b16b-8b9acb9fedf9")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPO_B" output
-			(at 179.07 106.68 0)
-			(uuid "4200bf0f-2cac-48b4-b40e-468925c355fb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPP_A" output
-			(at 179.07 92.71 0)
-			(uuid "3c8723cc-1c19-4362-9548-03dfb8f9e210")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPO_C" output
-			(at 179.07 115.57 0)
-			(uuid "78a4fabf-1a51-46c5-a2a4-b27562ffa928")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPN_B" output
-			(at 179.07 104.14 0)
-			(uuid "61efea68-c32e-4079-8906-6bc37fc107b4")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPP_B" output
-			(at 179.07 101.6 0)
-			(uuid "11c71504-797b-4d0b-93b9-a7962d074eaa")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPN_C" output
-			(at 179.07 113.03 0)
-			(uuid "1d6c6b3d-eb68-468d-b8ba-0572e40dacf6")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "OPP_C" output
-			(at 179.07 110.49 0)
-			(uuid "1431ccf0-65b5-40b4-bf30-c10f095c5cd8")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "VREF+" input
 			(at 120.65 123.19 180)
 			(uuid "da76ef61-de65-47b0-a633-7a4add3c9df8")
@@ -499,6 +379,126 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "OPP_V" output
+			(at 179.07 96.52 0)
+			(uuid "4f7557b5-7ef8-41ce-a9b4-9aa84bc6e1f1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPO_W" output
+			(at 179.07 110.49 0)
+			(uuid "a2d2dfaa-41b0-4a24-80cf-3d20582b1fe0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_U" output
+			(at 179.07 87.63 0)
+			(uuid "d799f304-adaa-41f2-be9a-b5773f5daf93")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_U" output
+			(at 179.07 90.17 0)
+			(uuid "a4ad4899-5d65-4c7d-867a-e980a76f0243")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "U" output
+			(at 179.07 115.57 0)
+			(uuid "a0f233f0-8f44-4a60-bf76-4fd65fe021bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPP_W" output
+			(at 179.07 105.41 0)
+			(uuid "146188a1-d6c3-4c3c-be87-23bf3bc9f0fc")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_W" output
+			(at 179.07 107.95 0)
+			(uuid "c016faa2-a122-4081-a27d-5776bd048c4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "V" output
+			(at 179.07 118.11 0)
+			(uuid "0abd873a-a7b4-4d15-966d-1c9364dc2f6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPO_V" output
+			(at 179.07 101.6 0)
+			(uuid "add4b840-9ae7-451d-b449-a117dff305a7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPN_V" output
+			(at 179.07 99.06 0)
+			(uuid "86740b3f-4619-4672-acba-fcbd60f2042e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "OPO_U" output
+			(at 179.07 92.71 0)
+			(uuid "73f8062b-3236-4abb-9f79-842032db3dbe")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "W" output
+			(at 179.07 120.65 0)
+			(uuid "b271438a-1663-47b7-9567-85b7f6e832ae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
