@@ -3182,7 +3182,7 @@
 		)
 		(uuid "227de350-63fd-4f82-85af-a634759b5c55")
 	)
-	(text_box "Route both at EPAD:\n\n1. Gate Drivers Power Ground (PGND)\n-> Zone near VM_IN connector and low-side MOSFETs\n\n2. Control Logic Ground (VSS)\n-> Zone near MCU application circuitry"
+	(text_box "*Route both at EPAD:\n\n1. Gate Drivers Power Ground (PGND)\n-> Zone near VM_IN connector and low-side MOSFETs\n\n2. Control Logic Ground (VSS)\n-> Zone near MCU application circuitry"
 		(exclude_from_sim no)
 		(at 17.78 160.0599 0)
 		(size 55.88 17.7401)
