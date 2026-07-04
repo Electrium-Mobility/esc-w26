@@ -998,6 +998,26 @@
 			(embedded_fonts no)
 		)
 	)
+	(text_box "put ESD diodes"
+		(exclude_from_sim no)
+		(at 21.336 13.716 0)
+		(size 46.228 24.892)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "31907586-14c8-4260-8917-abcccc52847e")
+	)
 	(text_box "R = (V_rail - V_f) / I_f\n\ntaking I_f as 15mA\n(5mA for V_BAT)\n"
 		(exclude_from_sim no)
 		(at 95.25 109.0817 0)

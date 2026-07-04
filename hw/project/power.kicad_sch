@@ -2968,6 +2968,66 @@
 		)
 		(uuid "e4163f94-5838-4057-9b7a-0fe932872b43")
 	)
+	(text_box "Want no dependency on firmware for precharge circuit\nNeed to be handled in hardware\nThe STSPIN32G4 SoC's 3V3 line will only be powered by its internal regulator, which requires VM\nHowever, this circuit won't give the VM it needs until the MCU logic is involved."
+		(exclude_from_sim no)
+		(at 244.094 3.81 0)
+		(size 86.868 29.464)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "066a80ed-cc01-42d2-ad92-fcd091c49ed3")
+	)
+	(text_box "TVS diodes here (or move to above section)? -> place as close to VM in PCB as possible, so put on VM above\n\nstart clamping below 78V? -> can't find suitable Vrwm/Vc combo, so this TVS is sufficient but might not guarantee clamping at 78V (there are other more complicated solutions, if needed). plus, Vbr at around 66.7-73.7V is fine."
+		(exclude_from_sim no)
+		(at 38.608 141.478 0)
+		(size 32.512 38.707)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "26292418-ca49-44b3-a0ed-2965fc694b88")
+	)
+	(text_box "Power dissipation is too high (take 40A): P = (40A)^2 * 12mOhms = 19.2W\n-> do something else with N-MOS instead since they have less Rds(on)"
+		(exclude_from_sim no)
+		(at 139.7 14.5053 0)
+		(size 40.386 18.2607)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "371ccdaf-5d36-4119-9754-35fa6c4c13e8")
+	)
 	(text_box ""
 		(exclude_from_sim no)
 		(at 196.85 124.46 0)
@@ -2988,6 +3048,26 @@
 			(justify left top)
 		)
 		(uuid "6a317faa-82a3-430b-969b-209b66502e5a")
+	)
+	(text_box "Just make really big (above 50A prolly) cuz we expect max 40A continuous"
+		(exclude_from_sim no)
+		(at 97.536 21.59 0)
+		(size 35.814 10.668)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "8ae8cdda-668d-4ded-a0a3-650364ebb20c")
 	)
 	(junction
 		(at 160.02 58.42)
