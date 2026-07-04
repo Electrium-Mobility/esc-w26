@@ -3330,7 +3330,7 @@
 		)
 		(uuid "bf906a37-66e2-46a3-a9d3-c5748c3e9b81")
 	)
-	(text_box "Motor Supply Voltage\n\nC_M = 220nF ( = C_VM), while the bulk C_VMpol will be in Peripherals"
+	(text_box "Motor Supply Voltage\n\nC_M = 220nF ( = C_VM), while the bulk C_VMpol (3 x 100uF) will be in Peripherals"
 		(exclude_from_sim no)
 		(at 210.82 114.3 0)
 		(size 71.12 10.16)
@@ -4907,6 +4907,50 @@
 		)
 		(uuid "f704d096-0232-4518-947c-bb54dfd49164")
 	)
+	(hierarchical_label "OPN_V"
+		(shape input)
+		(at 33.02 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a4c8b8d-89ff-473c-ad98-e435831d39de")
+	)
+	(hierarchical_label "OPN_W"
+		(shape input)
+		(at 33.02 53.34 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58b7e486-06aa-4c07-81ff-c10366ff3e3a")
+	)
+	(hierarchical_label "OPP_U"
+		(shape input)
+		(at 73.66 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7947e0c9-6bf6-4006-94b2-8aec7b29884e")
+	)
+	(hierarchical_label "OPO_U"
+		(shape output)
+		(at 73.66 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "97b1f486-0655-4d76-ab5c-91492254c11b")
+	)
 	(hierarchical_label "VREF+"
 		(shape output)
 		(at 21.59 142.24 180)
@@ -4928,6 +4972,61 @@
 			(justify right)
 		)
 		(uuid "b1ca4c5c-2daf-46f4-af77-5ddc5b694928")
+	)
+	(hierarchical_label "OPN_U"
+		(shape input)
+		(at 73.66 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "c612bf4b-b2a9-4340-ab6f-f6fa2c0483ba")
+	)
+	(hierarchical_label "OPO_W"
+		(shape output)
+		(at 33.02 50.8 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cf096524-d628-480d-8f02-b85daee5b8ee")
+	)
+	(hierarchical_label "OPO_V"
+		(shape output)
+		(at 73.66 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2e7fb44-d928-4dae-97d2-e0c751713b5c")
+	)
+	(hierarchical_label "OPP_V"
+		(shape input)
+		(at 73.66 63.5 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "de59a71f-750d-4b66-a137-c56773bdc2e9")
+	)
+	(hierarchical_label "OPP_W"
+		(shape input)
+		(at 33.02 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "fc654a86-7247-4dbd-90d8-f598615cf9bc")
 	)
 	(symbol
 		(lib_id "Device:C")
