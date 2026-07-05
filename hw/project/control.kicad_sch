@@ -4929,28 +4929,6 @@
 		)
 		(uuid "58b7e486-06aa-4c07-81ff-c10366ff3e3a")
 	)
-	(hierarchical_label "OPP_U"
-		(shape input)
-		(at 73.66 48.26 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "7947e0c9-6bf6-4006-94b2-8aec7b29884e")
-	)
-	(hierarchical_label "OPO_U"
-		(shape output)
-		(at 73.66 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "97b1f486-0655-4d76-ab5c-91492254c11b")
-	)
 	(hierarchical_label "VREF+"
 		(shape output)
 		(at 21.59 142.24 180)
@@ -4983,50 +4961,6 @@
 			(justify left)
 		)
 		(uuid "c612bf4b-b2a9-4340-ab6f-f6fa2c0483ba")
-	)
-	(hierarchical_label "OPO_W"
-		(shape output)
-		(at 33.02 50.8 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cf096524-d628-480d-8f02-b85daee5b8ee")
-	)
-	(hierarchical_label "OPO_V"
-		(shape output)
-		(at 73.66 60.96 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "d2e7fb44-d928-4dae-97d2-e0c751713b5c")
-	)
-	(hierarchical_label "OPP_V"
-		(shape input)
-		(at 73.66 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "de59a71f-750d-4b66-a137-c56773bdc2e9")
-	)
-	(hierarchical_label "OPP_W"
-		(shape input)
-		(at 33.02 48.26 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "fc654a86-7247-4dbd-90d8-f598615cf9bc")
 	)
 	(symbol
 		(lib_id "Device:C")
@@ -5194,6 +5128,7 @@
 		)
 		(pin "25"
 			(uuid "7cabf724-7078-4be0-a224-a87f680080bb")
+			(alternate "OPAMP3_VINM")
 		)
 		(pin "54"
 			(uuid "1c17baba-da98-4648-bb7b-7461a804d21f")
@@ -5236,6 +5171,7 @@
 		)
 		(pin "16"
 			(uuid "32e73f6e-21a2-4a39-99af-f8dcb5069b91")
+			(alternate "OPAMP1_VINM")
 		)
 		(pin "39"
 			(uuid "48c134de-a4f0-433c-b741-90d12090efd9")
@@ -5290,6 +5226,7 @@
 		)
 		(pin "22"
 			(uuid "8fb782b3-c1e7-4d19-90c5-1c7a0bc5c4cd")
+			(alternate "OPAMP2_VINM")
 		)
 		(pin "40"
 			(uuid "58309e5b-943e-47af-a1d1-3b99475e2172")
