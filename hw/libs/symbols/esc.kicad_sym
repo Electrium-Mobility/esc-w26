@@ -926,6 +926,7 @@
 						)
 					)
 				)
+				(alternate "SWDIO-JTMS" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 40.64 -53.34 180)
@@ -944,6 +945,7 @@
 						)
 					)
 				)
+				(alternate "SWCLK-JTCK," input clock)
 			)
 			(pin bidirectional line
 				(at 40.64 -55.88 180)
@@ -1016,6 +1018,7 @@
 						)
 					)
 				)
+				(alternate "JTDO-TRACESWO" output line)
 			)
 			(pin bidirectional line
 				(at 0 -30.48 0)
@@ -1034,6 +1037,7 @@
 						)
 					)
 				)
+				(alternate "JTRST" input line)
 			)
 			(pin bidirectional line
 				(at 0 -33.02 0)

@@ -4907,6 +4907,28 @@
 		)
 		(uuid "f704d096-0232-4518-947c-bb54dfd49164")
 	)
+	(hierarchical_label "SWCLK"
+		(shape input)
+		(at 73.66 81.28 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "03b065bc-9cfd-4b84-954f-5597976a5521")
+	)
+	(hierarchical_label "TRACESWO"
+		(shape output)
+		(at 33.02 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "0ea2c964-8574-41cc-aba9-f02dedb6815d")
+	)
 	(hierarchical_label "OPN_V"
 		(shape input)
 		(at 33.02 91.44 180)
@@ -4928,6 +4950,17 @@
 			(justify right)
 		)
 		(uuid "58b7e486-06aa-4c07-81ff-c10366ff3e3a")
+	)
+	(hierarchical_label "SWDIO"
+		(shape bidirectional)
+		(at 73.66 78.74 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "9577c24e-5792-42ff-aa30-d25ac4139ef5")
 	)
 	(hierarchical_label "VREF+"
 		(shape output)
@@ -5128,7 +5161,6 @@
 		)
 		(pin "25"
 			(uuid "7cabf724-7078-4be0-a224-a87f680080bb")
-			(alternate "OPAMP3_VINM")
 		)
 		(pin "54"
 			(uuid "1c17baba-da98-4648-bb7b-7461a804d21f")
@@ -5171,7 +5203,6 @@
 		)
 		(pin "16"
 			(uuid "32e73f6e-21a2-4a39-99af-f8dcb5069b91")
-			(alternate "OPAMP1_VINM")
 		)
 		(pin "39"
 			(uuid "48c134de-a4f0-433c-b741-90d12090efd9")
@@ -5226,7 +5257,6 @@
 		)
 		(pin "22"
 			(uuid "8fb782b3-c1e7-4d19-90c5-1c7a0bc5c4cd")
-			(alternate "OPAMP2_VINM")
 		)
 		(pin "40"
 			(uuid "58309e5b-943e-47af-a1d1-3b99475e2172")
