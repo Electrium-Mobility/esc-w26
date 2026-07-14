@@ -3149,7 +3149,7 @@
 		)
 		(uuid "a98721a1-a136-4a14-b2cc-7fe476c8d304")
 	)
-	(text_box "Backup Operating Voltage\n\nFeature not used since no need for RTC"
+	(text_box "Backup Operating Voltage\n\nFeature not used since no need for RTC -> nvm, RTC to be implemented"
 		(exclude_from_sim no)
 		(at 210.82 124.46 0)
 		(size 71.12 10.16)
@@ -3616,6 +3616,16 @@
 			(type default)
 		)
 		(uuid "1486557c-7c30-47a2-ab20-40773f1cd643")
+	)
+	(wire
+		(pts
+			(xy 73.66 96.52) (xy 82.55 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cab4484-d6af-49e0-bdc7-b4c06f6a515f")
 	)
 	(wire
 		(pts
@@ -4961,6 +4971,17 @@
 			(justify left)
 		)
 		(uuid "9577c24e-5792-42ff-aa30-d25ac4139ef5")
+	)
+	(hierarchical_label "NRST"
+		(shape input)
+		(at 82.55 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a8ab3e3f-134f-454e-aa0c-ae91dcdbd049")
 	)
 	(hierarchical_label "VREF+"
 		(shape output)
