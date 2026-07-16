@@ -521,6 +521,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -3084,6 +3251,18 @@
 		)
 		(uuid "80e2c8b8-1c81-43ee-98d3-7e3a480c429f")
 	)
+	(rectangle
+		(start 236.22 15.24)
+		(end 281.94 33.02)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "bc088ade-05e9-4378-afb9-bca823e74daa")
+	)
 	(text "Analog Voltage"
 		(exclude_from_sim no)
 		(at 158.242 16.764 0)
@@ -3269,26 +3448,6 @@
 		)
 		(uuid "6a8062a1-72d8-45b4-9140-244cc6d76dd2")
 	)
-	(text_box "Analog Supply Voltage\n-> Star routing\n-> Ferrite bead bt VDD & VDDA??"
-		(exclude_from_sim no)
-		(at 236.22 15.3178 0)
-		(size 45.72 20.2422)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "74203b64-946d-47dc-9fb9-ba0d27fe9eaf")
-	)
 	(text_box "Temperature Monitoring\n\n10k NTC is standard, but is taken at 25 deg C\n\nSince active operation temp > room temp, use R_bias = 4.7k to shift ADC midpoint (1.65V) over active temp range(check datasheet for when R_NTC drops to 4.7k exactly)"
 		(exclude_from_sim no)
 		(at 167.64 149.86 0)
@@ -3310,7 +3469,7 @@
 		)
 		(uuid "b2aecc59-5b9d-4b54-a872-c103a2051078")
 	)
-	(text_box "ADC Positive Reference Voltage\n\nEVSPIN32G4 uses VREF+ instead of VDD on the temp sense and current sense dividers"
+	(text_box "ADC Positive Reference Voltage\n\nEVSPIN32G4 uses VREF+ instead of VDD on the temp sense and current sense dividers\n\n200 on NRST to prevent 3V3 to GND short when switch is pressed"
 		(exclude_from_sim no)
 		(at 236.22 35.56 0)
 		(size 45.72 20.32)
@@ -4159,6 +4318,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 25.4) (xy 252.73 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a79990e1-ee39-40c5-a450-a41de32dc36b")
+	)
+	(wire
+		(pts
 			(xy 134.62 144.78) (xy 134.62 147.32)
 		)
 		(stroke
@@ -4356,6 +4525,16 @@
 			(type default)
 		)
 		(uuid "d7ea629e-b782-4fc5-b6f4-b67705e9346f")
+	)
+	(wire
+		(pts
+			(xy 257.81 25.4) (xy 266.7 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d9d2e6cd-b5e3-4dd1-940a-a83e6e1d8fa7")
 	)
 	(wire
 		(pts
@@ -4767,6 +4946,16 @@
 		)
 		(uuid "9a3b4082-3828-4873-981d-e0a881f069ca")
 	)
+	(label "VDDA"
+		(at 266.7 25.4 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9ba3ede6-63cf-4009-9466-cdc722beab94")
+	)
 	(label "VDD"
 		(at 175.26 107.95 180)
 		(effects
@@ -4856,6 +5045,16 @@
 			(justify right bottom)
 		)
 		(uuid "d160bb8e-000b-4e6f-bab1-31a5a4f9a981")
+	)
+	(label "VDD"
+		(at 243.84 25.4 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "d43faa7d-b9cf-401b-81a5-9600bd65dc63")
 	)
 	(label "REG3V3{slash}VDD"
 		(at 30.48 134.62 180)
@@ -5842,6 +6041,86 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "C9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 255.27 25.4 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "252697fe-b567-49e0-aa94-17a11343a7eb")
+		(property "Reference" "FB1"
+			(at 255.2319 19.05 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "600"
+			(at 255.2319 21.59 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+			(at 255.27 27.178 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/shenzhen-sunlord-electronics-co-ltd/gz1608e601tf/14120568"
+			(at 255.27 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "600 Ohms @ 100 MHz 1 Signal Line Ferrite Bead 0603 (1608 Metric) 200mA 450mOhm"
+			(at 255.27 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "afb48dba-ab81-45f3-af5c-6c23086cc544")
+		)
+		(pin "2"
+			(uuid "4b92e457-ee21-45a8-876e-e6eaabc5a040")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "FB1")
 					(unit 1)
 				)
 			)
