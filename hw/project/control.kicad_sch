@@ -3190,6 +3190,145 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:VDD"
+			(power global)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "VDD"
+				(at 0 3.556 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VDD\""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "VDD_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VDD_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 91.44 137.16)
@@ -3531,22 +3670,28 @@
 		(uuid "f207e6ef-bfbf-4505-af74-69536bd526e9")
 	)
 	(junction
-		(at 200.66 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "00d392ca-6f03-479e-8699-86672fd65550")
-	)
-	(junction
 		(at 116.84 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "07b029a2-fca1-4617-b4cf-22a70b11c321")
 	)
 	(junction
+		(at 96.52 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "08f2afe7-d8d4-49e3-9527-ef4fa23222eb")
+	)
+	(junction
 		(at 96.52 114.3)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12ce6398-1f14-44f8-8aef-4f4acadd2bd4")
+	)
+	(junction
+		(at 200.66 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "16d6068b-975f-406b-926d-a39834a73b96")
 	)
 	(junction
 		(at 96.52 35.56)
@@ -3561,16 +3706,16 @@
 		(uuid "2c3bdd44-e076-4a35-8b86-75263a4001ce")
 	)
 	(junction
+		(at 215.9 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4992bcee-87f9-4176-bd77-6eb726945b33")
+	)
+	(junction
 		(at 99.06 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4fa13de4-5cb1-4359-be78-621b97172c5f")
-	)
-	(junction
-		(at 165.1 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6cd91b9f-04d8-43b5-8eaf-78dc939aad85")
 	)
 	(junction
 		(at 104.14 170.18)
@@ -3589,6 +3734,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74f86af7-9ef5-4c98-abd8-372e6a0f668e")
+	)
+	(junction
+		(at 165.1 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7b26d9e4-f233-4fd9-8188-230ea361e76c")
 	)
 	(junction
 		(at 116.84 83.82)
@@ -4008,16 +4159,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 27.94) (xy 165.1 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c7818ec-cee4-4223-8e9e-63a3e6dcb631")
-	)
-	(wire
-		(pts
 			(xy 207.01 83.82) (xy 215.9 83.82)
 		)
 		(stroke
@@ -4165,6 +4306,16 @@
 			(type default)
 		)
 		(uuid "84845266-eb47-4e54-8de0-983fa3de0be5")
+	)
+	(wire
+		(pts
+			(xy 96.52 101.6) (xy 96.52 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "883507cc-cda2-40d2-b69a-1aac458c32ef")
 	)
 	(wire
 		(pts
@@ -4318,7 +4469,7 @@
 	)
 	(wire
 		(pts
-			(xy 243.84 25.4) (xy 252.73 25.4)
+			(xy 247.65 25.4) (xy 256.54 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4345,16 +4496,6 @@
 			(type default)
 		)
 		(uuid "acfc7eef-6c47-4d07-8eb8-b0f5a3c985d0")
-	)
-	(wire
-		(pts
-			(xy 96.52 101.6) (xy 96.52 104.14)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aec9ce87-7bd4-4194-96bf-7695f25bda62")
 	)
 	(wire
 		(pts
@@ -4385,16 +4526,6 @@
 			(type default)
 		)
 		(uuid "b1ea1344-1f96-4dce-8cfe-d8bb0c6c840d")
-	)
-	(wire
-		(pts
-			(xy 96.52 25.4) (xy 96.52 22.86)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b1f4df52-e131-4839-ad45-49503d8f9d9a")
 	)
 	(wire
 		(pts
@@ -4528,7 +4659,7 @@
 	)
 	(wire
 		(pts
-			(xy 257.81 25.4) (xy 266.7 25.4)
+			(xy 261.62 25.4) (xy 270.51 25.4)
 		)
 		(stroke
 			(width 0)
@@ -4716,16 +4847,6 @@
 		)
 		(uuid "fd7b8f84-d974-4bce-867c-b7416c4b90b6")
 	)
-	(wire
-		(pts
-			(xy 200.66 27.94) (xy 200.66 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fdc7ec83-985f-42fb-907f-65d975699285")
-	)
 	(label "TEMP_SENSE"
 		(at 33.02 88.9 180)
 		(effects
@@ -4786,16 +4907,6 @@
 		)
 		(uuid "29f26cd7-29a5-4f63-b637-9cee94fcbe85")
 	)
-	(label "VDD"
-		(at 200.66 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "4143f7f7-700a-49cd-bff0-436f3aaf5e80")
-	)
 	(label "REG3V3{slash}VDD"
 		(at 198.12 68.58 180)
 		(effects
@@ -4845,16 +4956,6 @@
 			(justify left bottom)
 		)
 		(uuid "657c9b9b-5ff6-4cef-9a67-d2b16e01a441")
-	)
-	(label "VDD"
-		(at 134.62 35.56 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "66e6df4b-9496-488d-ab3e-85335f988ab4")
 	)
 	(label "VCC"
 		(at 154.94 71.12 180)
@@ -4947,7 +5048,7 @@
 		(uuid "9a3b4082-3828-4873-981d-e0a881f069ca")
 	)
 	(label "VDDA"
-		(at 266.7 25.4 0)
+		(at 270.51 25.4 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4955,16 +5056,6 @@
 			(justify left bottom)
 		)
 		(uuid "9ba3ede6-63cf-4009-9466-cdc722beab94")
-	)
-	(label "VDD"
-		(at 175.26 107.95 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "a764e874-e9ac-44af-9738-3b8b9f8c8ce9")
 	)
 	(label "VDDA"
 		(at 180.34 30.48 0)
@@ -4985,16 +5076,6 @@
 			(justify left bottom)
 		)
 		(uuid "b459c49d-15f4-4eac-bdcb-bccc73afe50a")
-	)
-	(label "VDD"
-		(at 215.9 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "b85a22f7-3019-4adb-8b8d-9ec7f1d42333")
 	)
 	(label "VBAT"
 		(at 190.5 107.95 0)
@@ -5046,16 +5127,6 @@
 		)
 		(uuid "d160bb8e-000b-4e6f-bab1-31a5a4f9a981")
 	)
-	(label "VDD"
-		(at 243.84 25.4 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "d43faa7d-b9cf-401b-81a5-9600bd65dc63")
-	)
 	(label "REG3V3{slash}VDD"
 		(at 30.48 134.62 180)
 		(effects
@@ -5076,16 +5147,6 @@
 		)
 		(uuid "e5c56207-7619-4206-8642-83cbca37d9a7")
 	)
-	(label "VDD"
-		(at 165.1 27.94 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "e87d5e98-7601-4a07-a7d3-b513a9d11ed5")
-	)
 	(label "REGIN"
 		(at 167.64 71.12 0)
 		(effects
@@ -5095,26 +5156,6 @@
 			(justify left bottom)
 		)
 		(uuid "ed19629b-e913-4ca4-83dd-86ecd98f5523")
-	)
-	(label "VDD"
-		(at 96.52 22.86 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "efb15f10-d868-41bd-8362-39a1b2a1d7fe")
-	)
-	(label "VDD"
-		(at 96.52 101.6 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "f704d096-0232-4518-947c-bb54dfd49164")
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)
@@ -5803,6 +5844,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 247.65 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "187b724d-98da-4823-a919-2e8213e5e304")
+		(property "Reference" "#PWR048"
+			(at 247.65 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 247.65 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 247.65 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 247.65 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 247.65 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b259ac2a-0bb6-4459-89e8-6292b1c72076")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 149.86 163.83 0)
 		(unit 1)
@@ -6048,7 +6167,7 @@
 	)
 	(symbol
 		(lib_id "Device:FerriteBead_Small")
-		(at 255.27 25.4 90)
+		(at 259.08 25.4 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6059,7 +6178,7 @@
 		(fields_autoplaced yes)
 		(uuid "252697fe-b567-49e0-aa94-17a11343a7eb")
 		(property "Reference" "FB1"
-			(at 255.2319 19.05 90)
+			(at 259.0419 19.05 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6069,7 +6188,7 @@
 			)
 		)
 		(property "Value" "600"
-			(at 255.2319 21.59 90)
+			(at 259.0419 21.59 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6079,7 +6198,7 @@
 			)
 		)
 		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
-			(at 255.27 27.178 90)
+			(at 259.08 27.178 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6090,7 +6209,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/shenzhen-sunlord-electronics-co-ltd/gz1608e601tf/14120568"
-			(at 255.27 25.4 0)
+			(at 259.08 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6101,7 +6220,7 @@
 			)
 		)
 		(property "Description" "600 Ohms @ 100 MHz 1 Signal Line Ferrite Bead 0603 (1608 Metric) 200mA 450mOhm"
-			(at 255.27 25.4 0)
+			(at 259.08 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6691,6 +6810,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 200.66 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44ccb5af-5ed8-4fa0-b12e-f30242bea050")
+		(property "Reference" "#PWR039"
+			(at 200.66 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 200.66 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 200.66 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 200.66 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 200.66 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5ac9dec2-7aa5-47a2-b2f4-543be0640829")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR039")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "esc:STSPIN32G4")
 		(at 30.48 129.54 0)
 		(unit 2)
@@ -7046,6 +7243,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 96.52 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "487b98b2-7114-4cf1-aa24-a29320a3a5e0")
+		(property "Reference" "#PWR042"
+			(at 96.52 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 96.52 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 96.52 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9c16bcf4-9270-40ec-96c4-4bac63eb47f0")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR042")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 167.64 83.82 0)
 		(unit 1)
@@ -7280,6 +7555,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "C23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 96.52 25.4 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "569b9aeb-c3c7-4581-a0b3-62a2060dfde3")
+		(property "Reference" "#PWR037"
+			(at 96.52 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 96.52 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 96.52 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 96.52 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 96.52 25.4 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f8cce15a-1514-4e96-b548-7263c5d0fc04")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -8089,6 +8442,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 165.1 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "74253293-3459-4ab2-844d-570b11d25e89")
+		(property "Reference" "#PWR038"
+			(at 165.1 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 165.1 26.67 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 165.1 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 165.1 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 165.1 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d983af11-edc0-4e71-a690-62459e350309")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 147.32 41.91 0)
 		(unit 1)
@@ -8651,6 +9082,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "R17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 175.26 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "aa57e9b0-aec3-4de5-a1fa-187b27470054")
+		(property "Reference" "#PWR041"
+			(at 175.26 111.76 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 175.26 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 175.26 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 175.26 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "eebfcaf6-a7d5-46b9-bdc4-afff5fb15706")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -9459,6 +9968,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VDD")
+		(at 215.9 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d9bff820-89ff-4bf0-846d-f17ab8275222")
+		(property "Reference" "#PWR040"
+			(at 215.9 74.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 215.9 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 215.9 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8188e77b-2b31-41af-9bd2-0381331c5a98")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D")
 		(at 99.06 77.47 270)
 		(unit 1)
@@ -9557,6 +10144,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VDD")
+		(at 134.62 35.56 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ebdc5474-0d6b-4608-be0e-1ef7daee5140")
+		(property "Reference" "#PWR049"
+			(at 134.62 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VDD"
+			(at 134.62 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VDD\""
+			(at 134.62 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "652e9189-d6d8-4b79-aab1-217fede18799")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
