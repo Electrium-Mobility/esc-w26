@@ -167,6 +167,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Unpolarized capacitor, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "capacitor cap"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
+					)
+					(stroke
+						(width 0.3302)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:D"
 			(pin_numbers
 				(hide yes)
@@ -849,6 +1005,160 @@
 					(at 0 -3.81 90)
 					(length 1.27)
 					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3708,17 +4018,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 124.46) (xy 96.52 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c8cea0f-2437-41e9-b3a1-96ef4c106c50")
-	)
-	(wire
-		(pts
-			(xy 215.9 71.12) (xy 215.9 73.66)
+			(xy 215.9 71.12) (xy 215.9 74.93)
 		)
 		(stroke
 			(width 0)
@@ -3738,7 +4038,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 81.28) (xy 215.9 83.82)
+			(xy 215.9 80.01) (xy 215.9 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3748,7 +4048,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 43.18) (xy 215.9 40.64)
+			(xy 215.9 39.37) (xy 215.9 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3788,6 +4088,16 @@
 	)
 	(wire
 		(pts
+			(xy 180.34 30.48) (xy 180.34 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1edcfc92-56fb-486d-96a1-61027111742a")
+	)
+	(wire
+		(pts
 			(xy 147.32 107.95) (xy 149.86 107.95)
 		)
 		(stroke
@@ -3808,7 +4118,7 @@
 	)
 	(wire
 		(pts
-			(xy 187.96 107.95) (xy 187.96 110.49)
+			(xy 187.96 107.95) (xy 187.96 111.76)
 		)
 		(stroke
 			(width 0)
@@ -3818,7 +4128,17 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 81.28) (xy 134.62 83.82)
+			(xy 167.64 71.12) (xy 167.64 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25f844ee-655b-47ef-8e4f-8fdb5feac064")
+	)
+	(wire
+		(pts
+			(xy 134.62 80.01) (xy 134.62 83.82)
 		)
 		(stroke
 			(width 0)
@@ -3888,7 +4208,7 @@
 	)
 	(wire
 		(pts
-			(xy 215.9 33.02) (xy 215.9 30.48)
+			(xy 215.9 30.48) (xy 215.9 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3898,23 +4218,13 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 71.12) (xy 134.62 73.66)
+			(xy 134.62 71.12) (xy 134.62 74.93)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "419f1e9b-cdc5-4e0e-a057-a7267ccf3329")
-	)
-	(wire
-		(pts
-			(xy 167.64 81.28) (xy 167.64 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4415a29e-5b83-4ed5-8591-06cc0fd4b685")
 	)
 	(wire
 		(pts
@@ -4008,6 +4318,16 @@
 	)
 	(wire
 		(pts
+			(xy 96.52 123.19) (xy 96.52 127)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "59b64ae8-05ef-4bd5-b96d-1223b8d18b8d")
+	)
+	(wire
+		(pts
 			(xy 165.1 27.94) (xy 165.1 30.48)
 		)
 		(stroke
@@ -4058,17 +4378,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 45.72) (xy 109.22 48.26)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67c9f3f1-9216-4227-959c-7d858ba18a3c")
-	)
-	(wire
-		(pts
-			(xy 187.96 118.11) (xy 187.96 120.65)
+			(xy 187.96 116.84) (xy 187.96 120.65)
 		)
 		(stroke
 			(width 0)
@@ -4085,16 +4395,6 @@
 			(type default)
 		)
 		(uuid "6874cbc1-e250-480b-976e-5578bb081336")
-	)
-	(wire
-		(pts
-			(xy 167.64 71.12) (xy 167.64 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a998da5-9033-49a7-9c62-aa6e1c39fce1")
 	)
 	(wire
 		(pts
@@ -4188,7 +4488,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 35.56) (xy 109.22 38.1)
+			(xy 109.22 35.56) (xy 109.22 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4258,7 +4558,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 43.18) (xy 180.34 40.64)
+			(xy 180.34 39.37) (xy 180.34 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4298,7 +4598,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 114.3) (xy 96.52 116.84)
+			(xy 96.52 114.3) (xy 96.52 118.11)
 		)
 		(stroke
 			(width 0)
@@ -4368,16 +4668,6 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 30.48) (xy 180.34 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "aff13864-c87d-4b10-9517-5d9873d1c9a0")
-	)
-	(wire
-		(pts
 			(xy 111.76 157.48) (xy 96.52 157.48)
 		)
 		(stroke
@@ -4388,7 +4678,7 @@
 	)
 	(wire
 		(pts
-			(xy 96.52 25.4) (xy 96.52 22.86)
+			(xy 96.52 22.86) (xy 96.52 27.94)
 		)
 		(stroke
 			(width 0)
@@ -4458,6 +4748,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 44.45) (xy 109.22 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7ba0e08-cbfa-412e-95ab-1e4f082c1bac")
+	)
+	(wire
+		(pts
 			(xy 21.59 142.24) (xy 30.48 142.24)
 		)
 		(stroke
@@ -4488,7 +4788,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 45.72) (xy 147.32 48.26)
+			(xy 147.32 44.45) (xy 147.32 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4515,6 +4815,16 @@
 			(type default)
 		)
 		(uuid "cb85ac98-56d4-4c6a-b65e-c0c7a83d29db")
+	)
+	(wire
+		(pts
+			(xy 167.64 80.01) (xy 167.64 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cbcd7ebe-44cb-4b85-94b5-39fd57e0929d")
 	)
 	(wire
 		(pts
@@ -4548,7 +4858,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 35.56) (xy 147.32 38.1)
+			(xy 147.32 35.56) (xy 147.32 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5216,8 +5526,8 @@
 		(uuid "c612bf4b-b2a9-4340-ab6f-f6fa2c0483ba")
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 215.9 36.83 0)
+		(lib_id "Device:C_Small")
+		(at 109.22 41.91 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5226,31 +5536,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "05ad98d0-bc1b-4c06-af66-63dda066ebaf")
-		(property "Reference" "C13"
-			(at 219.71 35.5599 0)
+		(uuid "04ef0ad2-e56b-4879-9a46-37738d3cf8fa")
+		(property "Reference" "C37"
+			(at 111.76 40.6335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "100nF/6.3V"
-			(at 219.71 38.0999 0)
+		(property "Value" "0.1uF"
+			(at 111.76 43.1735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 216.8652 40.64 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5260,8 +5570,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 215.9 36.83 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 109.22 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5271,8 +5581,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 215.9 36.83 0)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 109.22 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5283,15 +5593,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "4a0233b6-6de1-4839-8afd-62b5d4df177f")
+			(uuid "e052fd8f-523f-4968-ad5e-15a6cff8fb48")
 		)
 		(pin "2"
-			(uuid "6e24489e-f0f6-4253-9e7d-7eb1b3de1738")
+			(uuid "96831868-1635-4a1e-a082-8ecea5abe388")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C13")
+					(reference "C37")
 					(unit 1)
 				)
 			)
@@ -6207,88 +6517,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 134.62 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "275903c9-2d1d-489f-bb61-b6518a3954f2")
-		(property "Reference" "C22"
-			(at 138.43 76.1999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF/25V"
-			(at 138.43 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.5852 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 134.62 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 134.62 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d59e8759-02d5-427f-a78d-459d12d849c4")
-		)
-		(pin "2"
-			(uuid "a0740b8b-5ced-4bbc-8323-4f0302202b05")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 30.48 152.4 0)
 		(unit 1)
@@ -6361,6 +6589,85 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 147.32 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "2ca4379e-cbfc-463d-9b47-56d7a1f2edce")
+		(property "Reference" "R55"
+			(at 151.511 43.307 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 151.511 40.767 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 147.32 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 147.32 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 147.32 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f1a8a448-9656-4068-905c-ddac9e65809a")
+		)
+		(pin "2"
+			(uuid "9792767b-4a4d-446c-a8ee-9eeabe74c2f3")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -6449,170 +6756,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 167.64 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32025ce7-d5d4-4bd3-a206-ce467941a3d1")
-		(property "Reference" "C18"
-			(at 171.45 76.1999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF/25V"
-			(at 171.45 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.6052 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 167.64 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1569d065-53f4-4b0a-9ebc-4d6200f8d9d9")
-		)
-		(pin "2"
-			(uuid "4c2742d4-785d-4bbf-af76-44b9a87b842c")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 215.9 77.47 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "33d30fcb-159f-4291-aa7b-82c919770950")
-		(property "Reference" "C10"
-			(at 219.71 76.1999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF/6.3V"
-			(at 219.71 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 216.8652 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 215.9 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 215.9 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "fd6b8b98-ae39-492c-a871-9b3155230905")
-		)
-		(pin "2"
-			(uuid "87266f83-bb21-443d-a97f-aadedb8947c9")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 187.96 120.65 0)
 		(unit 1)
@@ -6685,6 +6828,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "#PWR015")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 167.64 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3de89cb7-0462-49d5-9060-c534f0cd723d")
+		(property "Reference" "C41"
+			(at 170.18 76.1935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 170.18 78.7335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 167.64 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 167.64 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 167.64 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fbaf8fbb-9ed3-4d35-8d57-9978c8da4f86")
+		)
+		(pin "2"
+			(uuid "da78f1fa-ebb1-4ef6-9a58-171d148b34c4")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "C41")
 					(unit 1)
 				)
 			)
@@ -7124,8 +7349,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 140.97 35.56 0)
+		(lib_id "Device:C_Small")
+		(at 215.9 36.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7134,29 +7359,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4cacaa74-d2da-4809-aa32-562cce9dcf7f")
-		(property "Reference" "SW2"
-			(at 140.97 27.94 0)
+		(uuid "4b137518-82ff-4a9f-8303-9969912e5ba9")
+		(property "Reference" "C36"
+			(at 218.44 35.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "RESET"
-			(at 140.97 30.48 0)
+		(property "Value" "0.1uF"
+			(at 218.44 38.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 140.97 30.48 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 215.9 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7166,8 +7393,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 140.97 30.48 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 215.9 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7177,8 +7404,8 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
-			(at 140.97 35.56 0)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 215.9 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7189,15 +7416,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ca440ed5-6496-465e-8353-76a773dcc327")
+			(uuid "bd359d16-6dc3-422b-9911-38a60f16c377")
 		)
 		(pin "2"
-			(uuid "3078cc1e-543d-49b8-bfec-484945e75ae7")
+			(uuid "c32e63eb-62cf-4961-b699-224e567c912c")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "SW2")
+					(reference "C36")
 					(unit 1)
 				)
 			)
@@ -7446,88 +7673,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 109.22 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59afc3fd-39bf-4232-b3e9-8d671aa8f8a5")
-		(property "Reference" "C21"
-			(at 113.03 40.6399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF / 6.3V"
-			(at 113.03 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.1852 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 109.22 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1fedab93-c75b-40e2-8d6c-97cafb510dd0")
-		)
-		(pin "2"
-			(uuid "fcaa66b1-f898-4d36-aba9-053f76586344")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 142.24 170.18 0)
 		(unit 1)
@@ -7681,6 +7826,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "C16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 134.62 77.47 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "685062e8-80fe-49b2-867a-cd80df298096")
+		(property "Reference" "C40"
+			(at 137.16 76.1935 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 137.16 78.7335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 134.62 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 134.62 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 134.62 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b944c941-6d23-4437-88b1-452ee7754945")
+		)
+		(pin "2"
+			(uuid "05a53d1f-a8de-402e-8bc7-e56212654a9b")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -7929,6 +8156,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 187.96 114.3 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "71d78d5d-8f54-409c-91e7-f883651d31b3")
+		(property "Reference" "C39"
+			(at 190.5 113.0235 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 190.5 115.5635 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 187.96 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 187.96 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 187.96 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e229904b-a3c7-4fbf-aa2f-da31b254a2a5")
+		)
+		(pin "2"
+			(uuid "80beb2ef-1166-428a-9381-455125c09a7f")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:L")
 		(at 107.95 71.12 90)
 		(unit 1)
@@ -8089,8 +8398,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 147.32 41.91 0)
+		(lib_id "Device:C_Small")
+		(at 215.9 77.47 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8099,31 +8408,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7b2776ee-c714-4340-9fed-66322c9896bf")
-		(property "Reference" "R32"
-			(at 149.86 40.6399 0)
+		(uuid "74a092b2-2a33-4d90-be59-fba5dbd5e71d")
+		(property "Reference" "C35"
+			(at 218.44 76.1935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10k"
-			(at 149.86 43.1799 0)
+		(property "Value" "0.1uF"
+			(at 218.44 78.7335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 148.336 42.164 90)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 215.9 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8133,8 +8442,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 147.32 41.91 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 215.9 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8144,8 +8453,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 147.32 41.91 0)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 215.9 77.47 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8156,97 +8465,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "76f700b7-8801-4e69-8181-a7229dcaf375")
+			(uuid "14ce07dd-03fe-445c-9a7f-89fe869b6f3b")
 		)
 		(pin "2"
-			(uuid "814174e0-4436-46ac-aedc-b247fdf97d6b")
+			(uuid "c0a28cb9-d39c-4763-a2ec-7e3da86af1a0")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 180.34 36.83 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8194ccf8-93ce-4288-9b8e-1dadbf9672b1")
-		(property "Reference" "C15"
-			(at 184.15 35.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF/6.3V"
-			(at 184.15 38.0999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 181.3052 40.64 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 180.34 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aacc19da-b92a-4b27-9dec-43a63b6cc9d1")
-		)
-		(pin "2"
-			(uuid "96140068-af05-40dd-aaca-42730f7da819")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C15")
+					(reference "C35")
 					(unit 1)
 				)
 			)
@@ -8487,88 +8714,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "R29")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 96.52 29.21 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a74073a2-d26f-4cb6-8fc7-6ed685cea309")
-		(property "Reference" "R22"
-			(at 99.06 27.9399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k / 5%"
-			(at 99.06 30.4799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 97.536 29.464 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 96.52 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 96.52 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8ea52c32-8b72-4d44-987d-e823529c50be")
-		)
-		(pin "2"
-			(uuid "b800c47e-74d4-4c8d-8caf-7f542925b7bb")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R22")
 					(unit 1)
 				)
 			)
@@ -8819,8 +8964,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 187.96 114.3 0)
+		(lib_id "Switch:SW_Push")
+		(at 140.97 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8829,31 +8974,29 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b5f664f6-b686-4d4d-87a9-c0e83250a345")
-		(property "Reference" "C12"
-			(at 191.77 113.0299 0)
+		(uuid "b5e53d62-559d-476e-be72-1febb5bf73ce")
+		(property "Reference" "SW2"
+			(at 140.97 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "100nF / 6.3V"
-			(at 191.77 115.5699 0)
+		(property "Value" "RESET"
+			(at 140.97 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 188.9252 118.11 0)
+		(property "Footprint" "SWT0220_016016GSA:SW_SWT0220-016016GSA_REVA"
+			(at 140.97 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8863,8 +9006,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 187.96 114.3 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/gct/SWT0220-016016GSA/26753069"
+			(at 140.97 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8874,8 +9017,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 187.96 114.3 0)
+		(property "Description" "TACTILE SWITCH, SPST-NO, 5.2 X 5"
+			(at 140.97 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8884,17 +9027,96 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "c258162e-d8e4-48a2-ac9e-7d63ca80f9df")
 		)
 		(pin "1"
-			(uuid "ecfe9592-cd95-43e9-9d48-7d7b3260fb90")
+			(uuid "523bd40d-9eaa-4509-b719-60c8ebc80001")
+		)
+		(pin "2"
+			(uuid "3963d22b-c4c7-4a1a-a791-fc2a120751ef")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "C12")
+					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 96.52 120.65 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b61fd461-411e-466c-89b5-7e9b4fffd3e8")
+		(property "Reference" "R54"
+			(at 100.711 122.047 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 100.711 119.507 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 96.52 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 96.52 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 96.52 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6b1b5db7-dc5b-4e6a-8ba3-40c4bee61d59")
+		)
+		(pin "2"
+			(uuid "bca8da55-6f2b-451a-9680-bb32aeb3d502")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -9133,6 +9355,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 96.52 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c448f10c-2c3e-43b2-84d4-cc6b223d868d")
+		(property "Reference" "R56"
+			(at 99.06 29.2099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 99.06 31.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT100K/1761112"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 100K OHM 1% 1/10W 0603"
+			(at 96.52 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "21085539-4f93-4ff2-bb8b-f598afb6608f")
+		)
+		(pin "2"
+			(uuid "50984236-5155-4b73-883f-1afedeefcc74")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -9563,8 +9867,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 96.52 120.65 0)
+		(lib_id "Device:C_Small")
+		(at 180.34 36.83 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9573,31 +9877,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f3699cbe-a607-4456-8a17-e78866ccec41")
-		(property "Reference" "R16"
-			(at 99.06 119.3799 0)
+		(uuid "f89a2910-f7da-4853-b0e3-625d8528f98a")
+		(property "Reference" "C38"
+			(at 182.88 35.5535 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "10k/1%"
-			(at 99.06 121.9199 0)
+		(property "Value" "0.1uF"
+			(at 182.88 38.0935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 97.536 120.904 90)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 180.34 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9607,8 +9911,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 96.52 120.65 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 180.34 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9618,8 +9922,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 96.52 120.65 0)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 180.34 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9628,17 +9932,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "b4ac8a62-5492-41e4-8f6b-44533910c6b3")
 		)
 		(pin "1"
-			(uuid "b9227d3d-b74f-4c07-b852-23f6ee2462bc")
+			(uuid "9fdd9944-60a0-4a04-9041-a5b9b542e01a")
+		)
+		(pin "2"
+			(uuid "7922ad1c-0a3a-4b99-8e62-ef2b6ffc8d73")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R16")
+					(reference "C38")
 					(unit 1)
 				)
 			)
@@ -9758,7 +10062,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "SWT0220_016016GSA:SW_SWT0220-016016GSA_REVA"
 			(at 101.6 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -9769,7 +10073,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/gct/SWT0220-016016GSA/26753069"
 			(at 101.6 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -9780,7 +10084,7 @@
 				)
 			)
 		)
-		(property "Description" "Push button switch, generic, two pins"
+		(property "Description" "TACTILE SWITCH, SPST-NO, 5.2 X 5"
 			(at 96.52 41.91 0)
 			(hide yes)
 			(show_name no)

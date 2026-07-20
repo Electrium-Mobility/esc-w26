@@ -289,6 +289,162 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Small_US"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "capacitor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Small_US_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Small_US_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -2216,6 +2372,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 24.13 26.67)
+		(end 204.47 85.09)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "73fcc74d-696f-4593-9485-cc20d3f61709")
+	)
 	(text "Choose\nthe nearest standard 33-µH ferrite inductor with a capability of 1.5 A RMS current and 2.5 A saturation current."
 		(exclude_from_sim no)
 		(at 230.378 132.842 0)
@@ -2296,6 +2464,16 @@
 		)
 		(uuid "8474c562-84a9-46de-bbfb-09f957b7899b")
 	)
+	(text "OV voltage picked to be triggered at 60V"
+		(exclude_from_sim no)
+		(at 230.124 66.04 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8834fadc-ae18-44c0-9a0f-59fa22fe4cae")
+	)
 	(text "frequency: 400kHz"
 		(exclude_from_sim no)
 		(at 90.424 136.652 0)
@@ -2308,7 +2486,7 @@
 	)
 	(text "Reverse Polarity & Soft Start"
 		(exclude_from_sim no)
-		(at 148.59 82.042 0)
+		(at 179.832 81.28 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2327,10 +2505,22 @@
 		(uuid "d219fa2e-c964-4331-8304-5c70481d747d")
 	)
 	(junction
+		(at 182.88 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0a303d1b-4d79-4f4f-bcff-e1b4e5c7115b")
+	)
+	(junction
 		(at 59.69 110.49)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0bcbc369-7661-4f48-83ee-1605ef7f3b0e")
+	)
+	(junction
+		(at 172.72 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0de131fa-3a59-4ed3-8865-7350164027cd")
 	)
 	(junction
 		(at 73.66 53.34)
@@ -2345,6 +2535,12 @@
 		(uuid "113d7ad3-69d8-40c6-886d-b8cc13cb66d3")
 	)
 	(junction
+		(at 162.56 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "131bb875-c466-4516-8320-f5b5532afca2")
+	)
+	(junction
 		(at 143.51 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2355,6 +2551,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "20be477b-e4b6-4eb9-a996-6d9106859661")
+	)
+	(junction
+		(at 152.4 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2aacaf6b-c834-4fff-8852-0b6db65eb861")
 	)
 	(junction
 		(at 69.85 110.49)
@@ -2435,10 +2637,10 @@
 		(uuid "c1761452-365d-4bf1-8edb-82e2617b5f16")
 	)
 	(junction
-		(at 152.4 36.83)
+		(at 193.04 36.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c7488fb5-8b20-423e-8dbe-a427a314a23b")
+		(uuid "c6a8d6ff-f36a-460e-b7d2-a6feec387438")
 	)
 	(junction
 		(at 125.73 36.83)
@@ -2486,16 +2688,6 @@
 		)
 		(uuid "0fa4e5b4-0157-4d6a-bf4a-9b497928bbcd")
 	)
-	(polyline
-		(pts
-			(xy 24.13 83.82) (xy 163.83 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "127d65de-dcd0-438f-b7d7-023e82dcea03")
-	)
 	(wire
 		(pts
 			(xy 113.03 68.58) (xy 118.11 68.58)
@@ -2505,6 +2697,36 @@
 			(type default)
 		)
 		(uuid "161e0577-4baa-4d81-9124-bf96a20e4dd9")
+	)
+	(wire
+		(pts
+			(xy 182.88 36.83) (xy 182.88 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ab1e43d-db56-44f6-839b-da2a115f2337")
+	)
+	(wire
+		(pts
+			(xy 172.72 63.5) (xy 172.72 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1e4faadf-9650-4532-a9ff-3ec0f69e1710")
+	)
+	(wire
+		(pts
+			(xy 182.88 36.83) (xy 172.72 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21b1e374-a0ed-438e-9594-55be44d74bcc")
 	)
 	(wire
 		(pts
@@ -2558,6 +2780,16 @@
 	)
 	(wire
 		(pts
+			(xy 162.56 36.83) (xy 172.72 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "407c6384-bafe-4805-8f51-18db1d6cf28c")
+	)
+	(wire
+		(pts
 			(xy 52.07 53.34) (xy 63.5 53.34)
 		)
 		(stroke
@@ -2568,7 +2800,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 35.56) (xy 152.4 36.83)
+			(xy 193.04 35.56) (xy 193.04 36.83)
 		)
 		(stroke
 			(width 0)
@@ -2776,16 +3008,6 @@
 		)
 		(uuid "6962cd81-b502-479c-807c-32b4c50d37eb")
 	)
-	(polyline
-		(pts
-			(xy 163.83 83.82) (xy 163.83 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6af64e3b-4531-4e26-955b-2deb1b323034")
-	)
 	(wire
 		(pts
 			(xy 102.87 115.57) (xy 125.73 115.57)
@@ -2815,6 +3037,16 @@
 			(type default)
 		)
 		(uuid "73f8c562-6450-4808-8e40-f7dd80657c2b")
+	)
+	(wire
+		(pts
+			(xy 162.56 58.42) (xy 162.56 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74cd1ca9-f4a5-4b95-b915-f5336bc8d3ac")
 	)
 	(wire
 		(pts
@@ -2885,16 +3117,6 @@
 			(type default)
 		)
 		(uuid "7eb6dee1-5b32-44dd-9654-59e939cc0dd5")
-	)
-	(polyline
-		(pts
-			(xy 163.83 25.4) (xy 24.13 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8107605b-4a51-408c-8430-a39fe8721bd8")
 	)
 	(wire
 		(pts
@@ -2978,6 +3200,26 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 36.83) (xy 162.56 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93bd8277-53c1-474d-bece-a655c923f758")
+	)
+	(wire
+		(pts
+			(xy 162.56 63.5) (xy 162.56 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9769853d-aed2-497d-88d5-34916621563c")
+	)
+	(wire
+		(pts
 			(xy 138.43 116.84) (xy 138.43 120.65)
 		)
 		(stroke
@@ -3055,6 +3297,16 @@
 			(type default)
 		)
 		(uuid "ac4024f6-3eaf-41f2-b3b0-7555cb29153a")
+	)
+	(wire
+		(pts
+			(xy 193.04 36.83) (xy 182.88 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b10ba7fa-a534-472b-b58c-1478f7150772")
 	)
 	(wire
 		(pts
@@ -3158,6 +3410,16 @@
 	)
 	(wire
 		(pts
+			(xy 172.72 36.83) (xy 172.72 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d2f4ab24-f96c-4ea9-bea0-be72b9f03e6b")
+	)
+	(wire
+		(pts
 			(xy 119.38 53.34) (xy 130.81 53.34)
 		)
 		(stroke
@@ -3205,16 +3467,6 @@
 			(type default)
 		)
 		(uuid "dbc7cd12-b695-45ba-bc92-81b1d059d4e2")
-	)
-	(polyline
-		(pts
-			(xy 24.13 25.4) (xy 24.13 83.82)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e4d8797e-f5e5-4a28-8084-da71087e8780")
 	)
 	(wire
 		(pts
@@ -3318,6 +3570,16 @@
 	)
 	(wire
 		(pts
+			(xy 182.88 63.5) (xy 182.88 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fafee30b-b976-4e31-a577-75fb6bc4b4ef")
+	)
+	(wire
+		(pts
 			(xy 124.46 105.41) (xy 125.73 105.41)
 		)
 		(stroke
@@ -3325,6 +3587,26 @@
 			(type default)
 		)
 		(uuid "fb4fc8e8-b672-4e74-bbb5-86ffd79ff376")
+	)
+	(wire
+		(pts
+			(xy 193.04 63.5) (xy 193.04 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc29cebf-fdb1-4d71-892c-78d496bdde9f")
+	)
+	(wire
+		(pts
+			(xy 193.04 36.83) (xy 193.04 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd6ef8c4-2b86-43e2-978a-634e54c3f345")
 	)
 	(wire
 		(pts
@@ -3573,6 +3855,165 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 162.56 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "111ad2cb-466c-4cb4-b4ca-faa429ca70e6")
+		(property "Reference" "#PWR037"
+			(at 162.56 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 162.052 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 162.56 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 162.56 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 162.56 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c3f1a9c5-c813-4199-8422-1717268201f0")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "#PWR037")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 107.95 168.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "13e6c494-8996-4cf7-b978-26e6d0ab6c9a")
+		(property "Reference" "C42"
+			(at 110.49 167.6462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1uF"
+			(at 110.49 170.1862 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 107.95 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
+			(at 107.95 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1UF 16V X7R 0603"
+			(at 107.95 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "96b1caac-acb6-4041-a2ca-91142631343e")
+		)
+		(pin "2"
+			(uuid "0ba4beb5-238e-4a79-bb92-a1a9568877b7")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C42")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 152.4 69.85 0)
 		(unit 1)
 		(body_style 1)
@@ -3728,88 +4169,6 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 152.4 60.96 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2623c330-5932-4590-865f-416ce99f83fb")
-		(property "Reference" "C32"
-			(at 154.94 59.6835 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "220uF"
-			(at 154.94 62.2235 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 152.4 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 152.4 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 152.4 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1371e894-018c-4c97-926a-ed5ccbb53eef")
-		)
-		(pin "2"
-			(uuid "21fbd04d-f7f8-41bb-863c-19b273cb1166")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
 		(at 50.8 167.64 0)
 		(unit 1)
 		(body_style 1)
@@ -3842,7 +4201,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 50.8 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -3853,7 +4212,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C105K4RACTU/2199788"
 			(at 50.8 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -3864,7 +4223,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 1UF 16V X7R 0603"
 			(at 50.8 167.64 0)
 			(hide yes)
 			(show_name no)
@@ -3969,6 +4328,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 193.04 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "38d8064e-dfc4-41e0-ab9e-828610b2217f")
+		(property "Reference" "C5"
+			(at 195.58 59.8169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "18uF"
+			(at 195.58 62.3569 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "100ZLH18MEFC6_3X11:CAP_YX_6P3X11_RUB"
+			(at 193.04 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rubycon/100ZLH18MEFC6-3X11/3563157"
+			(at 193.04 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 18UF 20% 100V RADIAL TH"
+			(at 193.04 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4dd4c9a8-ada2-486d-ae01-d58136fb5e1b")
+		)
+		(pin "2"
+			(uuid "9e13154a-694a-432c-8161-1deb9f069184")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 111.76 163.83 270)
 		(unit 1)
@@ -4042,6 +4483,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 162.56 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "40039627-b1f9-474a-bd7c-899428a1598d")
+		(property "Reference" "C6"
+			(at 165.1 59.8169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "68uF"
+			(at 165.1 62.3569 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "100ZLH68MEFC8X20:CAP_YX_8X20_RUB"
+			(at 162.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rubycon/100ZLH68MEFC8X20/3133963"
+			(at 162.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 68UF 20% 100V RADIAL TH"
+			(at 162.56 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a0c69824-d04e-4954-8da1-8c0abd283fec")
+		)
+		(pin "2"
+			(uuid "9ba410c5-a901-4755-a83e-599f93a37672")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C6")
 					(unit 1)
 				)
 			)
@@ -4148,6 +4671,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 172.72 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46b824c8-d41e-44e7-87a3-ed65bb52b447")
+		(property "Reference" "C7"
+			(at 175.26 59.8169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "68uF"
+			(at 175.26 62.3569 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "100ZLH68MEFC8X20:CAP_YX_8X20_RUB"
+			(at 172.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rubycon/100ZLH68MEFC8X20/3133963"
+			(at 172.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 68UF 20% 100V RADIAL TH"
+			(at 172.72 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6fccceb0-24d6-4a69-a37e-3f419a178c4f")
+		)
+		(pin "2"
+			(uuid "802c7550-fcec-4f13-a817-6cc80f281dca")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 130.81 58.42 0)
 		(unit 1)
@@ -4159,7 +4764,7 @@
 		(dnp no)
 		(uuid "547673f1-a8c6-4dad-ad15-a46560d32f8f")
 		(property "Reference" "R48"
-			(at 136.652 58.674 90)
+			(at 135.001 59.817 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4169,7 +4774,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 134.112 58.674 90)
+			(at 135.001 57.277 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4178,7 +4783,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 130.81 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4189,7 +4794,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 130.81 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4200,7 +4805,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 130.81 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4260,7 +4865,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -4271,7 +4876,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -4282,7 +4887,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 125.73 118.11 0)
 			(hide yes)
 			(show_name no)
@@ -4310,7 +4915,7 @@
 	)
 	(symbol
 		(lib_id "power:VMEM")
-		(at 152.4 35.56 0)
+		(at 193.04 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4321,7 +4926,7 @@
 		(fields_autoplaced yes)
 		(uuid "5dc81dae-4cf9-4e14-be5b-a39226ffdace")
 		(property "Reference" "#PWR045"
-			(at 152.4 39.37 0)
+			(at 193.04 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4332,7 +4937,7 @@
 			)
 		)
 		(property "Value" "V_SS"
-			(at 152.4 30.48 0)
+			(at 193.04 30.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4342,7 +4947,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 152.4 35.56 0)
+			(at 193.04 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4353,7 +4958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 152.4 35.56 0)
+			(at 193.04 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4364,7 +4969,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VMEM\""
-			(at 152.4 35.56 0)
+			(at 193.04 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4564,7 +5169,7 @@
 				)
 			)
 		)
-		(property "Value" "V_M"
+		(property "Value" "V_SS"
 			(at 36.83 105.41 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4977,7 +5582,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 125.73 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4988,7 +5593,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
 			(at 125.73 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -4999,7 +5604,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
 			(at 125.73 111.76 0)
 			(hide yes)
 			(show_name no)
@@ -5136,7 +5741,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 138.43 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5147,7 +5752,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10A226MP8NUNE/3886932"
 			(at 138.43 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5158,7 +5763,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 22UF 10V X5R 0603"
 			(at 138.43 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -5179,6 +5784,86 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "C29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 109.22 105.41 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9fd97d34-7d70-4d50-b06d-fc1e41d79501")
+		(property "Reference" "C34"
+			(at 109.2136 99.06 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 109.2136 101.6 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 109.22 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 109.22 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 109.22 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "72e0e901-3f62-4c9a-8322-d80ba0ef8943")
+		)
+		(pin "2"
+			(uuid "83530d39-8a2e-4fe1-b351-ec0447b7e63b")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -5262,6 +5947,165 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 193.04 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a7c9dc4c-4c04-4b3c-b524-c17b94074567")
+		(property "Reference" "#PWR040"
+			(at 193.04 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 192.532 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 193.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 193.04 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "207ee798-91b6-4089-a5b0-51439189b5a7")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "#PWR040")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 152.4 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a8d9a302-1987-449f-8611-69e9735bf3c4")
+		(property "Reference" "C4"
+			(at 154.94 59.8169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "68uF"
+			(at 154.94 62.3569 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "100ZLH68MEFC8X20:CAP_YX_8X20_RUB"
+			(at 152.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rubycon/100ZLH68MEFC8X20/3133963"
+			(at 152.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 68UF 20% 100V RADIAL TH"
+			(at 152.4 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "195d7985-95f3-437d-a33e-89d47fbe1c33")
+		)
+		(pin "2"
+			(uuid "cdec8312-b858-4790-9ce7-7942b0c38745")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 130.81 66.04 180)
 		(unit 1)
@@ -5295,7 +6139,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 130.81 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5306,7 +6150,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kemet/C0603C273K1RACTU/754739"
 			(at 130.81 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5317,7 +6161,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 0.027UF 100V X7R 0603"
 			(at 130.81 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -5499,9 +6343,8 @@
 		)
 	)
 	(symbol
-		(lib_name "GSFP06120_1")
-		(lib_id "GSFP06120:GSFP06120")
-		(at 138.43 36.83 90)
+		(lib_id "power:GND")
+		(at 172.72 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5509,11 +6352,88 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
+		(uuid "c10a9951-997a-4059-a5fa-10757c5e208c")
+		(property "Reference" "#PWR038"
+			(at 172.72 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 172.212 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 172.72 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 172.72 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 172.72 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "836de29b-c968-4a58-902e-ba99507aba12")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "#PWR038")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GSFP06120_1")
+		(lib_id "GSFP06120:GSFP06120")
+		(at 138.43 36.83 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
 		(uuid "c2a023c4-4694-4219-9404-493a263f3998")
 		(property "Reference" "Q12"
-			(at 130.81 21.59 0)
-			(hide yes)
+			(at 138.43 32.766 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5523,7 +6443,7 @@
 			)
 		)
 		(property "Value" "MOSFET, N-CH, SINGLE, 120A, 65V,"
-			(at 133.35 21.59 0)
+			(at 143.51 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5686,7 +6606,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "3.5k"
+		(property "Value" "10.7k"
 			(at 66.04 68.5799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5697,7 +6617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 63.5 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5708,7 +6628,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10K7/1761114"
 			(at 63.5 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5719,7 +6639,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "RES 10.7K OHM 1% 1/10W 0603"
 			(at 63.5 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -5856,7 +6776,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 46.99 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5867,7 +6787,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tdk/CGA3E2X7R2A222K080AA/2443286"
 			(at 46.99 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5878,7 +6798,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 2200PF 100V X7R 0603"
 			(at 46.99 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -5927,7 +6847,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "49.9k"
 			(at 66.04 59.6899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5938,7 +6858,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 63.5 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5949,7 +6869,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/susumu/RG1608P-4992-B-T5/1240601"
 			(at 63.5 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5960,7 +6880,7 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
+		(property "Description" "RES SMD 49.9KOHM 0.1% 1/10W 0603"
 			(at 63.5 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -5981,88 +6901,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "R46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 107.95 168.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1af4a41-17db-41ad-9470-d8a433bb9f40")
-		(property "Reference" "C25"
-			(at 110.49 167.6462 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1uF"
-			(at 110.49 170.1862 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 107.95 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 107.95 168.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "20020340-89eb-46eb-b0f4-60f13bfb7204")
-		)
-		(pin "2"
-			(uuid "f1a0e77f-ac5a-45ea-9b46-2d95ec5e6a08")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -6162,11 +7000,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "e575e440-5915-4715-be9a-b0063632c0c1")
 		(property "Reference" "Q10"
-			(at 111.76 21.59 0)
-			(hide yes)
+			(at 119.126 32.766 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6388,7 +7224,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 59.69 115.57 0)
+		(at 59.69 115.57 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6397,30 +7233,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e73fe2a6-95c8-4a16-ad4d-b48b21e3c5ef")
-		(property "Reference" "C27"
-			(at 62.23 114.3062 0)
+		(uuid "ea50507c-1cba-45f8-a644-c47de2148e84")
+		(property "Reference" "C32"
+			(at 62.23 114.2935 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "0.1uF"
-			(at 62.23 116.8462 0)
+			(at 62.23 116.8335 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 59.69 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6431,7 +7267,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
 			(at 59.69 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6442,7 +7278,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
 			(at 59.69 115.57 0)
 			(hide yes)
 			(show_name no)
@@ -6454,15 +7290,92 @@
 			)
 		)
 		(pin "1"
-			(uuid "d330e81f-514f-4d89-807d-4cb6140ebb4e")
+			(uuid "1be95f73-8b2a-4bbf-b77b-e6110bca00dc")
 		)
 		(pin "2"
-			(uuid "531e9575-15e0-47cf-9991-56b89a16cf6e")
+			(uuid "df681934-c5a0-49aa-bb92-1e3974b73f28")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C27")
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 182.88 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f0290e05-3ecb-4cb0-8ef3-3721086b884a")
+		(property "Reference" "#PWR039"
+			(at 182.88 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 182.372 74.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 182.88 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 182.88 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 182.88 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c960b1bd-c7a1-4861-94e5-18da12bb500f")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -6502,7 +7415,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 52.07 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6513,7 +7426,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
 			(at 52.07 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6524,7 +7437,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
 			(at 52.07 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -6584,7 +7497,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6595,7 +7508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/HMK107C7224KAHTE/6563605"
 			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6606,7 +7519,7 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
+		(property "Description" "CAP CER 0.22UF 100V X7S 0603"
 			(at 73.66 55.88 0)
 			(hide yes)
 			(show_name no)
@@ -6627,6 +7540,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "C30")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 182.88 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f15610ab-0395-430e-abdb-1e4f82c6bc4a")
+		(property "Reference" "C8"
+			(at 185.42 59.8169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "68uF"
+			(at 185.42 62.3569 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "100ZLH68MEFC8X20:CAP_YX_8X20_RUB"
+			(at 182.88 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/rubycon/100ZLH68MEFC8X20/3133963"
+			(at 182.88 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 68UF 20% 100V RADIAL TH"
+			(at 182.88 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "562900d0-bb6c-4232-a841-154f4d66ca67")
+		)
+		(pin "2"
+			(uuid "a2da9a32-e318-4cfe-a4bd-66727bed5c72")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6783,86 +7778,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 109.22 105.41 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fc390f84-82b7-4228-92fa-967938df14a9")
-		(property "Reference" "C28"
-			(at 109.2263 99.06 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0.1uF"
-			(at 109.2263 101.6 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 109.22 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 109.22 105.41 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "bdfad4b6-73d5-4b67-ac72-d9933c0ab1b3")
-		)
-		(pin "2"
-			(uuid "59fbe75e-f791-42b0-867f-219600a8852d")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C28")
 					(unit 1)
 				)
 			)
