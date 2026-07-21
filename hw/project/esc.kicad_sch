@@ -195,6 +195,106 @@
 				(justify left top)
 			)
 		)
+		(pin "NRST" input
+			(at 135.255 43.18 180)
+			(uuid "a694c27e-289b-408b-91c0-e0395212c38d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWCLK" input
+			(at 135.255 40.64 180)
+			(uuid "b94b3e3a-ca30-4c8a-99ef-96036c36c4f6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SWDIO" bidirectional
+			(at 135.255 38.1 180)
+			(uuid "a72e03fd-7cfc-458e-b8bb-67f61cd3ab37")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "TRACESWO" output
+			(at 135.255 45.72 180)
+			(uuid "5144a007-2678-48db-b4a9-2c89ce8c3ae3")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "U" input
+			(at 135.255 27.94 180)
+			(uuid "9e81af40-1ee6-4df5-9e6a-60b58d33966a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USART1_RX" input
+			(at 135.255 50.8 180)
+			(uuid "35405ba8-3980-475f-8e9a-6b6263bcf580")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USART1_TX" output
+			(at 135.255 53.34 180)
+			(uuid "504debd2-6ed9-4a22-9caf-82982d5edce1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "V" input
+			(at 135.255 30.48 180)
+			(uuid "d4e710f5-8ed1-4ddc-8606-06ec944e3051")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "VM_IN" output
+			(at 170.815 38.1 0)
+			(uuid "8b4a0c86-fbd6-48e5-96ab-429769309f51")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "W" input
+			(at 135.255 33.02 180)
+			(uuid "ca2c9ce7-0bb9-4a55-8082-e873fd4f7774")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
