@@ -5,6 +5,195 @@
 	(uuid "2b3e170f-c835-466a-b97e-564d16bfb8ff")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Conn_01x03_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J4"
+				(at 0 -8.89 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Phases"
+				(at 0 -6.35 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x03_1_1_1"
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "W"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "U"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_numbers
 				(hide yes)
@@ -1736,8 +1925,8 @@
 		)
 	)
 	(rectangle
-		(start 111.506 93.726)
-		(end 162.306 119.126)
+		(start 104.394 131.826)
+		(end 155.194 157.226)
 		(stroke
 			(width 0)
 			(type default)
@@ -1783,7 +1972,19 @@
 		)
 		(uuid "86cbd338-0e57-43f6-9ee8-e3cf54938595")
 	)
-	(text "Power Inputs"
+	(rectangle
+		(start 127 76.2)
+		(end 152.4 101.6)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "9c1aa79a-cb82-4cb7-9ef8-2c5215c92699")
+	)
+	(text "Battery Input"
 		(exclude_from_sim no)
 		(at 26.162 77.724 0)
 		(effects
@@ -1811,7 +2012,7 @@
 	)
 	(text "Hall Sensors"
 		(exclude_from_sim no)
-		(at 112.268 95.25 0)
+		(at 105.156 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1834,6 +2035,19 @@
 			(justify left top)
 		)
 		(uuid "aa080ded-3c45-43a3-a90c-cb28a132c1a7")
+	)
+	(text "Phase Inputs"
+		(exclude_from_sim no)
+		(at 127.762 77.724 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "f4b992bd-cee9-4488-9f87-0c202983b801")
 	)
 	(text_box "Serial \n\nUse PA9 & PA10, as those are the non-alternate pins for USART1\n-> Confirm above\n-> Edit Symbol (after Eleanor's changes in): Change pin names to TX, GND, RX"
 		(exclude_from_sim no)
@@ -2372,6 +2586,17 @@
 		)
 		(uuid "fe0805eb-c0e4-44dd-b208-769b04f4bd04")
 	)
+	(hierarchical_label "V"
+		(shape input)
+		(at 142.24 92.71 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "294c29e4-2e63-4b8e-9c4d-ac1c7df98278")
+	)
 	(hierarchical_label "SWDIO"
 		(shape bidirectional)
 		(at 64.77 38.1 0)
@@ -2438,6 +2663,17 @@
 		)
 		(uuid "899a0190-37fc-4e3b-b994-3da68dd9f6c0")
 	)
+	(hierarchical_label "W"
+		(shape input)
+		(at 142.24 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "990bc182-283e-4135-831c-a2d129540978")
+	)
 	(hierarchical_label "VM_IN"
 		(shape output)
 		(at 83.82 82.55 0)
@@ -2459,6 +2695,17 @@
 			(justify left)
 		)
 		(uuid "bb925eb8-6a21-4d28-bf39-3355ba8bb963")
+	)
+	(hierarchical_label "U"
+		(shape input)
+		(at 142.24 90.17 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d242c4a2-7fbf-4df9-b3ef-41ed7e1323b8")
 	)
 	(hierarchical_label "USART1_RX"
 		(shape input)
@@ -2647,6 +2894,90 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Conn_01x03_1")
+		(lib_id "Connector_Generic:Conn_01x03")
+		(at 137.16 92.71 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "121151bc-70b9-40e3-a799-2cf0abda5940")
+		(property "Reference" "J4"
+			(at 137.16 83.82 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Phases"
+			(at 137.16 86.36 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 137.16 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dbd5b636-d286-4015-9e35-41a24a00e3a4")
+		)
+		(pin "2"
+			(uuid "55b24ad7-44e5-48e8-bba7-00b2a280b23f")
+		)
+		(pin "3"
+			(uuid "c2ff5c8f-873d-46bd-8d15-ac3f10560d77")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "J4")
 					(unit 1)
 				)
 			)
