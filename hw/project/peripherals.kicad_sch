@@ -668,6 +668,160 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 0.762 0.508 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "r resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_Small_US_1_1"
+				(polyline
+					(pts
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.016)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -1658,7 +1812,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 81.28) (xy 104.14 82.55)
+			(xy 104.14 81.28) (xy 104.14 83.82)
 		)
 		(stroke
 			(width 0)
@@ -1688,7 +1842,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 90.17) (xy 104.14 91.44)
+			(xy 104.14 88.9) (xy 104.14 91.44)
 		)
 		(stroke
 			(width 0)
@@ -2049,7 +2203,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10a45ca1-1852-4736-a948-ab9df2d7f6ab")
-		(property "Reference" "#PWR034"
+		(property "Reference" "#PWR060"
 			(at 149.86 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2109,7 +2263,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR034")
+					(reference "#PWR060")
 					(unit 1)
 				)
 			)
@@ -2212,7 +2366,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "262a6ba3-bc08-43f8-891c-ed69e442cd72")
-		(property "Reference" "#PWR036"
+		(property "Reference" "#PWR056"
 			(at 113.03 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -2272,7 +2426,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR036")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -2383,7 +2537,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41c862fd-19cd-4e57-a4bf-3c007b8900f2")
-		(property "Reference" "R53"
+		(property "Reference" "R51"
 			(at 167.64 107.9499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2447,7 +2601,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R53")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -2465,7 +2619,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42df165c-3105-4a8d-bd6e-9c0bba108631")
-		(property "Reference" "#PWR010"
+		(property "Reference" "#PWR053"
 			(at 30.48 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -2525,7 +2679,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR010")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -2543,7 +2697,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4750d29e-74f2-4a0d-861a-c584b5155543")
-		(property "Reference" "#PWR033"
+		(property "Reference" "#PWR059"
 			(at 130.81 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -2603,7 +2757,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR033")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -2621,7 +2775,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4e22ed68-bcba-40e0-883b-bf9f725cb657")
-		(property "Reference" "D8"
+		(property "Reference" "D9"
 			(at 107.95 95.5674 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2696,7 +2850,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "D8")
+					(reference "D9")
 					(unit 1)
 				)
 			)
@@ -2807,7 +2961,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "609ab4b0-d313-4eb3-ae2a-3d07bd1fa502")
-		(property "Reference" "#PWR031"
+		(property "Reference" "#PWR058"
 			(at 116.84 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -2867,7 +3021,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR031")
+					(reference "#PWR058")
 					(unit 1)
 				)
 			)
@@ -2885,7 +3039,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "666d8cc1-26df-4d15-b609-8f332d42c947")
-		(property "Reference" "#PWR032"
+		(property "Reference" "#PWR061"
 			(at 165.1 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -2945,7 +3099,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR032")
+					(reference "#PWR061")
 					(unit 1)
 				)
 			)
@@ -2963,7 +3117,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6a667615-d51c-4e24-bcd1-42ffccb3c1ba")
-		(property "Reference" "R51"
+		(property "Reference" "R49"
 			(at 167.64 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3027,7 +3181,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R51")
+					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -3045,7 +3199,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "760d3e21-f9b1-40f4-967c-8821bc1100f0")
-		(property "Reference" "R47"
+		(property "Reference" "R45"
 			(at 119.38 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3109,7 +3263,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R47")
+					(reference "R45")
 					(unit 1)
 				)
 			)
@@ -3127,7 +3281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "80d9b0a5-eb6d-479e-b585-7a4e276d1fa2")
-		(property "Reference" "D10"
+		(property "Reference" "D13"
 			(at 168.91 118.4274 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3202,7 +3356,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "D10")
+					(reference "D13")
 					(unit 1)
 				)
 			)
@@ -3220,7 +3374,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d15c998-24d1-4d5c-ac0a-d7daa288b2ac")
-		(property "Reference" "D9"
+		(property "Reference" "D10"
 			(at 120.65 95.5674 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3295,7 +3449,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "D9")
+					(reference "D10")
 					(unit 1)
 				)
 			)
@@ -3313,7 +3467,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9583d555-e58b-489b-bc25-61d225aa228d")
-		(property "Reference" "R50"
+		(property "Reference" "R48"
 			(at 167.64 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3377,7 +3531,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R50")
+					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -3395,7 +3549,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f80df4d-12f8-4117-ba65-86f0b8b9d2cc")
-		(property "Reference" "#PWR011"
+		(property "Reference" "#PWR052"
 			(at 30.48 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3455,7 +3609,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR011")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -3473,7 +3627,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b8c8b2f8-08f0-4cb9-bf1b-5d366b8ef017")
-		(property "Reference" "R48"
+		(property "Reference" "R46"
 			(at 133.35 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3537,7 +3691,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R48")
+					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -3555,7 +3709,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccc6da04-c927-476c-8c96-28147e317307")
-		(property "Reference" "R49"
+		(property "Reference" "R47"
 			(at 152.4 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3619,7 +3773,89 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R49")
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 104.14 86.36 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d7c5efad-dcb8-4484-be7a-9b1912cb7857")
+		(property "Reference" "R44"
+			(at 106.68 85.0899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "200"
+			(at 106.68 87.6299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 104.14 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/thin-film-technology-corp/TFAS0603R2000F-T5/22983888"
+			(at 104.14 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 200 OHM 1% 1/10W 0603"
+			(at 104.14 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "6e46abcf-15df-47f2-a198-63cddad3807c")
+		)
+		(pin "1"
+			(uuid "d015b55e-a911-4b71-a871-e2e4f478ce2f")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -3637,7 +3873,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "da19efc3-624d-4466-b01e-b02f6aaae21a")
-		(property "Reference" "R52"
+		(property "Reference" "R50"
 			(at 167.64 100.3299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3701,7 +3937,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R52")
+					(reference "R50")
 					(unit 1)
 				)
 			)
@@ -3719,7 +3955,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dbce8815-8281-4f72-8b52-107be9e38435")
-		(property "Reference" "#PWR030"
+		(property "Reference" "#PWR055"
 			(at 104.14 106.68 0)
 			(hide yes)
 			(show_name no)
@@ -3779,7 +4015,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR030")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -3797,7 +4033,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e0d19173-fdf3-4333-a384-fbac0480805b")
-		(property "Reference" "#PWR029"
+		(property "Reference" "#PWR054"
 			(at 104.14 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -3857,7 +4093,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR029")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -3875,7 +4111,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e531f9d3-17fc-49e7-a232-81ed402f916e")
-		(property "Reference" "#PWR028"
+		(property "Reference" "#PWR057"
 			(at 116.84 85.09 0)
 			(hide yes)
 			(show_name no)
@@ -3935,89 +4171,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR028")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 104.14 86.36 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd99086e-6cbf-4011-8a12-366567696a28")
-		(property "Reference" "R46"
-			(at 106.68 85.0899 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "200"
-			(at 106.68 87.6299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 105.156 86.614 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 104.14 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "14fccb7e-9fbc-4a73-8272-521404fc08ae")
-		)
-		(pin "2"
-			(uuid "b479d96c-931b-45ff-94ed-e5e967e8242b")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R46")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)

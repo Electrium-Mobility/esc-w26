@@ -5,12 +5,13 @@
 	(uuid "dd5b96c0-c600-4daf-b11c-37c81c20c165")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
+		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
 				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -18,7 +19,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
-				(at 0.635 2.54 0)
+				(at 0.254 1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -28,8 +29,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
+			(property "Value" "C_Small"
+				(at 0.254 -2.032 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -40,7 +41,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -61,7 +62,7 @@
 					)
 				)
 			)
-			(property "Description" "Unpolarized capacitor"
+			(property "Description" "Unpolarized capacitor, small symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -72,7 +73,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "cap capacitor"
+			(property "ki_keywords" "capacitor cap"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -94,13 +95,13 @@
 					)
 				)
 			)
-			(symbol "C_0_1"
+			(symbol "C_Small_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -109,10 +110,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
+						(xy -1.524 -0.508) (xy 1.524 -0.508)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.3302)
 						(type default)
 					)
 					(fill
@@ -120,10 +121,10 @@
 					)
 				)
 			)
-			(symbol "C_1_1"
+			(symbol "C_Small_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
+					(at 0 2.54 270)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -140,8 +141,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
+					(at 0 -2.54 90)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -571,12 +572,13 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R_US"
+		(symbol "Device:R_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
 			(pin_names
-				(offset 0)
+				(offset 0.254)
+				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -584,27 +586,29 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "R"
-				(at 2.54 0 90)
+				(at 0.762 0.508 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
-			(property "Value" "R_US"
-				(at -2.54 0 90)
+			(property "Value" "R_Small_US"
+				(at 0.762 -1.016 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
-				(at 1.016 -0.254 90)
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
@@ -625,7 +629,7 @@
 					)
 				)
 			)
-			(property "Description" "Resistor, US symbol"
+			(property "Description" "Resistor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -636,7 +640,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "R res resistor"
+			(property "ki_keywords" "r resistor"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -658,10 +662,10 @@
 					)
 				)
 			)
-			(symbol "R_US_0_1"
+			(symbol "R_Small_US_1_1"
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 0 2.54)
+						(xy 0 1.524) (xy 1.016 1.143) (xy 0 0.762) (xy -1.016 0.381) (xy 0 0)
 					)
 					(stroke
 						(width 0)
@@ -673,7 +677,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 0) (xy 1.016 -0.381) (xy 0 -0.762) (xy -1.016 -1.143) (xy 0 -1.524)
 					)
 					(stroke
 						(width 0)
@@ -683,47 +687,9 @@
 						(type none)
 					)
 				)
-				(polyline
-					(pts
-						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_US_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
+					(at 0 2.54 270)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -740,8 +706,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
+					(at 0 -2.54 90)
+					(length 1.016)
 					(name ""
 						(effects
 							(font
@@ -750,309 +716,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Q_NMOS_DGS_1"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_DGS"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/gate/source"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_1_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_1_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1309,1218 +972,6 @@
 				)
 			)
 			(symbol "Q_NMOS_DGS_2_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Q_NMOS_DGS_3"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_DGS"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/gate/source"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_3_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_3_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Q_NMOS_DGS_4"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_DGS"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/gate/source"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_4_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_4_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Q_NMOS_DGS_5"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_DGS"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/gate/source"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_5_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_5_1_1"
-				(pin passive line
-					(at 2.54 5.08 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Transistor_FET:Q_NMOS_DGS"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "Q"
-				(at 5.08 1.905 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "Q_NMOS_DGS"
-				(at 5.08 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 5.08 2.54 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "N-MOSFET transistor, drain/gate/source"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "transistor NMOS N-MOS N-MOSFET"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_0_1"
-				(polyline
-					(pts
-						(xy 0.254 1.905) (xy 0.254 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 2.286) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 0.508) (xy 0.762 -0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.27) (xy 0.762 -2.286)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.762 -1.778) (xy 3.302 -1.778) (xy 3.302 1.778) (xy 0.762 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.016 0) (xy 2.032 0.381) (xy 2.032 -0.381) (xy 1.016 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 1.651 0)
-					(radius 2.794)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 2.54) (xy 2.54 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(circle
-					(center 2.54 -1.778)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -2.54) (xy 2.54 0) (xy 0.762 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.921 0.381) (xy 3.683 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.302 0.381) (xy 2.921 -0.254) (xy 3.683 -0.254) (xy 3.302 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Q_NMOS_DGS_1_1"
 				(pin passive line
 					(at 2.54 5.08 270)
 					(length 2.54)
@@ -3007,18 +1458,6 @@
 		(uuid "31da8a40-d2ec-4d88-bc87-136f8b99a4f8")
 	)
 	(junction
-		(at 58.42 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "32aaa7c8-43dc-4a34-bcb3-50a00a0c8612")
-	)
-	(junction
-		(at 195.58 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4023dae3-7187-463c-867d-8c6d6d159800")
-	)
-	(junction
 		(at 186.69 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3067,6 +1506,12 @@
 		(uuid "7a233943-ae62-4084-81c1-758b002c9ac6")
 	)
 	(junction
+		(at 127 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "89f7a23c-aef4-4221-b547-abfc3d94b285")
+	)
+	(junction
 		(at 107.95 121.92)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3097,6 +1542,12 @@
 		(uuid "b4ce8537-3b5f-492e-bd50-65597d139c6d")
 	)
 	(junction
+		(at 195.58 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "be06af76-780c-4f4f-bb5e-1765ab2edec5")
+	)
+	(junction
 		(at 127 97.79)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3121,12 +1572,6 @@
 		(uuid "db49cf57-5b80-4386-a118-0c13d400a097")
 	)
 	(junction
-		(at 127 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "db85691c-0f1e-471a-80b9-d94ca9cdc9e4")
-	)
-	(junction
 		(at 127 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3144,6 +1589,12 @@
 		(color 0 0 0 0)
 		(uuid "fa83320d-786b-41a3-a515-664bda87ecb3")
 	)
+	(junction
+		(at 58.42 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fdfe8750-06f9-4397-af82-3c52bb8ce94a")
+	)
 	(wire
 		(pts
 			(xy 129.54 88.9) (xy 132.08 88.9)
@@ -3156,13 +1607,13 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 80.01) (xy 49.53 80.01)
+			(xy 40.64 41.91) (xy 49.53 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "029e2869-4b17-4e71-8964-bbce2d29ad87")
+		(uuid "00b23a21-1823-44d2-812d-896f8c0223e0")
 	)
 	(wire
 		(pts
@@ -3206,13 +1657,13 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 60.96) (xy 195.58 60.96)
+			(xy 182.88 69.85) (xy 186.69 69.85)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0a1eb4ea-2d2a-450a-b050-b7fc273ed9b7")
+		(uuid "09bb0c24-edcd-449f-b25d-260c18f30c2c")
 	)
 	(wire
 		(pts
@@ -3266,6 +1717,26 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 31.75) (xy 49.53 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0dd34351-7db0-4cb0-a7db-53215bd31bee")
+	)
+	(wire
+		(pts
+			(xy 52.07 60.96) (xy 58.42 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0e8e7968-4732-438d-9390-0f2dc6b89c3e")
+	)
+	(wire
+		(pts
 			(xy 101.6 85.09) (xy 101.6 86.36)
 		)
 		(stroke
@@ -3296,7 +1767,7 @@
 	)
 	(wire
 		(pts
-			(xy 195.58 31.75) (xy 198.12 31.75)
+			(xy 195.58 31.75) (xy 199.39 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3316,16 +1787,6 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 41.91) (xy 118.11 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1955884e-f20e-4383-80b4-7c7ee28032bc")
-	)
-	(wire
-		(pts
 			(xy 90.17 60.96) (xy 109.22 60.96)
 		)
 		(stroke
@@ -3336,7 +1797,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 69.85) (xy 108.4442 69.85)
+			(xy 105.41 69.85) (xy 109.22 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3346,7 +1807,7 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 54.61) (xy 29.21 54.61)
+			(xy 21.59 54.61) (xy 30.48 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3356,13 +1817,13 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 41.91) (xy 186.69 41.91)
+			(xy 189.23 60.96) (xy 195.58 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "257f8d37-6449-4ab3-8966-83f2f0466c08")
+		(uuid "26a2ab6a-b513-4b43-bba5-27d1550a335c")
 	)
 	(wire
 		(pts
@@ -3376,17 +1837,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 121.92) (xy 107.95 124.46)
+			(xy 176.53 130.81) (xy 176.53 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "272ee44e-17be-4e96-9a02-798cac226e4a")
+		(uuid "26f3dad3-71ae-4738-b4b8-057038dad47f")
 	)
 	(wire
 		(pts
-			(xy 163.83 41.91) (xy 171.45 41.91)
+			(xy 163.83 41.91) (xy 172.72 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3406,13 +1867,13 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 132.08) (xy 39.37 134.62)
+			(xy 120.65 60.96) (xy 127 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "2b76e624-562a-447e-8e04-74601488e538")
+		(uuid "2afc5dd7-22d1-40bf-9fb8-5ee406c36fea")
 	)
 	(wire
 		(pts
@@ -3426,17 +1887,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 60.96) (xy 58.42 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c2d5793-c9c4-43ff-8a57-46e06b7741c9")
-	)
-	(wire
-		(pts
-			(xy 107.95 132.08) (xy 107.95 134.62)
+			(xy 107.95 121.92) (xy 107.95 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3446,7 +1897,7 @@
 	)
 	(wire
 		(pts
-			(xy 127 31.75) (xy 129.54 31.75)
+			(xy 127 31.75) (xy 130.81 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3486,26 +1937,6 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 132.08) (xy 176.53 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "337a78ea-06c7-4c5f-9b88-a33257c6ff36")
-	)
-	(wire
-		(pts
-			(xy 208.28 31.75) (xy 205.74 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3385c44a-f5f5-43e0-9ddc-2ca7ca20e7f8")
-	)
-	(wire
-		(pts
 			(xy 127 85.09) (xy 127 86.36)
 		)
 		(stroke
@@ -3526,7 +1957,7 @@
 	)
 	(wire
 		(pts
-			(xy 58.42 31.75) (xy 60.96 31.75)
+			(xy 58.42 31.75) (xy 62.23 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3596,7 +2027,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 60.96) (xy 182.88 60.96)
+			(xy 177.8 60.96) (xy 184.15 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3626,13 +2057,13 @@
 	)
 	(wire
 		(pts
-			(xy 46.99 31.75) (xy 49.53 31.75)
+			(xy 104.14 121.92) (xy 107.95 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42102666-1537-440f-a147-2ea61571b8f8")
+		(uuid "43226511-901e-4110-ac5d-d82ca94bd45e")
 	)
 	(wire
 		(pts
@@ -3666,16 +2097,6 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 31.75) (xy 137.16 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4b9ed5ff-8a3c-4247-b67c-e084f2053bf3")
-	)
-	(wire
-		(pts
 			(xy 104.14 88.9) (xy 106.68 88.9)
 		)
 		(stroke
@@ -3706,36 +2127,6 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 54.61) (xy 177.8 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53cb532a-4661-4d55-a722-5f87e4324f7b")
-	)
-	(wire
-		(pts
-			(xy 36.83 54.61) (xy 40.64 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54f989c7-7be2-4d0c-9744-9420369ae026")
-	)
-	(wire
-		(pts
-			(xy 121.92 60.96) (xy 127 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "56bbee70-a4b5-4d12-884d-ff0b95fc33a2")
-	)
-	(wire
-		(pts
 			(xy 39.37 121.92) (xy 49.53 121.92)
 		)
 		(stroke
@@ -3756,7 +2147,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 80.01) (xy 34.29 80.01)
+			(xy 26.67 80.01) (xy 35.56 80.01)
 		)
 		(stroke
 			(width 0)
@@ -3766,7 +2157,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 31.75) (xy 176.53 31.75)
+			(xy 173.99 31.75) (xy 177.8 31.75)
 		)
 		(stroke
 			(width 0)
@@ -3776,7 +2167,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 60.96) (xy 45.72 60.96)
+			(xy 40.64 60.96) (xy 46.99 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3786,7 +2177,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 121.92) (xy 176.53 124.46)
+			(xy 176.53 121.92) (xy 176.53 125.73)
 		)
 		(stroke
 			(width 0)
@@ -3836,13 +2227,13 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 121.92) (xy 39.37 121.92)
+			(xy 39.37 121.92) (xy 39.37 125.73)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6330e7d3-bb71-4d33-b1c1-2027936c7456")
+		(uuid "63a7bac6-8b8d-44c2-abf4-0af7b89f096c")
 	)
 	(wire
 		(pts
@@ -3866,13 +2257,23 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 121.92) (xy 166.37 121.92)
+			(xy 161.29 121.92) (xy 167.64 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "6992f999-f625-4ba8-9e65-73edd90abb6f")
+	)
+	(wire
+		(pts
+			(xy 107.95 130.81) (xy 107.95 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "699d1105-8b39-44ad-99a8-2e8abe1e14d2")
 	)
 	(wire
 		(pts
@@ -3896,16 +2297,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.0642 69.85) (xy 118.11 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6ef5be53-72b1-4487-82a1-7c637389c04f")
-	)
-	(wire
-		(pts
 			(xy 127 19.05) (xy 127 31.75)
 		)
 		(stroke
@@ -3916,7 +2307,7 @@
 	)
 	(wire
 		(pts
-			(xy 158.75 54.61) (xy 166.37 54.61)
+			(xy 158.75 54.61) (xy 167.64 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3926,17 +2317,17 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 31.75) (xy 118.11 31.75)
+			(xy 177.8 80.01) (xy 186.69 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "73c74aa4-ea1a-4955-8de1-e03a046a58f0")
+		(uuid "739a2758-c2d3-4655-87df-a9397ab2fc85")
 	)
 	(wire
 		(pts
-			(xy 173.99 69.85) (xy 176.53 69.85)
+			(xy 173.99 69.85) (xy 177.8 69.85)
 		)
 		(stroke
 			(width 0)
@@ -3946,23 +2337,13 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 80.01) (xy 102.87 80.01)
+			(xy 95.25 80.01) (xy 104.14 80.01)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "782c1d3e-15de-428f-8079-092073b1644b")
-	)
-	(wire
-		(pts
-			(xy 105.41 121.92) (xy 107.95 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "79fb52d4-573b-468c-a400-db63b78688be")
 	)
 	(wire
 		(pts
@@ -3976,13 +2357,23 @@
 	)
 	(wire
 		(pts
-			(xy 95.25 41.91) (xy 102.87 41.91)
+			(xy 95.25 41.91) (xy 104.14 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "7b0ead15-b26c-43b2-bb9b-46becc40fbe7")
+	)
+	(wire
+		(pts
+			(xy 109.22 41.91) (xy 118.11 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7e99e9b0-feba-4426-9cc1-d9c78876923c")
 	)
 	(wire
 		(pts
@@ -3996,7 +2387,7 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 41.91) (xy 34.29 41.91)
+			(xy 26.67 41.91) (xy 35.56 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4036,7 +2427,7 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 69.85) (xy 39.37 69.85)
+			(xy 36.83 69.85) (xy 40.64 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4046,17 +2437,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 31.75) (xy 68.58 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a0bb3bf-90d9-4342-8259-6470860dabcb")
-	)
-	(wire
-		(pts
-			(xy 163.83 80.01) (xy 171.45 80.01)
+			(xy 163.83 80.01) (xy 172.72 80.01)
 		)
 		(stroke
 			(width 0)
@@ -4066,7 +2447,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 121.92) (xy 29.21 121.92)
+			(xy 24.13 121.92) (xy 30.48 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4126,16 +2507,6 @@
 	)
 	(wire
 		(pts
-			(xy 39.37 121.92) (xy 39.37 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "95c3a975-d456-4b28-a8c2-f6bffece3e72")
-	)
-	(wire
-		(pts
 			(xy 58.42 19.05) (xy 58.42 31.75)
 		)
 		(stroke
@@ -4153,6 +2524,16 @@
 			(type default)
 		)
 		(uuid "99123d34-5691-492f-a699-5364626a96cd")
+	)
+	(wire
+		(pts
+			(xy 45.72 69.85) (xy 49.53 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b2af05d-03e2-43f0-9bbd-da10f0e4cf2b")
 	)
 	(wire
 		(pts
@@ -4176,6 +2557,16 @@
 	)
 	(wire
 		(pts
+			(xy 109.22 80.01) (xy 118.11 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d273a5c-7385-4cdd-b87a-f072f8d5cc0d")
+	)
+	(wire
+		(pts
 			(xy 29.21 69.85) (xy 26.67 69.85)
 		)
 		(stroke
@@ -4183,16 +2574,6 @@
 			(type default)
 		)
 		(uuid "9d72c65f-77e9-49fd-95b9-201d54719593")
-	)
-	(wire
-		(pts
-			(xy 46.99 69.85) (xy 49.53 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a17fdb83-3c26-46d5-baff-c5545e031d4f")
 	)
 	(wire
 		(pts
@@ -4206,7 +2587,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 60.96) (xy 114.3 60.96)
+			(xy 109.22 60.96) (xy 115.57 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4216,13 +2597,33 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 31.75) (xy 39.37 31.75)
+			(xy 39.37 130.81) (xy 39.37 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a68a73e7-bcc1-48da-b9e5-e11c4c1cf0ae")
+	)
+	(wire
+		(pts
+			(xy 36.83 31.75) (xy 40.64 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "a94c0f31-bf4e-4cc7-9079-4893692b48c7")
+	)
+	(wire
+		(pts
+			(xy 135.89 31.75) (xy 139.7 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aab7ae2c-4d99-4260-8216-015039016d0d")
 	)
 	(wire
 		(pts
@@ -4236,7 +2637,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 121.92) (xy 97.79 121.92)
+			(xy 92.71 121.92) (xy 99.06 121.92)
 		)
 		(stroke
 			(width 0)
@@ -4253,6 +2654,16 @@
 			(type default)
 		)
 		(uuid "af7eb3be-8126-45c9-acdf-623765c66051")
+	)
+	(wire
+		(pts
+			(xy 67.31 31.75) (xy 71.12 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b0300531-2274-4b35-a5ae-e59bcbb8bd1d")
 	)
 	(wire
 		(pts
@@ -4306,6 +2717,16 @@
 	)
 	(wire
 		(pts
+			(xy 40.64 80.01) (xy 49.53 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "beb6f115-a445-4056-bcb7-46ea0568e740")
+	)
+	(wire
+		(pts
 			(xy 58.42 46.99) (xy 58.42 60.96)
 		)
 		(stroke
@@ -4336,6 +2757,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 69.85) (xy 118.11 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2ba08a7-abdb-47ff-9732-abe47d1426de")
+	)
+	(wire
+		(pts
 			(xy 158.75 60.96) (xy 177.8 60.96)
 		)
 		(stroke
@@ -4343,16 +2774,6 @@
 			(type default)
 		)
 		(uuid "c5674fb9-154a-45ce-8a2f-ca8398403163")
-	)
-	(wire
-		(pts
-			(xy 184.15 31.75) (xy 186.69 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c5ef9b80-c7ce-4c53-847b-a4033a2388ba")
 	)
 	(wire
 		(pts
@@ -4366,13 +2787,23 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 69.85) (xy 186.69 69.85)
+			(xy 204.47 31.75) (xy 208.28 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c8ad43c5-7f69-4801-9e70-68c06af06ff2")
+		(uuid "ca3595b8-a552-4f03-bc5d-eaa76534f03c")
+	)
+	(wire
+		(pts
+			(xy 35.56 54.61) (xy 40.64 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cac5eaae-2f71-4f6e-a8fb-dc484f15d413")
 	)
 	(wire
 		(pts
@@ -4396,7 +2827,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 31.75) (xy 107.95 31.75)
+			(xy 105.41 31.75) (xy 109.22 31.75)
 		)
 		(stroke
 			(width 0)
@@ -4416,17 +2847,27 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 80.01) (xy 186.69 80.01)
+			(xy 35.56 121.92) (xy 39.37 121.92)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d557dee6-5457-40ac-8967-2aac3bb87305")
+		(uuid "d47133fd-f9b7-4f36-b198-12ae73b16109")
 	)
 	(wire
 		(pts
-			(xy 90.17 54.61) (xy 97.79 54.61)
+			(xy 177.8 41.91) (xy 186.69 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d81f8e16-2a02-4172-8025-c659d66ae465")
+	)
+	(wire
+		(pts
+			(xy 90.17 54.61) (xy 99.06 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4446,16 +2887,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 54.61) (xy 105.41 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "daee3d03-4d15-41ab-a88a-a86940906c65")
-	)
-	(wire
-		(pts
 			(xy 127 97.79) (xy 127 99.06)
 		)
 		(stroke
@@ -4463,6 +2894,26 @@
 			(type default)
 		)
 		(uuid "df011e1b-77f3-4c7a-bd96-1e8d3d90b05f")
+	)
+	(wire
+		(pts
+			(xy 182.88 31.75) (xy 186.69 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e041ca03-91d2-4ebf-90d2-b921d35d4592")
+	)
+	(wire
+		(pts
+			(xy 104.14 54.61) (xy 109.22 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4874617-754e-4826-97f7-c0c2aa346a0d")
 	)
 	(wire
 		(pts
@@ -4483,26 +2934,6 @@
 			(type default)
 		)
 		(uuid "e8a17093-e3a7-4861-8c86-6f9142756374")
-	)
-	(wire
-		(pts
-			(xy 41.91 41.91) (xy 49.53 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e993df52-e5e6-4855-a940-46778bd796ef")
-	)
-	(wire
-		(pts
-			(xy 173.99 121.92) (xy 176.53 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ea74557a-65ac-4abd-a3f4-8ebd196eb554")
 	)
 	(wire
 		(pts
@@ -4533,6 +2964,16 @@
 			(type default)
 		)
 		(uuid "f09aaabd-6a65-4bd9-9919-a4d29b9497f7")
+	)
+	(wire
+		(pts
+			(xy 172.72 121.92) (xy 176.53 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2cc6e9b-50dc-4992-a892-ade0b9becbc9")
 	)
 	(wire
 		(pts
@@ -4576,13 +3017,23 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 80.01) (xy 118.11 80.01)
+			(xy 114.3 31.75) (xy 118.11 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd4bc919-1f22-47aa-83b4-923fce5aa88a")
+		(uuid "f827809d-f86c-49f9-b628-22f1ce1f1a42")
+	)
+	(wire
+		(pts
+			(xy 172.72 54.61) (xy 177.8 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "faf94200-2b81-4b34-992e-0cac79fc125d")
 	)
 	(label "VSHUNT_U+"
 		(at 38.1 88.9 0)
@@ -4966,8 +3417,8 @@
 		(uuid "fdd5c6a3-b0a7-4a2f-83cd-69e1a2a478fa")
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 175.26 80.01 90)
+		(lib_id "Device:R_Small_US")
+		(at 111.76 69.85 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4975,10 +3426,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01466853-6deb-4197-83a3-80e43bfa1473")
-		(property "Reference" "R9"
-			(at 175.26 73.66 90)
+		(uuid "00fb6d2f-d1cb-43d8-9269-e2ed8ff99bba")
+		(property "Reference" "R33"
+			(at 112.014 64.008 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4987,8 +3437,8 @@
 				)
 			)
 		)
-		(property "Value" "33"
-			(at 175.26 76.2 90)
+		(property "Value" "0"
+			(at 112.014 66.548 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4997,8 +3447,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 175.514 78.994 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 111.76 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5008,8 +3458,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 175.26 80.01 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 111.76 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5019,8 +3469,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 175.26 80.01 0)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 111.76 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5031,94 +3481,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "c4f14c24-2996-4348-b5c4-a38d58a5b3e0")
+			(uuid "95fd36c4-845e-42fc-a724-fb8accccabe5")
 		)
 		(pin "2"
-			(uuid "a2722023-63a2-435d-8362-0df943c5b80d")
+			(uuid "e7553767-7111-485f-bd1e-ec5dcd480c4b")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 38.1 80.01 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "07b2f776-8a41-43de-b72b-b5a2104ec2e9")
-		(property "Reference" "R7"
-			(at 38.1 73.66 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33"
-			(at 38.1 76.2 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.354 78.994 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 38.1 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3f9a8ea-2d66-4c02-a8fa-34c16e11511e")
-		)
-		(pin "2"
-			(uuid "99a8d669-2be4-4ecd-9ab9-4beaf1abe0b4")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R7")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -5136,7 +3507,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0b555f17-da85-410c-9913-e3823ea803d7")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR050"
 			(at 195.58 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -5196,7 +3567,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR03")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -5214,7 +3585,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10f803cf-c86c-4478-bcbd-91900ab03489")
-		(property "Reference" "#PWR09"
+		(property "Reference" "#PWR049"
 			(at 176.53 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -5274,16 +3645,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR09")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "Q_NMOS_DGS_3")
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 124.46 41.91 0)
+		(lib_id "Device:R_Small_US")
+		(at 43.18 69.85 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5291,32 +3661,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "135425ea-be2a-4ab0-aa83-19cf7a344b12")
-		(property "Reference" "Q3"
-			(at 130.81 40.6399 0)
+		(uuid "110174bf-05fb-4ac0-bd97-10b78f0a6094")
+		(property "Reference" "R25"
+			(at 43.434 64.008 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "STL110N10F7"
-			(at 130.81 43.1799 0)
+		(property "Value" "0"
+			(at 43.434 66.548 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 129.54 39.37 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 43.18 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5326,8 +3693,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 124.46 41.91 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 43.18 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5337,91 +3704,8 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 124.46 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "59deb0e0-95d3-4af1-ad23-dddde4bb18c4")
-		)
-		(pin "1"
-			(uuid "c354753d-6d60-4fda-87ab-498e022d3db4")
-		)
-		(pin "2"
-			(uuid "21cb9c94-98cf-4492-8bda-64e1b4c311bc")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "Q3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 170.18 54.61 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "16cfbc6d-a32a-44d2-b9fe-eee712d458f3")
-		(property "Reference" "C29"
-			(at 170.18 46.99 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1uF/25V"
-			(at 170.18 49.53 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 53.6448 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 170.18 54.61 0)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 43.18 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5432,15 +3716,253 @@
 			)
 		)
 		(pin "1"
-			(uuid "4f60d5e1-68e2-4624-9edc-f3def4d7ad1e")
+			(uuid "b5220d35-15d9-424a-bfd3-82508c5a9c8f")
 		)
 		(pin "2"
-			(uuid "32bdf330-4f32-4d53-8e18-04cc7f76faa5")
+			(uuid "ecb30d86-1b44-4560-9c35-e27484cd0560")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C29")
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 101.6 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1598c268-021c-41ca-a602-a96b998ed124")
+		(property "Reference" "D5"
+			(at 101.2825 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "70V"
+			(at 101.2825 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 101.6 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMDL770T1G/1482073"
+			(at 101.6 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 70V SOD323"
+			(at 101.6 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ba811997-47eb-4886-af6b-30d3d23ff218")
+		)
+		(pin "2"
+			(uuid "a9686520-7cdc-4079-b9fe-d4e561f015c9")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "D5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 101.6 121.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "206fe1e7-07d6-49b5-82c1-212aa16c81af")
+		(property "Reference" "R29"
+			(at 101.854 116.078 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 101.854 118.618 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10R0/1761152"
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10 OHM 1% 1/10W 0603"
+			(at 101.6 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c5ea6560-a82d-4f56-b589-aafa5e788306")
+		)
+		(pin "2"
+			(uuid "7e4f329e-d6d7-42c4-8872-119108e917d1")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R29")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 186.69 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29b4da5b-e961-4abb-aa68-4d7b35fd3280")
+		(property "Reference" "R42"
+			(at 186.944 55.118 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 186.944 57.658 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 186.69 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 186.69 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 186.69 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ab46b4f-dd41-4e6e-80b1-70550ac2f4bf")
+		)
+		(pin "2"
+			(uuid "d0803134-f7e1-4b93-a420-2d698bbef022")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R42")
 					(unit 1)
 				)
 			)
@@ -5457,8 +3979,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "195621a3-3955-496b-acc0-d0bd4d46572b")
-		(property "Reference" "R1"
+		(uuid "2ee44363-80be-4d76-a002-e961673becab")
+		(property "Reference" "R27"
 			(at 55.88 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5469,7 +3991,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2m/2W"
+		(property "Value" "2m/3W"
 			(at 55.88 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5480,7 +4002,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 56.642 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -5491,7 +4013,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/c-b-resi/MCSM2512FR002K9/29296128"
 			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5502,7 +4024,7 @@
 				)
 			)
 		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
+		(property "Description" "0.002 OHM 1% 3W 100PPM/C"
 			(at 58.42 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -5514,679 +4036,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "2664866e-57d1-4d88-ab75-fff4d86418c7")
+			(uuid "bbac2617-88bb-4e48-9974-528dafeefbf0")
 		)
 		(pin "4"
-			(uuid "74d4a3ab-4b51-4e21-ae35-c34f9d73b1e7")
+			(uuid "899265ce-3cb6-4823-9453-60b1cd6a6e59")
 		)
 		(pin "3"
-			(uuid "2f5fd63a-5a4c-415b-88f8-7b1f2c922c49")
+			(uuid "cfd3d6d9-37ad-4cb0-a200-13d1ef0cce15")
 		)
 		(pin "2"
-			(uuid "cb5bfb0c-001f-4a6a-9912-f9badf6913d6")
+			(uuid "db5a8a83-38fe-4c4a-962f-8a8f84a267f1")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Shunt_US")
-		(at 170.18 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1bc78700-3a89-46d3-8387-90f42a7d6f55")
-		(property "Reference" "R43"
-			(at 167.64 90.1699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2m/2W"
-			(at 167.64 92.7099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 168.402 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
-			(at 170.18 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "376d71e3-3753-42ab-8a83-eba0c63661bc")
-		)
-		(pin "4"
-			(uuid "9f41f76a-e9d7-442d-bd28-6717f8f2e649")
-		)
-		(pin "3"
-			(uuid "1814c3e7-4375-4f6a-9042-277782b92d55")
-		)
-		(pin "2"
-			(uuid "7569255b-de7a-4901-b337-8487798508dd")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R43")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 133.35 31.75 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1cff2e39-b0a5-44f9-9a47-3baf25d83720")
-		(property "Reference" "C25"
-			(at 133.35 24.13 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "220nF/100V"
-			(at 133.35 26.67 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 137.16 30.7848 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 133.35 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 133.35 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "983844f1-d6c5-40a6-a889-9d2550c9c7e2")
-		)
-		(pin "2"
-			(uuid "74fa84c7-03c6-412f-967f-51c2198d17e4")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 170.18 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2692cd69-9f03-4cec-b2a7-b8aca90ab5db")
-		(property "Reference" "R24"
-			(at 170.18 115.57 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10"
-			(at 170.18 118.11 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.434 120.904 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 170.18 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "80cf7e71-bc13-4a53-a57d-7e7ad8f84f1a")
-		)
-		(pin "1"
-			(uuid "a0485f00-28bb-4a65-9100-7da20a29f706")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R24")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 107.95 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2b8afe94-c01f-49ec-af6e-738a8531cde0")
-		(property "Reference" "C2"
-			(at 111.76 126.9999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNP"
-			(at 111.76 129.5399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 108.9152 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 107.95 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 107.95 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ead1c55-81e2-4640-b98c-f22e83e7ec9b")
-		)
-		(pin "2"
-			(uuid "8ecaa3c9-c9eb-4a2e-bea3-eb20c5aded27")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 49.53 60.96 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "32f414bb-7f7e-4f32-9db1-3e157aaf235a")
-		(property "Reference" "R41"
-			(at 49.53 54.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 49.53 57.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.784 59.944 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 49.53 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c5cad3cd-2f86-466c-8d18-aae3c70a25d1")
-		)
-		(pin "2"
-			(uuid "082b6c71-5a5b-4809-966f-6152db51d9a4")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R41")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 170.18 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "391c6ced-e07a-43ed-89e0-aa0c866cbb1b")
-		(property "Reference" "D6"
-			(at 169.8625 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT48"
-			(at 169.8625 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 170.18 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1ac74ac1-354e-477e-83fc-b7b303d8f218")
-		)
-		(pin "2"
-			(uuid "7862fea3-9fcd-40cc-b49a-95beedd86f8f")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Shunt_US")
-		(at 127 91.44 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ccd2365-5b48-41ab-8c5c-fd024c468c1f")
-		(property "Reference" "R2"
-			(at 124.46 90.1699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "2m/2W"
-			(at 124.46 92.7099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 125.222 91.44 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
-			(at 127 91.44 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "82eefb1f-1f9b-4614-9a08-c55843eee68e")
-		)
-		(pin "4"
-			(uuid "33b1ff0c-fdad-4d76-9680-0993aa77fd7d")
-		)
-		(pin "3"
-			(uuid "317b8ae4-26da-43fe-8a94-d77bf4f4d468")
-		)
-		(pin "2"
-			(uuid "9461a32e-bef2-4e68-b69c-d388ae6d3564")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 186.69 60.96 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3d6fb70d-0c57-4a42-a55c-1652e32218fb")
-		(property "Reference" "R42"
-			(at 186.69 54.61 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 186.69 57.15 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 186.944 59.944 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 186.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 186.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f666b851-b431-4cce-8b8b-e9099fd4684b")
-		)
-		(pin "2"
-			(uuid "5cca4e29-a61a-4d22-95eb-df43e4e48777")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R42")
+					(reference "R27")
 					(unit 1)
 				)
 			)
@@ -6205,7 +4069,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3dd52a75-e858-4b65-97d1-1fab0543b9cf")
-		(property "Reference" "Q1"
+		(property "Reference" "Q3"
 			(at 62.23 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6227,7 +4091,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STL110N10F7:MOSFET_10N10F7_STM"
 			(at 60.96 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -6238,7 +4102,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STL110N10F7/4250812"
 			(at 55.88 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6249,7 +4113,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
+		(property "Description" "MOSFET N-CH 100V 107A POWERFLAT"
 			(at 55.88 41.91 0)
 			(hide yes)
 			(show_name no)
@@ -6272,15 +4136,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "Q1")
+					(reference "Q3")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 101.6 69.85 0)
+		(lib_id "Device:R_Small_US")
+		(at 175.26 41.91 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6288,10 +4152,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "42619d4d-9ef7-4d79-9471-19bb9251ca25")
-		(property "Reference" "D4"
-			(at 101.2825 63.5 0)
+		(uuid "3e1ea0c9-1603-41a1-bc9e-97b8d55be6f7")
+		(property "Reference" "R38"
+			(at 175.514 36.068 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6300,8 +4163,8 @@
 				)
 			)
 		)
-		(property "Value" "BAT48"
-			(at 101.2825 66.04 0)
+		(property "Value" "33"
+			(at 175.514 38.608 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6310,8 +4173,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 101.6 69.85 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.26 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6321,8 +4184,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 101.6 69.85 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT33R0/1760804"
+			(at 175.26 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6332,8 +4195,8 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 101.6 69.85 0)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 175.26 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6344,15 +4207,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "e3743081-6f00-4ba6-b290-8a23ad867d02")
+			(uuid "f625b3d9-763b-4b6b-958a-5be8a98f9676")
 		)
 		(pin "2"
-			(uuid "b1d2c294-4419-4379-bb08-d212d0b37f39")
+			(uuid "d9e69469-a592-46c6-8c3c-3c820cb4b834")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "D4")
+					(reference "R38")
 					(unit 1)
 				)
 			)
@@ -6360,7 +4223,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Shunt_US")
-		(at 195.58 91.44 0)
+		(at 127 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6369,9 +4232,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4294c0d3-a521-4b2f-bf16-1ab3b6f2a0e2")
-		(property "Reference" "R3"
-			(at 193.04 90.1699 0)
+		(uuid "4353f152-b359-455d-b466-26ee256dfaf0")
+		(property "Reference" "R35"
+			(at 124.46 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6381,8 +4244,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2m/2W"
-			(at 193.04 92.7099 0)
+		(property "Value" "2m/3W"
+			(at 124.46 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6392,8 +4255,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 193.802 91.44 90)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 125.222 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6403,8 +4266,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 195.58 91.44 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/c-b-resi/MCSM2512FR002K9/29296128"
+			(at 127 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6414,8 +4277,8 @@
 				)
 			)
 		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
-			(at 195.58 91.44 0)
+		(property "Description" "0.002 OHM 1% 3W 100PPM/C"
+			(at 127 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6426,29 +4289,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "020caaa8-49a0-4844-8238-bedfb1e842dd")
+			(uuid "c59f32c8-8973-4607-9a90-8130c4de5474")
 		)
 		(pin "4"
-			(uuid "8dd14af9-5c28-4705-9fd8-c00d261d4146")
+			(uuid "d55be034-8989-4afb-9566-b4aae4c20402")
 		)
 		(pin "3"
-			(uuid "09730b4f-14bf-425d-bdb8-de9b79e76c35")
+			(uuid "a00513f0-58a9-4def-b3dd-69dde2aacffb")
 		)
 		(pin "2"
-			(uuid "4f3292c0-b43f-452f-a183-a778334a060b")
+			(uuid "b7a076c6-91de-42fc-ba84-d8e3bc28419f")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R3")
+					(reference "R35")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 170.18 31.75 0)
+		(lib_id "Device:R_Small_US")
+		(at 111.76 31.75 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6456,10 +4319,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48d29eb7-5243-4e80-83ce-bbe329d0303b")
-		(property "Reference" "D5"
-			(at 169.8625 25.4 0)
+		(uuid "4526b970-1098-4a8c-85af-36c20a1318b5")
+		(property "Reference" "R32"
+			(at 112.014 25.908 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6468,8 +4330,8 @@
 				)
 			)
 		)
-		(property "Value" "BAT48"
-			(at 169.8625 27.94 0)
+		(property "Value" "0"
+			(at 112.014 28.448 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6478,8 +4340,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 170.18 31.75 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 111.76 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6489,8 +4351,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 170.18 31.75 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 111.76 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6500,8 +4362,8 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 170.18 31.75 0)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 111.76 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6512,15 +4374,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "478b0c86-0fc0-4e47-a7ed-fabd4afaa94e")
+			(uuid "c2786d31-fc5b-45cc-b3fa-920608f16307")
 		)
 		(pin "2"
-			(uuid "c53718ae-372b-49cc-b8bc-86c475efcf51")
+			(uuid "9837b7b1-e6b1-43ed-b370-5b695b99000d")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "D5")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -6538,7 +4400,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "49ec97a2-b44d-48ca-93a0-b90a93c2e44b")
-		(property "Reference" "#PWR06"
+		(property "Reference" "#PWR051"
 			(at 208.28 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -6598,15 +4460,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR06")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 201.93 31.75 90)
+		(lib_id "Device:C_Small")
+		(at 201.93 31.75 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6615,9 +4477,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4b986c71-a288-4bd2-9080-cf03c9daddad")
-		(property "Reference" "C24"
-			(at 201.93 24.13 90)
+		(uuid "4a32ac76-daf1-451e-a374-6e0675678bbe")
+		(property "Reference" "C40"
+			(at 201.9236 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6626,8 +4488,8 @@
 				)
 			)
 		)
-		(property "Value" "220nF/100V"
-			(at 201.93 26.67 90)
+		(property "Value" "220nF"
+			(at 201.9236 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6636,18 +4498,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 205.74 30.7848 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 201.93 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -6658,7 +4509,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/HMK107C7224KAHTE/6563605"
+			(at 201.93 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.22UF 100V X7S 0603"
 			(at 201.93 31.75 0)
 			(hide yes)
 			(show_name no)
@@ -6670,23 +4532,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "c92419e9-6eed-441d-9446-77ff69c9288d")
+			(uuid "9d2c749d-42b9-440d-9a73-87546a6678a4")
 		)
 		(pin "2"
-			(uuid "edad0cd9-c45e-4643-86f5-311ff0813183")
+			(uuid "1b8459bf-37bc-4dc5-8a15-d72aed9264f3")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C24")
+					(reference "C40")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 39.37 128.27 0)
+		(lib_id "Device:C_Small")
+		(at 33.02 54.61 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6695,171 +4557,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "53cc58ce-f5f3-4a2f-a975-c41d97f8f1cc")
-		(property "Reference" "C1"
-			(at 43.18 126.9999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNP"
-			(at 43.18 129.5399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 40.3352 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 39.37 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "093cff68-696e-46e8-84d8-22c1ca2d5a85")
-		)
-		(pin "2"
-			(uuid "6fd86d86-da57-411b-94d2-eba7f8e5cb74")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 175.26 41.91 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "579473ee-099d-43df-a898-71a05f3448ba")
-		(property "Reference" "R6"
-			(at 175.26 35.56 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33"
-			(at 175.26 38.1 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.514 40.894 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 175.26 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2e492b32-7627-41d3-a9b6-6c0be5fe79c1")
-		)
-		(pin "2"
-			(uuid "c9d9beec-8fdc-4a52-9b74-4a253a3487cd")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 33.02 54.61 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67f4eed4-ecbf-43d1-9c19-fc77569bffef")
-		(property "Reference" "C27"
-			(at 33.02 46.99 90)
+		(uuid "5976f6a1-a7b2-451a-addc-1b5f75907971")
+		(property "Reference" "C32"
+			(at 33.0136 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6869,7 +4569,7 @@
 			)
 		)
 		(property "Value" "1uF/25V"
-			(at 33.02 49.53 90)
+			(at 33.0136 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6878,18 +4578,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 36.83 53.6448 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 33.02 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6900,7 +4589,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/TMK107B7105KA-T/2714162"
+			(at 33.02 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1UF 25V X7R 0603"
 			(at 33.02 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -6912,23 +4612,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "d4509493-f623-4015-ad3c-4168a03b6fe8")
+			(uuid "a84fb87e-a4ea-42fb-9fb1-bb872b01de41")
 		)
 		(pin "2"
-			(uuid "75c3f9c9-3b34-4d16-b9e8-08c17b1a7b27")
+			(uuid "39d33f3c-957f-4239-90c3-c41c9ba9b6c8")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C27")
+					(reference "C32")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 180.34 31.75 90)
+		(lib_id "Device:R_Small_US")
+		(at 175.26 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -6936,10 +4636,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c5ff482-176e-4e48-aca7-e97d95515272")
-		(property "Reference" "R34"
-			(at 180.34 25.4 90)
+		(uuid "5a78ab6b-f646-401a-a098-937ff7de359e")
+		(property "Reference" "R39"
+			(at 175.514 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6948,8 +4647,8 @@
 				)
 			)
 		)
-		(property "Value" "0"
-			(at 180.34 27.94 90)
+		(property "Value" "33"
+			(at 175.514 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -6958,8 +4657,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 180.594 30.734 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6969,8 +4668,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 180.34 31.75 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT33R0/1760804"
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6980,8 +4679,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 180.34 31.75 0)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 175.26 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6992,183 +4691,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "f7bfe874-de4b-437a-b3de-6731244ba755")
+			(uuid "ee5ecec8-c774-43b4-bacc-4ce688155b12")
 		)
 		(pin "2"
-			(uuid "24eea8f9-775d-4be6-8cee-072c215fc8ee")
+			(uuid "4a234040-4d20-4d62-8d5b-f7a924a24c21")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R34")
+					(reference "R39")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 176.53 128.27 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "73749928-0490-4bde-b2a0-01be6423e99b")
-		(property "Reference" "C3"
-			(at 180.34 126.9999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNP"
-			(at 180.34 129.5399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.4952 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 176.53 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 176.53 128.27 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8baede7e-e347-4666-88c4-9f59a6d89048")
-		)
-		(pin "2"
-			(uuid "6600c3e5-cc21-41c6-8fee-8ea6bbbc0f38")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 101.6 31.75 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7c0faa09-ded0-42ff-83f9-9f26b38fe88f")
-		(property "Reference" "D3"
-			(at 101.2825 25.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT48"
-			(at 101.2825 27.94 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.6 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 101.6 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5f56c546-6c3c-4fc6-b40d-fae41a7e83c8")
-		)
-		(pin "2"
-			(uuid "a764d56d-2c89-4c02-867b-9b5e5824749a")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
+		(lib_name "Q_NMOS_DGS_2")
 		(lib_id "Transistor_FET:Q_NMOS_DGS")
 		(at 124.46 80.01 0)
 		(unit 1)
@@ -7179,7 +4717,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7d2fb9a8-f038-4600-8033-f88dcd5af6b3")
+		(uuid "6af95335-1eaf-4160-84dd-978afa1df207")
 		(property "Reference" "Q6"
 			(at 130.81 78.7399 0)
 			(show_name no)
@@ -7202,7 +4740,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "STL110N10F7:MOSFET_10N10F7_STM"
 			(at 129.54 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -7213,7 +4751,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STL110N10F7/4250812"
 			(at 124.46 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7224,7 +4762,7 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
+		(property "Description" "MOSFET N-CH 100V 107A POWERFLAT"
 			(at 124.46 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7236,13 +4774,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "b712e4ea-a470-4843-b8c8-14298552290a")
+			(uuid "bde7cf2e-8e4a-4afe-9efc-999e08f07950")
 		)
 		(pin "1"
-			(uuid "43bcc887-968b-4f28-9396-2355eff7c366")
+			(uuid "25bd76e7-f487-4a9f-9b73-c5e48a22d30d")
 		)
 		(pin "2"
-			(uuid "2b59d42e-946d-4a7a-8863-b3ef07b69cb5")
+			(uuid "6c542f11-52c6-42ec-ac3a-0d2ec96add86")
 		)
 		(instances
 			(project "esc"
@@ -7254,8 +4792,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 101.6 54.61 90)
+		(lib_id "Device:C_Small")
+		(at 107.95 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7264,9 +4802,177 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "80cfaa32-bbc7-4f4e-8e06-afc2b771fe74")
-		(property "Reference" "C28"
-			(at 101.6 46.99 90)
+		(uuid "72571732-14da-48f9-a849-1d8d50e2efa9")
+		(property "Reference" "C36"
+			(at 110.49 127.0062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DNP"
+			(at 110.49 129.5462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 107.95 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 107.95 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 107.95 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "324fc04f-e176-4353-9fd9-21622461e79d")
+		)
+		(pin "1"
+			(uuid "4f28f398-9d01-45b6-bb54-488c03009b60")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "C36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Q_NMOS_DGS_2")
+		(lib_id "Transistor_FET:Q_NMOS_DGS")
+		(at 124.46 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "733b8827-45ab-4ce6-b372-d320d555652c")
+		(property "Reference" "Q5"
+			(at 130.81 40.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STL110N10F7"
+			(at 130.81 43.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STL110N10F7:MOSFET_10N10F7_STM"
+			(at 129.54 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STL110N10F7/4250812"
+			(at 124.46 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "MOSFET N-CH 100V 107A POWERFLAT"
+			(at 124.46 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "cc23e4b2-0282-45f6-ba1d-c0bff421c499")
+		)
+		(pin "1"
+			(uuid "74d1be81-8d3c-499e-aa1b-317ad9f5e6ac")
+		)
+		(pin "2"
+			(uuid "7e7ab022-e7cc-4a07-bb79-e18f60c4ea9f")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 170.18 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7358a7a9-d01b-4b7f-99e6-15d9c5e866d8")
+		(property "Reference" "C38"
+			(at 170.1736 48.26 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7276,7 +4982,7 @@
 			)
 		)
 		(property "Value" "1uF/25V"
-			(at 101.6 49.53 90)
+			(at 170.1736 50.8 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7285,8 +4991,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 105.41 53.6448 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 170.18 54.61 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7296,7 +5002,241 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/TMK107B7105KA-T/2714162"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1UF 25V X7R 0603"
+			(at 170.18 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4de209e6-5f35-4b73-b465-8b4a39f375bf")
+		)
+		(pin "2"
+			(uuid "a7fdbefa-3472-4e02-a457-98a9952d97ea")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "C38")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Q_NMOS_DGS_2")
+		(lib_id "Transistor_FET:Q_NMOS_DGS")
+		(at 55.88 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "77109547-0e2e-4800-904f-780017c0ffee")
+		(property "Reference" "Q4"
+			(at 62.23 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STL110N10F7"
+			(at 62.23 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STL110N10F7:MOSFET_10N10F7_STM"
+			(at 60.96 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STL110N10F7/4250812"
+			(at 55.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "MOSFET N-CH 100V 107A POWERFLAT"
+			(at 55.88 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "87a4a25d-a541-494f-aa37-20da8b4f8ac8")
+		)
+		(pin "1"
+			(uuid "5c41fdd5-888c-45e7-b740-52065b5ac651")
+		)
+		(pin "2"
+			(uuid "f44363ab-bc21-4766-8e17-8f4579394166")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 180.34 31.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7ca1fa75-584a-4ec9-a50e-4cc064614160")
+		(property "Reference" "R40"
+			(at 180.594 25.908 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 180.594 28.448 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 180.34 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 180.34 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 180.34 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2a71c55-a510-4ff4-a746-d3dbc0682166")
+		)
+		(pin "2"
+			(uuid "61846fe7-6d10-4871-b384-4acb63cfdc54")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 101.6 54.61 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7d206ad8-5f2f-4644-98d5-626b90007c71")
+		(property "Reference" "C35"
+			(at 101.5936 48.26 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1uF/25V"
+			(at 101.5936 50.8 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 101.6 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7307,7 +5247,18 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/TMK107B7105KA-T/2714162"
+			(at 101.6 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1UF 25V X7R 0603"
 			(at 101.6 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -7319,23 +5270,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "57c2ffa1-3191-44ee-a450-4c114e670efc")
+			(uuid "76766815-c8ef-4dab-85b3-97d3726f7393")
 		)
 		(pin "2"
-			(uuid "afc9aa44-b58e-443e-a5c0-8d2459692bb1")
+			(uuid "3cbc1134-2a7b-4281-ae75-95d490443702")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C28")
+					(reference "C35")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 112.2542 69.85 90)
+		(lib_id "Device:R_Shunt_US")
+		(at 195.58 91.44 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7344,29 +5295,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "83930c24-2943-49ce-88f8-bc74b9ff2b38")
-		(property "Reference" "R37"
-			(at 112.2542 63.5 90)
+		(uuid "7f8f04e8-dfe5-4241-9828-98ba422e4f84")
+		(property "Reference" "R43"
+			(at 193.04 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Value" "0"
-			(at 112.2542 66.04 90)
+		(property "Value" "2m/3W"
+			(at 193.04 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 112.5082 68.834 90)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 193.802 91.44 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7376,8 +5329,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 112.2542 69.85 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/c-b-resi/MCSM2512FR002K9/29296128"
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7387,8 +5340,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 112.2542 69.85 0)
+		(property "Description" "0.002 OHM 1% 3W 100PPM/C"
+			(at 195.58 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7399,175 +5352,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "b869dde1-a142-4c7b-9d3e-82c1482ad65c")
+			(uuid "197353c5-0deb-4827-9cc8-285a97bda05a")
+		)
+		(pin "4"
+			(uuid "afe59672-e243-4281-b277-ed02f7bdf9c5")
+		)
+		(pin "3"
+			(uuid "f80a3957-4db7-4e77-a07e-0d0bc1b756e1")
 		)
 		(pin "2"
-			(uuid "1acdcbe8-d5ed-4760-ab58-a6304796e69c")
+			(uuid "98bd8939-e0a3-458f-88d2-3b70421fc1d9")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 33.02 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8589aa5f-e2cf-4680-8683-689801762d2d")
-		(property "Reference" "R20"
-			(at 33.02 115.57 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10"
-			(at 33.02 118.11 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.274 120.904 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 33.02 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "59152601-84ee-4cec-99c8-61184237b9e9")
-		)
-		(pin "1"
-			(uuid "19e937aa-c434-4fd8-8888-314c193dff2a")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 180.34 69.85 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "87e50e46-7f49-41c5-94ce-a23437a4b163")
-		(property "Reference" "R35"
-			(at 180.34 63.5 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 180.34 66.04 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.594 68.834 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 180.34 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4eb29d89-61fc-48bc-917c-325ff9126528")
-		)
-		(pin "2"
-			(uuid "f2324099-21a6-49bc-9faf-b0b6be558e41")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R35")
+					(reference "R43")
 					(unit 1)
 				)
 			)
@@ -7575,7 +5374,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 33.02 31.75 0)
+		(at 101.6 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7584,9 +5383,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "8c84f41b-6fb9-482a-9e51-48f9f3b0103e")
-		(property "Reference" "D1"
-			(at 32.7025 25.4 0)
+		(uuid "85df2ba5-04f6-4634-9376-85163790c801")
+		(property "Reference" "D6"
+			(at 101.2825 63.5 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7595,8 +5394,8 @@
 				)
 			)
 		)
-		(property "Value" "BAT48"
-			(at 32.7025 27.94 0)
+		(property "Value" "70V"
+			(at 101.2825 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7605,8 +5404,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 31.75 0)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 101.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7616,8 +5415,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 33.02 31.75 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMDL770T1G/1482073"
+			(at 101.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7627,8 +5426,8 @@
 				)
 			)
 		)
-		(property "Description" "Schottky diode"
-			(at 33.02 31.75 0)
+		(property "Description" "DIODE SCHOTTKY 70V SOD323"
+			(at 101.6 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7639,15 +5438,259 @@
 			)
 		)
 		(pin "1"
-			(uuid "4136e3cd-7daa-4f86-8c32-32a8925aac13")
+			(uuid "5efd20df-7349-4f7a-91fe-31d7cbbfbf00")
 		)
 		(pin "2"
-			(uuid "7eeec94f-bb18-44ad-b110-604eebc74e2c")
+			(uuid "2da3a600-07a8-42d6-a455-bf502ddf0e1a")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "D1")
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Q_NMOS_DGS_2")
+		(lib_id "Transistor_FET:Q_NMOS_DGS")
+		(at 193.04 80.01 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "893c1d2e-5773-4a15-9443-58f0e7c589c8")
+		(property "Reference" "Q8"
+			(at 199.39 78.7399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "STL110N10F7"
+			(at 199.39 81.2799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "STL110N10F7:MOSFET_10N10F7_STM"
+			(at 198.12 77.47 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STL110N10F7/4250812"
+			(at 193.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "MOSFET N-CH 100V 107A POWERFLAT"
+			(at 193.04 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "8204578d-13d7-4f10-af57-5bc3c3ab82b9")
+		)
+		(pin "1"
+			(uuid "f760a398-868d-4a76-9333-7506c67c41c6")
+		)
+		(pin "2"
+			(uuid "b3fe96b2-4dcf-4053-bf97-4b943ab98959")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "Q8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 38.1 41.91 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "8b755fc6-ff45-44e5-a965-7f276d102ddc")
+		(property "Reference" "R22"
+			(at 38.354 36.068 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 38.354 38.608 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT33R0/1760804"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 38.1 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2d4791e7-76d8-44b0-873b-e76807402300")
+		)
+		(pin "2"
+			(uuid "6484ed90-3278-4a85-8a4e-d6f7f80e4fb7")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 49.53 60.96 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90057e21-bb77-45d3-a63b-73530c8692c2")
+		(property "Reference" "R26"
+			(at 49.784 55.118 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 49.784 57.658 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 49.53 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "772689b4-eb3a-4903-8bbd-e9c15469e86f")
+		)
+		(pin "2"
+			(uuid "efe5f15f-4c35-4205-a318-48e9dd3220e4")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R26")
 					(unit 1)
 				)
 			)
@@ -7665,7 +5708,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91e764c0-7e84-4fc3-be32-67265f345eda")
-		(property "Reference" "#PWR04"
+		(property "Reference" "#PWR045"
 			(at 71.12 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -7725,15 +5768,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR04")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 106.68 80.01 90)
+		(lib_id "Device:C_Small")
+		(at 176.53 128.27 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7742,9 +5785,90 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "92bd66b4-ae21-4ff7-bcf9-60b64c09e5a5")
-		(property "Reference" "R8"
-			(at 106.68 73.66 90)
+		(uuid "9c3889ef-c562-4e24-8bc0-edb8d394c368")
+		(property "Reference" "C39"
+			(at 179.07 127.0062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DNP"
+			(at 179.07 129.5462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 176.53 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d6ab54bb-ab00-4108-852c-25243e84eefc")
+		)
+		(pin "1"
+			(uuid "15ddfdda-d0cf-4984-8cc1-fece4dac5d0b")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "C39")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 106.68 80.01 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9c90896a-156c-4f0b-a9f6-6e0be4bb5b41")
+		(property "Reference" "R31"
+			(at 106.934 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7754,7 +5878,7 @@
 			)
 		)
 		(property "Value" "33"
-			(at 106.68 76.2 90)
+			(at 106.934 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7763,18 +5887,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.934 78.994 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 106.68 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7785,7 +5898,18 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT33R0/1760804"
+			(at 106.68 80.01 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
 			(at 106.68 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -7797,24 +5921,23 @@
 			)
 		)
 		(pin "1"
-			(uuid "5e802de3-8a5e-446b-9cd2-8eaf87087113")
+			(uuid "42d540fa-7ef3-4f79-ad52-2aadeca3ff90")
 		)
 		(pin "2"
-			(uuid "88c82fba-7a45-4346-8dd7-3aab439a6a94")
+			(uuid "2bbacf17-18fb-4290-82e1-c32934d1369f")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R8")
+					(reference "R31")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "Q_NMOS_DGS_1")
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 55.88 80.01 0)
+		(lib_id "Device:R_Small_US")
+		(at 170.18 121.92 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7822,32 +5945,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "95fa67d6-687e-4d85-b1b1-f55eaf43ae3a")
-		(property "Reference" "Q4"
-			(at 62.23 78.7399 0)
+		(uuid "9f4d042f-eacf-438d-b410-d293a4a0fa95")
+		(property "Reference" "R37"
+			(at 170.434 116.078 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "STL110N10F7"
-			(at 62.23 81.2799 0)
+		(property "Value" "10"
+			(at 170.434 118.618 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 60.96 77.47 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 170.18 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7857,8 +5977,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 55.88 80.01 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10R0/1761152"
+			(at 170.18 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7868,8 +5988,8 @@
 				)
 			)
 		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 55.88 80.01 0)
+		(property "Description" "RES 10 OHM 1% 1/10W 0603"
+			(at 170.18 121.92 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7878,20 +5998,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "3"
-			(uuid "2dc58d5d-65a9-4c4d-bc1d-e6ea9a0791a9")
 		)
 		(pin "1"
-			(uuid "2803f599-1bc8-4cad-bf1f-fc2b445443ad")
+			(uuid "96bf5647-2521-4d79-8d22-91d2371725a6")
 		)
 		(pin "2"
-			(uuid "8ba717e0-1b2b-437b-8dc5-e8d5957b51c8")
+			(uuid "96ab8121-7faf-467d-a079-83a5be775030")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "Q4")
+					(reference "R37")
 					(unit 1)
 				)
 			)
@@ -7908,8 +6025,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "96142ed1-9f40-452f-9bfc-7bd168c75e47")
-		(property "Reference" "R44"
+		(uuid "a1b9a11f-93f4-4e5f-8f9a-1543172a41b7")
+		(property "Reference" "R28"
 			(at 99.06 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7920,7 +6037,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2m/2W"
+		(property "Value" "2m/3W"
 			(at 99.06 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7931,7 +6048,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 99.822 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -7942,7 +6059,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/c-b-resi/MCSM2512FR002K9/29296128"
 			(at 101.6 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7953,7 +6070,7 @@
 				)
 			)
 		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
+		(property "Description" "0.002 OHM 1% 3W 100PPM/C"
 			(at 101.6 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -7965,101 +6082,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "9f00ddf2-f03f-4c48-afe6-fb8c590f9111")
+			(uuid "99a71609-0a0f-47de-85e6-fe6798cc4861")
 		)
 		(pin "4"
-			(uuid "8b9890c4-f650-4231-9a63-817bd11809a1")
+			(uuid "6858c0f9-8f01-4cdc-9539-65e5549974a7")
 		)
 		(pin "3"
-			(uuid "561794a4-62e4-4817-bcf9-6c7744e3941a")
+			(uuid "1e6d91ba-5a7a-4150-92bc-b955646dd349")
 		)
 		(pin "2"
-			(uuid "22c9a3c6-d8d5-4a6f-943e-bf032e3f30b9")
+			(uuid "2ed1bfac-597e-4016-9b57-5b41e4965eb4")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R44")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 111.76 31.75 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a42f7992-6019-492f-a0ac-987f4dafbd69")
-		(property "Reference" "R36"
-			(at 111.76 25.4 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 111.76 27.94 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 112.014 30.734 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 111.76 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 111.76 31.75 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "aa8720ca-c577-4793-b90b-454aeff38cf8")
-		)
-		(pin "2"
-			(uuid "72397b4d-f8e2-4ff8-8984-6b620552e0f8")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R36")
+					(reference "R28")
 					(unit 1)
 				)
 			)
@@ -8077,7 +6114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a736f8c4-01cc-481e-a916-807d3d1a6c62")
-		(property "Reference" "#PWR07"
+		(property "Reference" "#PWR043"
 			(at 39.37 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -8137,7 +6174,87 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR07")
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 33.02 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a92493e1-e03b-4a51-9e7a-717c898aff63")
+		(property "Reference" "D3"
+			(at 32.7025 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "70V"
+			(at 32.7025 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 33.02 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMDL770T1G/1482073"
+			(at 33.02 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 70V SOD323"
+			(at 33.02 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b43f2eef-7529-4244-bfaf-4a73ef65f6d0")
+		)
+		(pin "2"
+			(uuid "f407883c-e223-4192-9adb-8f943671d2e6")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "D3")
 					(unit 1)
 				)
 			)
@@ -8155,7 +6272,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "aa451b0d-1217-4461-9daf-c889efb7a7cd")
-		(property "Reference" "#PWR05"
+		(property "Reference" "#PWR048"
 			(at 139.7 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -8215,15 +6332,16 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR05")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 106.68 41.91 90)
+		(lib_name "Q_NMOS_DGS_2")
+		(lib_id "Transistor_FET:Q_NMOS_DGS")
+		(at 193.04 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8232,29 +6350,31 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b3cd2f94-5d80-4483-b0a5-5fa2f131da5d")
-		(property "Reference" "R5"
-			(at 106.68 35.56 90)
+		(uuid "aa854b59-be12-4775-939d-482ac1c0497c")
+		(property "Reference" "Q7"
+			(at 199.39 40.6399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "33"
-			(at 106.68 38.1 90)
+		(property "Value" "STL110N10F7"
+			(at 199.39 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 106.934 40.894 90)
+		(property "Footprint" "STL110N10F7:MOSFET_10N10F7_STM"
+			(at 198.12 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8264,8 +6384,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 106.68 41.91 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STL110N10F7/4250812"
+			(at 193.04 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8275,8 +6395,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 106.68 41.91 0)
+		(property "Description" "MOSFET N-CH 100V 107A POWERFLAT"
+			(at 193.04 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8285,25 +6405,28 @@
 					(size 1.27 1.27)
 				)
 			)
+		)
+		(pin "3"
+			(uuid "8427e881-8f63-4508-b928-33c2f62cca25")
 		)
 		(pin "1"
-			(uuid "8019ce88-1e4a-4009-9b01-f0ce0ee157ee")
+			(uuid "d46ff6f4-0368-4d3f-92ef-1d9cb225da85")
 		)
 		(pin "2"
-			(uuid "b4e15404-9aff-410d-b166-42c2e63ff932")
+			(uuid "9a03fcdf-53e9-47be-a08c-9293d9d5611f")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R5")
+					(reference "Q7")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 101.6 121.92 90)
+		(lib_id "Device:R_Small_US")
+		(at 43.18 31.75 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8311,90 +6434,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8118444-0f5e-4334-a726-8bdee44ce025")
-		(property "Reference" "R23"
-			(at 101.6 115.57 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10"
-			(at 101.6 118.11 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 101.854 120.904 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 101.6 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 101.6 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "756c9b4e-54f5-48fc-9754-4a2cc7b5b8c1")
-		)
-		(pin "1"
-			(uuid "385cff16-d621-48b8-8fc0-6a70c880befd")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R23")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 118.11 60.96 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c8b08151-b2b8-4a97-8091-a0c330216c55")
-		(property "Reference" "R40"
-			(at 118.11 54.61 90)
+		(uuid "ab5aa17e-ee26-42cd-92ff-7525dd59dffe")
+		(property "Reference" "R24"
+			(at 43.434 25.908 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8404,7 +6446,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 118.11 57.15 90)
+			(at 43.434 28.448 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8413,8 +6455,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 118.364 59.944 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 43.18 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8424,8 +6466,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 118.11 60.96 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 43.18 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8435,8 +6477,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 118.11 60.96 0)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 43.18 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8447,15 +6489,423 @@
 			)
 		)
 		(pin "1"
-			(uuid "29f59686-586a-4e6a-8d06-81dccf904c51")
+			(uuid "6ff31e1a-7d7d-4225-a135-076aa7c2a5db")
 		)
 		(pin "2"
-			(uuid "8f4b9a4e-d047-4887-81ae-d1dc4a7ee1c8")
+			(uuid "52767ce6-10dd-41e8-aad7-8d7dbc0b504e")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R40")
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 39.37 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bb035333-3189-48f0-8b0a-2cd6df12b1ff")
+		(property "Reference" "C33"
+			(at 41.91 127.0062 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DNP"
+			(at 41.91 129.5462 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 39.37 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 39.37 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 39.37 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "f6b6ac98-662f-4ae1-95fc-21215c2d1fcb")
+		)
+		(pin "1"
+			(uuid "d0029cca-81e9-4360-98f0-9de9a7253b12")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "C33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 33.02 121.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "bc8f86cd-65fd-445d-b441-266b73c8954c")
+		(property "Reference" "R21"
+			(at 33.274 116.078 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 33.274 118.618 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 33.02 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10R0/1761152"
+			(at 33.02 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10 OHM 1% 1/10W 0603"
+			(at 33.02 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0636fa96-0597-49ce-b21f-5c5139846ee2")
+		)
+		(pin "2"
+			(uuid "5a1dce08-9c86-43c6-9c4e-56f749ca8605")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 170.18 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c54d7d27-b203-4079-9c3f-9ee486fac20f")
+		(property "Reference" "D8"
+			(at 169.8625 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "70V"
+			(at 169.8625 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 170.18 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMDL770T1G/1482073"
+			(at 170.18 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 70V SOD323"
+			(at 170.18 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b51b79ce-7a2c-45f0-9c13-5d1bd33c057b")
+		)
+		(pin "2"
+			(uuid "4ca0f519-ed2f-4d15-bb0c-b95b13976cdc")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 180.34 69.85 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "c6056cc1-3c03-4d94-b39b-f179e56f2365")
+		(property "Reference" "R41"
+			(at 180.594 64.008 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0"
+			(at 180.594 66.548 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 180.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 180.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 180.34 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8f886920-e6a4-4445-925a-5829f238f30e")
+		)
+		(pin "2"
+			(uuid "2779e9b3-0b40-45ac-8a32-fda83381ce9d")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Shunt_US")
+		(at 170.18 91.44 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c77b22e8-29d1-42c8-9bbe-d6639b26c91a")
+		(property "Reference" "R36"
+			(at 167.64 90.1699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "2m/3W"
+			(at 167.64 92.7099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 168.402 91.44 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/c-b-resi/MCSM2512FR002K9/29296128"
+			(at 170.18 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "0.002 OHM 1% 3W 100PPM/C"
+			(at 170.18 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "e5f84074-cd8c-4ab1-9846-24f06a75126a")
+		)
+		(pin "4"
+			(uuid "280a48f3-429b-4c99-aa01-cbdb614e2104")
+		)
+		(pin "3"
+			(uuid "1920d49d-26ce-46fd-9d64-c2bbcc6907d7")
+		)
+		(pin "2"
+			(uuid "d91946fa-0ff4-4d52-8d2a-e155d6c27922")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R36")
 					(unit 1)
 				)
 			)
@@ -8473,7 +6923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccdf774e-127f-4269-9731-1be4c2b44bda")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR047"
 			(at 127 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -8533,16 +6983,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR02")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "Q_NMOS_DGS_4")
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 193.04 80.01 0)
+		(lib_id "Device:R_Small_US")
+		(at 118.11 60.96 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8550,175 +6999,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd3ef64e-2f5b-4f40-ab9b-463b47f99d08")
-		(property "Reference" "Q2"
-			(at 199.39 78.7399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STL110N10F7"
-			(at 199.39 81.2799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 77.47 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 193.04 80.01 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "87d7a44f-41f3-4056-a985-252f7de03d42")
-		)
-		(pin "1"
-			(uuid "e8174439-ba74-4909-80be-f0a5c1cab682")
-		)
-		(pin "2"
-			(uuid "0bdfd490-5480-46d8-8fd9-900373cb3253")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 38.1 41.91 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dbac1c90-9547-41d7-92f1-924f8901d5e8")
-		(property "Reference" "R4"
-			(at 38.1 35.56 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "33"
-			(at 38.1 38.1 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 38.354 40.894 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, US symbol"
-			(at 38.1 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3c28a2c7-8c41-41f5-93fd-2b2364a164fc")
-		)
-		(pin "2"
-			(uuid "be376bbd-aefa-49cb-8333-318c044aa490")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_US")
-		(at 43.18 31.75 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dc3f7410-8a2c-4a7e-9772-d087635edd2f")
-		(property "Reference" "R38"
-			(at 43.18 25.4 90)
+		(uuid "ce25e7a5-ff02-451e-ae5f-5d1e7a9c0405")
+		(property "Reference" "R34"
+			(at 118.364 55.118 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8728,7 +7011,7 @@
 			)
 		)
 		(property "Value" "0"
-			(at 43.18 27.94 90)
+			(at 118.364 57.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8737,8 +7020,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 43.434 30.734 90)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 118.11 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8748,8 +7031,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 43.18 31.75 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
+			(at 118.11 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8759,8 +7042,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 43.18 31.75 0)
+		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
+			(at 118.11 60.96 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8771,15 +7054,94 @@
 			)
 		)
 		(pin "1"
-			(uuid "d53941d7-3e3c-4078-8d3a-23de0ba36b2c")
+			(uuid "4ecf38e7-7ff0-47ab-b978-340027b42614")
 		)
 		(pin "2"
-			(uuid "407b3f05-5a97-43af-b940-f815cf1d4178")
+			(uuid "ce4e8de0-881c-4f39-892e-7e9ee78a507d")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R38")
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 106.68 41.91 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7c4ab84-1f1c-4f71-acd2-53a6cc9d63b3")
+		(property "Reference" "R30"
+			(at 106.934 36.068 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "33"
+			(at 106.934 38.608 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 106.68 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT33R0/1760804"
+			(at 106.68 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 106.68 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "5479febe-0a0d-449f-a050-050cfb00aadc")
+		)
+		(pin "2"
+			(uuid "5f690314-6f2d-4b76-a5ba-70c0d042b891")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -8797,7 +7159,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dd5aa26f-f663-49be-920f-2a0fbabf25ff")
-		(property "Reference" "R45"
+		(property "Reference" "R20"
 			(at 30.48 90.1699 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8808,7 +7170,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "2m/2W"
+		(property "Value" "2m/3W"
 			(at 30.48 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8819,7 +7181,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
 			(at 31.242 91.44 90)
 			(hide yes)
 			(show_name no)
@@ -8830,7 +7192,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/c-b-resi/MCSM2512FR002K9/29296128"
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8841,7 +7203,7 @@
 				)
 			)
 		)
-		(property "Description" "Shunt resistor with Kelvin connections, US symbol"
+		(property "Description" "0.002 OHM 1% 3W 100PPM/C"
 			(at 33.02 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -8867,7 +7229,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R45")
+					(reference "R20")
 					(unit 1)
 				)
 			)
@@ -8885,7 +7247,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3c1c148-6bcb-48c0-96b6-20b5d8c1dbb2")
-		(property "Reference" "#PWR01"
+		(property "Reference" "#PWR044"
 			(at 58.42 105.41 0)
 			(hide yes)
 			(show_name no)
@@ -8945,15 +7307,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR01")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 64.77 31.75 90)
+		(lib_id "Device:R_Small_US")
+		(at 38.1 80.01 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8961,10 +7323,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e5496fc2-c38c-4f8d-ba27-6f068d6978c8")
-		(property "Reference" "C26"
-			(at 64.77 24.13 90)
+		(uuid "ec53dc0f-7a88-4f73-bacc-c451489687f7")
+		(property "Reference" "R23"
+			(at 38.354 74.168 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8973,8 +7334,8 @@
 				)
 			)
 		)
-		(property "Value" "220nF/100V"
-			(at 64.77 26.67 90)
+		(property "Value" "33"
+			(at 38.354 76.708 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8983,8 +7344,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 68.58 30.7848 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 38.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8994,8 +7355,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 64.77 31.75 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT33R0/1760804"
+			(at 38.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9005,8 +7366,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor"
-			(at 64.77 31.75 0)
+		(property "Description" "RES 33 OHM 1% 1/10W 0603"
+			(at 38.1 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9017,181 +7378,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "120d45c2-ebcc-44cf-9248-f085992c0076")
+			(uuid "c81f9148-42be-4ac4-8dbf-4afb6e42ed98")
 		)
 		(pin "2"
-			(uuid "38ec5448-65cf-49e1-ba35-9f9bbd3004ab")
+			(uuid "7784860b-6356-43e4-a0dd-55ac4c648303")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C26")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 33.02 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e6d8c0a4-a6b5-4650-8b3f-49fc36146d46")
-		(property "Reference" "D2"
-			(at 32.7025 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "BAT48"
-			(at 32.7025 66.04 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 33.02 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "53f4ff30-bf7f-4021-9a41-fc2108249096")
-		)
-		(pin "2"
-			(uuid "b9f5097f-23cd-4f9e-b3ff-9d35a18a9f91")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "D2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_name "Q_NMOS_DGS_5")
-		(lib_id "Transistor_FET:Q_NMOS_DGS")
-		(at 193.04 41.91 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f523dda1-9772-40a0-91dc-cc253c55df03")
-		(property "Reference" "Q5"
-			(at 199.39 40.6399 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "STL110N10F7"
-			(at 199.39 43.1799 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 198.12 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "N-MOSFET transistor, drain/gate/source"
-			(at 193.04 41.91 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "3"
-			(uuid "60bf5a37-7628-43b8-aba1-9dcae0cc1093")
-		)
-		(pin "1"
-			(uuid "e2d826c8-7ef9-4352-904f-8ee2994a0744")
-		)
-		(pin "2"
-			(uuid "10e128c7-386c-4a56-a414-e823c140d852")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "Q5")
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -9209,7 +7404,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f8d1dedb-47c2-4f1d-92a0-65a7358033ae")
-		(property "Reference" "#PWR08"
+		(property "Reference" "#PWR046"
 			(at 107.95 140.97 0)
 			(hide yes)
 			(show_name no)
@@ -9269,15 +7464,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR08")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R_US")
-		(at 43.18 69.85 90)
+		(lib_id "Device:C_Small")
+		(at 133.35 31.75 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9286,9 +7481,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "fb7a2cc4-a669-4f3e-a61c-ea0145cd3b18")
-		(property "Reference" "R39"
-			(at 43.18 63.5 90)
+		(uuid "f90a16d6-c9a7-4d52-b8d6-0379a86db4f9")
+		(property "Reference" "C37"
+			(at 133.3436 25.4 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9297,8 +7492,8 @@
 				)
 			)
 		)
-		(property "Value" "0"
-			(at 43.18 66.04 90)
+		(property "Value" "220nF"
+			(at 133.3436 27.94 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9307,8 +7502,8 @@
 				)
 			)
 		)
-		(property "Footprint" ""
-			(at 43.434 68.834 90)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 133.35 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9318,8 +7513,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 43.18 69.85 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/HMK107C7224KAHTE/6563605"
+			(at 133.35 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9329,8 +7524,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, US symbol"
-			(at 43.18 69.85 0)
+		(property "Description" "CAP CER 0.22UF 100V X7S 0603"
+			(at 133.35 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9341,15 +7536,255 @@
 			)
 		)
 		(pin "1"
-			(uuid "94171c8c-bdd3-4e76-8931-438ae75811ff")
+			(uuid "e07ab117-e6a1-445c-9653-6d53cd1c7c0c")
 		)
 		(pin "2"
-			(uuid "a9e52991-8279-4c9a-a3a6-b048a354adae")
+			(uuid "98daf6c0-c8ba-485d-b5b2-61b47e7fad9e")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R39")
+					(reference "C37")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 170.18 31.75 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f9341d4a-0006-418b-aaab-16159a84cbbf")
+		(property "Reference" "D7"
+			(at 169.8625 25.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "70V"
+			(at 169.8625 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 170.18 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMDL770T1G/1482073"
+			(at 170.18 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 70V SOD323"
+			(at 170.18 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "23bf1b08-b3f9-4fc0-bb16-b2511b36e203")
+		)
+		(pin "2"
+			(uuid "30f3893a-9a26-4ff7-af19-538bca30de02")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 64.77 31.75 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb88c2dd-8c35-4c28-be1b-e76c265f0ffa")
+		(property "Reference" "C34"
+			(at 64.7636 25.4 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "220nF"
+			(at 64.7636 27.94 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 64.77 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/HMK107C7224KAHTE/6563605"
+			(at 64.77 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.22UF 100V X7S 0603"
+			(at 64.77 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f339240a-87da-44bd-8e8c-05e217bd31d9")
+		)
+		(pin "2"
+			(uuid "287e2d61-5f68-4fa4-80dc-cdb12dce438c")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "C34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 33.02 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ffd05cba-7486-4908-bd2f-9ea9880b4abe")
+		(property "Reference" "D4"
+			(at 32.7025 63.5 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "70V"
+			(at 32.7025 66.04 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SOD-323"
+			(at 33.02 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/onsemi/MMDL770T1G/1482073"
+			(at 33.02 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "DIODE SCHOTTKY 70V SOD323"
+			(at 33.02 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "77376852-58aa-409f-b5e5-c11b07ead738")
+		)
+		(pin "2"
+			(uuid "0c83a973-47a6-4d5f-97f5-f336e02cc851")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "D4")
 					(unit 1)
 				)
 			)
