@@ -777,7 +777,161 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "GSFP06120_1"
+		(symbol "Diode:SM15T36A"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "SM15T36A"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Diode_SMD:ST_D_SMC"
+				(at 0 -8.636 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.st.com/resource/en/datasheet/sm15t36a.pdf"
+				(at 0 -6.604 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "1500W (10/1000 μs) Unidirectional TVS Diode, VRM = 30.8V (IRM = 0.2 μA at 25°C), VBR = 34.2 ... 37.8V, 'MEV' marking, SMC"
+				(at 0 -4.572 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "ESD protection transient voltage-suppressor transil thyrector transorb"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "*D*SMC*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "SM15T36A_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy -1.27 1.27) (xy -1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "SM15T36A_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "A1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "GSFP06120:GSFP06120"
 			(pin_names
 				(offset 0.254)
 			)
@@ -865,7 +1019,7 @@
 					)
 				)
 			)
-			(symbol "GSFP06120_1_0_1"
+			(symbol "GSFP06120_0_1"
 				(polyline
 					(pts
 						(xy -2.286 1.905) (xy -2.286 -1.905)
@@ -1032,7 +1186,7 @@
 					)
 				)
 			)
-			(symbol "GSFP06120_1_1_1"
+			(symbol "GSFP06120_1_1"
 				(pin passive line
 					(at 0 5.08 270)
 					(length 2.54)
@@ -1612,145 +1766,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "esc:SMCJ60CA/TR13"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "TVS DIODE 60VWM 96.8VC DO214AB"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_SMD:D_SMC"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/SMCJ60CA-TR13/15856038"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "96.8V Clamp 15.5A Ipp Tvs Diode Surface Mount DO-214AB (SMC)"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "SMCJ60CA/TR13_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "SMCJ60CA/TR13_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "esc:TLV74033PDBVR"
+		(symbol "TLV74033PDBVR:TLV74033PDBVR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1779,7 +1795,7 @@
 					)
 				)
 			)
-			(property "Footprint" "esc-footprints:DBV0005A-MFG"
+			(property "Footprint" "TLV74033PDBVR:DBV0005A-MFG"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1791,7 +1807,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.digikey.ca/en/products/detail/texas-instruments/TLV74033PDBVR/12642183"
+			(property "Datasheet" "IC REG LINEAR 3.3V 300MA SOT23-5"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -1803,7 +1819,7 @@
 					)
 				)
 			)
-			(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 300mA SOT-23-5"
+			(property "Description" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2386,7 +2402,7 @@
 	)
 	(text "Reverse Polarity & Soft Start"
 		(exclude_from_sim no)
-		(at 177.292 77.47 0)
+		(at 185.42 78.994 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2416,7 +2432,7 @@
 	)
 	(text "I = ~200mA max for STM\nP = (200mA)(5V- 3V3) = 0.34W"
 		(exclude_from_sim no)
-		(at 132.08 168.148 0)
+		(at 181.356 157.226 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2436,7 +2452,7 @@
 	)
 	(text "Max output 1A"
 		(exclude_from_sim no)
-		(at 87.63 129.794 0)
+		(at 176.784 110.998 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2456,7 +2472,7 @@
 	)
 	(text "frequency: 400kHz"
 		(exclude_from_sim no)
-		(at 87.884 132.842 0)
+		(at 176.53 114.046 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3589,7 +3605,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "026ec3ad-0888-40b8-a007-997da1f47425")
-		(property "Reference" "R31"
+		(property "Reference" "R19"
 			(at 132.461 56.007 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3651,7 +3667,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R31")
+					(reference "R19")
 					(unit 1)
 				)
 			)
@@ -3669,7 +3685,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06387030-7dea-4db1-8855-52253298a30f")
-		(property "Reference" "#PWR079"
+		(property "Reference" "#PWR057"
 			(at 190.5 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -3729,7 +3745,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR079")
+					(reference "#PWR057")
 					(unit 1)
 				)
 			)
@@ -3747,7 +3763,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "089905f1-c651-43df-9013-b1355c60c25e")
-		(property "Reference" "#PWR026"
+		(property "Reference" "#PWR035"
 			(at 31.75 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3807,7 +3823,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR026")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -3825,7 +3841,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0a1f33c9-5551-4fed-8ea3-20a0115e62f0")
-		(property "Reference" "R29"
+		(property "Reference" "R17"
 			(at 125.73 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3889,7 +3905,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R29")
+					(reference "R17")
 					(unit 1)
 				)
 			)
@@ -3907,7 +3923,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0c883f43-7f3a-4c61-8743-87278e91056a")
-		(property "Reference" "C33"
+		(property "Reference" "C22"
 			(at 73.66 50.7935 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3971,7 +3987,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C33")
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -3989,7 +4005,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "158fc37a-b06f-4648-b58d-6fe3e901598d")
-		(property "Reference" "C23"
+		(property "Reference" "C18"
 			(at 46.99 110.4962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4053,7 +4069,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C23")
+					(reference "C18")
 					(unit 1)
 				)
 			)
@@ -4071,7 +4087,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15da62f7-333f-4c24-93ef-ff50c4fc04fd")
-		(property "Reference" "C36"
+		(property "Reference" "C24"
 			(at 106.6736 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4133,7 +4149,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C36")
+					(reference "C24")
 					(unit 1)
 				)
 			)
@@ -4230,7 +4246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e7c9f49-4cfe-4e31-b135-a36ba38a087d")
-		(property "Reference" "R27"
+		(property "Reference" "R15"
 			(at 63.5 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4294,7 +4310,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R27")
+					(reference "R15")
 					(unit 1)
 				)
 			)
@@ -4311,7 +4327,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "34128557-633e-4c59-9041-7f701e0ef193")
-		(property "Reference" "#PWR077"
+		(property "Reference" "#PWR055"
 			(at 170.18 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4371,7 +4387,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR077")
+					(reference "#PWR055")
 					(unit 1)
 				)
 			)
@@ -4388,7 +4404,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "419c78f4-e50c-45bb-bc40-ee09d6be782f")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR053"
 			(at 149.86 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4448,7 +4464,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR075")
+					(reference "#PWR053")
 					(unit 1)
 				)
 			)
@@ -4465,7 +4481,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "46b6c00a-c7ea-4935-badb-777521bd2803")
-		(property "Reference" "#PWR073"
+		(property "Reference" "#PWR051"
 			(at 135.89 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -4525,7 +4541,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR073")
+					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -4542,7 +4558,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4b19500c-0313-4abb-b5c8-8c390df11be4")
-		(property "Reference" "#PWR065"
+		(property "Reference" "#PWR043"
 			(at 60.96 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -4602,7 +4618,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR065")
+					(reference "#PWR043")
 					(unit 1)
 				)
 			)
@@ -4620,7 +4636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4be3a004-3e85-42c8-bded-28803e4a7af6")
-		(property "Reference" "R30"
+		(property "Reference" "R18"
 			(at 125.73 113.0299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4684,7 +4700,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R30")
+					(reference "R18")
 					(unit 1)
 				)
 			)
@@ -4701,7 +4717,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "4eea2533-277a-46f7-841a-22da9834fc55")
-		(property "Reference" "#PWR072"
+		(property "Reference" "#PWR050"
 			(at 128.27 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -4761,7 +4777,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR072")
+					(reference "#PWR050")
 					(unit 1)
 				)
 			)
@@ -4779,7 +4795,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "54fff449-c3db-41d7-9151-81eb66453f17")
-		(property "Reference" "C38"
+		(property "Reference" "C26"
 			(at 138.43 109.2135 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4843,7 +4859,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C38")
+					(reference "C26")
 					(unit 1)
 				)
 			)
@@ -4861,7 +4877,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5731f667-bfef-4d34-8b4f-167200433934")
-		(property "Reference" "C43"
+		(property "Reference" "C31"
 			(at 193.04 56.0069 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4925,7 +4941,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C43")
+					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -4943,7 +4959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "587b0f9f-f1f6-4393-abf4-73ea6c0c1d11")
-		(property "Reference" "#PWR074"
+		(property "Reference" "#PWR052"
 			(at 140.97 102.87 0)
 			(hide yes)
 			(show_name no)
@@ -5003,7 +5019,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR074")
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -5020,7 +5036,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "58b02c97-414a-441e-9a4e-fa03bfe0f968")
-		(property "Reference" "#PWR070"
+		(property "Reference" "#PWR048"
 			(at 115.57 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5080,7 +5096,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR070")
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -5098,7 +5114,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dbabfce-63fb-4631-9bb9-928fdf4d4c27")
-		(property "Reference" "#PWR066"
+		(property "Reference" "#PWR044"
 			(at 105.41 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -5158,7 +5174,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR066")
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -5176,7 +5192,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5dcc9210-f009-43b2-986d-5b44cbefc249")
-		(property "Reference" "C31"
+		(property "Reference" "C20"
 			(at 52.07 53.3335 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5240,15 +5256,15 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C31")
+					(reference "C20")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "esc:SMCJ60CA/TR13")
-		(at 31.75 57.15 270)
+		(lib_id "TLV74033PDBVR:TLV74033PDBVR")
+		(at 69.85 160.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5256,30 +5272,54 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "645092d7-8daa-4321-9ad5-b6d5b0936091")
-		(property "Reference" "D13"
-			(at 25.908 60.198 90)
+		(fields_autoplaced yes)
+		(uuid "5dfca4ea-e8b6-458f-872d-b1ffe6537163")
+		(property "Reference" "U1"
+			(at 85.09 149.86 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "TLV74033PDBVR"
+			(at 85.09 152.4 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "TLV74033PDBVR:DBV0005A-MFG"
+			(at 69.85 160.02 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
 			)
 		)
-		(property "Value" "TVS DIODE 60VWM 96.8VC DO214AB"
-			(at 23.368 62.738 90)
+		(property "Datasheet" "IC REG LINEAR 3.3V 300MA SOT23-5"
+			(at 69.85 160.02 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
+					(italic yes)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_SMD:D_SMC"
-			(at 31.75 57.15 0)
+		(property "Description" ""
+			(at 69.85 160.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5288,39 +5328,26 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/SMCJ60CA-TR13/15856038"
-			(at 31.75 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "96.8V Clamp 15.5A Ipp Tvs Diode Surface Mount DO-214AB (SMC)"
-			(at 31.75 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c6f4da7f-9199-471a-8e97-eaf4e796b056")
 		)
 		(pin "2"
-			(uuid "b3b708ec-49a9-4902-8580-67ccd94e25a7")
+			(uuid "3994ae43-f8be-44fa-be06-39c5f37127d6")
+		)
+		(pin "1"
+			(uuid "ce5c7e24-e266-4741-b942-4230c5a22a37")
+		)
+		(pin "3"
+			(uuid "280047b3-b944-4934-8987-938c756c0938")
+		)
+		(pin "4"
+			(uuid "1c6fbb96-d6a1-4385-ad51-f2bf02872db0")
+		)
+		(pin "5"
+			(uuid "88107515-476e-4223-94b5-738b234ec6d7")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "D13")
+					(reference "U1")
 					(unit 1)
 				)
 			)
@@ -5358,7 +5385,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LMR51610XDBVR:SOT95P280X145-6N"
+		(property "Footprint" "LMR51610XDBVR:LMR51610XDBVR-SOT95P280X145-6N"
 			(at 85.09 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5478,7 +5505,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6ddc1db4-c9db-4a57-9d41-0e6b36dce849")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR054"
 			(at 160.02 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5538,7 +5565,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR076")
+					(reference "#PWR054")
 					(unit 1)
 				)
 			)
@@ -5556,7 +5583,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "74389839-9fe9-42f9-8f50-80dd350da98b")
-		(property "Reference" "#PWR045"
+		(property "Reference" "#PWR040"
 			(at 48.26 175.26 0)
 			(hide yes)
 			(show_name no)
@@ -5616,7 +5643,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR045")
+					(reference "#PWR040")
 					(unit 1)
 				)
 			)
@@ -5633,7 +5660,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8c87bf0e-9fc0-4d4e-be37-f58953d94ae7")
-		(property "Reference" "#PWR046"
+		(property "Reference" "#PWR041"
 			(at 49.53 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -5693,7 +5720,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR046")
+					(reference "#PWR041")
 					(unit 1)
 				)
 			)
@@ -5711,7 +5738,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91b8024f-5f6d-4b42-a6d4-49c4550e0a42")
-		(property "Reference" "C39"
+		(property "Reference" "C27"
 			(at 152.4 56.0069 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5775,7 +5802,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C39")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -5792,7 +5819,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "93bef6b4-87c8-4290-881f-19974e33d73c")
-		(property "Reference" "#PWR078"
+		(property "Reference" "#PWR056"
 			(at 180.34 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5852,7 +5879,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR078")
+					(reference "#PWR056")
 					(unit 1)
 				)
 			)
@@ -5869,7 +5896,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "961e8a56-54aa-4461-962f-d8b2d8fbf1a1")
-		(property "Reference" "#PWR080"
+		(property "Reference" "#PWR058"
 			(at 190.5 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5929,7 +5956,89 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR080")
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Diode:SM15T36A")
+		(at 31.75 57.15 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a4ce6b09-559a-40ad-8bda-33665c823bc9")
+		(property "Reference" "D14"
+			(at 34.29 55.8799 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TVS DIODE 60VWM 96.8VC DO214AB"
+			(at 34.29 58.4199 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Diode_SMD:D_SMC"
+			(at 23.114 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/SMCJ60CA-TR13/15856038"
+			(at 25.146 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "96.8V Clamp 15.5A Ipp Tvs Diode Surface Mount DO-214AB (SMC)"
+			(at 27.178 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8cfe76e2-4611-437e-a74d-864e6aa24d2f")
+		)
+		(pin "2"
+			(uuid "7b0bf1fa-09b9-43c5-9fc0-db8ccda51591")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "D14")
 					(unit 1)
 				)
 			)
@@ -5946,7 +6055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aba3da49-b5bf-4378-9549-2d17e9d617cb")
-		(property "Reference" "#PWR027"
+		(property "Reference" "#PWR036"
 			(at 31.75 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6006,7 +6115,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR027")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -6023,7 +6132,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ac351530-112a-40a8-a50f-5b931a03d1dc")
-		(property "Reference" "#PWR043"
+		(property "Reference" "#PWR038"
 			(at 44.45 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -6083,14 +6192,13 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR043")
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_name "GSFP06120_1")
 		(lib_id "GSFP06120:GSFP06120")
 		(at 116.84 33.02 90)
 		(unit 1)
@@ -6101,7 +6209,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b02f18e6-2801-42da-bfb3-e5622f945f2f")
-		(property "Reference" "Q7"
+		(property "Reference" "Q1"
 			(at 116.586 28.956 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6169,7 +6277,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "Q7")
+					(reference "Q1")
 					(unit 1)
 				)
 			)
@@ -6187,7 +6295,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b0944b6b-ec63-4038-be75-6049e825035c")
-		(property "Reference" "C41"
+		(property "Reference" "C29"
 			(at 172.72 56.0069 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6251,7 +6359,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C41")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -6338,7 +6446,6 @@
 		)
 	)
 	(symbol
-		(lib_name "GSFP06120_1")
 		(lib_id "GSFP06120:GSFP06120")
 		(at 135.89 33.02 270)
 		(mirror x)
@@ -6350,7 +6457,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b3970112-d50b-4fee-9706-a50e1689e935")
-		(property "Reference" "Q8"
+		(property "Reference" "Q2"
 			(at 135.89 28.956 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6418,7 +6525,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "Q8")
+					(reference "Q2")
 					(unit 1)
 				)
 			)
@@ -6436,7 +6543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b43ad892-2ba2-4158-93e8-85b4fa7c5cc8")
-		(property "Reference" "C30"
+		(property "Reference" "C19"
 			(at 50.8 162.5662 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6500,7 +6607,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C30")
+					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -6517,7 +6624,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "b8130618-45cb-4e84-b27c-a81ebe6d6bb2")
-		(property "Reference" "#PWR069"
+		(property "Reference" "#PWR047"
 			(at 115.57 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -6577,7 +6684,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR069")
+					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -6674,7 +6781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c1dc46c1-8720-4339-8a0d-f11360eae117")
-		(property "Reference" "#PWR044"
+		(property "Reference" "#PWR039"
 			(at 48.26 162.56 0)
 			(hide yes)
 			(show_name no)
@@ -6734,7 +6841,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR044")
+					(reference "#PWR039")
 					(unit 1)
 				)
 			)
@@ -6852,7 +6959,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c764ef9f-592b-428d-9f46-fc50bfeaf6bc")
-		(property "Reference" "C32"
+		(property "Reference" "C21"
 			(at 59.69 110.4835 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6916,7 +7023,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C32")
+					(reference "C21")
 					(unit 1)
 				)
 			)
@@ -6934,7 +7041,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cad005e5-1567-406a-97dd-822a9140bcc3")
-		(property "Reference" "R28"
+		(property "Reference" "R16"
 			(at 63.5 62.2299 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6998,7 +7105,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R28")
+					(reference "R16")
 					(unit 1)
 				)
 			)
@@ -7016,7 +7123,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ccb9ab0f-3807-4e3c-98d2-72832c4f8618")
-		(property "Reference" "C42"
+		(property "Reference" "C30"
 			(at 182.88 56.0069 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7080,7 +7187,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C42")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -7097,7 +7204,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cdbc5db9-18f9-4631-9f40-14e8d55dd318")
-		(property "Reference" "#PWR047"
+		(property "Reference" "#PWR042"
 			(at 57.15 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -7157,7 +7264,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR047")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -7175,7 +7282,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d62a74ff-4ffe-4d9b-84cb-602df04f71b7")
-		(property "Reference" "C37"
+		(property "Reference" "C25"
 			(at 130.81 60.9535 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7239,7 +7346,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C37")
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -7257,7 +7364,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7a5aa01-4034-48a9-a33c-97d6dce8bce5")
-		(property "Reference" "#PWR068"
+		(property "Reference" "#PWR046"
 			(at 109.22 35.56 0)
 			(hide yes)
 			(show_name no)
@@ -7317,7 +7424,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR068")
+					(reference "#PWR046")
 					(unit 1)
 				)
 			)
@@ -7335,7 +7442,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dcb3ff3a-f199-43ea-aaa2-2b778ac9f4f3")
-		(property "Reference" "C40"
+		(property "Reference" "C28"
 			(at 162.56 56.0069 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7399,7 +7506,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C40")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -7417,7 +7524,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "df5a98c9-6459-47cb-b773-dc86839b6643")
-		(property "Reference" "C35"
+		(property "Reference" "C23"
 			(at 107.95 163.8362 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7481,7 +7588,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C35")
+					(reference "C23")
 					(unit 1)
 				)
 			)
@@ -7499,7 +7606,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e295156c-141a-4674-9d5e-321f8e9a1e5a")
-		(property "Reference" "#PWR035"
+		(property "Reference" "#PWR037"
 			(at 34.29 110.49 0)
 			(hide yes)
 			(show_name no)
@@ -7559,98 +7666,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "esc:TLV74033PDBVR")
-		(at 69.85 160.02 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e75f1001-fd6b-4463-b754-b0e6b8c8f248")
-		(property "Reference" "U2"
-			(at 85.09 149.86 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "TLV74033PDBVR"
-			(at 85.09 152.4 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "TLV74033PDBVR:DBV0005A-MFG"
-			(at 69.85 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/texas-instruments/TLV74033PDBVR/12642183"
-			(at 69.85 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "Linear Voltage Regulator IC Positive Fixed 1 Output 300mA SOT-23-5"
-			(at 69.85 160.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "8c5e1d32-030c-4b7e-a81f-67b85f6032bf")
-		)
-		(pin "5"
-			(uuid "b60357b7-0eab-46ef-b708-d44709b67774")
-		)
-		(pin "1"
-			(uuid "b9170ac7-b445-469f-8c39-dc72fed7b4fe")
-		)
-		(pin "3"
-			(uuid "3ff732bf-83f7-415a-9375-68d1912fcdac")
-		)
-		(pin "2"
-			(uuid "4a50465a-c718-4a72-a4ab-2a676ccabcad")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "U2")
+					(reference "#PWR037")
 					(unit 1)
 				)
 			)
@@ -7668,7 +7684,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ed021ac1-3be6-4fff-b700-cbc7bc5a412a")
-		(property "Reference" "#PWR067"
+		(property "Reference" "#PWR045"
 			(at 105.41 176.53 0)
 			(hide yes)
 			(show_name no)
@@ -7728,7 +7744,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR067")
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -7745,7 +7761,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f41deb56-f835-4810-a302-b0c00fd4caba")
-		(property "Reference" "#PWR071"
+		(property "Reference" "#PWR049"
 			(at 123.19 123.19 0)
 			(hide yes)
 			(show_name no)
@@ -7805,7 +7821,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR071")
+					(reference "#PWR049")
 					(unit 1)
 				)
 			)
