@@ -1,14 +1,14 @@
-(footprint "CAP_YX_8X20_RUB"
+(footprint "CAP_J20_NIP"
 	(version 20260206)
 	(generator "pcbnew")
 	(generator_version "10.0")
 	(layer "F.Cu")
-	(tags "100ZLH68MEFC8X20 ")
+	(tags "EKY-101ETD101MJ20S ")
 	(property "Reference" "REF**"
-		(at 1.75 0 0)
+		(at 2.5 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "083687d4-1989-4cb6-9e85-d68d49825927")
+		(uuid "fb5d08a0-d21e-441d-9c9f-38ba7a21a63f")
 		(effects
 			(font
 				(size 1 1)
@@ -16,11 +16,11 @@
 			)
 		)
 	)
-	(property "Value" "CAP_YX_8X20_RUB"
-		(at 1.75 0 0)
+	(property "Value" "CAP_J20_NIP"
+		(at 2.5 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "8314c710-f7b2-4874-943e-ad821e2c3786")
+		(uuid "591c92a3-1a5f-48d3-a3dc-74d454b02f8c")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "8b55eca2-ef53-4be7-9fbd-059ad763a302")
+		(uuid "849c08ba-ff46-4908-83aa-4546afc77a48")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c74181b4-ad8e-47b3-a850-7e03bf8013eb")
+		(uuid "65a76c65-cbe8-4f53-a649-997d92fe7f62")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -53,152 +53,152 @@
 	(attr through_hole)
 	(duplicate_pad_numbers_are_jumpers no)
 	(fp_line
-		(start -4.0285 0)
-		(end -2.7585 0)
+		(start -4.2691 0)
+		(end -2.9991 0)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "436d4972-b147-4622-b8e9-a66612d76117")
+		(uuid "a593259b-8984-48fe-bbc0-a82b4bb97d7d")
 	)
 	(fp_line
-		(start -3.3935 -0.635)
-		(end -3.3935 0.635)
+		(start -3.6341 -0.635)
+		(end -3.6341 0.635)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "a8d2d9b9-3bcf-43c1-9a61-3e1fdc23886f")
+		(uuid "073129b2-066d-4661-b1e7-e51bc2e2c14b")
 	)
 	(fp_circle
-		(center 1.75 0)
-		(end 6.1315 0)
+		(center 2.5 0)
+		(end 7.8721 0)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "14c506d7-625a-4cab-8732-febb71b60473")
+		(uuid "ef0e587b-80fc-4642-b107-bf01d98e750c")
 	)
 	(fp_line
-		(start -2.7585 -1.85644)
-		(end -0.10644 -4.5085)
+		(start -2.9991 -2.264336)
+		(end 0.235664 -5.4991)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "347ca9ce-ed97-4816-b574-6588018a7db2")
+		(uuid "adbb79d4-d8d3-4d74-9637-e958e57c8999")
 	)
 	(fp_line
-		(start -2.7585 1.85644)
-		(end -2.7585 -1.85644)
+		(start -2.9991 2.264336)
+		(end -2.9991 -2.264336)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "fa2e0c90-2674-4628-9b5f-550fd6e2e14f")
+		(uuid "ef6f9509-4765-4f05-81cf-ba23d8cbb468")
 	)
 	(fp_line
-		(start -0.10644 -4.5085)
-		(end 3.606441 -4.5085)
+		(start 0.235664 -5.4991)
+		(end 4.764337 -5.4991)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "faa55f4d-b727-449a-85b9-36eb75bcc0d8")
+		(uuid "21cc7302-8e40-4902-8bc0-242daede5e5a")
 	)
 	(fp_line
-		(start -0.10644 4.5085)
-		(end -2.7585 1.85644)
+		(start 0.235664 5.4991)
+		(end -2.9991 2.264336)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "5a572aae-af2f-483a-8b42-3110b72f0c9c")
+		(uuid "792e7299-1486-4276-b7b3-3128eac3acea")
 	)
 	(fp_line
-		(start 3.606441 -4.5085)
-		(end 6.2585 -1.85644)
+		(start 4.764337 -5.4991)
+		(end 7.9991 -2.264336)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "2823ed11-f7d5-4b38-92ed-324514a601d2")
+		(uuid "3cca3ba2-fe65-4336-9c3d-da537016d7d9")
 	)
 	(fp_line
-		(start 3.606441 4.5085)
-		(end -0.10644 4.5085)
+		(start 4.764337 5.4991)
+		(end 0.235664 5.4991)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "ffcb082f-1b12-4951-8d31-25946e35a9d4")
+		(uuid "ad971bf6-bfee-424f-9979-f333e5f10cb8")
 	)
 	(fp_line
-		(start 6.2585 -1.85644)
-		(end 6.2585 1.85644)
+		(start 7.9991 -2.264336)
+		(end 7.9991 2.264336)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "12dc660e-b1af-42b0-96c3-98cfa8989952")
+		(uuid "dc5f4e38-4ca2-4d5b-b9ca-88de5a744f69")
 	)
 	(fp_line
-		(start 6.2585 1.85644)
-		(end 3.606441 4.5085)
+		(start 7.9991 2.264336)
+		(end 4.764337 5.4991)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "5807cada-6df8-4782-8053-b7fe6deb26ee")
+		(uuid "ec979032-ddfc-4cbe-95cc-df731cdf0afe")
 	)
 	(fp_line
-		(start -4.0285 0)
-		(end -2.7585 0)
+		(start -4.2691 0)
+		(end -2.9991 0)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "2b5f2e3c-48e0-41ce-9079-76bd8fa059cb")
+		(uuid "38c0751f-fba2-4532-8a92-569df389d8ce")
 	)
 	(fp_line
-		(start -3.3935 -0.635)
-		(end -3.3935 0.635)
+		(start -3.6341 -0.635)
+		(end -3.6341 0.635)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "4029c44f-b867-47d9-86e9-956162f1cfd2")
+		(uuid "6220524a-8f5c-49e8-9bad-d08c9d9d3647")
 	)
 	(fp_circle
-		(center 1.75 0)
-		(end 6.0045 0)
+		(center 2.5 0)
+		(end 7.7451 0)
 		(stroke
 			(width 0.0254)
 			(type solid)
 		)
 		(fill no)
 		(layer "F.Fab")
-		(uuid "6ce47255-7fc8-43f5-9149-2c22fe59d686")
+		(uuid "193f3cfe-d842-4c89-b4a4-83881a735393")
 	)
 	(fp_text user "${REFERENCE}"
-		(at 1.75 0 0)
+		(at 2.5 0 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "90b8c752-3c1a-4728-9855-a64a6de4b4b7")
+		(uuid "1a26fd3b-d4b4-4ce4-8331-956a49d0aa41")
 		(effects
 			(font
 				(size 1 1)
@@ -206,24 +206,24 @@
 			)
 		)
 	)
-	(pad "1" thru_hole circle
+	(pad "1" thru_hole rect
 		(at 0 0)
 		(size 1.3716 1.3716)
 		(drill 0.8636)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "72e2106a-47ca-48d6-aec9-724253cf1018")
+		(uuid "7bef6b2b-0544-449b-9104-37d3620f95a1")
 	)
 	(pad "2" thru_hole circle
-		(at 3.500001 0)
+		(at 5 0)
 		(size 1.3716 1.3716)
 		(drill 0.8636)
 		(layers "*.Cu" "*.Mask")
 		(remove_unused_layers no)
-		(uuid "8ee7f650-1afb-4a86-949b-78569dfb7e97")
+		(uuid "574976df-73d5-41c1-9e03-2739862c4e49")
 	)
 	(embedded_fonts no)
-	(model "${KIPRJMOD}/../libs/3dmodels/CAP_YX_8X20_RUB.step"
+	(model "C:/KICAD/Electrium/esc-w26/hw/libs/3dmodels/EKY_101ETD101MJ20S.step"
 		(offset
 			(xyz 0 0 0)
 		)
