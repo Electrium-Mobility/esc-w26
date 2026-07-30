@@ -5,16 +5,6 @@
 	(uuid "86a17c4d-db96-42a1-af84-d43fe593f4e6")
 	(paper "A4")
 	(lib_symbols)
-	(text "power stage has no connections coming out btw"
-		(exclude_from_sim no)
-		(at 240.538 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "257d72f6-1ec3-4e04-afda-64e49f340bf0")
-	)
 	(wire
 		(pts
 			(xy 163.83 86.36) (xy 167.64 86.36)
@@ -314,6 +304,16 @@
 			(type default)
 		)
 		(uuid "c54fad7a-42a5-4ff0-a334-f27840222fee")
+	)
+	(wire
+		(pts
+			(xy 203.2 86.36) (xy 215.9 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "da86f25c-02aa-45bc-871a-c5d72993652c")
 	)
 	(wire
 		(pts
@@ -679,6 +679,16 @@
 				(justify left top)
 			)
 		)
+		(pin "VM_IN" input
+			(at 215.9 86.36 180)
+			(uuid "6be07db5-125d-4ecf-8f9c-f3ed36d6b63c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
@@ -833,6 +843,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "VM_IN" output
+			(at 203.2 86.36 0)
+			(uuid "9dbde7fd-9a3e-41ad-9f57-da0b3f13628a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
