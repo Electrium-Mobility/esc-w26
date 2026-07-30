@@ -2975,6 +2975,30 @@
 		)
 	)
 	(rectangle
+		(start 209.296 95.25)
+		(end 244.856 125.73)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "3eb163f0-af8c-40a9-94b8-14d29a9e5a8d")
+	)
+	(rectangle
+		(start 15.24 147.32)
+		(end 50.8 177.8)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "42435383-23bb-4786-81ea-21984aa23fcb")
+	)
+	(rectangle
 		(start 251.46 19.05)
 		(end 335.28 81.28)
 		(stroke
@@ -2999,6 +3023,18 @@
 		(uuid "458a86b5-c70b-46d9-81f4-f7a719145953")
 	)
 	(rectangle
+		(start 53.34 147.32)
+		(end 88.9 177.8)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "4b79f51e-b316-4ad5-90f1-63f8b036cd7e")
+	)
+	(rectangle
 		(start 15.24 50.8)
 		(end 101.6 83.82)
 		(stroke
@@ -3009,6 +3045,18 @@
 			(type none)
 		)
 		(uuid "4fe32a18-3c57-4edc-85ec-95ddb9be7ecf")
+	)
+	(rectangle
+		(start 129.54 152.146)
+		(end 165.1 182.626)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "82adf2bf-b0ec-41a6-9a71-d43bcf892be1")
 	)
 	(rectangle
 		(start 15.24 17.78)
@@ -3046,6 +3094,30 @@
 		)
 		(uuid "abe6d9bf-be87-423a-b70c-d98ded20437b")
 	)
+	(rectangle
+		(start 180.848 131.572)
+		(end 216.408 162.052)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "af5cc8f2-1a00-4445-8a2d-9d9abe56a442")
+	)
+	(rectangle
+		(start 91.44 147.32)
+		(end 127 177.8)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "e529550a-3ab7-45e6-865a-46e2836bd69a")
+	)
 	(text "Battery Input"
 		(exclude_from_sim no)
 		(at 16.002 52.324 0)
@@ -3059,6 +3131,45 @@
 		)
 		(uuid "2021024c-2c53-4de1-bc6d-c8d055f0e4b4")
 	)
+	(text "Trimming"
+		(exclude_from_sim no)
+		(at 16.002 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "37bb03de-7992-42cc-84aa-747915cb903b")
+	)
+	(text "Switches"
+		(exclude_from_sim no)
+		(at 54.102 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "3f2a3eed-e046-4050-865e-a357e192fd6a")
+	)
+	(text "ADC Inputs"
+		(exclude_from_sim no)
+		(at 130.302 153.67 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "4f156e70-8cad-4f84-9d55-61cba0a7b8ac")
+	)
 	(text "Programming (SWD)"
 		(exclude_from_sim no)
 		(at 16.002 19.304 0)
@@ -3071,6 +3182,19 @@
 			(justify left top)
 		)
 		(uuid "527ae572-fdf5-4b95-b73e-c0f3530e9303")
+	)
+	(text "LEDs"
+		(exclude_from_sim no)
+		(at 92.202 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "5715c9be-22a8-43bc-974a-35081497b04c")
 	)
 	(text "Hall Sensor Inputs"
 		(exclude_from_sim no)
@@ -3111,6 +3235,19 @@
 		)
 		(uuid "b767afda-b1ba-4453-9fe0-299d5a21ce68")
 	)
+	(text "Secondary Headers???"
+		(exclude_from_sim no)
+		(at 210.058 96.774 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "b79b99bc-bf35-48d8-90f1-4b7390febd37")
+	)
 	(text "Phase Outputs"
 		(exclude_from_sim no)
 		(at 94.742 19.304 0)
@@ -3123,6 +3260,19 @@
 			(justify left top)
 		)
 		(uuid "f4b992bd-cee9-4488-9f87-0c202983b801")
+	)
+	(text "Misc Pins????"
+		(exclude_from_sim no)
+		(at 181.61 133.096 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "f9f13b82-70e9-4e31-a060-6112b31eb71d")
 	)
 	(text_box "Hall Sensor Inputs\n\nAssume VH required by motor hall sensors is 5V, but expose pad to switch to 3V3, if desired\n\nUM2896 5.4: Recommends CH1-3 of TIM3 (PB4, PB5, PB0) for HA, HB, HC\n\nOptional TEMP (MOTOR_TEMP) pin if chosen motor provides winding temps (note that this is NOT the same temp as the one in control sheet)\n\nDC12_IN6 on PC0 used for MOTOR_TEMP based on current availability\n-> Might change based on needs of ADC since other ADC inputs not yet implemented\n\nPull up resistors since sensor is open drain\n\nDiodes to clamp voltage at 3V3 to protect MCU from external noise\n"
 		(exclude_from_sim no)
