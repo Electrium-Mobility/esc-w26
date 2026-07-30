@@ -4440,7 +4440,7 @@
 		)
 		(uuid "bf906a37-66e2-46a3-a9d3-c5748c3e9b81")
 	)
-	(text_box "Ext Clock\n\nR_ext=0 fine since STM32G4 has a low drive level"
+	(text_box "Ext. Oscillator\n\nR_ext=0 fine since STM32G4 has a low drive level"
 		(exclude_from_sim no)
 		(at 91.44 177.8 0)
 		(size 17.78 17.7799)
@@ -6697,7 +6697,7 @@
 				)
 			)
 		)
-		(property "Footprint" "STSPIN32G4:QFN_IN32G4_STM"
+		(property "Footprint" "esc:QFN_IN32G4_STM"
 			(at 33.02 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -6779,6 +6779,7 @@
 		)
 		(pin "6"
 			(uuid "6796aed8-5668-40ba-805f-435f2e0f4cad")
+			(alternate "OSC_IN")
 		)
 		(pin "13"
 			(uuid "f4021325-59c7-4b84-a3df-8e429e1e9978")
@@ -6797,6 +6798,7 @@
 		)
 		(pin "7"
 			(uuid "b746aaa9-d880-4ae3-8a65-9f0199e546b7")
+			(alternate "OSC_OUT")
 		)
 		(pin "14"
 			(uuid "80e0dce5-00a7-4d64-b7f1-482e2f79d97a")
@@ -10895,7 +10897,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "STSPIN32G4:QFN_IN32G4_STM"
+		(property "Footprint" "esc:QFN_IN32G4_STM"
 			(at 30.48 129.54 0)
 			(hide yes)
 			(show_name no)
