@@ -376,29 +376,27 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J4"
-				(at 2.54 1.27 0)
+			(property "Reference" "J"
+				(at 0 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "USART1"
-				(at 2.54 -1.27 0)
+			(property "Value" "Conn_01x03"
+				(at 0 -5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
+			(property "Footprint" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -409,7 +407,7 @@
 					)
 				)
 			)
-			(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20203VBNN/7794768"
+			(property "Datasheet" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -420,7 +418,7 @@
 					)
 				)
 			)
-			(property "Description" "CONN HEADER VERT 3POS 2.54MM"
+			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2925,8 +2923,8 @@
 		(uuid "4584512c-cff6-4896-a924-1f1bf35a0eca")
 	)
 	(rectangle
-		(start 58.42 17.78)
-		(end 93.98 48.26)
+		(start 53.34 17.78)
+		(end 81.28 48.26)
 		(stroke
 			(width 0)
 			(type default)
@@ -2950,7 +2948,7 @@
 	)
 	(rectangle
 		(start 15.24 17.78)
-		(end 55.88 48.26)
+		(end 50.8 48.26)
 		(stroke
 			(width 0)
 			(type default)
@@ -2961,8 +2959,8 @@
 		(uuid "86cbd338-0e57-43f6-9ee8-e3cf54938595")
 	)
 	(rectangle
-		(start 96.52 17.78)
-		(end 119.38 48.26)
+		(start 83.82 17.78)
+		(end 106.68 48.26)
 		(stroke
 			(width 0)
 			(type default)
@@ -3013,7 +3011,7 @@
 	)
 	(text "Serial (USART1)"
 		(exclude_from_sim no)
-		(at 59.182 19.304 0)
+		(at 54.102 19.304 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3039,7 +3037,7 @@
 	)
 	(text "Phase Inputs"
 		(exclude_from_sim no)
-		(at 97.282 19.304 0)
+		(at 84.582 19.304 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3070,10 +3068,10 @@
 		)
 		(uuid "058252ef-e6db-4954-9c3b-e1283fca4622")
 	)
-	(text_box "Serial \n\nUse PA9 & PA10, as those are the non-alternate pins for USART1\n-> Confirm above\n-> Edit Symbol (after Eleanor's changes in): Change pin names to TX, GND, RX"
+	(text_box "Serial \n\nUses PA9 (USART1_TX) & PA10 (USART1_RX)"
 		(exclude_from_sim no)
-		(at 223.52 34.29 0)
-		(size 51.816 17.018)
+		(at 109.22 26.67 0)
+		(size 48.26 8.89)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3110,10 +3108,10 @@
 		)
 		(uuid "31907586-14c8-4260-8917-abcccc52847e")
 	)
-	(text_box "Programming\n\nUses MCU's internal 3V3 (labelled VDD) to check if on\n-> Route 3V3 in control sheet to global VDD"
+	(text_box "Programming\n\nUses MCU's internal 3V3 (VDD) to check if on"
 		(exclude_from_sim no)
-		(at 223.52 17.78 0)
-		(size 51.816 13.97)
+		(at 109.22 17.78 0)
+		(size 48.26 8.89)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3150,10 +3148,10 @@
 		)
 		(uuid "82a9d641-7cb2-420c-a70e-c986a005857c")
 	)
-	(text_box "Phase Inputs\n\n<- Similar idea to Battery Input, but for final prototype 16 AWG wire will use bullet connectors"
+	(text_box "Phase Inputs\n\nSimilar idea to Battery Input, but for final prototype, 16 AWG wire will use bullet connectors"
 		(exclude_from_sim no)
-		(at 106.68 92.71 0)
-		(size 41.91 17.272)
+		(at 109.22 35.56 0)
+		(size 48.26 12.7)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3283,16 +3281,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 34.29) (xy 43.18 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "073e88c9-915c-43c9-8a7e-f795aa418ac2")
-	)
-	(wire
-		(pts
 			(xy 66.04 69.85) (xy 66.04 72.39)
 		)
 		(stroke
@@ -3323,7 +3311,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 43.18) (xy 104.14 43.18)
+			(xy 90.17 43.18) (xy 91.44 43.18)
 		)
 		(stroke
 			(width 0)
@@ -3423,7 +3411,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 33.02) (xy 63.5 33.02)
+			(xy 66.04 33.02) (xy 58.42 33.02)
 		)
 		(stroke
 			(width 0)
@@ -3453,16 +3441,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 39.37) (xy 43.18 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "420b3139-6e95-448b-bbdc-ba99ac694210")
-	)
-	(wire
-		(pts
 			(xy 66.04 77.47) (xy 66.04 78.74)
 		)
 		(stroke
@@ -3473,7 +3451,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 38.1) (xy 19.05 36.83)
+			(xy 21.59 36.83) (xy 21.59 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3563,7 +3541,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 36.83) (xy 43.18 36.83)
+			(xy 21.59 35.56) (xy 36.83 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3583,7 +3561,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 31.75) (xy 43.18 31.75)
+			(xy 33.02 30.48) (xy 36.83 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3663,7 +3641,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 27.94) (xy 33.02 31.75)
+			(xy 33.02 29.21) (xy 33.02 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3690,16 +3668,6 @@
 			(type default)
 		)
 		(uuid "a0cb6931-8c31-48b0-bbb4-0e543fcdaa02")
-	)
-	(wire
-		(pts
-			(xy 36.83 44.45) (xy 43.18 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a3e78455-4f9e-4515-8c53-657e668f9336")
 	)
 	(wire
 		(pts
@@ -3793,7 +3761,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 25.4) (xy 104.14 25.4)
+			(xy 90.17 25.4) (xy 91.44 25.4)
 		)
 		(stroke
 			(width 0)
@@ -3813,16 +3781,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 41.91) (xy 43.18 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ca2e59c2-1915-4f7c-b750-815aa5b91bdd")
-	)
-	(wire
-		(pts
 			(xy 83.82 72.39) (xy 83.82 69.85)
 		)
 		(stroke
@@ -3833,7 +3791,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 33.02) (xy 63.5 34.29)
+			(xy 58.42 33.02) (xy 58.42 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3963,7 +3921,7 @@
 	)
 	(wire
 		(pts
-			(xy 102.87 34.29) (xy 104.14 34.29)
+			(xy 90.17 34.29) (xy 91.44 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4033,7 +3991,7 @@
 	)
 	(hierarchical_label "V"
 		(shape input)
-		(at 102.87 34.29 180)
+		(at 90.17 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4044,7 +4002,7 @@
 	)
 	(hierarchical_label "U"
 		(shape input)
-		(at 102.87 25.4 180)
+		(at 90.17 25.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4055,7 +4013,7 @@
 	)
 	(hierarchical_label "TRACESWO"
 		(shape output)
-		(at 36.83 44.45 180)
+		(at 36.83 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4064,9 +4022,9 @@
 		)
 		(uuid "4a8d9d0a-a4be-4130-afd1-a6ad4935724a")
 	)
-	(hierarchical_label "USART1_TX"
+	(hierarchical_label "TX"
 		(shape output)
-		(at 77.47 30.48 180)
+		(at 66.04 30.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4077,7 +4035,7 @@
 	)
 	(hierarchical_label "SWDIO"
 		(shape bidirectional)
-		(at 36.83 39.37 180)
+		(at 36.83 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4099,7 +4057,7 @@
 	)
 	(hierarchical_label "W"
 		(shape input)
-		(at 102.87 43.18 180)
+		(at 90.17 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4121,7 +4079,7 @@
 	)
 	(hierarchical_label "NRST"
 		(shape input)
-		(at 36.83 41.91 180)
+		(at 36.83 40.64 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4132,7 +4090,7 @@
 	)
 	(hierarchical_label "SWCLK"
 		(shape input)
-		(at 36.83 34.29 180)
+		(at 36.83 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4141,9 +4099,9 @@
 		)
 		(uuid "cac0c3fb-426c-49c8-baeb-1aaf7f053def")
 	)
-	(hierarchical_label "USART1_RX"
+	(hierarchical_label "RX"
 		(shape input)
-		(at 77.47 35.56 180)
+		(at 66.04 35.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4154,7 +4112,7 @@
 	)
 	(symbol
 		(lib_id "7461001:WP-SHFU")
-		(at 109.22 25.4 270)
+		(at 96.52 25.4 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4165,7 +4123,7 @@
 		(fields_autoplaced yes)
 		(uuid "0b4cb1c4-516f-4b7c-8421-f99b4f912078")
 		(property "Reference" "J5"
-			(at 114.3 25.3999 90)
+			(at 101.6 25.3999 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4176,7 +4134,7 @@
 			)
 		)
 		(property "Value" "7461001"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4188,7 +4146,7 @@
 			)
 		)
 		(property "Footprint" "7461001:7461001"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4199,7 +4157,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/wurth-electronics-inc/7461001/3911014?curr=usd&utm_campaign=buynow&utm_medium=aggregator&utm_source=octopart"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4210,7 +4168,7 @@
 			)
 		)
 		(property "Description" "POWER ELEMENT SHANK M5 9PIN"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4221,7 +4179,7 @@
 			)
 		)
 		(property "THREAD" "M5"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4233,7 +4191,7 @@
 			)
 		)
 		(property "IR" "130A"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4245,7 +4203,7 @@
 			)
 		)
 		(property "PART-NUMBER" "7461001"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4257,7 +4215,7 @@
 			)
 		)
 		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/7461001?ae"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4269,7 +4227,7 @@
 			)
 		)
 		(property "PINS" "9"
-			(at 109.22 25.4 0)
+			(at 96.52 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4396,7 +4354,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 82.55 33.02 0)
+		(at 71.12 33.02 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4407,7 +4365,7 @@
 		(fields_autoplaced yes)
 		(uuid "1a957f20-3859-46ec-90e0-206a51efa625")
 		(property "Reference" "J4"
-			(at 85.09 31.75 0)
+			(at 73.66 31.7499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4417,8 +4375,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "USART1"
-			(at 85.09 34.29 0)
+		(property "Value" "Serial"
+			(at 73.66 34.2899 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4429,7 +4387,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x03_P2.54mm_Vertical"
-			(at 82.55 33.02 0)
+			(at 71.12 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4440,7 +4398,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20203VBNN/7794768"
-			(at 82.55 33.02 0)
+			(at 71.12 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4450,8 +4408,8 @@
 				)
 			)
 		)
-		(property "Description" "CONN HEADER VERT 3POS 2.54MM"
-			(at 82.55 33.02 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 71.12 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4638,7 +4596,7 @@
 	)
 	(symbol
 		(lib_id "7461001:WP-SHFU")
-		(at 109.22 34.29 270)
+		(at 96.52 34.29 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4649,7 +4607,7 @@
 		(fields_autoplaced yes)
 		(uuid "205884bb-6b85-4b3f-bdd0-9a2790bd4d62")
 		(property "Reference" "J6"
-			(at 114.3 34.2899 90)
+			(at 101.6 34.2899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4660,7 +4618,7 @@
 			)
 		)
 		(property "Value" "7461001"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4672,7 +4630,7 @@
 			)
 		)
 		(property "Footprint" "7461001:7461001"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4683,7 +4641,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/wurth-electronics-inc/7461001/3911014?curr=usd&utm_campaign=buynow&utm_medium=aggregator&utm_source=octopart"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4694,7 +4652,7 @@
 			)
 		)
 		(property "Description" "POWER ELEMENT SHANK M5 9PIN"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4705,7 +4663,7 @@
 			)
 		)
 		(property "THREAD" "M5"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4717,7 +4675,7 @@
 			)
 		)
 		(property "IR" "130A"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4729,7 +4687,7 @@
 			)
 		)
 		(property "PART-NUMBER" "7461001"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4741,7 +4699,7 @@
 			)
 		)
 		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/7461001?ae"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4753,7 +4711,7 @@
 			)
 		)
 		(property "PINS" "9"
-			(at 109.22 34.29 0)
+			(at 96.52 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4881,7 +4839,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 63.5 34.29 0)
+		(at 58.42 34.29 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4892,7 +4850,7 @@
 		(fields_autoplaced yes)
 		(uuid "262a6ba3-bc08-43f8-891c-ed69e442cd72")
 		(property "Reference" "#PWR083"
-			(at 63.5 40.64 0)
+			(at 58.42 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4903,7 +4861,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 63.5 39.37 0)
+			(at 58.42 39.37 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4913,7 +4871,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 63.5 34.29 0)
+			(at 58.42 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4924,7 +4882,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 63.5 34.29 0)
+			(at 58.42 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4935,7 +4893,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 63.5 34.29 0)
+			(at 58.42 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5209,7 +5167,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 19.05 38.1 0)
+		(at 21.59 36.83 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5220,7 +5178,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d526591-fafc-4a1c-9c2e-97c5c72e1d2b")
 		(property "Reference" "#PWR071"
-			(at 19.05 44.45 0)
+			(at 21.59 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5231,7 +5189,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 19.05 43.18 0)
+			(at 21.59 41.91 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5241,7 +5199,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 19.05 38.1 0)
+			(at 21.59 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5252,7 +5210,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 19.05 38.1 0)
+			(at 21.59 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5263,7 +5221,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 19.05 38.1 0)
+			(at 21.59 36.83 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7113,7 +7071,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 48.26 36.83 0)
+		(at 41.91 35.56 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7124,7 +7082,7 @@
 		(fields_autoplaced yes)
 		(uuid "a137b4e4-3752-4fa0-95d9-75599d7e49ae")
 		(property "Reference" "J3"
-			(at 50.8 36.8299 0)
+			(at 44.45 35.5599 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7135,7 +7093,7 @@
 			)
 		)
 		(property "Value" "SWD"
-			(at 50.8 39.3699 0)
+			(at 44.45 38.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7146,7 +7104,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 48.26 36.83 0)
+			(at 41.91 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7157,7 +7115,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 36.83 0)
+			(at 41.91 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7168,7 +7126,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 48.26 36.83 0)
+			(at 41.91 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7368,7 +7326,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 33.02 27.94 0)
+		(at 33.02 29.21 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7379,7 +7337,7 @@
 		(fields_autoplaced yes)
 		(uuid "b92644a3-2d05-4270-bf93-2067815c789c")
 		(property "Reference" "#PWR074"
-			(at 33.02 31.75 0)
+			(at 33.02 33.02 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7390,7 +7348,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 33.02 22.86 0)
+			(at 33.02 24.13 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7400,7 +7358,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 33.02 27.94 0)
+			(at 33.02 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7411,7 +7369,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 33.02 27.94 0)
+			(at 33.02 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7422,7 +7380,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 33.02 27.94 0)
+			(at 33.02 29.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7999,7 +7957,7 @@
 	)
 	(symbol
 		(lib_id "7461001:WP-SHFU")
-		(at 109.22 43.18 270)
+		(at 96.52 43.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8010,7 +7968,7 @@
 		(fields_autoplaced yes)
 		(uuid "d420a739-cf82-4023-ac83-76e40dfc9896")
 		(property "Reference" "J7"
-			(at 114.3 43.1799 90)
+			(at 101.6 43.1799 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8021,7 +7979,7 @@
 			)
 		)
 		(property "Value" "7461001"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8033,7 +7991,7 @@
 			)
 		)
 		(property "Footprint" "7461001:7461001"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8044,7 +8002,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.com/en/products/detail/wurth-electronics-inc/7461001/3911014?curr=usd&utm_campaign=buynow&utm_medium=aggregator&utm_source=octopart"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8055,7 +8013,7 @@
 			)
 		)
 		(property "Description" "POWER ELEMENT SHANK M5 9PIN"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8066,7 +8024,7 @@
 			)
 		)
 		(property "THREAD" "M5"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8078,7 +8036,7 @@
 			)
 		)
 		(property "IR" "130A"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8090,7 +8048,7 @@
 			)
 		)
 		(property "PART-NUMBER" "7461001"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8102,7 +8060,7 @@
 			)
 		)
 		(property "DATASHEET-URL" "https://www.we-online.com/redexpert/spec/7461001?ae"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8114,7 +8072,7 @@
 			)
 		)
 		(property "PINS" "9"
-			(at 109.22 43.18 0)
+			(at 96.52 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
