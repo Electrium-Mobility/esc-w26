@@ -2911,18 +2911,6 @@
 		(uuid "457fe60a-8b34-42a8-966d-24b9acc42e02")
 	)
 	(rectangle
-		(start 13.97 86.36)
-		(end 101.6 134.874)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "4584512c-cff6-4896-a924-1f1bf35a0eca")
-	)
-	(rectangle
 		(start 53.34 17.78)
 		(end 91.44 48.26)
 		(stroke
@@ -2970,6 +2958,18 @@
 		)
 		(uuid "9c1aa79a-cb82-4cb7-9ef8-2c5215c92699")
 	)
+	(rectangle
+		(start 15.24 86.36)
+		(end 101.6 134.62)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "abe6d9bf-be87-423a-b70c-d98ded20437b")
+	)
 	(text "Battery Input"
 		(exclude_from_sim no)
 		(at 16.002 52.324 0)
@@ -2996,9 +2996,9 @@
 		)
 		(uuid "527ae572-fdf5-4b95-b73e-c0f3530e9303")
 	)
-	(text "Hall Sensors"
+	(text "Hall Sensor Inputs"
 		(exclude_from_sim no)
-		(at 16.51 87.884 0)
+		(at 16.002 87.884 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3007,7 +3007,7 @@
 			)
 			(justify left top)
 		)
-		(uuid "a08ac992-0222-4567-8def-b4e6481cdb75")
+		(uuid "9b7a802a-6b7b-497e-a300-a49583c80408")
 	)
 	(text "Serial (USART1)"
 		(exclude_from_sim no)
@@ -3035,7 +3035,7 @@
 		)
 		(uuid "b767afda-b1ba-4453-9fe0-299d5a21ce68")
 	)
-	(text "Phase Inputs"
+	(text "Phase Outputs"
 		(exclude_from_sim no)
 		(at 94.742 19.304 0)
 		(effects
@@ -3048,10 +3048,10 @@
 		)
 		(uuid "f4b992bd-cee9-4488-9f87-0c202983b801")
 	)
-	(text_box "Hall Sensors: TMAG5213ADQLPG\nPull up resistors since sensor is open drain\nDiodes to clamp voltage at 3V3 to protect MCU from external noise\n"
+	(text_box "Hall Sensor Inputs\n\nPull up resistors since sensor is open drain\n\nDiodes to clamp voltage at 3V3 to protect MCU from external noise\n"
 		(exclude_from_sim no)
-		(at 104.14 86.36 0)
-		(size 63.5 12.7)
+		(at 139.192 94.742 0)
+		(size 63.5 14.1714)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3148,7 +3148,7 @@
 		)
 		(uuid "82a9d641-7cb2-420c-a70e-c986a005857c")
 	)
-	(text_box "Phase Inputs\n\nSimilar idea to Battery Input, but for final prototype, 16 AWG wire will use bullet connectors"
+	(text_box "Phase Outputs\n\nSimilar idea to Battery Input, but for final prototype, 16 AWG wire will use bullet connectors"
 		(exclude_from_sim no)
 		(at 119.38 35.56 0)
 		(size 48.26 12.7)
@@ -3959,38 +3959,19 @@
 		)
 		(uuid "fbbe9694-db5e-48d1-a34e-b7bd5ee8aaf2")
 	)
-	(label "HALL1"
-		(at 85.09 111.76 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "67b1d113-17d6-4a02-9189-ae1121a18fc0")
-	)
-	(label "HALL2"
-		(at 85.09 114.3 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a6aff224-9183-47c5-a4c9-49697b2ec38e")
-	)
-	(label "HALL3"
+	(hierarchical_label "HC"
+		(shape input)
 		(at 85.09 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "f110c717-f250-4265-b3a6-7e0ef1aafdf0")
+		(uuid "068efde3-064f-46c0-832b-3618f8b24d44")
 	)
 	(hierarchical_label "V"
-		(shape input)
+		(shape output)
 		(at 100.33 34.29 180)
 		(effects
 			(font
@@ -4001,7 +3982,7 @@
 		(uuid "1238954c-42eb-45ee-acfc-cfec36df44ae")
 	)
 	(hierarchical_label "U"
-		(shape input)
+		(shape output)
 		(at 100.33 25.4 180)
 		(effects
 			(font
@@ -4056,7 +4037,7 @@
 		(uuid "899a0190-37fc-4e3b-b994-3da68dd9f6c0")
 	)
 	(hierarchical_label "W"
-		(shape input)
+		(shape output)
 		(at 100.33 43.18 180)
 		(effects
 			(font
@@ -4065,6 +4046,17 @@
 			(justify right)
 		)
 		(uuid "ac12c5f6-d620-4e6b-b5fb-e13735a6e86d")
+	)
+	(hierarchical_label "HB"
+		(shape input)
+		(at 85.09 114.3 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ac80f6a9-b93a-46ef-a98e-6b7029b45ac9")
 	)
 	(hierarchical_label "STATUS"
 		(shape input)
@@ -4098,6 +4090,17 @@
 			(justify right)
 		)
 		(uuid "cac0c3fb-426c-49c8-baeb-1aaf7f053def")
+	)
+	(hierarchical_label "HA"
+		(shape input)
+		(at 85.09 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e0896eb3-c86b-49ab-9d6c-18e98bd35770")
 	)
 	(hierarchical_label "USART1_RX"
 		(shape input)
