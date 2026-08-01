@@ -6194,6 +6194,17 @@
 		)
 		(uuid "4a4c8b8d-89ff-473c-ad98-e435831d39de")
 	)
+	(hierarchical_label "SYS1"
+		(shape output)
+		(at 33.02 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4ab89ad6-c45a-44a3-8cec-d25241378cc8")
+	)
 	(hierarchical_label "TX"
 		(shape output)
 		(at 73.66 68.58 0)
@@ -6216,6 +6227,17 @@
 		)
 		(uuid "51666f4f-b56c-4291-9faa-5bc1cce7f7ee")
 	)
+	(hierarchical_label "READY"
+		(shape output)
+		(at 33.02 96.52 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "538da22d-7d84-47a6-8397-c066b22addef")
+	)
 	(hierarchical_label "OPN_W"
 		(shape input)
 		(at 33.02 53.34 180)
@@ -6237,6 +6259,17 @@
 			(justify left)
 		)
 		(uuid "5adfa102-8f99-46d3-9e72-ead22d214539")
+	)
+	(hierarchical_label "FAULT"
+		(shape output)
+		(at 33.02 99.06 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "66e0d84c-ecc5-41d8-9be8-72f8086a5652")
 	)
 	(hierarchical_label "SCL"
 		(shape bidirectional)
@@ -6270,6 +6303,17 @@
 			(justify right)
 		)
 		(uuid "6b3e67e9-6be8-4017-a1f8-0f4ff1ae7dc2")
+	)
+	(hierarchical_label "SYS2"
+		(shape output)
+		(at 33.02 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "75581df0-1b8b-4b93-9c81-faa843db9cc1")
 	)
 	(hierarchical_label "ADC"
 		(shape input)
@@ -6468,6 +6512,17 @@
 			(justify left)
 		)
 		(uuid "d3b17c96-ba96-4185-bc00-1fdb27078cff")
+	)
+	(hierarchical_label "USER"
+		(shape input)
+		(at 33.02 93.98 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "e7e587c8-d1b6-4116-a2e5-624633ad150e")
 	)
 	(hierarchical_label "OUT3"
 		(shape output)

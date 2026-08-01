@@ -147,6 +147,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 156.21) (xy 165.1 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "427a6e1d-cffb-41b5-aa74-db45f721db89")
+	)
+	(wire
+		(pts
 			(xy 208.28 92.71) (xy 191.77 92.71)
 		)
 		(stroke
@@ -244,6 +254,16 @@
 			(type default)
 		)
 		(uuid "68f74987-3262-49e6-a025-8c6790a204e4")
+	)
+	(wire
+		(pts
+			(xy 152.4 158.75) (xy 165.1 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6e81b2e5-277b-4259-81a4-a9b1f2079dd8")
 	)
 	(wire
 		(pts
@@ -367,6 +387,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 161.29) (xy 165.1 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "956fdd8d-7278-4dc5-9e5d-cfc62d1b9589")
+	)
+	(wire
+		(pts
 			(xy 157.48 76.2) (xy 152.4 76.2)
 		)
 		(stroke
@@ -377,6 +407,16 @@
 	)
 	(wire
 		(pts
+			(xy 152.4 153.67) (xy 165.1 153.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f64f785-bf31-4156-84a6-c01764eaa0a4")
+	)
+	(wire
+		(pts
 			(xy 165.1 93.98) (xy 152.4 93.98)
 		)
 		(stroke
@@ -384,6 +424,16 @@
 			(type default)
 		)
 		(uuid "b90d0fdd-ec57-4907-a70f-6cb7c1bc866c")
+	)
+	(wire
+		(pts
+			(xy 152.4 163.83) (xy 165.1 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b92c0a42-4410-4112-8b5d-124d88db0c3f")
 	)
 	(wire
 		(pts
@@ -497,7 +547,7 @@
 	)
 	(sheet
 		(at 165.1 67.31)
-		(size 26.67 90.17)
+		(size 26.67 110.49)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -523,7 +573,7 @@
 			)
 		)
 		(property "Sheetfile" "control.kicad_sch"
-			(at 165.1 158.0646 0)
+			(at 165.1 178.3846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -893,6 +943,56 @@
 				(justify left)
 			)
 		)
+		(pin "SYS2" output
+			(at 165.1 163.83 180)
+			(uuid "0d94f385-8232-4eed-8b51-d1de1761009d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "SYS1" output
+			(at 165.1 161.29 180)
+			(uuid "2f5717f0-5b16-4fc0-9f43-30bc0fc7137d")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "FAULT" output
+			(at 165.1 158.75 180)
+			(uuid "0875df18-b5ee-47ac-9f5d-f7d8b117481e")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USER" input
+			(at 165.1 153.67 180)
+			(uuid "f0fd581b-b6b8-4d2e-aac1-14ceb5820915")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "READY" output
+			(at 165.1 156.21 180)
+			(uuid "d0c078c1-5833-4537-b4e2-e7f01873e8b8")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
@@ -959,7 +1059,7 @@
 	)
 	(sheet
 		(at 116.84 67.31)
-		(size 35.56 90.17)
+		(size 35.56 110.49)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -985,7 +1085,7 @@
 			)
 		)
 		(property "Sheetfile" "peripherals.kicad_sch"
-			(at 116.84 158.0646 0)
+			(at 116.84 178.3846 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1238,6 +1338,56 @@
 		(pin "SCL" bidirectional
 			(at 152.4 149.86 0)
 			(uuid "a89fdffd-63ac-4fa0-92a0-8235a26ac95a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "USER" output
+			(at 152.4 153.67 0)
+			(uuid "3ccf9ff1-f905-4e15-a9cd-904d06ab2d2c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYS1" input
+			(at 152.4 161.29 0)
+			(uuid "559b9226-299e-49ba-a712-253d322b7949")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "SYS2" input
+			(at 152.4 163.83 0)
+			(uuid "28c7cc75-f782-43ef-a938-9783eb0bcd2b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "READY" input
+			(at 152.4 156.21 0)
+			(uuid "f79aea73-d9a8-461c-b628-b30ea48266e7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "FAULT" input
+			(at 152.4 158.75 0)
+			(uuid "4c427538-abbb-4aa4-b331-08d33b74f7c1")
 			(effects
 				(font
 					(size 1.27 1.27)
