@@ -177,16 +177,6 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 97.79) (xy 152.4 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66f2338c-8f72-40ba-aab6-7eb7e7769a0a")
-	)
-	(wire
-		(pts
 			(xy 208.28 107.95) (xy 191.77 107.95)
 		)
 		(stroke
@@ -274,16 +264,6 @@
 			(type default)
 		)
 		(uuid "8fe73d88-ad58-4499-ad9a-e9c60c4e88fe")
-	)
-	(wire
-		(pts
-			(xy 165.1 100.33) (xy 152.4 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "906c18ed-b64e-40a1-81d8-8c01cb057577")
 	)
 	(wire
 		(pts
@@ -643,26 +623,6 @@
 				(justify left)
 			)
 		)
-		(pin "FAULT" input
-			(at 165.1 97.79 180)
-			(uuid "8155a558-3bae-4e7c-a76a-91187be76eaf")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "STATUS" output
-			(at 165.1 100.33 180)
-			(uuid "3d9a1005-a349-442c-acd4-04c3aed3c022")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "HA" input
 			(at 165.1 121.92 180)
 			(uuid "c95d1947-e67b-4ee7-a1a7-c9b8878bc400")
@@ -918,26 +878,6 @@
 		(pin "W" output
 			(at 152.4 91.44 0)
 			(uuid "ca2c9ce7-0bb9-4a55-8082-e873fd4f7774")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "FAULT" output
-			(at 152.4 97.79 0)
-			(uuid "dbb0e8b4-dfc0-4616-aaa0-77a0c4b2a67b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "STATUS" input
-			(at 152.4 100.33 0)
-			(uuid "98751161-9c4a-4e25-8ece-0958e3086075")
 			(effects
 				(font
 					(size 1.27 1.27)
