@@ -4993,7 +4993,7 @@
 		)
 		(uuid "1bcedb6c-a644-4214-ae7a-807ca1af1625")
 	)
-	(text "change to \namber/orange/yellow"
+	(text "change to \namber/orange"
 		(exclude_from_sim no)
 		(at 264.16 94.234 0)
 		(effects
@@ -5041,6 +5041,17 @@
 		)
 		(uuid "2c90f375-5033-41c3-ad92-c41ee5232ab5")
 	)
+	(text "add testpoints"
+		(exclude_from_sim no)
+		(at 121.412 105.664 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "39fafd38-c296-4c39-adda-72b958f0dd02")
+	)
 	(text "dupont"
 		(exclude_from_sim no)
 		(at 112.522 176.784 0)
@@ -5076,9 +5087,9 @@
 		)
 		(uuid "4635fe33-e346-49f8-8c20-4cadbdce94ee")
 	)
-	(text "use VREF+"
+	(text "use VREF+ instead of 3V3\n\nrecheck all analog-related circuitry\nif it uses VREF+ or not"
 		(exclude_from_sim no)
-		(at 218.694 24.13 0)
+		(at 212.852 14.732 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5148,9 +5159,9 @@
 		)
 		(uuid "6be09e51-08c3-4bbf-936f-4d074af96b40")
 	)
-	(text "print on silkscreen: \nnREADY"
+	(text "print on silkscreen: \nNOT_READY"
 		(exclude_from_sim no)
-		(at 264.668 64.008 0)
+		(at 264.414 63.754 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5191,7 +5202,7 @@
 		)
 		(uuid "8395f54c-43e7-460b-b625-9f160487c12c")
 	)
-	(text "SPI"
+	(text "SPI (SPI1)"
 		(exclude_from_sim no)
 		(at 97.282 148.844 0)
 		(effects
@@ -5229,6 +5240,17 @@
 			(justify left top)
 		)
 		(uuid "9b7a802a-6b7b-497e-a300-a49583c80408")
+	)
+	(text "EVSPIN uses 4.7k resistors, \nsure about these?\n\nwhat if we get VM=75V (max)?"
+		(exclude_from_sim no)
+		(at 248.158 23.876 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "9fe04377-dc65-407b-acec-169c8f8b1c76")
 	)
 	(text "I2C"
 		(exclude_from_sim no)
@@ -7960,7 +7982,7 @@
 		(uuid "97f1d261-09d4-4d95-932e-00c871b2a2c5")
 	)
 	(hierarchical_label "ADC"
-		(shape input)
+		(shape output)
 		(at 218.44 78.74 180)
 		(effects
 			(font
@@ -8003,7 +8025,7 @@
 		)
 		(uuid "3535338e-9b70-454e-ac86-655f8512f190")
 	)
-	(hierarchical_label "CS"
+	(hierarchical_label "NSS"
 		(shape output)
 		(at 115.57 172.72 180)
 		(effects
@@ -8026,7 +8048,7 @@
 		(uuid "3c4e31c4-952c-47ad-b25c-695512e9369f")
 	)
 	(hierarchical_label "MISO"
-		(shape input)
+		(shape output)
 		(at 115.57 167.64 180)
 		(effects
 			(font
@@ -8069,7 +8091,7 @@
 		)
 		(uuid "4a8d9d0a-a4be-4130-afd1-a6ad4935724a")
 	)
-	(hierarchical_label "nFAULT"
+	(hierarchical_label "NFAULT"
 		(shape input)
 		(at 246.38 91.44 270)
 		(effects
@@ -8092,7 +8114,7 @@
 		(uuid "60846c4e-6beb-459b-af74-15cd4d81c6db")
 	)
 	(hierarchical_label "SPEED"
-		(shape input)
+		(shape output)
 		(at 186.69 30.48 180)
 		(effects
 			(font
@@ -8103,7 +8125,7 @@
 		(uuid "633e83a5-6994-40e6-ab28-dd5a1dfed058")
 	)
 	(hierarchical_label "TX"
-		(shape output)
+		(shape input)
 		(at 185.42 78.74 180)
 		(effects
 			(font
@@ -8125,7 +8147,7 @@
 		(uuid "8734c3d3-6718-4bd5-aee2-008b01580cce")
 	)
 	(hierarchical_label "TX"
-		(shape output)
+		(shape input)
 		(at 204.47 124.46 180)
 		(effects
 			(font
@@ -8169,7 +8191,7 @@
 		(uuid "9fb58319-1a61-4334-bc26-2c936d10bae1")
 	)
 	(hierarchical_label "ADC"
-		(shape input)
+		(shape output)
 		(at 204.47 121.92 180)
 		(effects
 			(font
@@ -8224,7 +8246,7 @@
 		(uuid "cac0c3fb-426c-49c8-baeb-1aaf7f053def")
 	)
 	(hierarchical_label "RX"
-		(shape input)
+		(shape output)
 		(at 204.47 127 180)
 		(effects
 			(font
@@ -8257,7 +8279,7 @@
 		(uuid "d4ce61e3-8cf2-4d7c-8b8a-0d048a1795bb")
 	)
 	(hierarchical_label "MOSI"
-		(shape output)
+		(shape input)
 		(at 115.57 170.18 180)
 		(effects
 			(font
@@ -8290,7 +8312,7 @@
 		(uuid "e0896eb3-c86b-49ab-9d6c-18e98bd35770")
 	)
 	(hierarchical_label "RX"
-		(shape input)
+		(shape output)
 		(at 185.42 81.28 180)
 		(effects
 			(font
