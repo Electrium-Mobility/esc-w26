@@ -6161,8 +6161,8 @@
 		)
 		(uuid "23875b53-69c2-4e11-8a3a-4e8312604294")
 	)
-	(hierarchical_label "PB1"
-		(shape input)
+	(hierarchical_label "CAN_STBY"
+		(shape output)
 		(at 33.02 50.8 180)
 		(effects
 			(font
@@ -6170,7 +6170,7 @@
 			)
 			(justify right)
 		)
-		(uuid "2a5ae28d-4d77-4082-94d6-17d092f22f52")
+		(uuid "27a90c0c-4ea0-4437-9efc-a94524c7561c")
 	)
 	(hierarchical_label "BOOT1"
 		(shape output)
@@ -6226,6 +6226,17 @@
 			(justify right)
 		)
 		(uuid "4ab89ad6-c45a-44a3-8cec-d25241378cc8")
+	)
+	(hierarchical_label "PWR_BTN"
+		(shape input)
+		(at 33.02 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4c8699a4-9a0d-4419-9ab2-0c6fbf633c89")
 	)
 	(hierarchical_label "TX"
 		(shape output)
@@ -6545,17 +6556,6 @@
 			(justify left)
 		)
 		(uuid "cddf9775-80c7-4cda-8267-a5820b1abf82")
-	)
-	(hierarchical_label "PB6"
-		(shape input)
-		(at 33.02 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "ce84552c-42d2-4456-b045-28fc0a8b1a6b")
 	)
 	(hierarchical_label "MISO"
 		(shape input)
