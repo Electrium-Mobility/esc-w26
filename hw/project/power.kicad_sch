@@ -2559,7 +2559,7 @@
 		)
 		(uuid "2a5faf10-51a8-41d8-b611-b9f58bc09a9d")
 	)
-	(text "Rds = 3.5m @ 30a\nP = 15^2(3.5m) = 0.7875w"
+	(text "Rds = 3.5m @ 30a\nP = 30^2(3.5m) = 3.15w"
 		(exclude_from_sim no)
 		(at 89.408 33.02 0)
 		(effects
@@ -2608,6 +2608,17 @@
 			)
 		)
 		(uuid "7883604d-9890-4fb8-9898-1805e4b29aff")
+	)
+	(text "are you sure this gives 5V?\n\ncan you document the calculation\nfor getting 5V output?"
+		(exclude_from_sim no)
+		(at 127 129.032 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "7b6c144e-c5ce-4353-a97d-4484575cb2b2")
 	)
 	(text "OV voltage picked to be triggered at 60V"
 		(exclude_from_sim no)
