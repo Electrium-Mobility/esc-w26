@@ -5693,6 +5693,17 @@
 		)
 		(uuid "7473a10e-c946-473d-8e63-369ce2cc18e3")
 	)
+	(text "add 5V latching \nbtn to BOM"
+		(exclude_from_sim no)
+		(at 102.616 24.638 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "807bd397-62f4-40c4-bc0e-8adcc3c371ed")
+	)
 	(text "dupont"
 		(exclude_from_sim no)
 		(at 191.008 174.752 0)
@@ -5957,7 +5968,7 @@
 		)
 		(uuid "66f0c9e3-cd91-4c8d-adc2-87ad6d812bd6")
 	)
-	(text_box "Programming\n\nUses MCU's internal 3V3 (VDD) to check if on"
+	(text_box "Programming\n\nUses MCU's internal 3V3 (VDD) to check if it's on"
 		(exclude_from_sim no)
 		(at 114.3 17.78 0)
 		(size 53.34 10.16)
@@ -6020,7 +6031,7 @@
 	(text_box "Phase Outputs\n\nSimilar idea to Battery Input, but for final prototype, 16 AWG wire will use bullet connectors"
 		(exclude_from_sim no)
 		(at 114.3 27.94 0)
-		(size 53.34 12.7)
+		(size 53.34 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -6117,10 +6128,10 @@
 		)
 		(uuid "c3d6a2be-f335-4451-a94f-7d53e5fe76b9")
 	)
-	(text_box "Power Button Input"
+	(text_box "Power Button Input\n\nClose the latching button to drive EN_UVLO high on LM74502"
 		(exclude_from_sim no)
-		(at 114.3 40.64 0)
-		(size 53.34 7.62)
+		(at 114.3 38.1 0)
+		(size 53.34 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -16428,7 +16439,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://media.metz-connect.com/files/171/Data_sheet_PR202XXVBNN.PDF"
 			(at 39.37 35.56 0)
 			(hide yes)
 			(show_name no)

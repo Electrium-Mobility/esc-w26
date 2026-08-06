@@ -137,16 +137,6 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 158.75) (xy 130.81 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3a461257-c021-4ac1-9122-693b6dab5587")
-	)
-	(wire
-		(pts
 			(xy 173.99 54.61) (xy 157.48 54.61)
 		)
 		(stroke
@@ -494,6 +484,16 @@
 			(type default)
 		)
 		(uuid "bca42c53-2c18-4838-af09-b798010574f0")
+	)
+	(wire
+		(pts
+			(xy 69.85 48.26) (xy 82.55 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3f1e91b-eb52-4ffb-8aea-acccebf29e3b")
 	)
 	(wire
 		(pts
@@ -1103,16 +1103,6 @@
 				(justify left)
 			)
 		)
-		(pin "PWR_BTN" input
-			(at 130.81 158.75 180)
-			(uuid "b03391e6-7ef2-45d6-a897-7e8a11308b1b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6"
@@ -1162,6 +1152,16 @@
 		(pin "VM_IN" input
 			(at 69.85 44.45 0)
 			(uuid "6be07db5-125d-4ecf-8f9c-f3ed36d6b63c")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "PWR_BTN" input
+			(at 69.85 48.26 0)
+			(uuid "5d07ecc4-828e-4819-8827-0795fc0587b7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1566,13 +1566,13 @@
 			)
 		)
 		(pin "PWR_BTN" output
-			(at 118.11 158.75 0)
+			(at 82.55 48.26 180)
 			(uuid "62c06539-5596-4e30-9a65-ef114481651a")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
+				(justify left)
 			)
 		)
 		(instances
