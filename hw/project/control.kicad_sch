@@ -6117,6 +6117,17 @@
 		)
 		(uuid "03b065bc-9cfd-4b84-954f-5597976a5521")
 	)
+	(hierarchical_label "PB6"
+		(shape bidirectional)
+		(at 33.02 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "05f72622-c826-4b14-bcb9-6c6627aeb3e1")
+	)
 	(hierarchical_label "GLS3"
 		(shape output)
 		(at 33.02 43.18 180)
@@ -6226,17 +6237,6 @@
 			(justify right)
 		)
 		(uuid "4ab89ad6-c45a-44a3-8cec-d25241378cc8")
-	)
-	(hierarchical_label "PWR_BTN"
-		(shape input)
-		(at 33.02 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "4c8699a4-9a0d-4419-9ab2-0c6fbf633c89")
 	)
 	(hierarchical_label "TX"
 		(shape output)
@@ -6382,7 +6382,7 @@
 		(uuid "8629de26-e8c2-465b-9528-bd3c4b51a21a")
 	)
 	(hierarchical_label "PC2"
-		(shape input)
+		(shape bidirectional)
 		(at 33.02 83.82 180)
 		(effects
 			(font
@@ -6393,7 +6393,7 @@
 		(uuid "88b4bbf3-2e70-4fbd-968e-f9f5a1d76f26")
 	)
 	(hierarchical_label "PB7"
-		(shape input)
+		(shape bidirectional)
 		(at 33.02 66.04 180)
 		(effects
 			(font
@@ -6503,7 +6503,7 @@
 		(uuid "ae166170-cb26-4aa1-8055-933465fa0776")
 	)
 	(hierarchical_label "PA1"
-		(shape input)
+		(shape bidirectional)
 		(at 73.66 48.26 0)
 		(effects
 			(font
@@ -6613,7 +6613,7 @@
 		(uuid "f5608c65-9d87-4e8b-996c-638dac41a8d7")
 	)
 	(hierarchical_label "PA8"
-		(shape input)
+		(shape bidirectional)
 		(at 73.66 66.04 0)
 		(effects
 			(font
@@ -7045,12 +7045,14 @@
 		)
 		(pin "20"
 			(uuid "0be9c432-ab2d-4811-8003-4deb9e4df167")
+			(alternate "SPI1_MOSI")
 		)
 		(pin "22"
 			(uuid "06c50662-c4e6-4c44-a64a-eb87d437c656")
 		)
 		(pin "18"
 			(uuid "aabdd950-64e2-4287-a14b-153627d9d84c")
+			(alternate "SPI1_SCK")
 		)
 		(pin "6"
 			(uuid "6796aed8-5668-40ba-805f-435f2e0f4cad")
@@ -7063,6 +7065,7 @@
 		)
 		(pin "19"
 			(uuid "cfd61df4-b2b0-48c8-9ecf-b4a4c5e260b1")
+			(alternate "SPI1_MISO")
 		)
 		(pin "23"
 			(uuid "655b411a-9044-4bc3-b32d-60f85bc9fbc5")
@@ -7090,6 +7093,7 @@
 		)
 		(pin "17"
 			(uuid "ec95cedb-b39b-45b7-a282-c46c3f67e210")
+			(alternate "SPI1_NSS")
 		)
 		(pin "28"
 			(uuid "d4dd2072-c656-4ecb-8b69-a50b87a3206b")
@@ -7141,6 +7145,7 @@
 		)
 		(pin "51"
 			(uuid "f004ec28-c703-4607-bf13-b968f6e591fb")
+			(alternate "I2C1_SCL")
 		)
 		(pin "52"
 			(uuid "a64f1d99-9031-4852-b027-507c97a2d681")
@@ -7174,6 +7179,7 @@
 		)
 		(pin "60"
 			(uuid "8c6401c2-df19-4fb7-86bd-deb6f70ea0bd")
+			(alternate "I2C1_SDA")
 		)
 		(pin "62"
 			(uuid "f2500793-57de-4e65-8f10-cdeb0e506e13")

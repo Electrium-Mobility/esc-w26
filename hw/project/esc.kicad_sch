@@ -67,7 +67,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 154.94) (xy 130.81 154.94)
+			(xy 118.11 156.21) (xy 130.81 156.21)
 		)
 		(stroke
 			(width 0)
@@ -417,7 +417,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 147.32) (xy 130.81 147.32)
+			(xy 118.11 149.86) (xy 130.81 149.86)
 		)
 		(stroke
 			(width 0)
@@ -477,7 +477,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 152.4) (xy 130.81 152.4)
+			(xy 118.11 153.67) (xy 130.81 153.67)
 		)
 		(stroke
 			(width 0)
@@ -534,6 +534,16 @@
 			(type default)
 		)
 		(uuid "da86f25c-02aa-45bc-871a-c5d72993652c")
+	)
+	(wire
+		(pts
+			(xy 118.11 147.32) (xy 130.81 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e389960f-3458-4df4-b479-06b24f5adf6f")
 	)
 	(wire
 		(pts
@@ -1063,7 +1073,7 @@
 				(justify left)
 			)
 		)
-		(pin "PA1" input
+		(pin "PA1" bidirectional
 			(at 130.81 144.78 180)
 			(uuid "3684304e-ca43-4a8c-9250-94f958897526")
 			(effects
@@ -1073,8 +1083,8 @@
 				(justify left)
 			)
 		)
-		(pin "PB7" input
-			(at 130.81 147.32 180)
+		(pin "PB7" bidirectional
+			(at 130.81 149.86 180)
 			(uuid "f7ab0253-15aa-48ae-a685-524fd81ce33a")
 			(effects
 				(font
@@ -1083,8 +1093,8 @@
 				(justify left)
 			)
 		)
-		(pin "PA8" input
-			(at 130.81 152.4 180)
+		(pin "PA8" bidirectional
+			(at 130.81 153.67 180)
 			(uuid "b66ef041-b3aa-4195-947d-9eb585f79d13")
 			(effects
 				(font
@@ -1093,9 +1103,19 @@
 				(justify left)
 			)
 		)
-		(pin "PC2" input
-			(at 130.81 154.94 180)
+		(pin "PC2" bidirectional
+			(at 130.81 156.21 180)
 			(uuid "2bcd2900-279b-468e-8e24-57e46b9040d5")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "PB6" bidirectional
+			(at 130.81 147.32 180)
+			(uuid "41f2c8c4-b137-49f5-8a99-2681d6f741b1")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1515,7 +1535,7 @@
 				(justify right)
 			)
 		)
-		(pin "PA1" input
+		(pin "PA1" bidirectional
 			(at 118.11 144.78 0)
 			(uuid "2d307f82-f2ce-4754-924a-270414174b3a")
 			(effects
@@ -1525,8 +1545,8 @@
 				(justify right)
 			)
 		)
-		(pin "PC2" input
-			(at 118.11 154.94 0)
+		(pin "PC2" bidirectional
+			(at 118.11 156.21 0)
 			(uuid "9e735b5b-250e-4102-af95-c94891bfd818")
 			(effects
 				(font
@@ -1545,8 +1565,8 @@
 				(justify right)
 			)
 		)
-		(pin "PA8" input
-			(at 118.11 152.4 0)
+		(pin "PA8" bidirectional
+			(at 118.11 153.67 0)
 			(uuid "debd8613-8972-4c38-bc62-be351cc25190")
 			(effects
 				(font
@@ -1555,8 +1575,8 @@
 				(justify right)
 			)
 		)
-		(pin "PB7" input
-			(at 118.11 147.32 0)
+		(pin "PB7" bidirectional
+			(at 118.11 149.86 0)
 			(uuid "65bfc624-82e5-4bb8-82ab-a1dce324bd12")
 			(effects
 				(font
@@ -1573,6 +1593,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "PB6" bidirectional
+			(at 118.11 147.32 0)
+			(uuid "c5609c24-8635-4309-a1c5-07a81a6541ca")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances
