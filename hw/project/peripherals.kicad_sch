@@ -7258,7 +7258,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 72.39) (xy 259.08 74.93)
+			(xy 259.08 73.66) (xy 259.08 76.2)
 		)
 		(stroke
 			(width 0)
@@ -8098,7 +8098,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 80.01) (xy 259.08 81.28)
+			(xy 259.08 81.28) (xy 259.08 82.55)
 		)
 		(stroke
 			(width 0)
@@ -8318,7 +8318,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 72.39) (xy 246.38 74.93)
+			(xy 246.38 73.66) (xy 246.38 76.2)
 		)
 		(stroke
 			(width 0)
@@ -8478,7 +8478,7 @@
 	)
 	(wire
 		(pts
-			(xy 259.08 88.9) (xy 259.08 91.44)
+			(xy 259.08 90.17) (xy 259.08 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9188,7 +9188,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 80.01) (xy 246.38 81.28)
+			(xy 246.38 81.28) (xy 246.38 82.55)
 		)
 		(stroke
 			(width 0)
@@ -9288,7 +9288,7 @@
 	)
 	(wire
 		(pts
-			(xy 246.38 88.9) (xy 246.38 91.44)
+			(xy 246.38 90.17) (xy 246.38 92.71)
 		)
 		(stroke
 			(width 0)
@@ -9508,12 +9508,12 @@
 	)
 	(hierarchical_label "READY"
 		(shape input)
-		(at 259.08 91.44 270)
+		(at 259.08 73.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "47db8523-b95c-4a2c-ae61-ed6a0f974248")
 	)
@@ -9530,12 +9530,12 @@
 	)
 	(hierarchical_label "FAULT"
 		(shape input)
-		(at 246.38 91.44 270)
+		(at 246.38 73.66 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "503edeaa-25da-4db5-a933-4f806c6dcde2")
 	)
@@ -10930,7 +10930,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 246.38 85.09 90)
+		(at 246.38 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10941,7 +10941,7 @@
 		(fields_autoplaced yes)
 		(uuid "18801c91-284f-4091-8fea-8b056b01fb87")
 		(property "Reference" "D21"
-			(at 250.19 85.4074 90)
+			(at 250.19 86.6774 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10952,7 +10952,7 @@
 			)
 		)
 		(property "Value" "2Vf"
-			(at 250.19 87.9474 90)
+			(at 250.19 89.2174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10963,7 +10963,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 246.38 85.09 0)
+			(at 246.38 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10974,7 +10974,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/liteon/LTST-C191KRKT/386837"
-			(at 246.38 85.09 0)
+			(at 246.38 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10985,7 +10985,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 246.38 85.09 0)
+			(at 246.38 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10996,7 +10996,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 246.38 85.09 0)
+			(at 246.38 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11332,6 +11332,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 246.38 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1f788342-a6d9-49b6-8e0b-672e6f64553a")
+		(property "Reference" "#PWR0130"
+			(at 246.38 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 246.38 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 246.38 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 246.38 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 246.38 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "578124d5-5b58-4ad1-bc47-db2ae24cca7c")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "#PWR0130")
 					(unit 1)
 				)
 			)
@@ -12388,7 +12466,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 259.08 77.47 180)
+		(at 259.08 78.74 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12399,7 +12477,7 @@
 		(fields_autoplaced yes)
 		(uuid "3d0ba2fe-b991-47e6-adae-5ca9a0ab6047")
 		(property "Reference" "R83"
-			(at 261.62 76.1999 0)
+			(at 261.62 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12410,7 +12488,7 @@
 			)
 		)
 		(property "Value" "130"
-			(at 261.62 78.7399 0)
+			(at 261.62 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12421,7 +12499,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 259.08 77.47 0)
+			(at 259.08 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12432,7 +12510,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT130R/1761271"
-			(at 259.08 77.47 0)
+			(at 259.08 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12443,7 +12521,7 @@
 			)
 		)
 		(property "Description" "RES 130 OHM 1% 1/10W 0603"
-			(at 259.08 77.47 0)
+			(at 259.08 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15261,84 +15339,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "R82")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 259.08 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "836671b3-f249-4e6b-8579-f932b411c68a")
-		(property "Reference" "#PWR094"
-			(at 259.08 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 259.08 67.31 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 259.08 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 259.08 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 259.08 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "741451f6-0bee-47ff-987d-22e7df54cba9")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR094")
 					(unit 1)
 				)
 			)
@@ -18335,7 +18335,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 246.38 77.47 180)
+		(at 246.38 78.74 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -18346,7 +18346,7 @@
 		(fields_autoplaced yes)
 		(uuid "cee03731-02de-4227-954f-4223d26ba9f4")
 		(property "Reference" "R80"
-			(at 248.92 76.1999 0)
+			(at 248.92 77.4699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18357,7 +18357,7 @@
 			)
 		)
 		(property "Value" "130"
-			(at 248.92 78.7399 0)
+			(at 248.92 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -18368,7 +18368,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 246.38 77.47 0)
+			(at 246.38 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18379,7 +18379,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT130R/1761271"
-			(at 246.38 77.47 0)
+			(at 246.38 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18390,7 +18390,7 @@
 			)
 		)
 		(property "Description" "RES 130 OHM 1% 1/10W 0603"
-			(at 246.38 77.47 0)
+			(at 246.38 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18489,6 +18489,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR0127")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 259.08 92.71 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d4145891-976c-49e7-886b-ee3d92e0e449")
+		(property "Reference" "#PWR0131"
+			(at 259.08 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 259.08 97.79 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 259.08 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "845ed66b-70ff-4c56-974c-e2347c071639")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "#PWR0131")
 					(unit 1)
 				)
 			)
@@ -20045,7 +20123,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 259.08 85.09 90)
+		(at 259.08 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -20056,7 +20134,7 @@
 		(fields_autoplaced yes)
 		(uuid "ece0e9d4-d86b-4567-977a-e9861872b916")
 		(property "Reference" "D22"
-			(at 262.89 85.4074 90)
+			(at 262.89 86.6774 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20067,7 +20145,7 @@
 			)
 		)
 		(property "Value" "2Vf"
-			(at 262.89 87.9474 90)
+			(at 262.89 89.2174 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -20078,7 +20156,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 259.08 85.09 0)
+			(at 259.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20089,7 +20167,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/150060AS75000/10468254"
-			(at 259.08 85.09 0)
+			(at 259.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20100,7 +20178,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 259.08 85.09 0)
+			(at 259.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -20111,7 +20189,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 259.08 85.09 0)
+			(at 259.08 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -21029,84 +21107,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR0107")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 246.38 72.39 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fe52b7cf-cd96-42ee-af6f-4e07ed03c41a")
-		(property "Reference" "#PWR090"
-			(at 246.38 76.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VDD"
-			(at 246.38 67.31 0)
-			(show_name no)
-			(do_not_autoplace yes)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 246.38 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 246.38 72.39 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a0e65699-9439-4636-bd5f-2ee8a85c9fe2")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR090")
 					(unit 1)
 				)
 			)
