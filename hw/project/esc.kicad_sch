@@ -950,16 +950,6 @@
 				(justify left)
 			)
 		)
-		(pin "SPEED" input
-			(at 130.81 93.98 180)
-			(uuid "c87b2328-c56e-4087-ad66-4d0598638721")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "SCK" bidirectional
 			(at 130.81 106.68 180)
 			(uuid "ea530fb6-f766-4432-b8e6-3b999be64f2c")
@@ -1186,9 +1176,9 @@
 				(justify right)
 			)
 		)
-		(pin "PWR_BTN" input
+		(pin "PWR" input
 			(at 69.85 48.26 0)
-			(uuid "5d07ecc4-828e-4819-8827-0795fc0587b7")
+			(uuid "0cfe3335-53d2-4d1c-8197-f8c83f2c2bb5")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1412,16 +1402,6 @@
 				(justify right)
 			)
 		)
-		(pin "SPEED" output
-			(at 118.11 93.98 0)
-			(uuid "b5bf5caf-b752-4d8f-b9ff-9760e17bf093")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
 		(pin "ADC" output
 			(at 118.11 78.74 0)
 			(uuid "4595e580-de22-4585-90cb-7dbf6f1f2d53")
@@ -1592,16 +1572,6 @@
 				(justify right)
 			)
 		)
-		(pin "PWR_BTN" output
-			(at 82.55 48.26 180)
-			(uuid "62c06539-5596-4e30-9a65-ef114481651a")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "PB6" bidirectional
 			(at 118.11 147.32 0)
 			(uuid "c5609c24-8635-4309-a1c5-07a81a6541ca")
@@ -1610,6 +1580,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "PWR" output
+			(at 82.55 48.26 180)
+			(uuid "5b656019-c29c-401a-8fe9-46630aa408eb")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
