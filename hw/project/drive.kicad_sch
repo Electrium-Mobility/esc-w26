@@ -1803,6 +1803,26 @@
 		)
 		(uuid "10dc809b-c166-4dab-b09a-699ce9b6da8d")
 	)
+	(text_box "Phase Voltage Sense\n\nExpecting 60Vmax, so R1=47k (0805), R2=2.49k (0603), Cf=2.2nF (>=16V)\n\nNote: Phase Voltage =/= BEMF\n\nBoth FOC and 6-step require the phase voltages to be measured to determine BEMF, thus they require the same circuitry for measuring the phase voltages\n\n6-step\n- With 6-step, zero-crossings are detected EITHER in-software (by sampling the voltage directly with ADC) OR in-hardware (by using a comparator to detect the crossing)\n- This board will only support SOFTWARE-based zero-crossing detection, so the associated pins only require ADCx and not COMPx\n- Note: Virtual Neutral Point could also be determined in either SW or HW, but choosing SW (see Control sheet)"
+		(exclude_from_sim no)
+		(at 78.74 155.194 0)
+		(size 86.36 36.6624)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "7b44e567-9a7b-418b-a81a-d93f1003eebf")
+	)
 	(text_box "PGA Configuration: Inverting Mode (non-inverting disallows DC bias) (AN5306 3.4.1)\n\nVINP (OPP/non-inverting)\n- HW: NC, free up pins with OPAMPx_VINP for other periphs\n- FW: VP_SEL[1:0] = 11 to cut off VINP and route internal DAC ch (RM0440 25.3.4)\n\nVINM (OPN/inverting)\n- HW: small R to limit curr (R1_internal=10k => G_error=0.1%)\n- FW: VM_SEL[1:0] = 10 to enable PGA mode (internal feedback R's) (AN5306 3.4.1)\n\nVOUT (OPO)\n- HW: NC, free up pins with OPAMPx_VOUT for other periphs\n- FW: OPAINTOEN = 1 to cut off VOUT and route internal ADC ch (RM0440 25.3.4)\n\nPGA_GAIN[4:0] = 8 to 13 to implement an inverting amplifier (12=>-31, 13=>-63)"
 		(exclude_from_sim no)
 		(at 195.58 109.22 0)
@@ -3523,6 +3543,16 @@
 		)
 		(uuid "ffac1585-f853-4e30-813a-4e81b225d61b")
 	)
+	(label "W"
+		(at 195.58 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0527dfc6-8c69-4333-80ae-25eda1eab13e")
+	)
 	(label "VSHUNT_U+"
 		(at 38.1 88.9 0)
 		(effects
@@ -3532,6 +3562,16 @@
 			(justify left bottom)
 		)
 		(uuid "0717cf34-4972-475f-b95e-5f535bcda11b")
+	)
+	(label "U"
+		(at 58.42 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0d31f5cc-d69a-41a1-8436-ecdb4dbbedaa")
 	)
 	(label "VSHUNT_W-"
 		(at 200.66 95.25 0)
@@ -3623,6 +3663,16 @@
 		)
 		(uuid "998fa69f-d6a5-428d-8988-81afeadb2445")
 	)
+	(label "V"
+		(at 127 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a13f1347-bae3-4b59-b7d9-5173f05f2312")
+	)
 	(label "VSHUNT_V+"
 		(at 92.71 123.19 180)
 		(effects
@@ -3652,6 +3702,16 @@
 			(justify left bottom)
 		)
 		(uuid "cf131654-64ec-41cf-ab55-6078f2d67367")
+	)
+	(label "U"
+		(at 21.59 158.75 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dc21fcbd-10a0-4022-b10a-d2cf8fdc726c")
 	)
 	(label "VSHUNT_U-"
 		(at 63.5 93.98 0)
@@ -3782,6 +3842,17 @@
 			(justify left)
 		)
 		(uuid "9af35308-4230-4658-b405-ed3733ce717b")
+	)
+	(hierarchical_label "VPHASE_U"
+		(shape output)
+		(at 49.53 157.48 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a75d459b-1b47-4e47-843d-b10441ddd347")
 	)
 	(hierarchical_label "GLS3"
 		(shape input)
@@ -4598,6 +4669,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 31.75 168.91 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2f97c191-643a-4721-bc14-01beab6eaff2")
+		(property "Reference" "R70"
+			(at 34.29 167.6399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_US"
+			(at 34.29 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 30.734 168.656 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 31.75 168.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9dd31e2f-0784-4a03-a2a5-5a84a996eafb")
+		)
+		(pin "2"
+			(uuid "0e0c73cd-2637-48be-b06d-d2afe57c99f7")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R70")
 					(unit 1)
 				)
 			)
@@ -7345,6 +7498,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "R40")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 31.75 158.75 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c5641975-bc34-4764-b801-80356b865b3a")
+		(property "Reference" "R52"
+			(at 34.29 157.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "R_US"
+			(at 34.29 160.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 30.734 158.496 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 31.75 158.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd73195a-f546-484f-8f8c-ae33da22ba22")
+		)
+		(pin "2"
+			(uuid "b9cc3694-c276-4bac-ad7b-8473bb92a1b5")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R52")
 					(unit 1)
 				)
 			)

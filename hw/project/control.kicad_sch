@@ -4350,6 +4350,17 @@
 		)
 		(uuid "338c4e1e-da55-4f8c-a040-b149d458622e")
 	)
+	(text "TODO: CHANGE BASED ON FINAL VBUS MAX"
+		(exclude_from_sim no)
+		(at 160.02 140.462 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "4910640c-ce99-4bfc-8264-95ce4735dea9")
+	)
 	(text "Logic Voltage"
 		(exclude_from_sim no)
 		(at 92.202 58.674 0)
@@ -4614,7 +4625,7 @@
 		)
 		(uuid "d4ee9a4c-5bc9-4180-9ec1-5bee62498a6c")
 	)
-	(text_box "Bus Voltage Monitoring\n\nVM_max = 78V, but take as 82.5V to avoid clipping\n\n82.5V / 3.3V = 25.0 = Rbus_2 / (Rbus_1 + Rbus_2) => Rbus_1 / Rbus_2 = 24.0"
+	(text_box "Bus Voltage Monitoring\n\n- VM_max = 78V, but take as 82.5V to avoid clipping\n- 82.5V / 3.3V = 25.0 = Rbus_2 / (Rbus_1 + Rbus_2) => Rbus_1 / Rbus_2 = 24.0\n- Used to determine Virtual Neutral Point in-software as opposed to hardware"
 		(exclude_from_sim no)
 		(at 167.64 135.89 0)
 		(size 114.3 12.7)
@@ -7270,6 +7281,7 @@
 		)
 		(pin "18"
 			(uuid "aabdd950-64e2-4287-a14b-153627d9d84c")
+			(alternate "SPI1_SCK")
 		)
 		(pin "6"
 			(uuid "6796aed8-5668-40ba-805f-435f2e0f4cad")
@@ -7303,6 +7315,7 @@
 		)
 		(pin "16"
 			(uuid "91788421-aa9a-4d2b-92c0-2a9dede20fcb")
+			(alternate "OPAMP1_VINM")
 		)
 		(pin "24"
 			(uuid "373e1d63-3cc6-4f79-a92a-9fe04ef38271")
