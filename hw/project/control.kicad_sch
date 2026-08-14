@@ -6369,17 +6369,6 @@
 		)
 		(uuid "03b065bc-9cfd-4b84-954f-5597976a5521")
 	)
-	(hierarchical_label "PB6"
-		(shape bidirectional)
-		(at 33.02 63.5 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "05f72622-c826-4b14-bcb9-6c6627aeb3e1")
-	)
 	(hierarchical_label "GLS3"
 		(shape output)
 		(at 33.02 43.18 180)
@@ -6457,9 +6446,20 @@
 		)
 		(uuid "4a4c8b8d-89ff-473c-ad98-e435831d39de")
 	)
-	(hierarchical_label "SYS1"
+	(hierarchical_label "PB9"
+		(shape bidirectional)
+		(at 33.02 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "4a6b6bf9-b113-4a7c-9f55-2540753b312f")
+	)
+	(hierarchical_label "STATUS1"
 		(shape output)
-		(at 33.02 101.6 180)
+		(at 33.02 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6547,7 +6547,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
-		(at 33.02 71.12 180)
+		(at 33.02 66.04 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6567,9 +6567,9 @@
 		)
 		(uuid "6b3e67e9-6be8-4017-a1f8-0f4ff1ae7dc2")
 	)
-	(hierarchical_label "SYS2"
+	(hierarchical_label "STATUS2"
 		(shape output)
-		(at 33.02 73.66 180)
+		(at 33.02 60.96 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6611,17 +6611,6 @@
 		)
 		(uuid "8629de26-e8c2-465b-9528-bd3c4b51a21a")
 	)
-	(hierarchical_label "PB7"
-		(shape bidirectional)
-		(at 33.02 66.04 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8b77df57-1cf5-4559-9842-e39324b12c16")
-	)
 	(hierarchical_label "GLS1"
 		(shape output)
 		(at 33.02 38.1 180)
@@ -6643,6 +6632,17 @@
 			(justify right)
 		)
 		(uuid "8f74dd88-4e5d-4a18-b8df-88ea83c15132")
+	)
+	(hierarchical_label "PD2"
+		(shape bidirectional)
+		(at 33.02 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "919ebaf8-66d7-44cc-9f60-131a3b01e882")
 	)
 	(hierarchical_label "VPHASE_W"
 		(shape input)
@@ -6842,6 +6842,17 @@
 		)
 		(uuid "ea99dfbd-dfc2-4ad1-8cfa-b220b1410f3e")
 	)
+	(hierarchical_label "PB10"
+		(shape bidirectional)
+		(at 33.02 73.66 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "f54d9925-e0eb-42fc-8c57-16685c3529af")
+	)
 	(hierarchical_label "GHS1"
 		(shape output)
 		(at 73.66 35.56 0)
@@ -6852,6 +6863,17 @@
 			(justify left)
 		)
 		(uuid "f5608c65-9d87-4e8b-996c-638dac41a8d7")
+	)
+	(hierarchical_label "PB6"
+		(shape bidirectional)
+		(at 33.02 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ff4ae72b-289d-4449-8873-cb85d354b700")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
