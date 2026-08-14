@@ -6089,7 +6089,7 @@
 		(uuid "ffbdce87-69c3-49c8-97a9-cb3786f6d5b0")
 	)
 	(label "SIP_TEMP"
-		(at 33.02 83.82 180)
+		(at 33.02 48.26 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6129,7 +6129,7 @@
 		(uuid "204692e8-638e-4ee2-b4ca-9fcfa44df8c6")
 	)
 	(label "VM_SENSE"
-		(at 33.02 86.36 180)
+		(at 33.02 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6404,12 +6404,12 @@
 	)
 	(hierarchical_label "CAN_STBY"
 		(shape output)
-		(at 33.02 50.8 180)
+		(at 73.66 66.04 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "27a90c0c-4ea0-4437-9efc-a94524c7561c")
 	)
@@ -6481,12 +6481,12 @@
 	)
 	(hierarchical_label "HB"
 		(shape input)
-		(at 33.02 60.96 180)
+		(at 73.66 48.26 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "51666f4f-b56c-4291-9faa-5bc1cce7f7ee")
 	)
@@ -6558,12 +6558,12 @@
 	)
 	(hierarchical_label "HC"
 		(shape input)
-		(at 33.02 48.26 180)
+		(at 73.66 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "6b3e67e9-6be8-4017-a1f8-0f4ff1ae7dc2")
 	)
@@ -6580,7 +6580,7 @@
 	)
 	(hierarchical_label "ADC"
 		(shape input)
-		(at 33.02 78.74 180)
+		(at 33.02 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6591,12 +6591,12 @@
 	)
 	(hierarchical_label "HA"
 		(shape input)
-		(at 33.02 58.42 180)
+		(at 73.66 45.72 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "829358ec-ec24-4688-8385-7bf7bb4dbe07")
 	)
@@ -6610,17 +6610,6 @@
 			(justify left)
 		)
 		(uuid "8629de26-e8c2-465b-9528-bd3c4b51a21a")
-	)
-	(hierarchical_label "PC4"
-		(shape bidirectional)
-		(at 33.02 88.9 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "88b4bbf3-2e70-4fbd-968e-f9f5a1d76f26")
 	)
 	(hierarchical_label "PB7"
 		(shape bidirectional)
@@ -6657,12 +6646,12 @@
 	)
 	(hierarchical_label "VPHASE_W"
 		(shape input)
-		(at 73.66 50.8 0)
+		(at 33.02 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "92b5c348-eb09-45c7-b364-823afef662dc")
 	)
@@ -6690,7 +6679,7 @@
 	)
 	(hierarchical_label "MOTOR_TEMP"
 		(shape input)
-		(at 33.02 81.28 180)
+		(at 33.02 50.8 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6745,12 +6734,12 @@
 	)
 	(hierarchical_label "VPHASE_V"
 		(shape input)
-		(at 73.66 48.26 0)
+		(at 33.02 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "b6a8c227-80dd-4744-b37f-bbf15790c709")
 	)
@@ -6833,12 +6822,12 @@
 	)
 	(hierarchical_label "VPHASE_U"
 		(shape input)
-		(at 73.66 45.72 0)
+		(at 33.02 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "e864fa3f-6c98-45fa-b06c-0690cebbe076")
 	)
@@ -6863,17 +6852,6 @@
 			(justify left)
 		)
 		(uuid "f5608c65-9d87-4e8b-996c-638dac41a8d7")
-	)
-	(hierarchical_label "PA8"
-		(shape bidirectional)
-		(at 73.66 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "fab218bb-eefe-4a5b-83ea-89832920f546")
 	)
 	(symbol
 		(lib_id "Device:C_Small")
@@ -7311,27 +7289,29 @@
 		)
 		(pin "13"
 			(uuid "f4021325-59c7-4b84-a3df-8e429e1e9978")
-			(alternate "ADC12_IN1")
+			(alternate "TIM2_CH1")
 		)
 		(pin "15"
 			(uuid "08bfd1ad-2cce-4e75-9973-ce6eeb3297cc")
-			(alternate "ADC1_IN3")
+			(alternate "TIM2_CH3")
 		)
 		(pin "19"
 			(uuid "cfd61df4-b2b0-48c8-9ecf-b4a4c5e260b1")
 		)
 		(pin "23"
 			(uuid "655b411a-9044-4bc3-b32d-60f85bc9fbc5")
+			(alternate "ADC1_IN15")
 		)
 		(pin "21"
 			(uuid "796fbcb9-84c5-4085-a5a6-114e0faa8064")
+			(alternate "ADC2_IN5")
 		)
 		(pin "7"
 			(uuid "b746aaa9-d880-4ae3-8a65-9f0199e546b7")
 		)
 		(pin "14"
 			(uuid "80e0dce5-00a7-4d64-b7f1-482e2f79d97a")
-			(alternate "ADC12_IN2")
+			(alternate "TIM2_CH2")
 		)
 		(pin "12"
 			(uuid "713ea809-e6d1-43f5-a6e7-21175650d408")
@@ -7346,6 +7326,7 @@
 		)
 		(pin "24"
 			(uuid "373e1d63-3cc6-4f79-a92a-9fe04ef38271")
+			(alternate "ADC1_IN12")
 		)
 		(pin "17"
 			(uuid "ec95cedb-b39b-45b7-a282-c46c3f67e210")

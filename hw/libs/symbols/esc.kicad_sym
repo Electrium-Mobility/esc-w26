@@ -371,6 +371,7 @@
 					)
 				)
 				(alternate "ADC12_IN1" input line)
+				(alternate "TIM2_CH1" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 40.64 -20.32 180)
@@ -390,6 +391,7 @@
 					)
 				)
 				(alternate "ADC12_IN2" input line)
+				(alternate "TIM2_CH2" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 40.64 -22.86 180)
@@ -409,6 +411,7 @@
 					)
 				)
 				(alternate "ADC1_IN3" input line)
+				(alternate "TIM2_CH3" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 40.64 -25.4 180)
@@ -560,7 +563,8 @@
 						)
 					)
 				)
-				(alternate "TIM3_CH3" input line)
+				(alternate "ADC1_IN15" input line)
+				(alternate "TIM3_CH3" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 0 -22.86 0)
@@ -579,6 +583,7 @@
 						)
 					)
 				)
+				(alternate "ADC1_IN12" bidirectional line)
 			)
 			(pin bidirectional line
 				(at 0 -25.4 0)
