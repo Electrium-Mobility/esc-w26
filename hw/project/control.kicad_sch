@@ -4361,6 +4361,17 @@
 		)
 		(uuid "4910640c-ce99-4bfc-8264-95ce4735dea9")
 	)
+	(text "TODO: CHANGE BASED ON FINAL VBUS MAX"
+		(exclude_from_sim no)
+		(at 120.904 139.192 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "5278a5f7-c6c5-45a1-b3d6-da4d6e7c1273")
+	)
 	(text "Logic Voltage"
 		(exclude_from_sim no)
 		(at 92.202 58.674 0)
@@ -4410,6 +4421,17 @@
 			(justify left top)
 		)
 		(uuid "a98721a1-a136-4a14-b2cc-7fe476c8d304")
+	)
+	(text "TODO: CHANGE BASED ON FINAL VBUS MAX"
+		(exclude_from_sim no)
+		(at 116.586 128.524 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "c1428e92-5f96-4503-a97d-d28c2ed679d6")
 	)
 	(text "External Oscillator"
 		(exclude_from_sim no)
@@ -6066,8 +6088,8 @@
 		)
 		(uuid "ffbdce87-69c3-49c8-97a9-cb3786f6d5b0")
 	)
-	(label "TEMP_SENSE"
-		(at 33.02 88.9 180)
+	(label "SIP_TEMP"
+		(at 33.02 83.82 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6107,12 +6129,12 @@
 		(uuid "204692e8-638e-4ee2-b4ca-9fcfa44df8c6")
 	)
 	(label "VM_SENSE"
-		(at 73.66 45.72 0)
+		(at 33.02 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "29f26cd7-29a5-4f63-b637-9cee94fcbe85")
 	)
@@ -6296,7 +6318,7 @@
 		)
 		(uuid "d160bb8e-000b-4e6f-bab1-31a5a4f9a981")
 	)
-	(label "TEMP_SENSE"
+	(label "SIP_TEMP"
 		(at 149.86 156.21 0)
 		(effects
 			(font
@@ -6379,17 +6401,6 @@
 			(justify right)
 		)
 		(uuid "0ea2c964-8574-41cc-aba9-f02dedb6815d")
-	)
-	(hierarchical_label "PA2"
-		(shape input)
-		(at 73.66 50.8 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "23875b53-69c2-4e11-8a3a-4e8312604294")
 	)
 	(hierarchical_label "CAN_STBY"
 		(shape output)
@@ -6569,7 +6580,7 @@
 	)
 	(hierarchical_label "ADC"
 		(shape input)
-		(at 33.02 81.28 180)
+		(at 33.02 78.74 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6600,9 +6611,9 @@
 		)
 		(uuid "8629de26-e8c2-465b-9528-bd3c4b51a21a")
 	)
-	(hierarchical_label "PC2"
+	(hierarchical_label "PC4"
 		(shape bidirectional)
-		(at 33.02 83.82 180)
+		(at 33.02 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6644,6 +6655,17 @@
 		)
 		(uuid "8f74dd88-4e5d-4a18-b8df-88ea83c15132")
 	)
+	(hierarchical_label "VPHASE_W"
+		(shape input)
+		(at 73.66 50.8 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "92b5c348-eb09-45c7-b364-823afef662dc")
+	)
 	(hierarchical_label "SWDIO"
 		(shape bidirectional)
 		(at 73.66 78.74 0)
@@ -6668,7 +6690,7 @@
 	)
 	(hierarchical_label "MOTOR_TEMP"
 		(shape input)
-		(at 33.02 78.74 180)
+		(at 33.02 81.28 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6721,8 +6743,8 @@
 		)
 		(uuid "ae166170-cb26-4aa1-8055-933465fa0776")
 	)
-	(hierarchical_label "PA1"
-		(shape bidirectional)
+	(hierarchical_label "VPHASE_V"
+		(shape input)
 		(at 73.66 48.26 0)
 		(effects
 			(font
@@ -6730,7 +6752,7 @@
 			)
 			(justify left)
 		)
-		(uuid "b7bbde2f-c4a7-4d83-87b2-ac6e7d6303d2")
+		(uuid "b6a8c227-80dd-4744-b37f-bbf15790c709")
 	)
 	(hierarchical_label "GHS2"
 		(shape output)
@@ -6764,17 +6786,6 @@
 			(justify left)
 		)
 		(uuid "c612bf4b-b2a9-4340-ab6f-f6fa2c0483ba")
-	)
-	(hierarchical_label "PC3"
-		(shape bidirectional)
-		(at 33.02 86.36 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "cbbf39e7-5380-418f-9935-e3e0d0860f5b")
 	)
 	(hierarchical_label "OUT1"
 		(shape output)
@@ -6819,6 +6830,17 @@
 			(justify right)
 		)
 		(uuid "e7e587c8-d1b6-4116-a2e5-624633ad150e")
+	)
+	(hierarchical_label "VPHASE_U"
+		(shape input)
+		(at 73.66 45.72 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e864fa3f-6c98-45fa-b06c-0690cebbe076")
 	)
 	(hierarchical_label "OUT3"
 		(shape output)
@@ -7263,12 +7285,14 @@
 		)
 		(pin "11"
 			(uuid "ce481101-f941-4e57-ac0a-26db4dc69a9f")
+			(alternate "ADC12_IN8")
 		)
 		(pin "39"
 			(uuid "5cc9335e-598e-4732-a123-a2ccaeb8043a")
 		)
 		(pin "9"
 			(uuid "bc4a89e3-6407-4caa-bfdf-eb503ec18a98")
+			(alternate "ADC12_IN6")
 		)
 		(pin "8"
 			(uuid "00816b34-0328-41be-bcf2-774ec9694498")
@@ -7281,16 +7305,17 @@
 		)
 		(pin "18"
 			(uuid "aabdd950-64e2-4287-a14b-153627d9d84c")
-			(alternate "SPI1_SCK")
 		)
 		(pin "6"
 			(uuid "6796aed8-5668-40ba-805f-435f2e0f4cad")
 		)
 		(pin "13"
 			(uuid "f4021325-59c7-4b84-a3df-8e429e1e9978")
+			(alternate "ADC12_IN1")
 		)
 		(pin "15"
 			(uuid "08bfd1ad-2cce-4e75-9973-ce6eeb3297cc")
+			(alternate "ADC1_IN3")
 		)
 		(pin "19"
 			(uuid "cfd61df4-b2b0-48c8-9ecf-b4a4c5e260b1")
@@ -7306,16 +7331,18 @@
 		)
 		(pin "14"
 			(uuid "80e0dce5-00a7-4d64-b7f1-482e2f79d97a")
+			(alternate "ADC12_IN2")
 		)
 		(pin "12"
 			(uuid "713ea809-e6d1-43f5-a6e7-21175650d408")
+			(alternate "ADC12_IN9")
 		)
 		(pin "10"
 			(uuid "429ca819-ea45-4866-bdd2-4e3af0d3911c")
+			(alternate "ADC12_IN7")
 		)
 		(pin "16"
 			(uuid "91788421-aa9a-4d2b-92c0-2a9dede20fcb")
-			(alternate "OPAMP1_VINM")
 		)
 		(pin "24"
 			(uuid "373e1d63-3cc6-4f79-a92a-9fe04ef38271")
