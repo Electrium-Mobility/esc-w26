@@ -687,8 +687,8 @@
       "group_symbols": true,
       "include_excluded_from_bom": true,
       "name": "",
-      "sort_asc": false,
-      "sort_field": "${QUANTITY}"
+      "sort_asc": true,
+      "sort_field": "Value"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -739,7 +739,7 @@
         "uuid": "86a17c4d-db96-42a1-af84-d43fe593f4e6"
       }
     ],
-    "used_designators": "R52,R70,R72,R74-79,C23,C52,C54,#PWR75,#PWR79,#PWR82",
+    "used_designators": "R80,#PWR39,#PWR44",
     "variants": []
   },
   "sheets": [
