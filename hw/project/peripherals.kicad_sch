@@ -6019,17 +6019,6 @@
 		)
 		(uuid "2c90f375-5033-41c3-ad92-c41ee5232ab5")
 	)
-	(text "PGND?"
-		(exclude_from_sim no)
-		(at 28.702 75.184 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "3c816edc-9da1-4e84-ac81-5ef89b0421b4")
-	)
 	(text "Power Switch"
 		(exclude_from_sim no)
 		(at 16.002 19.304 0)
@@ -11354,6 +11343,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 78.74 130.81 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "36b46f35-3667-4f12-9a41-7111cf5cd2f9")
+		(property "Reference" "C60"
+			(at 81.28 129.5335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1nF"
+			(at 81.28 132.0735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 78.74 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
+			(at 78.74 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
+			(at 78.74 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "89676ab7-9c6b-4bdf-a643-7bdd9fe7969b")
+		)
+		(pin "1"
+			(uuid "e3153d1e-8e1e-4fd0-b21f-06cdf92c63ae")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "C60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 257.81 27.94 0)
 		(unit 1)
@@ -12164,88 +12235,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 274.32 132.08 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "43cc1304-0cfe-4f6c-bef9-a8525d0573cc")
-		(property "Reference" "C53"
-			(at 276.86 130.8035 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1nF"
-			(at 276.86 133.3435 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 274.32 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 274.32 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 274.32 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2d5465f2-f92e-4284-b970-758aecf7a804")
-		)
-		(pin "1"
-			(uuid "2b50f0ad-698b-47ec-b87d-29215b9ec1bf")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C53")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 204.47 165.1 0)
 		(mirror y)
@@ -12477,6 +12466,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "SW3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 88.9 130.81 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4d9ca7ba-543f-4d4b-9f3c-1f832ff78956")
+		(property "Reference" "C61"
+			(at 91.44 129.5335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1nF"
+			(at 91.44 132.0735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 88.9 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
+			(at 88.9 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
+			(at 88.9 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "7ee9b650-f734-422a-8554-e677ed581a81")
+		)
+		(pin "1"
+			(uuid "7f1ddfdf-a0ab-4fea-aecb-9ded799293ec")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "C61")
 					(unit 1)
 				)
 			)
@@ -12811,88 +12882,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 88.9 130.81 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5bff93ef-e9b4-422d-9117-e4560eb4d630")
-		(property "Reference" "C44"
-			(at 91.44 129.5335 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1nF"
-			(at 91.44 132.0735 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 88.9 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 88.9 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 88.9 130.81 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "51a13fa5-1015-41ed-b727-66cb59c1173c")
-		)
-		(pin "1"
-			(uuid "b0c94cc3-6ed9-43e4-bd3b-1a375d7eb578")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C44")
 					(unit 1)
 				)
 			)
@@ -15291,7 +15280,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 78.74 130.81 180)
+		(at 274.32 132.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15300,9 +15289,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "99cb1c3c-6e9d-474a-93f3-b4bc2ac8e7a1")
-		(property "Reference" "C42"
-			(at 81.28 129.5335 0)
+		(uuid "982e56d2-a40f-42ca-9bc0-db47cd5238ca")
+		(property "Reference" "C63"
+			(at 276.86 130.8035 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15313,7 +15302,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 81.28 132.0735 0)
+			(at 276.86 133.3435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15323,8 +15312,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 78.74 130.81 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 274.32 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15334,8 +15323,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 78.74 130.81 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
+			(at 274.32 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15345,8 +15334,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 78.74 130.81 0)
+		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
+			(at 274.32 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15357,15 +15346,15 @@
 			)
 		)
 		(pin "2"
-			(uuid "941cb56c-5827-429c-a5a1-79951f39e914")
+			(uuid "840a6705-4db8-4a16-8300-eeba85d7fb57")
 		)
 		(pin "1"
-			(uuid "8cd7bab9-3522-4413-91e6-6e0582943c93")
+			(uuid "787b8300-8125-4424-b4aa-1e414deb580a")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C42")
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -16702,84 +16691,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 39.37 74.93 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bd65e8fc-1066-40eb-a873-3f3b76726ad1")
-		(property "Reference" "#PWR076"
-			(at 39.37 81.28 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 39.37 80.01 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 39.37 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 39.37 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 39.37 74.93 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a652b345-c868-40e4-bd25-8a621741a4cb")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR076")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:LED")
 		(at 243.84 96.52 90)
 		(unit 1)
@@ -17042,6 +16953,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "C43")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 99.06 130.81 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c2675f0a-4a90-433e-a6af-ee0f77d9f55d")
+		(property "Reference" "C62"
+			(at 101.6 129.5335 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1nF"
+			(at 101.6 132.0735 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 99.06 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
+			(at 99.06 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
+			(at 99.06 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "b3b0492e-d9a9-4558-8743-0afed473d08c")
+		)
+		(pin "1"
+			(uuid "812a4515-6ca9-4ab3-98ff-6a7f0a2fa4bb")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -17920,8 +17913,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 99.06 130.81 180)
+		(lib_id "power:GND")
+		(at 39.37 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17930,31 +17923,30 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "e071d637-bcc3-4a67-b56e-343cae511dd7")
-		(property "Reference" "C45"
-			(at 101.6 129.5335 0)
+		(uuid "e028185f-2d41-4519-903b-0f657fc68c4e")
+		(property "Reference" "#PWR06"
+			(at 39.37 81.28 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "1nF"
-			(at 101.6 132.0735 0)
+		(property "Value" "PGND"
+			(at 39.37 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 99.06 130.81 0)
+		(property "Footprint" ""
+			(at 39.37 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17965,7 +17957,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 99.06 130.81 0)
+			(at 39.37 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17975,8 +17967,8 @@
 				)
 			)
 		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 99.06 130.81 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 39.37 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17985,17 +17977,14 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "84caf280-ae91-4dde-8335-60a803887474")
 		)
 		(pin "1"
-			(uuid "4567f2a9-1c21-4a4d-98bc-45ecddf0901c")
+			(uuid "d5ebf48c-69b9-431b-b466-3efd61e77682")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C45")
+					(reference "#PWR06")
 					(unit 1)
 				)
 			)
