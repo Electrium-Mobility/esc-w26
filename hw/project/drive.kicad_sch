@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "10.0")
 	(uuid "dd5b96c0-c600-4daf-b11c-37c81c20c165")
-	(paper "A3")
+	(paper "User" 330.2 228.6)
 	(title_block
 		(title "ESC 2026 - Drive")
 		(date "2026-06-30")
@@ -1728,6 +1728,18 @@
 		)
 		(uuid "1a97c022-06d6-4e64-a3e3-b980bbdcf0ad")
 	)
+	(text "C0G/NP0 required!!\n\nso cant reuse hall sensor's 1nF, but can just it for all"
+		(exclude_from_sim no)
+		(at 93.726 131.064 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+			(justify left)
+		)
+		(uuid "45ec0ec7-d176-4e20-9836-4b5d33df3278")
+	)
 	(text "Voltage Sense U"
 		(exclude_from_sim no)
 		(at 26.162 146.304 0)
@@ -1866,8 +1878,8 @@
 	)
 	(text_box "Bootstrap Cap (BOOTx - OUTx)\n\nFor STL110N10F7, since V_GS(th, max) = 4.5V and R_DS(on, max) spec'd at V_GS = 10V, VCC = 10V set in FW\n\nC_BOOT(min) >= (10*Q_g)/V_GS = (10*72nC)/10V = 72nF\n\nBut take 1uF from EVSPIN32G4 for plenty of safety buffer against voltage sag while remaining small enough to fully recharge when GLSx on"
 		(exclude_from_sim no)
-		(at 223.52 40.64 0)
-		(size 86.36 20.3053)
+		(at 223.52 38.1 0)
+		(size 86.36 22.8453)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1947,7 +1959,7 @@
 	(text_box "Asymmetric Gate Drive (GHSx/GLSx - GATE)\n\nTurn-off (gate pulled low) faster due to discharge thru D, so shoot-through avoided. Optional series R to damp voltage spikes in the path.\n\nTurn-on (gate pulled high) slowed by R to reduce voltage spikes\n\n"
 		(exclude_from_sim no)
 		(at 223.52 20.32 0)
-		(size 86.36 15.2399)
+		(size 86.36 17.7799)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -1964,7 +1976,7 @@
 		)
 		(uuid "d0eff5b7-bef8-48a7-ab31-f6eeb9fb9502")
 	)
-	(text_box "External Filtering Resistor: R_f = 10 ohms\nInternal op-amp has high input impedance, so effect on measurement is negligible\n\nExternal Filtering Capacitor: C_f = 1 nF\nSTM32G431C6 datasheet gives GBW_min=7MHz & BW_PGA=GBW/G, so G_worst=-63 => BW_worst=7MHz/64=109kHz > f_FOC=50kHz\nTheoretically fine to DNP a C_f, but add 1nF anyway to prevent high-freq MOSFET switching noise before captured by the ADC\nC_f cannot hurt since f_c=15.91MHz >>> 109kHz=BW_worst"
+	(text_box "External Filtering Resistor: R_f = 10 ohms\nInternal op-amp has high input impedance, so effect on measurement is negligible\n\nExternal Filtering Capacitor: C_f = 1 nF (C0G/NP0 is a MUST)\nSTM32G431C6 datasheet gives GBW_min=7MHz & BW_PGA=GBW/G, so G_worst=-63 => BW_worst=7MHz/64=109kHz > f_FOC=50kHz\nTheoretically fine to DNP a C_f, but add 1nF anyway to prevent high-freq MOSFET switching noise before captured by the ADC\nC_f cannot hurt since f_c=15.91MHz >>> 109kHz=BW_worst"
 		(exclude_from_sim no)
 		(at 241.3 119.38 0)
 		(size 68.58 22.86)
@@ -2986,16 +2998,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 121.92) (xy 39.37 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6330e7d3-bb71-4d33-b1c1-2027936c7456")
-	)
-	(wire
-		(pts
 			(xy 97.79 69.85) (xy 95.25 69.85)
 		)
 		(stroke
@@ -3246,6 +3248,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 121.92) (xy 39.37 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "882d4aae-f926-45c8-8a0c-25511eddf351")
+	)
+	(wire
+		(pts
 			(xy 101.6 85.09) (xy 101.6 86.36)
 		)
 		(stroke
@@ -3266,7 +3278,7 @@
 	)
 	(wire
 		(pts
-			(xy 24.13 121.92) (xy 29.21 121.92)
+			(xy 24.13 121.92) (xy 30.48 121.92)
 		)
 		(stroke
 			(width 0)
@@ -7618,6 +7630,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 33.02 121.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7cddd2e5-02fb-4117-bc9a-035a5700123c")
+		(property "Reference" "R79"
+			(at 33.274 116.078 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10"
+			(at 33.274 118.618 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 33.02 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT10R0/1761152"
+			(at 33.02 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10 OHM 1% 1/10W 0603"
+			(at 33.02 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "afc5ab37-9e7b-4a12-8389-b3ddd6b63021")
+		)
+		(pin "2"
+			(uuid "9321d8e9-0784-4c07-bb16-7b128b1e8615")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R79")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 135.89 128.27 180)
 		(unit 1)
@@ -7855,86 +7946,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "R34")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 33.02 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8589aa5f-e2cf-4680-8683-689801762d2d")
-		(property "Reference" "R21"
-			(at 33.02 115.57 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10"
-			(at 33.02 118.11 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 33.02 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "59152601-84ee-4cec-99c8-61184237b9e9")
-		)
-		(pin "1"
-			(uuid "19e937aa-c434-4fd8-8888-314c193dff2a")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R21")
 					(unit 1)
 				)
 			)
