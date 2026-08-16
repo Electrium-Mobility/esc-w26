@@ -4287,7 +4287,7 @@
 		)
 		(uuid "227de350-63fd-4f82-85af-a634759b5c55")
 	)
-	(text_box "V_DS Monitoring Protection / Short Circuit REFerence (5.2.5)\n\n- Normally Open, so feature enabled when header is NOT on\n- Capacitor is N.M. There in case of false positives.\n\nResistor divider based on EVSPIN32G4's use of the STL110N10F7, so need to spec for desired trip current since same MOSFETs are used\n\nRefer to J2 in UM2896"
+	(text_box "V_DS Monitoring Protection / Short Circuit REFerence (5.2.5)\n\n- Normally Open, so feature enabled when header is NOT on\n- Capacitor is N.M. There in case of false positives.\n\nResistor divider based on EVSPIN32G4's use of the STL110N10F7, so need to spec for desired trip current since same MOSFETs are used\n\nRefer to J2 and section 5.5.1 in UM2896"
 		(exclude_from_sim no)
 		(at 210.82 91.44 0)
 		(size 71.12 21.5899)
