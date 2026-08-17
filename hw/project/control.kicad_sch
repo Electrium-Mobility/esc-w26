@@ -4530,6 +4530,12 @@
 		(uuid "33592e24-b17d-4702-8b9d-0180d79fe012")
 	)
 	(junction
+		(at 154.94 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3bdf3ccc-30b2-45ff-a682-067c05bf13dd")
+	)
+	(junction
 		(at 153.67 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4588,6 +4594,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8b96987f-9f1c-46ff-bf9f-c3572f7bc205")
+	)
+	(junction
+		(at 203.2 81.28)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8eea866f-65de-47b7-8d0c-7b7bd9563484")
 	)
 	(junction
 		(at 137.16 68.58)
@@ -4761,13 +4773,33 @@
 	)
 	(wire
 		(pts
-			(xy 154.94 118.11) (xy 154.94 121.92)
+			(xy 200.66 81.28) (xy 203.2 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11649b71-2324-4882-b5e4-5db537f585f8")
+	)
+	(wire
+		(pts
+			(xy 154.94 118.11) (xy 154.94 120.65)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "11771d7e-4417-479d-8607-68ab9f66f4ab")
+	)
+	(wire
+		(pts
+			(xy 154.94 120.65) (xy 154.94 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18e24608-9652-4203-8427-f9595bf7f9f1")
 	)
 	(wire
 		(pts
@@ -5438,6 +5470,16 @@
 			(type default)
 		)
 		(uuid "9e7cd0d5-2aaf-472d-b989-7acdc2d99420")
+	)
+	(wire
+		(pts
+			(xy 152.4 120.65) (xy 154.94 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f482728-3d47-4e3c-a8d3-790f5d4773fd")
 	)
 	(wire
 		(pts
@@ -7975,6 +8017,83 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 200.66 81.28 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2e382cf4-0e9f-4bd7-9612-37076846b32e")
+		(property "Reference" "TP18"
+			(at 197.358 76.2 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 197.358 78.74 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KEYSTONE_5016:KEYSTONE_5016"
+			(at 200.66 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/keystone-electronics/5016/278887"
+			(at 200.66 76.2 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 200.66 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d4908938-4e68-48f3-9d15-f17d452fbf89")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -13519,6 +13638,83 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "R82")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 152.4 120.65 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e3af6963-0c7b-4d52-b343-b4a426302c1c")
+		(property "Reference" "TP19"
+			(at 149.098 115.57 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PGND"
+			(at 149.098 118.11 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "KEYSTONE_5016:KEYSTONE_5016"
+			(at 152.4 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/keystone-electronics/5016/278887"
+			(at 152.4 115.57 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 152.4 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f6a72496-8ca7-44ec-b18c-34338d06fa77")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "TP19")
 					(unit 1)
 				)
 			)

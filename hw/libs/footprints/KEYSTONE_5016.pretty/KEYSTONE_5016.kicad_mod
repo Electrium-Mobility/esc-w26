@@ -1,0 +1,151 @@
+(footprint "KEYSTONE_5016"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(property "Reference" "REF**"
+		(at 0.575 -3.6 0)
+		(layer "F.SilkS")
+		(uuid "3d97feab-2ccf-48b0-8cb0-3193ad4fed99")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "KEYSTONE_5016"
+		(at 5.655 3.6 0)
+		(layer "F.Fab")
+		(uuid "ae5acc65-7c08-42a7-8882-549a36c93597")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "f2a748b0-0e3b-499f-8df6-1464206b553b")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(property "Description" ""
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "bb9253aa-5634-4dc0-8ad2-6bbb57249139")
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+	)
+	(attr smd)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -2.6 -1.965)
+		(end -2.6 1.965)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "744ee8cf-c472-4270-8a8b-d33ddb33dbc0")
+	)
+	(fp_line
+		(start -2.6 1.965)
+		(end 2.6 1.965)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "d63b517b-e222-4b95-bc0e-290ff6c9a0db")
+	)
+	(fp_line
+		(start 2.6 -1.965)
+		(end -2.6 -1.965)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "1d281b34-36f7-4cb3-b76a-23c163ecc21c")
+	)
+	(fp_line
+		(start 2.6 1.965)
+		(end 2.6 -1.965)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(layer "F.CrtYd")
+		(uuid "5c109b77-3378-41b4-a4f3-d3b7fcdc3e75")
+	)
+	(fp_line
+		(start -1.905 -1.42)
+		(end 1.905 -1.42)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "faa21c84-37e7-41bc-994c-81fbdd3fc503")
+	)
+	(fp_line
+		(start -1.905 1.42)
+		(end -1.905 -1.42)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "e8c012d5-88e9-4f67-bbdd-c4a6f91c7ba1")
+	)
+	(fp_line
+		(start 1.905 -1.42)
+		(end 1.905 1.42)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "ed810b8b-7478-49bc-9094-fd04f3ade0f0")
+	)
+	(fp_line
+		(start 1.905 1.42)
+		(end -1.905 1.42)
+		(stroke
+			(width 0.127)
+			(type solid)
+		)
+		(layer "F.Fab")
+		(uuid "3262c0b4-fda4-4aee-b5f2-f5ba0707a11a")
+	)
+	(pad "TP" smd rect
+		(at 0 0)
+		(size 4.7 3.43)
+		(layers "F.Cu" "F.Mask" "F.Paste")
+		(solder_mask_margin 0.102)
+		(uuid "57eb038d-e0fd-4d05-8420-1eb543ec0a11")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../libs/3dmodels/KEYSTONE_5016.STEP"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz -90 -0 -0)
+		)
+	)
+)

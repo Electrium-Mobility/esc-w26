@@ -1913,7 +1913,7 @@
 		)
 		(uuid "8784e90b-d30e-47a6-a916-52a31b3cc497")
 	)
-	(text_box "Transfer Function: V_OUT = V_DAC - ( |G_inverting| * V_SHUNT )\n\n- To keep 0A midpoint at VDD / 2 = 1.65V, config DAC at 2048\n- G=-63 for bench testing (2A) & G=-31 for reg. riding (<50A)"
+	(text_box "Transfer Function: V_OUT = V_DAC - ( |G_inverting| * V_SHUNT )\n- To keep 0A midpoint at VDD / 2 = 1.65V, config DAC at 2048\n- G=-63 (bench testing): {-26, 26} [A] -> {0.012, 3.288} [V]\n- G=-31 (regular riding): {-53, 53} [A] -> {0.007, 3.293} [V]"
 		(exclude_from_sim no)
 		(at 246.38 109.2201 0)
 		(size 68.58 10.16)

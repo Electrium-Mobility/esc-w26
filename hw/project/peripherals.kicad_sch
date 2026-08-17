@@ -3125,162 +3125,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Small_US"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 0.254 1.778 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Small_US"
-				(at 0.254 -2.032 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "capacitor, small US symbol"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "C_Small_US_0_1"
-				(polyline
-					(pts
-						(xy -1.524 0.508) (xy 1.524 0.508)
-					)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -1.524 -0.762)
-					(mid 0 -0.3734)
-					(end 1.524 -0.762)
-					(stroke
-						(width 0.3048)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_Small_US_1_1"
-				(pin passive line
-					(at 0 2.54 270)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 90)
-					(length 2.032)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:D_Schottky"
 			(pin_numbers
 				(hide yes)
@@ -6300,7 +6144,7 @@
 		)
 		(uuid "058252ef-e6db-4954-9c3b-e1283fca4622")
 	)
-	(text_box "Serial (JST-PH)\n\n- Uses USART1_TX (PA9) & USART1_RX (PA10), which are 5V-tolerant\n- For sk8's Flipsky VX1's receiver module (JST-PH)"
+	(text_box "Serial (JST-PH)\n\n- Uses USART1_TX (PA9) & USART1_RX (PA10), which are 5V-tolerant\n- For sk8's Flipsky VX1's receiver module (JST-PH, soldered to JST-XH connector)"
 		(exclude_from_sim no)
 		(at 213.36 86.4126 0)
 		(size 22.86 25.3474)
@@ -6480,7 +6324,7 @@
 		)
 		(uuid "c3d6a2be-f335-4451-a94f-7d53e5fe76b9")
 	)
-	(text_box "Power Switch\n\nClose the slide switch to drive EN_UVLO high on LM74502\n\nR_limit=10k (0805) both protects against shorts and is part of divider circuit (see PWR net in Power sheet)"
+	(text_box "Power Switch\n\nClose the slide switch to drive EN_UVLO high on LM74502\n\nR_limit=10k both protects against shorts and is part of divider circuit (see PWR net in Power sheet)"
 		(exclude_from_sim no)
 		(at 99.06 17.78 0)
 		(size 68.58 15.2399)
@@ -6519,7 +6363,7 @@
 		(uuid "066975a5-6cd4-4b4b-be17-4878d26474af")
 	)
 	(junction
-		(at 339.09 132.08)
+		(at 358.14 132.08)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "096d3bb7-3845-4adb-ba5e-bbc5acea0b72")
@@ -6615,6 +6459,12 @@
 		(uuid "5d2f4cfa-c932-44ab-83d8-9508bf8a8a41")
 	)
 	(junction
+		(at 39.37 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "656b55a1-51d9-4e3f-82e1-58354a777cb5")
+	)
+	(junction
 		(at 394.97 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6669,12 +6519,6 @@
 		(uuid "9538a188-c09d-4415-a908-24549cf626c8")
 	)
 	(junction
-		(at 39.37 73.66)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "965e762f-0239-463f-8673-bdcae4f516ee")
-	)
-	(junction
 		(at 118.11 157.48)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6717,7 +6561,7 @@
 		(uuid "acd7f46d-8405-4e31-8943-b63999fc2a42")
 	)
 	(junction
-		(at 342.9 129.54)
+		(at 354.33 129.54)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b6f84a97-7903-49fa-95ce-09e96fc38dd4")
@@ -6896,7 +6740,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 132.08) (xy 339.09 132.08)
+			(xy 364.49 132.08) (xy 358.14 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6976,7 +6820,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 96.52) (xy 30.48 97.79)
+			(xy 30.48 96.52) (xy 30.48 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6986,7 +6830,7 @@
 	)
 	(wire
 		(pts
-			(xy 332.74 129.54) (xy 342.9 129.54)
+			(xy 364.49 129.54) (xy 354.33 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7356,13 +7200,13 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 96.52) (xy 38.1 97.79)
+			(xy 38.1 104.14) (xy 38.1 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3bd1b183-16de-4446-9a10-8ee7a02d0ec1")
+		(uuid "3bec54df-1b6a-4e5e-8539-5802d04c8f0d")
 	)
 	(wire
 		(pts
@@ -7436,16 +7280,6 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 105.41) (xy 38.1 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4ab07ecd-e845-46a5-aacf-679c5ddefe87")
-	)
-	(wire
-		(pts
 			(xy 127 165.1) (xy 127 163.83)
 		)
 		(stroke
@@ -7463,6 +7297,16 @@
 			(type default)
 		)
 		(uuid "501d42c5-fc15-4de2-94b3-be4984ac0973")
+	)
+	(wire
+		(pts
+			(xy 26.67 109.22) (xy 30.48 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50bb6877-12da-4b3d-ad0d-9e06343a8651")
 	)
 	(wire
 		(pts
@@ -7496,7 +7340,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 127) (xy 353.06 127)
+			(xy 345.44 127) (xy 344.17 127)
 		)
 		(stroke
 			(width 0)
@@ -7536,16 +7380,6 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 109.22) (xy 30.48 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "58dd39a3-b2ad-44b9-bc6a-f685aaa98649")
-	)
-	(wire
-		(pts
 			(xy 172.72 40.64) (xy 180.34 40.64)
 		)
 		(stroke
@@ -7556,7 +7390,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 109.22) (xy 17.78 109.22)
+			(xy 17.78 109.22) (xy 21.59 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7666,7 +7500,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 105.41) (xy 30.48 109.22)
+			(xy 30.48 104.14) (xy 30.48 109.22)
 		)
 		(stroke
 			(width 0)
@@ -7886,7 +7720,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 132.08) (xy 353.06 132.08)
+			(xy 358.14 132.08) (xy 344.17 132.08)
 		)
 		(stroke
 			(width 0)
@@ -7996,7 +7830,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 134.62) (xy 353.06 134.62)
+			(xy 345.44 134.62) (xy 344.17 134.62)
 		)
 		(stroke
 			(width 0)
@@ -8006,7 +7840,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 135.89) (xy 351.79 134.62)
+			(xy 345.44 135.89) (xy 345.44 134.62)
 		)
 		(stroke
 			(width 0)
@@ -8266,7 +8100,7 @@
 	)
 	(wire
 		(pts
-			(xy 351.79 125.73) (xy 351.79 127)
+			(xy 345.44 125.73) (xy 345.44 127)
 		)
 		(stroke
 			(width 0)
@@ -8396,7 +8230,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 129.54) (xy 353.06 129.54)
+			(xy 354.33 129.54) (xy 344.17 129.54)
 		)
 		(stroke
 			(width 0)
@@ -8406,7 +8240,7 @@
 	)
 	(wire
 		(pts
-			(xy 342.9 127) (xy 342.9 129.54)
+			(xy 354.33 127) (xy 354.33 129.54)
 		)
 		(stroke
 			(width 0)
@@ -8626,7 +8460,7 @@
 	)
 	(wire
 		(pts
-			(xy 339.09 127) (xy 339.09 132.08)
+			(xy 358.14 127) (xy 358.14 132.08)
 		)
 		(stroke
 			(width 0)
@@ -8653,6 +8487,16 @@
 			(type default)
 		)
 		(uuid "db56c935-f552-439a-8b8c-76eea824f305")
+	)
+	(wire
+		(pts
+			(xy 38.1 96.52) (xy 38.1 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2e9841-1261-438a-be9c-8e6a8b192589")
 	)
 	(wire
 		(pts
@@ -8975,12 +8819,12 @@
 		(uuid "1dd3820d-48b1-4f2a-a748-40b2dcce8c5b")
 	)
 	(label "CAN_N"
-		(at 332.74 132.08 180)
+		(at 364.49 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "4de75c12-577c-49bf-95f4-f6f13889479f")
 	)
@@ -8995,12 +8839,12 @@
 		(uuid "59451744-2072-47ac-b4fe-0ed856e80315")
 	)
 	(label "CAN_P"
-		(at 332.74 129.54 180)
+		(at 364.49 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
 		(uuid "68f3ac17-9ad1-4c2b-9977-d9617af04c9f")
 	)
@@ -10121,85 +9965,6 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 69.85 127 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "162dfaf5-a27f-42ac-98d8-16366a162351")
-		(property "Reference" "R46"
-			(at 65.278 125.984 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 74.676 125.984 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 69.85 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 69.85 127 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0430cbdd-b33d-4a26-a2bf-b35e10e1751e")
-		)
-		(pin "2"
-			(uuid "f0d2b725-1e3f-4d53-ac2e-f27aad3ad8c8")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R46")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
 		(at 355.6 87.63 0)
 		(unit 1)
 		(body_style 1)
@@ -11105,7 +10870,8 @@
 	)
 	(symbol
 		(lib_id "power:+5V")
-		(at 351.79 125.73 0)
+		(at 345.44 125.73 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11115,7 +10881,7 @@
 		(dnp no)
 		(uuid "27adb56e-7668-4dbe-a2ef-d106ecfddfce")
 		(property "Reference" "#PWR081"
-			(at 351.79 129.54 0)
+			(at 345.44 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11126,7 +10892,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 351.028 121.666 0)
+			(at 346.202 121.666 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11137,7 +10903,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 351.79 125.73 0)
+			(at 345.44 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11148,7 +10914,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 351.79 125.73 0)
+			(at 345.44 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11159,7 +10925,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 351.79 125.73 0)
+			(at 345.44 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11261,8 +11027,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 30.48 101.6 0)
+		(lib_id "Device:C_Small")
+		(at 207.01 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11271,9 +11037,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "30342e5b-9825-4df6-8703-31532ddad5be")
-		(property "Reference" "R58"
-			(at 33.02 100.3299 0)
+		(uuid "2a4c1d82-bc35-46d2-b24a-2a314cc205c5")
+		(property "Reference" "C34"
+			(at 209.55 68.5862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11283,8 +11049,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0"
-			(at 33.02 102.8699 0)
+		(property "Value" "0.1uF"
+			(at 209.55 71.1262 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11294,8 +11060,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 30.48 101.6 0)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 207.01 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11305,8 +11071,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 30.48 101.6 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 207.01 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11316,8 +11082,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 30.48 101.6 0)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 207.01 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11326,17 +11092,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "a4ef7172-cd5e-480d-ac73-9454e5f948fb")
 		)
 		(pin "1"
-			(uuid "f31f92dd-ab8c-4f58-af40-8ef1057cf12a")
+			(uuid "fe7a1848-9d19-4e4e-90e1-bf5c8459e1a3")
+		)
+		(pin "2"
+			(uuid "0c7f1cb0-54f1-444f-9b8e-77383161be0a")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R58")
+					(reference "C34")
 					(unit 1)
 				)
 			)
@@ -11582,88 +11348,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 264.16 132.08 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3ca286ea-a45a-4c02-be2e-cfec12d67784")
-		(property "Reference" "R71"
-			(at 266.7 130.8099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "100k"
-			(at 266.7 133.3499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 264.16 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 264.16 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 264.16 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f6d1e830-2970-41eb-bcd5-73574a7e5553")
-		)
-		(pin "2"
-			(uuid "b5881b36-705d-47e7-be79-c4169818e876")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R71")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 257.81 55.88 0)
 		(unit 1)
@@ -11736,85 +11420,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR0101")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 69.85 121.92 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3efd6cc7-a34b-4407-8602-c856f1f13c76")
-		(property "Reference" "R44"
-			(at 65.278 120.904 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 74.676 120.904 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 69.85 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 69.85 121.92 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9ca55263-3500-4cac-8f21-7752303951e9")
-		)
-		(pin "2"
-			(uuid "aa761373-e524-490e-a01b-dc118d0b6a67")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R44")
 					(unit 1)
 				)
 			)
@@ -12314,6 +11919,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 274.32 132.08 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "46cd2453-9913-427c-939b-3aa29fa78733")
+		(property "Reference" "C19"
+			(at 276.86 130.8035 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 276.86 133.3435 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 274.32 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 274.32 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 274.32 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "fff3d243-fe24-4c7b-99fb-70358c9f7b56")
+		)
+		(pin "2"
+			(uuid "080f6bfe-958d-4442-a758-0c2ae2ad3ce9")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "C19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
 		(at 88.9 110.49 0)
 		(unit 1)
@@ -12386,6 +12073,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR093")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 38.1 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b13ec3f-769a-4684-94af-52343461bdd5")
+		(property "Reference" "R102"
+			(at 40.64 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DNP"
+			(at 40.64 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 38.1 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 38.1 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61380fb3-645f-474f-a9e0-1fac6a00387f")
+		)
+		(pin "2"
+			(uuid "04c30287-502c-4989-8644-611ea79bdcbf")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R102")
 					(unit 1)
 				)
 			)
@@ -12808,86 +12577,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 194.31 64.77 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "59faa3e0-a2c3-4d1a-8f27-1bb60c9016d1")
-		(property "Reference" "R57"
-			(at 194.31 58.42 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 194.31 60.96 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 194.31 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 194.31 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 194.31 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "953f4595-95e9-4011-9d87-41582f52983b")
-		)
-		(pin "1"
-			(uuid "f641e163-5044-4cdd-9b9b-a4e3b440b0c4")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R57")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 109.22 118.11 0)
 		(unit 1)
@@ -12961,6 +12650,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 60.96 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "61428f8e-1114-4395-8191-e3d3e5d68dea")
+		(property "Reference" "R97"
+			(at 63.5 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 63.5 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 60.96 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 60.96 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 60.96 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f19b5ae8-6090-48a5-84c9-787b3544a65f")
+		)
+		(pin "2"
+			(uuid "ee5499b4-af51-4fe4-aaae-fd8a6002219b")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R97")
 					(unit 1)
 				)
 			)
@@ -13051,6 +12822,85 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 69.85 124.46 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "63ee9c94-7709-4940-be0a-61068bc5cc10")
+		(property "Reference" "R99"
+			(at 65.278 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 74.168 123.19 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 69.85 124.46 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "edb06f27-da6f-4c03-8e10-60f2bb77be87")
+		)
+		(pin "2"
+			(uuid "89133016-771b-4ace-8cfa-84f9ebe3e450")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R99")
 					(unit 1)
 				)
 			)
@@ -13557,7 +13407,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 45.72 116.84 180)
+		(at 194.31 64.77 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13565,9 +13415,10 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "6b6096d9-d60b-46e2-8e7c-0bee834811b0")
-		(property "Reference" "R47"
-			(at 48.514 116.078 0)
+		(fields_autoplaced yes)
+		(uuid "6d636566-3507-4e48-918f-b929cf304a2a")
+		(property "Reference" "R106"
+			(at 194.31 58.42 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13577,7 +13428,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 49.022 118.364 0)
+			(at 194.31 60.96 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13586,8 +13437,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 45.72 116.84 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 194.31 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13597,8 +13448,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 45.72 116.84 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 194.31 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13608,88 +13459,8 @@
 				)
 			)
 		)
-		(property "Description" "Resistor, small US symbol"
-			(at 45.72 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "301af5fb-66e8-4684-9517-125a6a735458")
-		)
-		(pin "2"
-			(uuid "c78554f1-d87f-4e83-882c-f56e2afea782")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 22.86 109.22 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6e550cad-825f-4b7b-ba7e-a274528896cf")
-		(property "Reference" "C47"
-			(at 22.8536 102.87 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100nF/25V"
-			(at 22.8536 105.41 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 22.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 22.86 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 22.86 109.22 0)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 194.31 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13700,15 +13471,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "f9cab6e9-1cd2-4356-9dfd-0c1dbff0071f")
+			(uuid "91613ff8-1ab0-4ae0-83cc-19d59cc0e7ec")
 		)
 		(pin "2"
-			(uuid "fc013beb-a626-454b-8d62-d6cc65ab5ed5")
+			(uuid "2613f323-79b7-4d3c-8529-9c9b9f4c0461")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C47")
+					(reference "R106")
 					(unit 1)
 				)
 			)
@@ -13757,7 +13528,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B6B-XH-A/1000381"
 			(at 24.13 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -13768,7 +13539,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x06, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 6POS 2.5MM"
 			(at 24.13 121.92 0)
 			(hide yes)
 			(show_name no)
@@ -13840,7 +13611,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x05_P2.54mm_Vertical"
 			(at 189.23 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13851,7 +13622,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/adam-tech/PH1-05-UA/9830343"
 			(at 189.23 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13862,7 +13633,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 5POS 2.54MM"
 			(at 189.23 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -14134,6 +13905,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "R64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 53.34 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7845d621-e510-481b-9629-cae97b766400")
+		(property "Reference" "R96"
+			(at 55.88 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 55.88 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 53.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 53.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 53.34 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2311bffb-991e-402c-901a-15f7d4754723")
+		)
+		(pin "2"
+			(uuid "691bdc34-2f98-4771-9a9c-46c1702751ea")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R96")
 					(unit 1)
 				)
 			)
@@ -14464,7 +14317,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7ab8e99b-928f-42f2-a316-863a2b5139fd")
 		(property "Reference" "D30"
 			(at 81.28 115.2524 90)
@@ -14571,7 +14423,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
 			(at 189.23 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14582,7 +14434,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/ePH.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B4B-XH-A/1651047"
 			(at 189.23 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14593,7 +14445,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 4POS 2.5MM"
 			(at 189.23 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -14620,88 +14472,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 38.1 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7eeead6e-231c-4fad-8541-e3c6e1950833")
-		(property "Reference" "R59"
-			(at 40.64 100.3299 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "DNP"
-			(at 40.64 102.8699 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 38.1 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 38.1 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 38.1 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "fe3fc39b-b3dc-4e48-9d94-a1b752cdb3a0")
-		)
-		(pin "1"
-			(uuid "2a1867db-7f69-4831-a5c8-0f14c7a65283")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R59")
 					(unit 1)
 				)
 			)
@@ -14784,164 +14554,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "C49")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 53.34 116.84 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "84107940-97cc-463e-af63-779088928e9a")
-		(property "Reference" "R48"
-			(at 56.134 116.078 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 56.642 118.364 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 53.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 53.34 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c08f0b5a-e8af-49af-a3e2-3a4c28b7311c")
-		)
-		(pin "2"
-			(uuid "b305f26a-d416-43f3-8924-c9d6fd1da10a")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R48")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 60.96 116.84 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "84bf92a4-c076-4212-b1a8-3f8682af7c30")
-		(property "Reference" "R49"
-			(at 63.754 116.078 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 64.262 118.364 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 60.96 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 60.96 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 60.96 116.84 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a1dc1982-b270-4f9a-99f9-af8f26edd851")
-		)
-		(pin "2"
-			(uuid "b6681910-1b4d-410d-9166-9ac884bb78e2")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R49")
 					(unit 1)
 				)
 			)
@@ -15112,6 +14724,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 50.8 34.29 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8ea99472-4f5c-4106-977d-c5613663c9da")
+		(property "Reference" "R104"
+			(at 53.34 33.0199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 53.34 35.5599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.8 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 50.8 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 50.8 34.29 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd63d406-8fe0-41bf-99f6-ba492f0a854d")
+		)
+		(pin "2"
+			(uuid "a4f6350b-27b1-402f-98d6-6c22573f0774")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R104")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 104.14 165.1 0)
 		(mirror y)
@@ -15157,7 +14851,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20204VBNN/12342903"
 			(at 104.14 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -15168,7 +14862,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "PIN HEADER, THR, SINGLE ROW, .10"
 			(at 104.14 165.1 0)
 			(hide yes)
 			(show_name no)
@@ -15279,88 +14973,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 274.32 132.08 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "982e56d2-a40f-42ca-9bc0-db47cd5238ca")
-		(property "Reference" "C63"
-			(at 276.86 130.8035 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "1nF"
-			(at 276.86 133.3435 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 274.32 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
-			(at 274.32 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
-			(at 274.32 132.08 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "840a6705-4db8-4a16-8300-eeba85d7fb57")
-		)
-		(pin "1"
-			(uuid "787b8300-8125-4424-b4aa-1e414deb580a")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C63")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "CONN_691256610003_WRE:691256610003")
 		(at 77.47 33.02 90)
 		(mirror x)
@@ -15450,6 +15062,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "J5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 30.48 101.6 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9a498276-b3f5-41b4-bab5-6dec6531e5c1")
+		(property "Reference" "R101"
+			(at 33.02 100.3299 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 33.02 102.8699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 30.48 101.6 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "674ac08a-ce6c-463a-87ae-dd7a78a4b728")
+		)
+		(pin "2"
+			(uuid "1cfd6a2b-c132-4d03-adb8-caf18359f045")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R101")
 					(unit 1)
 				)
 			)
@@ -15607,6 +15301,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "TP5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 45.72 116.84 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9df52714-5ca5-423f-a600-49c0c77e4a6f")
+		(property "Reference" "R95"
+			(at 48.26 115.5699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 48.26 118.1099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 45.72 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 45.72 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 45.72 116.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4a1339f4-77c4-4e23-adad-8d2234ddc945")
+		)
+		(pin "2"
+			(uuid "eb902e36-505d-47cb-9638-8dc0698bdbc4")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R95")
 					(unit 1)
 				)
 			)
@@ -15852,85 +15628,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 69.85 124.46 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a44cd6aa-a12e-4bcf-aa28-cb094b3a9f94")
-		(property "Reference" "R45"
-			(at 65.278 123.444 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "10k"
-			(at 74.676 123.444 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 69.85 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 69.85 124.46 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "4c80b7a3-29ae-4c02-aea6-a139a12bd56a")
-		)
-		(pin "2"
-			(uuid "b4e511f7-c528-4d99-b6d5-d62070d93b88")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R45")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_02x05_Odd_Even")
 		(at 378.46 231.14 0)
 		(unit 1)
@@ -16036,7 +15733,8 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 339.09 127 0)
+		(at 358.14 127 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16046,7 +15744,7 @@
 		(dnp no)
 		(uuid "a7ef6845-1543-460e-aa6d-49e75b4379be")
 		(property "Reference" "TP9"
-			(at 337.058 118.618 0)
+			(at 360.172 118.618 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16057,7 +15755,7 @@
 			)
 		)
 		(property "Value" "CANN"
-			(at 336.55 120.904 0)
+			(at 360.68 120.904 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16068,7 +15766,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 344.17 127 0)
+			(at 353.06 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16079,7 +15777,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 344.17 127 0)
+			(at 353.06 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16090,7 +15788,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 339.09 127 0)
+			(at 358.14 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16192,8 +15890,97 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 189.23 162.56 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ad6b412d-d826-4f70-a270-79651c3bd888")
+		(property "Reference" "J15"
+			(at 186.69 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Voltage Monitor"
+			(at 186.69 165.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
+			(at 189.23 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20204VBNN/12342903"
+			(at 189.23 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "PIN HEADER, THR, SINGLE ROW, .10"
+			(at 189.23 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "bd85d046-7ced-4277-8a4f-5ba95f110d86")
+		)
+		(pin "3"
+			(uuid "caecb456-1963-49a5-914a-e5659180ab33")
+		)
+		(pin "4"
+			(uuid "1262299e-2d0f-43d1-82f6-4e68440bb4ac")
+		)
+		(pin "2"
+			(uuid "1eade9f8-aed8-4a15-8cd3-29c1a0114ac0")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 342.9 127 0)
+		(at 354.33 127 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16204,7 +15991,7 @@
 		(fields_autoplaced yes)
 		(uuid "ade90b76-670b-4082-bf8c-a2ad98a246da")
 		(property "Reference" "TP8"
-			(at 345.44 122.4279 0)
+			(at 351.79 122.4279 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16215,7 +16002,7 @@
 			)
 		)
 		(property "Value" "CANP"
-			(at 345.44 124.9679 0)
+			(at 351.79 124.9679 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16226,7 +16013,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 347.98 127 0)
+			(at 349.25 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16237,7 +16024,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 347.98 127 0)
+			(at 349.25 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16248,7 +16035,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 342.9 127 0)
+			(at 354.33 127 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16313,7 +16100,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20206VBNN/12342874"
 			(at 30.48 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -16324,7 +16111,7 @@
 				)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "PIN HEADER, THR, SINGLE ROW, .10"
 			(at 30.48 161.29 0)
 			(hide yes)
 			(show_name no)
@@ -16357,88 +16144,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "J12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small_US")
-		(at 207.01 69.85 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b168fda5-c97b-418b-bddc-0cc883930d7a")
-		(property "Reference" "C19"
-			(at 209.55 68.7069 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100nF"
-			(at 209.55 71.2469 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 207.01 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 207.01 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "capacitor, small US symbol"
-			(at 207.01 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7b3a2e7d-90ad-415a-9dcf-e4602e21e0de")
-		)
-		(pin "2"
-			(uuid "7d45b2d2-017e-4a72-afa0-153aacfb0e83")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "C19")
 					(unit 1)
 				)
 			)
@@ -16523,6 +16228,165 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 69.85 127 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b2a99d78-fdc9-4a55-8624-a4a34bbecbbc")
+		(property "Reference" "R100"
+			(at 65.278 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 74.168 125.73 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.85 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 69.85 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 69.85 127 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "97052cbf-b683-468b-b357-2800d32a0bc6")
+		)
+		(pin "2"
+			(uuid "8fdc6884-ec96-4786-bcec-f161da9709d6")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R100")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 24.13 109.22 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b46a949a-ef67-4b06-9131-d2d5d86c58ad")
+		(property "Reference" "C32"
+			(at 24.1236 102.87 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1uF"
+			(at 24.1236 105.41 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 24.13 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/samsung-electro-mechanics/CL10B104KC8NNNC/5961291"
+			(at 24.13 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP CER 0.1UF 100V X7R 0603"
+			(at 24.13 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0ba3d658-c7a7-41fe-9410-24c0d14b3016")
+		)
+		(pin "2"
+			(uuid "355df0f4-b30d-40f4-bcce-fa6f32aa2c6c")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "C32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 99.06 116.84 270)
 		(unit 1)
@@ -16599,88 +16463,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "D32")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 50.8 34.29 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b6b5d793-a5e5-49ec-97de-79d1d07737d3")
-		(property "Reference" "R56"
-			(at 53.34 33.0199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 53.34 35.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
-			(at 50.8 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 50.8 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 50.8 34.29 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "9f500015-abbd-4823-997b-694963cbb0ba")
-		)
-		(pin "2"
-			(uuid "16a1ac2f-ac47-4e6b-a2bf-45d244e03362")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -17354,6 +17136,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 69.85 121.92 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ca45ba28-5c87-4dd5-9525-982145752416")
+		(property "Reference" "R98"
+			(at 65.278 120.65 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "10k"
+			(at 74.168 120.65 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 69.85 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 69.85 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 69.85 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "33090e4e-50dc-41a8-88a2-77a42288acb9")
+		)
+		(pin "2"
+			(uuid "2bccd4f7-5955-47ff-8c90-0c984bb26b52")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R98")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 93.98 134.62 180)
 		(unit 1)
@@ -17512,6 +17373,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 264.16 132.08 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3fbb002-fb4e-4271-b49b-1bdeaa9f61c5")
+		(property "Reference" "R107"
+			(at 266.7 130.8099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 266.7 133.3499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 264.16 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 264.16 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 264.16 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "01e28421-7ff6-4a5c-a965-28225dac36a8")
+		)
+		(pin "2"
+			(uuid "3caa240c-ec8a-4226-9a77-9604cd315d47")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "R107")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 257.81 104.14 0)
 		(unit 1)
@@ -17591,7 +17534,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 358.14 129.54 0)
+		(at 339.09 129.54 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17602,7 +17546,7 @@
 		(fields_autoplaced yes)
 		(uuid "d4b3a14e-7b3d-4db9-a244-b776e2929b6c")
 		(property "Reference" "J9"
-			(at 360.68 129.5399 0)
+			(at 336.55 129.5399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17613,7 +17557,7 @@
 			)
 		)
 		(property "Value" "CAN"
-			(at 360.68 132.0799 0)
+			(at 336.55 132.0799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17624,7 +17568,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 358.14 129.54 0)
+			(at 339.09 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17635,7 +17579,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B4B-XH-A/1651047"
-			(at 358.14 129.54 0)
+			(at 339.09 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17645,8 +17589,8 @@
 				)
 			)
 		)
-		(property "Description" "Connector Header Through Hole 4 position 0.098\" (2.50mm)"
-			(at 358.14 129.54 0)
+		(property "Description" "CONN HEADER VERT 4POS 2.5MM"
+			(at 339.09 129.54 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18804,95 +18748,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 189.23 162.56 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ef0985e8-9819-488e-bc5f-bfbb015f681a")
-		(property "Reference" "J11"
-			(at 186.69 162.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Voltage Monitor"
-			(at 186.69 165.0999 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 189.23 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://media.metz-connect.com/files/171/Data_sheet_PR202XXVBNN.PDF"
-			(at 189.23 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 189.23 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6f91cd7c-053e-41d6-bb39-d8f06b671ea4")
-		)
-		(pin "3"
-			(uuid "2376d90b-398f-4af5-a153-39a7ef6433c5")
-		)
-		(pin "4"
-			(uuid "0fcb06ca-0bc6-4c4a-af0e-cd3834e28f2b")
-		)
-		(pin "2"
-			(uuid "82bda7e2-1aa2-4df3-8e06-fa71bce0dedf")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
 		(at 180.34 64.77 0)
 		(mirror y)
@@ -18938,7 +18793,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.jst-mfg.com/product/pdf/eng/eXH.pdf"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B3B-XH-A/1651046"
 			(at 180.34 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -18949,7 +18804,7 @@
 				)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 3POS 2.5MM"
 			(at 180.34 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -19059,7 +18914,8 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 351.79 135.89 0)
+		(at 345.44 135.89 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -19070,7 +18926,7 @@
 		(fields_autoplaced yes)
 		(uuid "f0e8eb10-b72f-4008-b336-963dcc5b4c88")
 		(property "Reference" "#PWR0111"
-			(at 351.79 142.24 0)
+			(at 345.44 142.24 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19081,7 +18937,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 351.79 140.97 0)
+			(at 345.44 140.97 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -19091,7 +18947,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 351.79 135.89 0)
+			(at 345.44 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19102,7 +18958,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 351.79 135.89 0)
+			(at 345.44 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -19113,7 +18969,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 351.79 135.89 0)
+			(at 345.44 135.89 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
