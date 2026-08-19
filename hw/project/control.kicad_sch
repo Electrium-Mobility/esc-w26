@@ -457,6 +457,173 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:FerriteBead_Small"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "FB"
+				(at 1.905 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "FerriteBead_Small"
+				(at 1.905 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Ferrite bead, small symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "L ferrite bead inductor filter"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Inductor_* L_* *Ferrite*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_0_1"
+				(polyline
+					(pts
+						(xy -1.8288 0.2794) (xy -1.1176 1.4986) (xy 1.8288 -0.2032) (xy 1.1176 -1.4224) (xy -1.8288 0.2794)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.889) (xy 0 1.2954)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -1.27) (xy 0 -0.7874)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "FerriteBead_Small_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:L"
 			(pin_numbers
 				(hide yes)
@@ -4596,12 +4763,6 @@
 		(uuid "82b5b2f3-c5df-4122-872d-fcf91d44dc70")
 	)
 	(junction
-		(at 200.66 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "87aace6d-cc47-44d9-83e6-1b8c45d27e13")
-	)
-	(junction
 		(at 203.2 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4674,16 +4835,16 @@
 		(uuid "cf350ae5-f8c2-4444-8b11-8cc935224a48")
 	)
 	(junction
-		(at 162.56 30.48)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d4ad0bbe-b7f5-4b9b-9680-c660fa0541ce")
-	)
-	(junction
 		(at 27.94 152.4)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "dd11a6f4-33a1-4d1d-9c6d-f07808a1d42d")
+	)
+	(junction
+		(at 200.66 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e6a474da-8e42-47d6-8ee8-e239e7bb5782")
 	)
 	(junction
 		(at 111.76 33.02)
@@ -4698,20 +4859,16 @@
 		(uuid "f21eba47-7f6c-4380-bac8-8ca13236cd7f")
 	)
 	(junction
+		(at 162.56 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f449565d-3bf1-45ba-9d2b-5ad5bb25c263")
+	)
+	(junction
 		(at 104.14 172.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd98ec7e-d5b3-4059-b634-797125e7c835")
-	)
-	(wire
-		(pts
-			(xy 172.72 30.48) (xy 177.8 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "007e1b01-54c9-4f22-af4c-dbce7e76051d")
 	)
 	(wire
 		(pts
@@ -4745,7 +4902,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 30.48) (xy 205.74 30.48)
+			(xy 200.66 30.48) (xy 215.9 30.48)
 		)
 		(stroke
 			(width 0)
@@ -4815,7 +4972,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 30.48) (xy 167.64 30.48)
+			(xy 162.56 30.48) (xy 177.8 30.48)
 		)
 		(stroke
 			(width 0)
@@ -4825,7 +4982,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 25.4) (xy 162.56 30.48)
+			(xy 162.56 22.86) (xy 162.56 24.13)
 		)
 		(stroke
 			(width 0)
@@ -4952,6 +5109,16 @@
 			(type default)
 		)
 		(uuid "3115cea8-bf7c-4946-bd0d-5d3247d431d8")
+	)
+	(wire
+		(pts
+			(xy 180.34 30.48) (xy 177.8 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "368348d3-a536-4583-8b76-7e480cb46841")
 	)
 	(wire
 		(pts
@@ -5085,16 +5252,6 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 30.48) (xy 215.9 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5277091a-4fcd-48b5-9f0a-55e39f83150c")
-	)
-	(wire
-		(pts
 			(xy 121.92 66.04) (xy 121.92 68.58)
 		)
 		(stroke
@@ -5162,6 +5319,16 @@
 			(type default)
 		)
 		(uuid "648feba2-d748-480f-8b3b-84b6b183d455")
+	)
+	(wire
+		(pts
+			(xy 162.56 29.21) (xy 162.56 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6749831a-7079-41d3-baa3-758bc46af590")
 	)
 	(wire
 		(pts
@@ -5615,7 +5782,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 25.4) (xy 200.66 30.48)
+			(xy 200.66 22.86) (xy 200.66 24.13)
 		)
 		(stroke
 			(width 0)
@@ -5952,6 +6119,16 @@
 			(type default)
 		)
 		(uuid "e52041aa-c53b-4284-999d-80a1e18c148f")
+	)
+	(wire
+		(pts
+			(xy 200.66 29.21) (xy 200.66 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e5b76435-044c-4765-895f-6aacd4fc5518")
 	)
 	(wire
 		(pts
@@ -8909,7 +9086,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 177.8 30.48 270)
+		(at 180.34 30.48 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8920,7 +9097,7 @@
 		(fields_autoplaced yes)
 		(uuid "4de6c765-613a-40ae-b5a2-bb1083cb7b4a")
 		(property "Reference" "TP1"
-			(at 182.88 29.2099 90)
+			(at 185.42 29.2099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8931,7 +9108,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 182.88 31.7499 90)
+			(at 185.42 31.7499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8942,7 +9119,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 177.8 35.56 0)
+			(at 180.34 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8953,7 +9130,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 177.8 35.56 0)
+			(at 180.34 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8964,7 +9141,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 177.8 30.48 0)
+			(at 180.34 30.48 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9790,8 +9967,90 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:FerriteBead_Small")
+		(at 162.56 26.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6bc769f8-9613-409b-b92f-d08702384428")
+		(property "Reference" "FB1"
+			(at 165.1 25.438 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "600@100MHz"
+			(at 165.1 27.978 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+			(at 164.338 26.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/shenzhen-sunlord-electronics-co-ltd/GZ1608D601TF/14120345"
+			(at 162.56 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "FERRITE BEAD 600 OHM 0603 1LN"
+			(at 162.56 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "53ea6288-691f-40f2-9ee6-7ddb8ea8b705")
+		)
+		(pin "2"
+			(uuid "2c6f99cb-d858-48f0-ad7a-670777993920")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VDD")
-		(at 162.56 25.4 0)
+		(at 162.56 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9802,7 +10061,7 @@
 		(fields_autoplaced yes)
 		(uuid "6c0e7cc9-1ee0-4582-8368-3fef275b53d6")
 		(property "Reference" "#PWR094"
-			(at 162.56 29.21 0)
+			(at 162.56 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9813,7 +10072,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 162.56 20.32 0)
+			(at 162.56 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9823,7 +10082,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 162.56 25.4 0)
+			(at 162.56 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9834,7 +10093,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 162.56 25.4 0)
+			(at 162.56 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9845,7 +10104,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 162.56 25.4 0)
+			(at 162.56 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10751,85 +11010,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 170.18 30.48 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8dc9d24e-0852-49fd-80db-ac20d75ceb9a")
-		(property "Reference" "R81"
-			(at 170.434 24.638 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 170.434 27.178 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 170.18 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
-			(at 170.18 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
-			(at 170.18 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "d7904c0f-d0c4-4d1a-a48b-f51262eddba0")
-		)
-		(pin "2"
-			(uuid "eb5b900f-03da-4a0c-8767-092532c8e36d")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R81")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 154.94 115.57 180)
 		(unit 1)
@@ -10995,7 +11175,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 208.28 30.48 90)
+		(at 200.66 26.67 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11003,29 +11183,32 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
+		(fields_autoplaced yes)
 		(uuid "976278d6-9df3-4294-a7fb-7e1111a1c720")
 		(property "Reference" "R14"
-			(at 208.534 24.638 90)
+			(at 203.2 25.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "0"
-			(at 208.534 27.178 90)
+			(at 203.2 27.9399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 208.28 30.48 0)
+			(at 200.66 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11036,7 +11219,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
-			(at 208.28 30.48 0)
+			(at 200.66 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11047,7 +11230,7 @@
 			)
 		)
 		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
-			(at 208.28 30.48 0)
+			(at 200.66 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11472,7 +11655,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 200.66 25.4 0)
+		(at 200.66 22.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11483,7 +11666,7 @@
 		(fields_autoplaced yes)
 		(uuid "9f7ab426-ed7c-4a14-80a9-795138a751b2")
 		(property "Reference" "#PWR098"
-			(at 200.66 29.21 0)
+			(at 200.66 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11494,7 +11677,7 @@
 			)
 		)
 		(property "Value" "VDDA"
-			(at 200.66 20.32 0)
+			(at 200.66 17.78 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11504,7 +11687,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 200.66 25.4 0)
+			(at 200.66 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11515,7 +11698,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 200.66 25.4 0)
+			(at 200.66 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11526,7 +11709,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 200.66 25.4 0)
+			(at 200.66 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
