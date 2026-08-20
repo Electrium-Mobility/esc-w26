@@ -135,7 +135,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:C_Polarized_US"
+		(symbol "Device:C_Polarized_Small_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -149,7 +149,7 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "C"
-				(at 0.635 2.54 0)
+				(at 0.254 1.778 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -159,8 +159,8 @@
 					(justify left)
 				)
 			)
-			(property "Value" "C_Polarized_US"
-				(at 0.635 -2.54 0)
+			(property "Value" "C_Polarized_Small_US"
+				(at 0.254 -2.032 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -192,7 +192,7 @@
 					)
 				)
 			)
-			(property "Description" "Polarized capacitor, US symbol"
+			(property "Description" "Polarized capacitor, small US symbol"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -225,13 +225,13 @@
 					)
 				)
 			)
-			(symbol "C_Polarized_US_0_1"
+			(symbol "C_Polarized_Small_US_0_1"
 				(polyline
 					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
+						(xy -1.524 0.508) (xy 1.524 0.508)
 					)
 					(stroke
-						(width 0.508)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -240,7 +240,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
+						(xy -1.27 1.524) (xy -0.762 1.524)
 					)
 					(stroke
 						(width 0)
@@ -252,7 +252,7 @@
 				)
 				(polyline
 					(pts
-						(xy -1.27 1.778) (xy -1.27 2.794)
+						(xy -1.016 1.27) (xy -1.016 1.778)
 					)
 					(stroke
 						(width 0)
@@ -263,11 +263,11 @@
 					)
 				)
 				(arc
-					(start -2.032 -1.27)
-					(mid 0 -0.5572)
-					(end 2.032 -1.27)
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
 					(stroke
-						(width 0.508)
+						(width 0.3048)
 						(type default)
 					)
 					(fill
@@ -275,10 +275,10 @@
 					)
 				)
 			)
-			(symbol "C_Polarized_US_1_1"
+			(symbol "C_Polarized_Small_US_1_1"
 				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
+					(at 0 2.54 270)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -295,8 +295,8 @@
 					)
 				)
 				(pin passive line
-					(at 0 -3.81 90)
-					(length 3.302)
+					(at 0 -2.54 90)
+					(length 2.032)
 					(name ""
 						(effects
 							(font
@@ -2132,7 +2132,7 @@
 	)
 	(text "1) Spec rest of this page, then write notes\n2) Confirm 5V\n3) verify with claude about drive sheet\n4) deal with 22k vs 22.1k\n5) DRC check"
 		(exclude_from_sim no)
-		(at 138.176 94.742 0)
+		(at 138.176 100.076 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2150,6 +2150,17 @@
 			)
 		)
 		(uuid "3957c057-360d-4450-b56e-c289ebc681c5")
+	)
+	(text "spec"
+		(exclude_from_sim no)
+		(at 32.766 73.406 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "54717047-558c-4566-a10d-4dc2c77725b8")
 	)
 	(text "Overvoltage\nProtection"
 		(exclude_from_sim no)
@@ -2187,7 +2198,7 @@
 	)
 	(text "calculate \njunction t\nempearture"
 		(exclude_from_sim no)
-		(at 141.478 77.724 0)
+		(at 141.224 87.884 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2243,7 +2254,18 @@
 		)
 		(uuid "dfd72e91-0a31-4d5e-a402-8be6dbaa2d78")
 	)
-	(text "Capacitor Bank"
+	(text "reuse in drive stage"
+		(exclude_from_sim no)
+		(at 153.416 164.592 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "e58f5b0c-8bf6-4306-801e-2cd0aca0caaa")
+	)
+	(text "Bulk (Electrolytic) Capacitor Bank"
 		(exclude_from_sim no)
 		(at 117.602 29.464 0)
 		(effects
@@ -2271,7 +2293,7 @@
 	)
 	(text_box "Inrush Current Limiting and Capacitor Bank\n\n\n"
 		(exclude_from_sim no)
-		(at 208.026 69.088 0)
+		(at 186.182 133.858 0)
 		(size 80.772 11.4299)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2291,7 +2313,7 @@
 	)
 	(text_box "Overvoltage Protection\n\n- PMOS has V_DS(max)=80V, so V_C<80V"
 		(exclude_from_sim no)
-		(at 208.026 20.5468 0)
+		(at 186.182 85.3168 0)
 		(size 80.772 11.4299)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2311,7 +2333,7 @@
 	)
 	(text_box "Reverse Polarity Protection\n\nP-MOSFETs: GT090P08M\n- \n\nGate Resistors: 10 ohms\n\nZener Diode\n- PMOS has V_GS(R_DS(on))=10V, V_GS(max)=+/-20V, so V_Z=12V\n- POWER CALC (consider supported MAX VIN)\n\nPull-down Resistor\n- POWER CALC\n- TIMING CALC"
 		(exclude_from_sim no)
-		(at 207.772 34.29 0)
+		(at 185.928 99.06 0)
 		(size 80.772 30.5285)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2331,7 +2353,7 @@
 	)
 	(text_box "thought of having a switch, but adds more parts -> next time, use an ideal diode IC"
 		(exclude_from_sim no)
-		(at 204.978 84.836 0)
+		(at 183.134 149.606 0)
 		(size 80.772 11.4299)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2356,12 +2378,6 @@
 		(uuid "057499a0-276d-46a8-9047-0d0e7bc87508")
 	)
 	(junction
-		(at 157.48 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "08d67741-9fb9-4117-9142-49bef3f97867")
-	)
-	(junction
 		(at 83.82 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2374,10 +2390,10 @@
 		(uuid "1b8fdbfc-ed23-4a9f-af46-b545e8e832ed")
 	)
 	(junction
-		(at 139.7 40.64)
+		(at 121.92 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "224690bd-99d9-4494-a5fb-a4414626c131")
+		(uuid "1f69c0fc-80e8-41ab-9502-2a24548b05d9")
 	)
 	(junction
 		(at 66.04 40.64)
@@ -2386,28 +2402,34 @@
 		(uuid "224b3af7-0134-4cae-b4ce-1c60593bf3b0")
 	)
 	(junction
+		(at 157.48 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "29b07838-a6f2-45d7-8e36-31f0d65857a4")
+	)
+	(junction
 		(at 44.45 171.45)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2d60d1fb-5371-4ab9-b03d-e10154b4a8c5")
 	)
 	(junction
-		(at 139.7 60.96)
+		(at 175.26 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "45bc131e-d6fa-4e8d-abae-6ceed52ebf2a")
+		(uuid "3162e0bf-35af-4494-95df-97f084f9e223")
 	)
 	(junction
-		(at 175.26 60.96)
+		(at 139.7 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5c1e3379-e61d-40e6-b116-95fbfba3f79c")
+		(uuid "3b0acadb-630e-4cd9-a2bd-e97a62b02925")
 	)
 	(junction
 		(at 157.48 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "5ce90838-69e5-463a-b619-5e77ffe3f8b0")
+		(uuid "3f361d42-e982-439d-88ed-8a2f246fc6df")
 	)
 	(junction
 		(at 93.98 50.8)
@@ -2428,22 +2450,22 @@
 		(uuid "64f2d7da-858e-46ee-a10d-fb5a4952baee")
 	)
 	(junction
+		(at 121.92 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "67814be4-c99c-41ee-a846-1761ef1fe5f2")
+	)
+	(junction
 		(at 135.89 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d96e9df-2581-48f4-97e8-b2f58f09e509")
 	)
 	(junction
-		(at 175.26 40.64)
+		(at 139.7 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "7b7ffbf0-2b1d-4fea-80ff-b47a13734508")
-	)
-	(junction
-		(at 121.92 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "91a77382-264b-4bce-aaff-344017a9ff56")
+		(uuid "940121bd-6b8b-4b4d-a3e4-a064d96443dc")
 	)
 	(junction
 		(at 55.88 50.8)
@@ -2476,12 +2498,6 @@
 		(uuid "be9a0d6a-c317-43c1-bdf6-b0eef9e56edc")
 	)
 	(junction
-		(at 121.92 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c4100854-bf09-45c8-a4e1-d54ae510ee7f")
-	)
-	(junction
 		(at 111.76 156.21)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2504,6 +2520,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d91c3b22-61ba-4014-80c3-ec8eaed0baeb")
+	)
+	(junction
+		(at 175.26 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ea23d20c-d438-416e-97bf-b426e544593b")
 	)
 	(junction
 		(at 93.98 40.64)
@@ -2539,23 +2561,13 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 20.32) (xy 175.26 40.64)
+			(xy 175.26 21.59) (xy 175.26 40.64)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "02af553c-b3df-4703-9454-0be73c90ee55")
-	)
-	(wire
-		(pts
-			(xy 121.92 60.96) (xy 139.7 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03c0c841-521e-48f9-a5ac-69365d5fe9dd")
 	)
 	(wire
 		(pts
@@ -2579,6 +2591,16 @@
 	)
 	(wire
 		(pts
+			(xy 121.92 40.64) (xy 121.92 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d9086ad-5118-4bae-be90-a321ca139420")
+	)
+	(wire
+		(pts
 			(xy 66.04 50.8) (xy 66.04 49.53)
 		)
 		(stroke
@@ -2596,6 +2618,16 @@
 			(type default)
 		)
 		(uuid "14dc1783-02c9-4881-a795-0a6242a5d7dc")
+	)
+	(wire
+		(pts
+			(xy 175.26 49.53) (xy 175.26 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1846b7de-3000-4f84-886d-1df56a89ff2a")
 	)
 	(wire
 		(pts
@@ -2619,16 +2651,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 48.26) (xy 175.26 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a13cda0-3693-4ec3-9e18-61bd318459a1")
-	)
-	(wire
-		(pts
 			(xy 66.04 40.64) (xy 83.82 40.64)
 		)
 		(stroke
@@ -2636,16 +2658,6 @@
 			(type default)
 		)
 		(uuid "2c2fae08-dc52-4e4c-8571-626d5b478448")
-	)
-	(wire
-		(pts
-			(xy 157.48 54.61) (xy 157.48 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2c887315-6cd4-46ac-b5eb-fc58d8a1229e")
 	)
 	(wire
 		(pts
@@ -2666,26 +2678,6 @@
 			(type default)
 		)
 		(uuid "34a1e9ac-0879-4784-b880-4200d8e675d1")
-	)
-	(wire
-		(pts
-			(xy 157.48 40.64) (xy 175.26 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37ac2095-911c-42d0-b0fb-8d4d50189a53")
-	)
-	(wire
-		(pts
-			(xy 139.7 40.64) (xy 157.48 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3aa7fcc9-b28d-4fc6-ab68-398cc2ae7957")
 	)
 	(wire
 		(pts
@@ -2719,16 +2711,6 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 53.34) (xy 175.26 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43cbc3e5-3696-4bcd-b6ec-37114e9b7423")
-	)
-	(wire
-		(pts
 			(xy 20.32 40.64) (xy 33.02 40.64)
 		)
 		(stroke
@@ -2746,6 +2728,26 @@
 			(type default)
 		)
 		(uuid "46ceeb93-66c1-4b1b-a155-2bf391b2f69c")
+	)
+	(wire
+		(pts
+			(xy 121.92 60.96) (xy 139.7 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4a24aa42-a71c-4f7d-a798-be1df2ee2a4f")
+	)
+	(wire
+		(pts
+			(xy 175.26 57.15) (xy 175.26 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4c64f00c-296d-41d5-acb6-cf17043ca521")
 	)
 	(wire
 		(pts
@@ -2799,6 +2801,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 40.64) (xy 139.7 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5c7202ca-1210-49fd-93c2-b5bcee946c9b")
+	)
+	(wire
+		(pts
+			(xy 121.92 53.34) (xy 121.92 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62a38e79-f1d7-4656-a99f-a514bd583931")
+	)
+	(wire
+		(pts
 			(xy 55.88 48.26) (xy 55.88 50.8)
 		)
 		(stroke
@@ -2806,36 +2828,6 @@
 			(type default)
 		)
 		(uuid "66a6f994-86cd-4c86-ae40-b340f128a057")
-	)
-	(wire
-		(pts
-			(xy 121.92 40.64) (xy 121.92 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67318e9f-31ce-4268-abbc-1b4dd5f6c30d")
-	)
-	(wire
-		(pts
-			(xy 139.7 40.64) (xy 139.7 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6812dc49-d13f-469a-969c-1a59b92c1ae5")
-	)
-	(wire
-		(pts
-			(xy 139.7 54.61) (xy 139.7 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e4eebc5-648e-40cd-af5f-23e41d78e0f2")
 	)
 	(wire
 		(pts
@@ -2856,16 +2848,6 @@
 			(type default)
 		)
 		(uuid "7649c51a-e480-4295-b554-a91bae6a549b")
-	)
-	(wire
-		(pts
-			(xy 157.48 40.64) (xy 157.48 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "770237b1-8b2b-41b1-a932-8b58eaed4389")
 	)
 	(wire
 		(pts
@@ -2906,6 +2888,16 @@
 			(type default)
 		)
 		(uuid "801ef924-7809-412e-b6a6-7f5046ba1b83")
+	)
+	(wire
+		(pts
+			(xy 121.92 40.64) (xy 139.7 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "807d3931-62f7-43c3-a855-ec4957838dc4")
 	)
 	(polyline
 		(pts
@@ -2949,6 +2941,16 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 60.96) (xy 175.26 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f502266-ba9d-4c28-b8e0-f5ecf03b06b1")
+	)
+	(wire
+		(pts
 			(xy 57.15 161.29) (xy 67.31 161.29)
 		)
 		(stroke
@@ -2986,16 +2988,6 @@
 			(type default)
 		)
 		(uuid "af9faec9-7757-413e-a3a7-89c054827f12")
-	)
-	(wire
-		(pts
-			(xy 157.48 60.96) (xy 175.26 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b18b08ee-2883-4e50-a784-18b9e351f38c")
 	)
 	(wire
 		(pts
@@ -3039,16 +3031,6 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 40.64) (xy 139.7 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b586a95d-b1ea-4937-b6d0-29fd1a41a29e")
-	)
-	(wire
-		(pts
 			(xy 93.98 50.8) (xy 104.14 50.8)
 		)
 		(stroke
@@ -3066,6 +3048,26 @@
 			(type default)
 		)
 		(uuid "b6aa0256-47fa-461f-a722-51e5ce398540")
+	)
+	(wire
+		(pts
+			(xy 139.7 53.34) (xy 139.7 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bb36fb3b-6bb4-4943-8276-c537453d7632")
+	)
+	(wire
+		(pts
+			(xy 139.7 40.64) (xy 175.26 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd8d4167-df1c-458c-9353-d285fd68b911")
 	)
 	(wire
 		(pts
@@ -3119,6 +3121,16 @@
 	)
 	(wire
 		(pts
+			(xy 157.48 53.34) (xy 157.48 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c70c2059-bade-44de-8624-6bb7fef2ec30")
+	)
+	(wire
+		(pts
 			(xy 135.89 156.21) (xy 140.97 156.21)
 		)
 		(stroke
@@ -3139,7 +3151,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 60.96) (xy 175.26 68.58)
+			(xy 175.26 60.96) (xy 175.26 67.31)
 		)
 		(stroke
 			(width 0)
@@ -3149,13 +3161,13 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 54.61) (xy 121.92 60.96)
+			(xy 175.26 40.64) (xy 175.26 44.45)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "d09d43ce-16f2-4075-9480-d2954eff8dea")
+		(uuid "de78d1bf-ae96-4311-a7ca-c6e19d695e23")
 	)
 	(wire
 		(pts
@@ -3209,13 +3221,13 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 60.96) (xy 157.48 60.96)
+			(xy 157.48 40.64) (xy 157.48 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "edf700be-d270-4026-a2fc-40aa6677df29")
+		(uuid "e980f087-8815-46ba-a5c5-2e9e4f4a2c36")
 	)
 	(wire
 		(pts
@@ -3642,8 +3654,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 175.26 50.8 0)
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 157.48 50.8 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3652,9 +3664,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "3432e699-e859-4446-a805-88df6ee6521f")
-		(property "Reference" "R19"
-			(at 177.8 49.5299 0)
+		(uuid "2d499d98-9ca4-471d-a081-94ba53a55dd4")
+		(property "Reference" "C27"
+			(at 160.02 49.0981 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3664,8 +3676,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22.1k"
-			(at 177.8 52.0699 0)
+		(property "Value" "430uF/100V"
+			(at 160.02 51.6381 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3675,8 +3687,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 175.26 50.8 0)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 157.48 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3686,8 +3698,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
-			(at 175.26 50.8 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
+			(at 157.48 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3697,8 +3709,8 @@
 				)
 			)
 		)
-		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
-			(at 175.26 50.8 0)
+		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
+			(at 157.48 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3707,17 +3719,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "1"
-			(uuid "dc99c3b8-da9d-4a3a-bc74-54938fa7e745")
 		)
 		(pin "2"
-			(uuid "f5b1a29b-58fa-4dce-98c7-236599be285c")
+			(uuid "2e49e5e1-a545-4e7b-899f-bf7ee157fc2d")
+		)
+		(pin "1"
+			(uuid "ed259386-9771-4a0f-9a94-3d9a74f931e3")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R19")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -3806,7 +3818,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_US")
+		(lib_id "Device:C_Polarized_Small_US")
 		(at 121.92 50.8 0)
 		(unit 1)
 		(body_style 1)
@@ -3818,7 +3830,7 @@
 		(fields_autoplaced yes)
 		(uuid "4013e707-b043-4733-83a4-9c870342e937")
 		(property "Reference" "C22"
-			(at 125.73 48.8949 0)
+			(at 124.46 49.0981 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3828,8 +3840,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "220uF/63V"
-			(at 125.73 51.4349 0)
+		(property "Value" "430uF/100V"
+			(at 124.46 51.6381 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3839,7 +3851,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
 			(at 121.92 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3850,7 +3862,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
 			(at 121.92 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3861,7 +3873,7 @@
 				)
 			)
 		)
-		(property "Description" "Polarized capacitor, US symbol"
+		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
 			(at 121.92 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -3882,88 +3894,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "C22")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized_US")
-		(at 157.48 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "409233bc-c21d-459b-ac71-040857585cf9")
-		(property "Reference" "C27"
-			(at 161.29 48.8949 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220uF/63V"
-			(at 161.29 51.4349 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 157.48 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 157.48 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor, US symbol"
-			(at 157.48 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "20d18a86-b50c-4e59-928f-93a3bdc7b672")
-		)
-		(pin "1"
-			(uuid "df66bbf7-4f6d-4236-9462-76a1e0cb4085")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -4294,88 +4224,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 55.88 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6203fa6c-5d99-45a2-a8d3-2b5e70435834")
-		(property "Reference" "R1"
-			(at 58.42 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 58.42 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "3d8f307c-62bd-4f3b-b500-285ed93b86b4")
-		)
-		(pin "1"
-			(uuid "60defb0c-0da2-455a-a156-99ffc4d6c539")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "LMR51610XDBVR:LMR51610XDBVR")
 		(at 85.09 163.83 0)
 		(unit 1)
@@ -4518,7 +4366,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 68.58 0)
+		(at 175.26 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4529,7 +4377,7 @@
 		(fields_autoplaced yes)
 		(uuid "71aef6e0-5018-49e6-ab4a-edf3555d4004")
 		(property "Reference" "#PWR023"
-			(at 175.26 74.93 0)
+			(at 175.26 73.66 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4540,7 +4388,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 175.26 73.66 0)
+			(at 175.26 72.39 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4550,7 +4398,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 68.58 0)
+			(at 175.26 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4561,7 +4409,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 68.58 0)
+			(at 175.26 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4572,7 +4420,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 68.58 0)
+			(at 175.26 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4755,6 +4603,170 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 175.26 54.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9262c5dd-d5ee-425f-9d26-2fca564d7584")
+		(property "Reference" "R22"
+			(at 177.8 53.3399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 177.8 55.8799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.26 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 175.26 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 175.26 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "11731413-48d2-4e51-9566-90b858264f7d")
+		)
+		(pin "2"
+			(uuid "83d68baf-d5da-4fae-a578-a9f3491a8df5")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "R22")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 104.14 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9662f697-835d-4ae9-99a4-3be73f892488")
+		(property "Reference" "R20"
+			(at 106.68 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "118k"
+			(at 106.68 57.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 104.14 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT118K/1713571"
+			(at 104.14 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 118K OHM 1% 1/10W 0603"
+			(at 104.14 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2e9b139b-b756-4cfa-8faf-332399718009")
+		)
+		(pin "2"
+			(uuid "632cf071-a705-402c-9bd8-6028b1e4f61c")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GDS")
 		(at 104.14 43.18 270)
 		(mirror x)
@@ -4832,6 +4844,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "Q2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 139.7 50.8 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a50bf8c5-aa2a-4068-9379-755ddf7e04e0")
+		(property "Reference" "C25"
+			(at 142.24 49.0981 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "430uF/100V"
+			(at 142.24 51.6381 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 139.7 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
+			(at 139.7 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
+			(at 139.7 50.8 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "028e3a0e-ddff-4de3-ab83-54377d88b059")
+		)
+		(pin "1"
+			(uuid "d32c1a28-9d4d-44c6-855d-a110a5210655")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C25")
 					(unit 1)
 				)
 			)
@@ -5000,88 +5094,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_US")
-		(at 139.7 50.8 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b51033aa-7c61-4522-b222-e238ef107927")
-		(property "Reference" "C25"
-			(at 143.51 48.8949 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "220uF/63V"
-			(at 143.51 51.4349 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 139.7 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 139.7 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Polarized capacitor, US symbol"
-			(at 139.7 50.8 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "8b0447ca-8867-4e0e-94ae-0cc5f896dd5e")
-		)
-		(pin "1"
-			(uuid "0f6ed16e-5bb3-4d51-aa4a-4f60b7d7c6fb")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C25")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 143.51 156.21 270)
 		(unit 1)
@@ -5243,8 +5255,172 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 55.88 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c79bb0f4-bb1e-4de2-ab04-7a7c022df54b")
+		(property "Reference" "R19"
+			(at 58.42 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 58.42 57.1499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 55.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
+			(at 55.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 10K OHM 1% 1/10W 0603"
+			(at 55.88 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "88bf2c54-8a0c-4475-aed0-e95f56d1bf96")
+		)
+		(pin "2"
+			(uuid "59d1a951-202d-494c-a3c7-fb8b8d5107d1")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 175.26 46.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ceb79a27-096c-4f1c-8dc7-7b31404abdf7")
+		(property "Reference" "R21"
+			(at 177.8 45.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 177.8 48.2599 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 175.26 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 175.26 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 175.26 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f97eb25c-07d8-4741-8cc4-ea0c0459a882")
+		)
+		(pin "2"
+			(uuid "39263b8c-7d7f-4232-b807-ab1005e0a645")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "R21")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VMEM")
-		(at 175.26 20.32 0)
+		(at 175.26 21.59 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5255,7 +5431,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7a5aa01-4034-48a9-a33c-97d6dce8bce5")
 		(property "Reference" "#PWR046"
-			(at 175.26 24.13 0)
+			(at 175.26 25.4 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5266,7 +5442,7 @@
 			)
 		)
 		(property "Value" "VM"
-			(at 175.26 15.24 0)
+			(at 175.26 16.51 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5276,7 +5452,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 20.32 0)
+			(at 175.26 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5287,7 +5463,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 20.32 0)
+			(at 175.26 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5298,7 +5474,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VMEM\""
-			(at 175.26 20.32 0)
+			(at 175.26 21.59 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5476,88 +5652,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "#PWR037")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 104.14 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f96d122d-721e-4797-b559-b1fa74c7cbf8")
-		(property "Reference" "R2"
-			(at 106.68 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "100k"
-			(at 106.68 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 104.14 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 104.14 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor, small US symbol"
-			(at 104.14 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "52e0a657-6afb-4e77-8eae-246f409ad587")
-		)
-		(pin "1"
-			(uuid "2aa042ee-3cdc-4ca3-a39e-5b1dc0b0ad0d")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R2")
 					(unit 1)
 				)
 			)
