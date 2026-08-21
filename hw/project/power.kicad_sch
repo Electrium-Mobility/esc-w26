@@ -2151,17 +2151,6 @@
 		)
 		(uuid "3957c057-360d-4450-b56e-c289ebc681c5")
 	)
-	(text "spec"
-		(exclude_from_sim no)
-		(at 32.766 73.406 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "54717047-558c-4566-a10d-4dc2c77725b8")
-	)
 	(text "Overvoltage\nProtection"
 		(exclude_from_sim no)
 		(at 26.162 29.464 0)
@@ -2293,7 +2282,7 @@
 	)
 	(text_box "Inrush Current Limiting and Capacitor Bank\n\n\n"
 		(exclude_from_sim no)
-		(at 186.182 133.858 0)
+		(at 196.088 71.9092 0)
 		(size 80.772 11.4299)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2313,7 +2302,7 @@
 	)
 	(text_box "Overvoltage Protection\n\n- PMOS has V_DS(max)=80V, so V_C<80V"
 		(exclude_from_sim no)
-		(at 186.182 85.3168 0)
+		(at 196.088 23.368 0)
 		(size 80.772 11.4299)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2333,7 +2322,7 @@
 	)
 	(text_box "Reverse Polarity Protection\n\nP-MOSFETs: GT090P08M\n- \n\nGate Resistors: 10 ohms\n\nZener Diode\n- PMOS has V_GS(R_DS(on))=10V, V_GS(max)=+/-20V, so V_Z=12V\n- POWER CALC (consider supported MAX VIN)\n\nPull-down Resistor\n- POWER CALC\n- TIMING CALC"
 		(exclude_from_sim no)
-		(at 185.928 99.06 0)
+		(at 195.834 37.1112 0)
 		(size 80.772 30.5285)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2353,7 +2342,7 @@
 	)
 	(text_box "thought of having a switch, but adds more parts -> next time, use an ideal diode IC"
 		(exclude_from_sim no)
-		(at 183.134 149.606 0)
+		(at 193.04 87.6572 0)
 		(size 80.772 11.4299)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
@@ -2372,10 +2361,10 @@
 		(uuid "f3eab18c-c9ff-4715-a42a-8a7054335e46")
 	)
 	(junction
-		(at 33.02 60.96)
+		(at 30.48 60.96)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "057499a0-276d-46a8-9047-0d0e7bc87508")
+		(uuid "0efc2814-ce23-4552-a2e8-fd115b599677")
 	)
 	(junction
 		(at 83.82 40.64)
@@ -2420,6 +2409,12 @@
 		(uuid "3162e0bf-35af-4494-95df-97f084f9e223")
 	)
 	(junction
+		(at 30.48 40.64)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "32ec2baf-2683-4056-a71f-9f4f7dd5b923")
+	)
+	(junction
 		(at 139.7 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2442,12 +2437,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "610f9b64-b9c8-411f-9939-47b8e1af1278")
-	)
-	(junction
-		(at 33.02 40.64)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "64f2d7da-858e-46ee-a10d-fb5a4952baee")
 	)
 	(junction
 		(at 121.92 40.64)
@@ -2591,6 +2580,16 @@
 	)
 	(wire
 		(pts
+			(xy 30.48 60.96) (xy 55.88 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0d4e22d3-f43c-4050-85e9-8efeae1c8dcf")
+	)
+	(wire
+		(pts
 			(xy 121.92 40.64) (xy 121.92 48.26)
 		)
 		(stroke
@@ -2691,7 +2690,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 60.96) (xy 33.02 60.96)
+			(xy 20.32 60.96) (xy 30.48 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2711,7 +2710,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 40.64) (xy 33.02 40.64)
+			(xy 20.32 40.64) (xy 30.48 40.64)
 		)
 		(stroke
 			(width 0)
@@ -2771,23 +2770,13 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 40.64) (xy 33.02 46.99)
+			(xy 30.48 40.64) (xy 30.48 46.99)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "54c16a79-f55f-4d9e-8ecd-73b43d4dbcaf")
-	)
-	(wire
-		(pts
-			(xy 33.02 40.64) (xy 50.8 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "564c992f-20f6-4eb6-ad98-6ebe2d838dff")
 	)
 	(wire
 		(pts
@@ -2911,16 +2900,6 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 60.96) (xy 55.88 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "85e1c3fd-df50-4a55-a3d2-bf5fadf12078")
-	)
-	(wire
-		(pts
 			(xy 93.98 40.64) (xy 99.06 40.64)
 		)
 		(stroke
@@ -2938,6 +2917,16 @@
 			(type default)
 		)
 		(uuid "88ec5c17-d097-43cf-bd2f-713ee36decac")
+	)
+	(wire
+		(pts
+			(xy 30.48 40.64) (xy 50.8 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d39eb18-9c46-4abd-8865-b2c450ca2e39")
 	)
 	(wire
 		(pts
@@ -3001,7 +2990,7 @@
 	)
 	(wire
 		(pts
-			(xy 33.02 54.61) (xy 33.02 60.96)
+			(xy 30.48 54.61) (xy 30.48 60.96)
 		)
 		(stroke
 			(width 0)
@@ -3758,7 +3747,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12V"
+		(property "Value" "12Vz"
 			(at 81.28 46.9899 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4444,7 +4433,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 33.02 50.8 90)
+		(at 30.48 50.8 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4455,7 +4444,7 @@
 		(fields_autoplaced yes)
 		(uuid "7de88ba2-0b30-44cd-9cdf-852eea93ca94")
 		(property "Reference" "D4"
-			(at 35.56 49.5299 90)
+			(at 33.02 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4465,8 +4454,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "47.8V"
-			(at 35.56 52.0699 90)
+		(property "Value" "36.8Vwm"
+			(at 33.02 52.0699 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4476,8 +4465,8 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" ""
-			(at 33.02 50.8 0)
+		(property "Footprint" "Diode_SMD:D_SMB"
+			(at 30.48 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4487,8 +4476,8 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 33.02 50.8 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/P6SMB43CA-AT-TR13/16266003"
+			(at 30.48 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4498,8 +4487,8 @@
 				)
 			)
 		)
-		(property "Description" "Bidirectional transient-voltage-suppression diode"
-			(at 33.02 50.8 0)
+		(property "Description" "TVS DIODE 36.8VWM 59.3V DO214AA"
+			(at 30.48 50.8 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5034,7 +5023,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12V"
+		(property "Value" "12Vz"
 			(at 68.58 46.9899 90)
 			(show_name no)
 			(do_not_autoplace no)
