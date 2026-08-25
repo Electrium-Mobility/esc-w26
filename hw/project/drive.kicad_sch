@@ -1631,18 +1631,6 @@
 		(uuid "5623a2ae-62d3-44e9-b6cd-dd54064b485f")
 	)
 	(rectangle
-		(start 22.86 180.34)
-		(end 147.828 215.9)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "5c7d647e-f481-4130-b7dd-08f5fd644c38")
-	)
-	(rectangle
 		(start 22.86 20.32)
 		(end 76.2 106.68)
 		(stroke
@@ -1764,18 +1752,6 @@
 		)
 		(uuid "5bf1c4ba-57dd-4eb3-84cb-a67921db1b90")
 	)
-	(text "1210 or 2220"
-		(exclude_from_sim no)
-		(at 10.414 194.818 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-			(justify left)
-		)
-		(uuid "80cfc4c2-0fcb-43e2-89bb-09fb14db08c5")
-	)
 	(text "verify all with claude!!!!!!!!!!!!!!!!!!!!!!"
 		(exclude_from_sim no)
 		(at -10.16 154.686 0)
@@ -1787,19 +1763,6 @@
 			(justify left)
 		)
 		(uuid "834b2702-e820-4f5d-ba7a-9fc8df6d8897")
-	)
-	(text "Bulk (Ceramic) Capacitor Bank"
-		(exclude_from_sim no)
-		(at 23.622 181.864 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left top)
-		)
-		(uuid "84f73225-bc3a-412a-b492-1a4c52ce36d5")
 	)
 	(text "Voltage Sense W"
 		(exclude_from_sim no)
@@ -2573,16 +2536,6 @@
 			(type default)
 		)
 		(uuid "293a94dc-4629-44e3-b57e-9419573d0a6c")
-	)
-	(wire
-		(pts
-			(xy 27.94 193.04) (xy 27.94 195.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2aef26c2-31e8-4b19-a55e-b4907b05c4e9")
 	)
 	(wire
 		(pts
@@ -3826,16 +3779,6 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 200.66) (xy 27.94 203.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc9a6bee-bd7a-477b-88d4-997d3fff95b6")
-	)
-	(wire
-		(pts
 			(xy 109.22 162.56) (xy 109.22 163.83)
 		)
 		(stroke
@@ -4667,84 +4610,6 @@
 	)
 	(symbol
 		(lib_id "power:VBUS")
-		(at 27.94 193.04 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "05e27357-ec92-4f52-85e6-90815b67343f")
-		(property "Reference" "#PWR071"
-			(at 27.94 196.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "VM"
-			(at 27.94 187.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 27.94 193.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "85046a99-2531-4663-a048-8cda3a910412")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR071")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VBUS")
 		(at 127 19.05 0)
 		(unit 1)
 		(body_style 1)
@@ -5143,88 +5008,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "Q8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Small")
-		(at 43.18 198.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "1a80fbad-6dd3-4907-8747-b91b13e50459")
-		(property "Reference" "C31"
-			(at 45.72 196.8562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF/100V"
-			(at 45.72 199.3962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 43.18 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 43.18 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "cb792b26-e10e-4203-bf95-2b723c916c12")
-		)
-		(pin "2"
-			(uuid "57469e89-f44f-437e-af15-b74c3f4230f0")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C31")
 					(unit 1)
 				)
 			)
@@ -9079,88 +8862,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Small")
-		(at 27.94 198.12 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "ab33637b-3edf-404b-94bd-4a642f1fac10")
-		(property "Reference" "C20"
-			(at 30.48 196.8562 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "22uF/100V"
-			(at 30.48 199.3962 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 27.94 198.12 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "50f013ae-0e0c-49ad-b01a-5e08e1fdea78")
-		)
-		(pin "2"
-			(uuid "7cf6b72b-2144-41f8-a8bc-444145f8ab71")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Transistor_FET:Q_NMOS_DGS")
 		(at 193.04 41.91 0)
 		(unit 1)
@@ -10541,84 +10242,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 27.94 203.2 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "db006ca8-2d1d-4a2a-bea8-232bb0ad9f84")
-		(property "Reference" "#PWR078"
-			(at 27.94 209.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PGND"
-			(at 27.94 208.28 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 27.94 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 27.94 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 27.94 203.2 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c3106329-4ab8-419f-b015-f14e6370eec1")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "#PWR078")
 					(unit 1)
 				)
 			)
