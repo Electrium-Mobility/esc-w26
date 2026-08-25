@@ -1236,9 +1236,9 @@
 				(justify right)
 			)
 		)
-		(pin "POWER" input
+		(pin "PGND" input
 			(at 45.72 26.67 0)
-			(uuid "0cfe3335-53d2-4d1c-8197-f8c83f2c2bb5")
+			(uuid "4d898c88-c5ea-49e0-83fa-114f8f239618")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1562,16 +1562,6 @@
 				(justify left)
 			)
 		)
-		(pin "POWER" output
-			(at 58.42 26.67 180)
-			(uuid "5b656019-c29c-401a-8fe9-46630aa408eb")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(pin "STATUS1" input
 			(at 109.22 124.46 270)
 			(uuid "97146bdc-dd1b-4a3d-a924-4be935a1ddc9")
@@ -1630,6 +1620,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "PGND" output
+			(at 58.42 26.67 180)
+			(uuid "725fc6af-8e73-4654-8c56-00adfcf03d03")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
