@@ -2731,6 +2731,186 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:C_Polarized_Small_US"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.254)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "C"
+				(at 0.254 1.778 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C_Polarized_Small_US"
+				(at 0.254 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Polarized capacitor, small US symbol"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "CP_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_US_0_1"
+				(polyline
+					(pts
+						(xy -1.524 0.508) (xy 1.524 0.508)
+					)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.27 1.524) (xy -0.762 1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.016 1.27) (xy -1.016 1.778)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start -1.524 -0.762)
+					(mid 0 -0.3734)
+					(end 1.524 -0.762)
+					(stroke
+						(width 0.3048)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_Polarized_Small_US_1_1"
+				(pin passive line
+					(at 0 2.54 270)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 90)
+					(length 2.032)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:C_Small"
 			(pin_numbers
 				(hide yes)
@@ -4027,6 +4207,105 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Switch:SW_Push"
 			(pin_numbers
 				(hide yes)
@@ -4184,168 +4463,6 @@
 						(effects
 							(font
 								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "WCAP-ASLI_4X5.5:WCAP-ASLI_4X5.5"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "C"
-				(at 1.175 3.38 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Value" "22uF"
-				(at 0.915 -5.075 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Footprint" "WCAP-ASLI_4X5.5:WCAP-ASLI_4X5.5_DXL_"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/865080340003/5728008"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "CAP ALUM 22UF 20% 16V SMD"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "WCAP-ASLI_4X5.5_0_0"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0.6426 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.635 -1.905) (xy 0.635 1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 1.905) (xy 1.905 -1.905)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.9279 0) (xy 2.5705 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(text "+"
-					(at 2.54 -1.905 0)
-					(effects
-						(font
-							(size 1.4224 1.4224)
-						)
-						(justify left bottom)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 0 0)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
 							)
 						)
 					)
@@ -5038,6 +5155,18 @@
 		(uuid "059bbf35-9845-4090-9bda-0385b85c542f")
 	)
 	(rectangle
+		(start 170.18 147.32)
+		(end 210.82 177.8)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid "0e3a9d4a-d8e7-4d9d-a984-24b9577e87d6")
+	)
+	(rectangle
 		(start 302.26 60.96)
 		(end 406.4 111.76)
 		(stroke
@@ -5229,28 +5358,6 @@
 		)
 		(uuid "f5a88c64-86dd-4b6f-97d6-7d60d5982e28")
 	)
-	(text "ADD HOLES FOR STANDOFFS (feet will be rubber)"
-		(exclude_from_sim no)
-		(at 176.276 165.354 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "0419b0f6-c6b0-40fe-910b-4aee891f2554")
-	)
-	(text "CHECK IF SCHOTTKYS NEEDED ANYWHERE HERE"
-		(exclude_from_sim no)
-		(at 197.866 154.686 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "07c6dba7-1dbf-4285-9a6a-a5cf97623383")
-	)
 	(text "Vf=2.0V @ If=20mA\n\n5mA<Itarget<10mA =>\nVtarget=1.9V (@ If_min)"
 		(exclude_from_sim no)
 		(at 298.958 22.86 0)
@@ -5298,6 +5405,19 @@
 		)
 		(uuid "2021024c-2c53-4de1-bc6d-c8d055f0e4b4")
 	)
+	(text "Mounting Holes"
+		(exclude_from_sim no)
+		(at 170.942 148.844 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left top)
+		)
+		(uuid "26ef5bcb-b48f-43b4-8a6d-842fc7026a0f")
+	)
 	(text "CANBus Split Termination"
 		(exclude_from_sim no)
 		(at 303.022 62.484 0)
@@ -5313,7 +5433,7 @@
 	)
 	(text "add terminal connector crimp kit to BOM"
 		(exclude_from_sim no)
-		(at 92.456 45.212 0)
+		(at 98.298 45.212 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5334,17 +5454,6 @@
 			(justify left top)
 		)
 		(uuid "527ae572-fdf5-4b95-b73e-c0f3530e9303")
-	)
-	(text "TO-SPEC STILL!!"
-		(exclude_from_sim no)
-		(at 297.942 75.438 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "57f793f6-92a1-4ee6-9d03-723c716bb3eb")
 	)
 	(text "CAN Transceiver"
 		(exclude_from_sim no)
@@ -5372,7 +5481,7 @@
 		)
 		(uuid "8de729a6-d1ec-426a-9c6e-93843d1b701a")
 	)
-	(text "Misc. STM Header"
+	(text "Misc. Header Pins"
 		(exclude_from_sim no)
 		(at 94.742 149.098 0)
 		(effects
@@ -5472,17 +5581,6 @@
 		)
 		(uuid "aa0eb326-64b7-4b4c-ac50-8b8e922e30d5")
 	)
-	(text "CHECK OVER THIS"
-		(exclude_from_sim no)
-		(at 407.924 66.04 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "ac9c3da4-5767-4d9c-a2fb-19042a7440d1")
-	)
 	(text "Voltage Monitor"
 		(exclude_from_sim no)
 		(at 15.494 148.844 0)
@@ -5508,6 +5606,17 @@
 			(justify left top)
 		)
 		(uuid "dfb8aa78-a43d-4866-b138-a160bb5749e2")
+	)
+	(text "add mounting hole stuff to BOM"
+		(exclude_from_sim no)
+		(at 236.728 167.894 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 4 4 1)
+			)
+		)
+		(uuid "f3866d73-2dee-41b7-9830-d3a6802f495c")
 	)
 	(text "Phase Outputs"
 		(exclude_from_sim no)
@@ -5567,6 +5676,26 @@
 			(justify left top)
 		)
 		(uuid "058252ef-e6db-4954-9c3b-e1283fca4622")
+	)
+	(text_box "Misc. Header Pins\n\nFour unused pins remain, so pair with GND and expose"
+		(exclude_from_sim no)
+		(at 142.24 147.32 0)
+		(size 25.4 30.48)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "0ef522bc-9a3b-4728-ac9e-39f2fb4174a6")
 	)
 	(text_box "Serial (JST-PH)\n\n- Uses USART1_TX (PA9) & USART1_RX (PA10), which are 5V-tolerant\n- For sk8's Flipsky VX1's receiver module (JST-PH, soldered to JST-XH connector)"
 		(exclude_from_sim no)
@@ -5747,6 +5876,26 @@
 			(justify left top)
 		)
 		(uuid "c3d6a2be-f335-4451-a94f-7d53e5fe76b9")
+	)
+	(text_box "Mounting Holes\n\nUsing non-plated through-holes (NPTH) sized for screw-in rubber bumpers"
+		(exclude_from_sim no)
+		(at 213.36 147.32 0)
+		(size 23.114 30.48)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c7ae7eb8-06b3-4874-93d0-f72113ad66df")
 	)
 	(junction
 		(at 45.72 88.9)
@@ -6818,7 +6967,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 38.1) (xy 312.42 39.37)
+			(xy 312.42 38.1) (xy 312.42 40.64)
 		)
 		(stroke
 			(width 0)
@@ -7938,7 +8087,7 @@
 	)
 	(wire
 		(pts
-			(xy 312.42 46.99) (xy 312.42 49.53)
+			(xy 312.42 45.72) (xy 312.42 49.53)
 		)
 		(stroke
 			(width 0)
@@ -9185,8 +9334,8 @@
 		)
 	)
 	(symbol
-		(lib_id "WCAP-ASLI_4X5.5:WCAP-ASLI_4X5.5")
-		(at 312.42 44.45 90)
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 312.42 43.18 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9196,7 +9345,7 @@
 		(dnp no)
 		(uuid "1a2887f7-c353-4318-9770-ec74f99c78b1")
 		(property "Reference" "C55"
-			(at 305.054 42.164 90)
+			(at 309.88 41.4781 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9207,7 +9356,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 305.054 44.704 90)
+			(at 309.88 44.0181 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9218,7 +9367,7 @@
 			)
 		)
 		(property "Footprint" "WCAP-ASLI_4X5.5:WCAP-ASLI_4X5.5_DXL_"
-			(at 312.42 44.45 0)
+			(at 312.42 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9226,11 +9375,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(justify bottom)
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/865080340003/5728008"
-			(at 312.42 44.45 0)
+			(at 312.42 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9240,8 +9388,8 @@
 				)
 			)
 		)
-		(property "Description" "CAP ALUM 22UF 20% 16V SMD"
-			(at 312.42 44.45 0)
+		(property "Description" "Polarized capacitor, small US symbol"
+			(at 312.42 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10487,6 +10635,82 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 175.26 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3ddd6d3f-4bc7-4b7e-bcde-69bfed702653")
+		(property "Reference" "H1"
+			(at 177.8 154.9399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 177.8 157.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 175.26 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 175.26 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "H1")
 					(unit 1)
 				)
 			)
@@ -11967,6 +12191,82 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "C51")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 193.04 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6ab5cef8-cdef-4e61-981b-7fc4fedfc188")
+		(property "Reference" "H4"
+			(at 195.58 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 195.58 172.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 193.04 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 193.04 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "H4")
 					(unit 1)
 				)
 			)
@@ -15693,6 +15993,82 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 193.04 156.21 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c9479926-daf6-4e35-8a87-3d4092d90174")
+		(property "Reference" "H3"
+			(at 195.58 154.9399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 195.58 157.4799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 193.04 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 193.04 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 193.04 156.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "H3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 243.84 41.91 180)
 		(unit 1)
@@ -16005,6 +16381,82 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "TP7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 175.26 171.45 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf2fcc8f-de8c-448a-ac7b-d11f0a1ea8f2")
+		(property "Reference" "H2"
+			(at 177.8 170.1799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 177.8 172.7199 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3.2mm_M3"
+			(at 175.26 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 175.26 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 175.26 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "H2")
 					(unit 1)
 				)
 			)
