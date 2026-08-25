@@ -2071,8 +2071,8 @@
 		)
 	)
 	(rectangle
-		(start 116.84 27.94)
-		(end 185.42 63.5)
+		(start 116.84 25.4)
+		(end 185.42 60.96)
 		(stroke
 			(width 0)
 			(type default)
@@ -2083,8 +2083,8 @@
 		(uuid "22c44ea3-4b65-4400-bf5a-52ebd65704dd")
 	)
 	(rectangle
-		(start 25.4 27.94)
-		(end 43.18 63.5)
+		(start 25.4 25.4)
+		(end 43.18 60.96)
 		(stroke
 			(width 0)
 			(type default)
@@ -2095,8 +2095,8 @@
 		(uuid "38897413-21e1-4a57-92b4-436f290c2fd0")
 	)
 	(rectangle
-		(start 22.86 22.86)
-		(end 187.96 66.04)
+		(start 22.86 20.32)
+		(end 187.96 63.5)
 		(stroke
 			(width 0)
 			(type default)
@@ -2107,8 +2107,8 @@
 		(uuid "506efbfe-6823-4aa7-bf2c-e2e90dca6cbb")
 	)
 	(rectangle
-		(start 45.72 27.94)
-		(end 73.66 63.5)
+		(start 45.72 25.4)
+		(end 73.66 60.96)
 		(stroke
 			(width 0)
 			(type default)
@@ -2119,8 +2119,8 @@
 		(uuid "8e9e386f-7c36-4e4e-aa51-b0bccdd8fadc")
 	)
 	(rectangle
-		(start 76.2 27.94)
-		(end 114.3 63.5)
+		(start 76.2 25.4)
+		(end 114.3 60.96)
 		(stroke
 			(width 0)
 			(type default)
@@ -2130,9 +2130,9 @@
 		)
 		(uuid "f62672c1-1822-4632-a6fe-b624bf7a9284")
 	)
-	(text "1) Spec rest of this page, then write notes\n2) Confirm 5V\n3) verify with claude about drive sheet\n4) deal with 22k vs 22.1k\n5) DRC check"
+	(text "1) Spec rest of this page, then write notes\n2) Confirm 5V stage buck\n3) verify with claude about drive sheet\n4) deal with 22k vs 22.1k\n5) DRC check"
 		(exclude_from_sim no)
-		(at 138.176 100.076 0)
+		(at 126.238 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2153,7 +2153,7 @@
 	)
 	(text "Overvoltage\nProtection"
 		(exclude_from_sim no)
-		(at 26.162 29.464 0)
+		(at 26.162 26.924 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2187,7 +2187,7 @@
 	)
 	(text "calculate \njunction t\nempearture"
 		(exclude_from_sim no)
-		(at 141.224 87.884 0)
+		(at 75.438 -3.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2198,7 +2198,7 @@
 	)
 	(text "INPUT PROTECTION"
 		(exclude_from_sim no)
-		(at 23.622 24.384 0)
+		(at 23.622 21.844 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2209,9 +2209,9 @@
 		)
 		(uuid "b11262dc-e1ee-4de1-a11f-09b03fff4525")
 	)
-	(text "Inrush Current Limiting"
+	(text "Inrush Current Limiter"
 		(exclude_from_sim no)
-		(at 76.962 29.464 0)
+		(at 76.962 26.924 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2254,9 +2254,9 @@
 		)
 		(uuid "e58f5b0c-8bf6-4306-801e-2cd0aca0caaa")
 	)
-	(text "Bulk (Electrolytic) Capacitor Bank"
+	(text "Bulk Capacitor Bank"
 		(exclude_from_sim no)
-		(at 117.602 29.464 0)
+		(at 117.602 26.924 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2269,7 +2269,7 @@
 	)
 	(text "Reverse Polarity Protection"
 		(exclude_from_sim no)
-		(at 46.482 29.464 0)
+		(at 46.482 26.924 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2280,10 +2280,10 @@
 		)
 		(uuid "feab3bfc-c1cd-44a9-9a6f-9be4818fab88")
 	)
-	(text_box "Inrush Current Limiting and Capacitor Bank\n\n\n"
+	(text_box "RC Soft-Start\ntau(typ) = R_pd*[C_ss+C_iss(typ)] = 118kΩ*(220nF+7.5nF) = 26.8ms > 1.16ms"
 		(exclude_from_sim no)
-		(at 196.088 71.9092 0)
-		(size 80.772 11.4299)
+		(at 165.1 71.12 0)
+		(size 40.64 10.0822)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2298,12 +2298,12 @@
 			)
 			(justify left top)
 		)
-		(uuid "073ed9a4-222d-480a-9d41-129d0057f523")
+		(uuid "4c23f8ee-5a4e-4d35-9687-45e4c99f5bcd")
 	)
-	(text_box "Overvoltage Protection\n\n- PMOS has V_DS(max)=80V, so V_C<80V"
+	(text_box "TVS Diode OVP\n- PMOS has V_DS(max)=60V, so V_C=59.3V<60V\n- V_spec(max)=36V, so V_wm=36.8V>36V"
 		(exclude_from_sim no)
-		(at 196.088 23.368 0)
-		(size 80.772 11.4299)
+		(at 22.86 71.12 0)
+		(size 50.8 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2320,10 +2320,10 @@
 		)
 		(uuid "7def7196-4272-43af-9cab-1d24feed1e78")
 	)
-	(text_box "Reverse Polarity Protection\n\nP-MOSFETs: GT090P08M\n- \n\nGate Resistors: 10 ohms\n\nZener Diode\n- PMOS has V_GS(R_DS(on))=10V, V_GS(max)=+/-20V, so V_Z=12V\n- POWER CALC (consider supported MAX VIN)\n\nPull-down Resistor\n- POWER CALC\n- TIMING CALC"
+	(text_box "High-side PMOS RPP\n- PMOS has R_DS(on,min) = 0.0053 Ohms @ -10V and V_GS(max)=+/-20V, so V_Z=12V\n- tau(max) = R_pd*C_iss(max) = 118 kOhms*9800 pF (typ) = 1.16ms < 27.1ms"
 		(exclude_from_sim no)
-		(at 195.834 37.1112 0)
-		(size 80.772 30.5285)
+		(at 73.66 71.12 0)
+		(size 91.44 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2340,10 +2340,10 @@
 		)
 		(uuid "86f4c720-e9b8-447e-a1c5-3dbacc1b494d")
 	)
-	(text_box "thought of having a switch, but adds more parts -> next time, use an ideal diode IC"
+	(text_box "Power on PMOS' Zener Diode and Pull-down Resistor\n- P_Z = V_Z*I_pd = 12V * 203.4uA = 2.44mW < 500mW\n- V_G = V_bus−V_Z = 36−12 = 24V. I_pd = 24V/118kOhms = 203.4uA. \n- P_pd = V_G*I_pd = 24V*203.4 uA = 4.88mW < 0.1W"
 		(exclude_from_sim no)
-		(at 193.04 87.6572 0)
-		(size 80.772 11.4299)
+		(at 205.74 71.12 0)
+		(size 76.2 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2358,40 +2358,80 @@
 			)
 			(justify left top)
 		)
-		(uuid "f3eab18c-c9ff-4715-a42a-8a7054335e46")
+		(uuid "aa5ed0fe-9579-4a8d-a681-4a3e7fc1231b")
+	)
+	(text_box "Absolute Maximum Ratings\n- Supply Voltage: 36V. Continuous Current: 15A. Worst Load: 36V, 250W E-bike Motor."
+		(exclude_from_sim no)
+		(at 190.5 20.32 0)
+		(size 91.44 7.6199)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "c04b1b9c-4945-4484-9665-edb560f13562")
+	)
+	(text_box "Bulk Capacitor Bank\n- C_bulk(min) = [I(max)*D(1−D)]/(f_sw*deltaV_ripple(target)) = (15*0.25)/(20000*0.36) = 3.75/7200 = 520.8uF\n- I_ripple(total) > I(max)*sqrt[D(1−D)] = 15*sqrt(0.25) = 7.5A_rms => I_ripple(single) > 7.5/3 = 2.5A_rms\n\n- C_total = 3*430uF = 1290uF. ESR_total = 31mOhms/3 = 10.33mOhms (in parallel, 100kHz/20°C)\n- coefficient_log-interpolated(20 kHz) = 0.958 => I_ripple(single) = 4.61*0.958 = 4.42A_rms @ 20kHz => I_ripple(total) = 3*4.42 = 13.25A_rms @ 20kHz\n- E = 0.5*C*V^2 = 0.5*1290uF*36^2 = 0.836 J\n\n- I_bleed = 36V / 44.2kOhms = 814.5uA => P_bleed(single) = 18V*814.5uA = 14.66mW\n- tau_bleed = R_total × C_total = 44.2kOhms× 1290uF = 57.0s\n\n- T_a=70°C: T_J=150.7°C, R_DS(on)=8.96mOhms, P=2.02W => 24.3°C to 175°C(max)"
+		(exclude_from_sim no)
+		(at 190.5 27.94 0)
+		(size 91.44 35.56)
+		(margins 0.9525 0.9525 0.9525 0.9525)
+		(stroke
+			(width 0)
+			(type solid)
+		)
+		(fill
+			(type none)
+		)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left top)
+		)
+		(uuid "f3d4192a-b2c7-481b-801c-d0729d43b710")
 	)
 	(junction
-		(at 30.48 60.96)
+		(at 30.48 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0efc2814-ce23-4552-a2e8-fd115b599677")
 	)
 	(junction
-		(at 83.82 40.64)
+		(at 83.82 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "12ea13ac-b19b-4544-881f-bed023912ab3")
 	)
 	(junction
-		(at 104.14 50.8)
+		(at 104.14 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1b8fdbfc-ed23-4a9f-af46-b545e8e832ed")
 	)
 	(junction
-		(at 121.92 60.96)
+		(at 121.92 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "1f69c0fc-80e8-41ab-9502-2a24548b05d9")
 	)
 	(junction
-		(at 66.04 40.64)
+		(at 66.04 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "224b3af7-0134-4cae-b4ce-1c60593bf3b0")
 	)
 	(junction
-		(at 157.48 60.96)
+		(at 157.48 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "29b07838-a6f2-45d7-8e36-31f0d65857a4")
@@ -2403,31 +2443,31 @@
 		(uuid "2d60d1fb-5371-4ab9-b03d-e10154b4a8c5")
 	)
 	(junction
-		(at 175.26 40.64)
+		(at 175.26 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3162e0bf-35af-4494-95df-97f084f9e223")
 	)
 	(junction
-		(at 30.48 40.64)
+		(at 30.48 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "32ec2baf-2683-4056-a71f-9f4f7dd5b923")
 	)
 	(junction
-		(at 139.7 40.64)
+		(at 139.7 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b0acadb-630e-4cd9-a2bd-e97a62b02925")
 	)
 	(junction
-		(at 157.48 40.64)
+		(at 157.48 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3f361d42-e982-439d-88ed-8a2f246fc6df")
 	)
 	(junction
-		(at 93.98 50.8)
+		(at 93.98 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "60692c1d-8ad8-4bdb-8fd2-079a93e0ce72")
@@ -2439,7 +2479,7 @@
 		(uuid "610f9b64-b9c8-411f-9939-47b8e1af1278")
 	)
 	(junction
-		(at 121.92 40.64)
+		(at 121.92 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67814be4-c99c-41ee-a846-1761ef1fe5f2")
@@ -2451,13 +2491,13 @@
 		(uuid "6d96e9df-2581-48f4-97e8-b2f58f09e509")
 	)
 	(junction
-		(at 139.7 60.96)
+		(at 139.7 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "940121bd-6b8b-4b4d-a3e4-a064d96443dc")
 	)
 	(junction
-		(at 55.88 50.8)
+		(at 55.88 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9adeda9e-d7e6-4d0e-b919-1fcc9b1c2085")
@@ -2481,7 +2521,7 @@
 		(uuid "bcfb691b-6bb8-47ce-8c21-f19236d04fe3")
 	)
 	(junction
-		(at 104.14 60.96)
+		(at 104.14 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be9a0d6a-c317-43c1-bdf6-b0eef9e56edc")
@@ -2511,26 +2551,26 @@
 		(uuid "d91c3b22-61ba-4014-80c3-ec8eaed0baeb")
 	)
 	(junction
-		(at 175.26 60.96)
+		(at 175.26 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ea23d20c-d438-416e-97bf-b426e544593b")
 	)
 	(junction
-		(at 93.98 40.64)
+		(at 93.98 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9977f0f-6120-4850-a051-834350f85869")
 	)
 	(junction
-		(at 55.88 60.96)
+		(at 55.88 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd819a7d-fd8b-4fef-9cbb-583f72389d4b")
 	)
 	(wire
 		(pts
-			(xy 104.14 48.26) (xy 104.14 50.8)
+			(xy 104.14 45.72) (xy 104.14 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2550,7 +2590,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 21.59) (xy 175.26 40.64)
+			(xy 175.26 19.05) (xy 175.26 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2570,7 +2610,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 40.64) (xy 93.98 40.64)
+			(xy 83.82 38.1) (xy 93.98 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2580,7 +2620,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 60.96) (xy 55.88 60.96)
+			(xy 30.48 58.42) (xy 55.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2590,7 +2630,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 40.64) (xy 121.92 48.26)
+			(xy 121.92 38.1) (xy 121.92 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2600,7 +2640,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 50.8) (xy 66.04 49.53)
+			(xy 66.04 48.26) (xy 66.04 46.99)
 		)
 		(stroke
 			(width 0)
@@ -2610,7 +2650,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 48.26) (xy 93.98 50.8)
+			(xy 93.98 45.72) (xy 93.98 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2620,7 +2660,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 49.53) (xy 175.26 52.07)
+			(xy 175.26 46.99) (xy 175.26 49.53)
 		)
 		(stroke
 			(width 0)
@@ -2630,7 +2670,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 60.96) (xy 121.92 60.96)
+			(xy 104.14 58.42) (xy 121.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2640,7 +2680,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 58.42) (xy 104.14 60.96)
+			(xy 104.14 55.88) (xy 104.14 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2650,7 +2690,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 40.64) (xy 83.82 40.64)
+			(xy 66.04 38.1) (xy 83.82 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2670,7 +2710,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 50.8) (xy 93.98 50.8)
+			(xy 83.82 48.26) (xy 93.98 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2680,7 +2720,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 58.42) (xy 55.88 60.96)
+			(xy 55.88 55.88) (xy 55.88 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2690,7 +2730,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 60.96) (xy 30.48 60.96)
+			(xy 20.32 58.42) (xy 30.48 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2710,7 +2750,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 40.64) (xy 30.48 40.64)
+			(xy 20.32 38.1) (xy 30.48 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2730,7 +2770,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 60.96) (xy 139.7 60.96)
+			(xy 121.92 58.42) (xy 139.7 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2740,7 +2780,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 57.15) (xy 175.26 60.96)
+			(xy 175.26 54.61) (xy 175.26 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2770,7 +2810,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 40.64) (xy 30.48 46.99)
+			(xy 30.48 38.1) (xy 30.48 44.45)
 		)
 		(stroke
 			(width 0)
@@ -2790,7 +2830,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 40.64) (xy 139.7 48.26)
+			(xy 139.7 38.1) (xy 139.7 45.72)
 		)
 		(stroke
 			(width 0)
@@ -2800,7 +2840,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 53.34) (xy 121.92 60.96)
+			(xy 121.92 50.8) (xy 121.92 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2810,7 +2850,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 48.26) (xy 55.88 50.8)
+			(xy 55.88 45.72) (xy 55.88 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2820,7 +2860,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 40.64) (xy 66.04 41.91)
+			(xy 66.04 38.1) (xy 66.04 39.37)
 		)
 		(stroke
 			(width 0)
@@ -2830,7 +2870,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 50.8) (xy 55.88 53.34)
+			(xy 55.88 48.26) (xy 55.88 50.8)
 		)
 		(stroke
 			(width 0)
@@ -2840,7 +2880,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 50.8) (xy 55.88 50.8)
+			(xy 66.04 48.26) (xy 55.88 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2850,7 +2890,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 40.64) (xy 66.04 40.64)
+			(xy 60.96 38.1) (xy 66.04 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2860,7 +2900,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 49.53) (xy 83.82 50.8)
+			(xy 83.82 46.99) (xy 83.82 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2880,7 +2920,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 40.64) (xy 139.7 40.64)
+			(xy 121.92 38.1) (xy 139.7 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2900,7 +2940,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 40.64) (xy 99.06 40.64)
+			(xy 93.98 38.1) (xy 99.06 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2920,7 +2960,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 40.64) (xy 50.8 40.64)
+			(xy 30.48 38.1) (xy 50.8 38.1)
 		)
 		(stroke
 			(width 0)
@@ -2930,7 +2970,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 60.96) (xy 175.26 60.96)
+			(xy 139.7 58.42) (xy 175.26 58.42)
 		)
 		(stroke
 			(width 0)
@@ -2990,7 +3030,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 54.61) (xy 30.48 60.96)
+			(xy 30.48 52.07) (xy 30.48 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3000,7 +3040,7 @@
 	)
 	(wire
 		(pts
-			(xy 83.82 41.91) (xy 83.82 40.64)
+			(xy 83.82 39.37) (xy 83.82 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3020,7 +3060,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 50.8) (xy 104.14 50.8)
+			(xy 93.98 48.26) (xy 104.14 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3030,7 +3070,7 @@
 	)
 	(wire
 		(pts
-			(xy 104.14 50.8) (xy 104.14 53.34)
+			(xy 104.14 48.26) (xy 104.14 50.8)
 		)
 		(stroke
 			(width 0)
@@ -3040,7 +3080,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 53.34) (xy 139.7 60.96)
+			(xy 139.7 50.8) (xy 139.7 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3050,7 +3090,7 @@
 	)
 	(wire
 		(pts
-			(xy 139.7 40.64) (xy 175.26 40.64)
+			(xy 139.7 38.1) (xy 175.26 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3110,7 +3150,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 53.34) (xy 157.48 60.96)
+			(xy 157.48 50.8) (xy 157.48 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3140,7 +3180,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 60.96) (xy 175.26 67.31)
+			(xy 175.26 58.42) (xy 175.26 64.77)
 		)
 		(stroke
 			(width 0)
@@ -3150,7 +3190,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 40.64) (xy 175.26 44.45)
+			(xy 175.26 38.1) (xy 175.26 41.91)
 		)
 		(stroke
 			(width 0)
@@ -3160,7 +3200,7 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 40.64) (xy 93.98 43.18)
+			(xy 93.98 38.1) (xy 93.98 40.64)
 		)
 		(stroke
 			(width 0)
@@ -3190,7 +3230,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 40.64) (xy 121.92 40.64)
+			(xy 109.22 38.1) (xy 121.92 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3210,7 +3250,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 40.64) (xy 157.48 48.26)
+			(xy 157.48 38.1) (xy 157.48 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3290,7 +3330,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 60.96) (xy 104.14 60.96)
+			(xy 55.88 58.42) (xy 104.14 58.42)
 		)
 		(stroke
 			(width 0)
@@ -3300,7 +3340,7 @@
 	)
 	(hierarchical_label "VM_IN"
 		(shape input)
-		(at 20.32 40.64 180)
+		(at 20.32 38.1 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3311,7 +3351,7 @@
 	)
 	(hierarchical_label "PGND"
 		(shape input)
-		(at 20.32 60.96 180)
+		(at 20.32 58.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3644,7 +3684,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 157.48 50.8 0)
+		(at 157.48 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3655,7 +3695,7 @@
 		(fields_autoplaced yes)
 		(uuid "2d499d98-9ca4-471d-a081-94ba53a55dd4")
 		(property "Reference" "C27"
-			(at 160.02 49.0981 0)
+			(at 160.02 46.5581 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3666,7 +3706,7 @@
 			)
 		)
 		(property "Value" "430uF/100V"
-			(at 160.02 51.6381 0)
+			(at 160.02 49.0981 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3677,7 +3717,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
-			(at 157.48 50.8 0)
+			(at 157.48 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3688,7 +3728,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
-			(at 157.48 50.8 0)
+			(at 157.48 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3699,7 +3739,7 @@
 			)
 		)
 		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
-			(at 157.48 50.8 0)
+			(at 157.48 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3726,7 +3766,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 83.82 45.72 90)
+		(at 83.82 43.18 90)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -3737,7 +3777,7 @@
 		(dnp no)
 		(uuid "3cf0fd91-96a6-4139-9674-8538807638f2")
 		(property "Reference" "D14"
-			(at 81.28 44.4499 90)
+			(at 81.28 41.9099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3748,7 +3788,7 @@
 			)
 		)
 		(property "Value" "12Vz"
-			(at 81.28 46.9899 90)
+			(at 81.28 44.4499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3759,7 +3799,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 83.82 45.72 0)
+			(at 83.82 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3770,7 +3810,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/good-ark-semiconductor/BZT52B12/18649091"
-			(at 83.82 45.72 0)
+			(at 83.82 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3781,7 +3821,7 @@
 			)
 		)
 		(property "Description" "DIODE ZENER 12V 500MW SOD123"
-			(at 83.82 45.72 0)
+			(at 83.82 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3808,7 +3848,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 121.92 50.8 0)
+		(at 121.92 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -3819,7 +3859,7 @@
 		(fields_autoplaced yes)
 		(uuid "4013e707-b043-4733-83a4-9c870342e937")
 		(property "Reference" "C22"
-			(at 124.46 49.0981 0)
+			(at 124.46 46.5581 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3830,7 +3870,7 @@
 			)
 		)
 		(property "Value" "430uF/100V"
-			(at 124.46 51.6381 0)
+			(at 124.46 49.0981 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3841,7 +3881,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
-			(at 121.92 50.8 0)
+			(at 121.92 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3852,7 +3892,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
-			(at 121.92 50.8 0)
+			(at 121.92 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3863,7 +3903,7 @@
 			)
 		)
 		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
-			(at 121.92 50.8 0)
+			(at 121.92 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4132,7 +4172,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 93.98 45.72 0)
+		(at 93.98 43.18 0)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4143,7 +4183,7 @@
 		(dnp no)
 		(uuid "5e495159-d8d0-47e1-8dab-febbc58c91d9")
 		(property "Reference" "C43"
-			(at 91.44 44.4435 0)
+			(at 91.44 41.9035 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4154,7 +4194,7 @@
 			)
 		)
 		(property "Value" "220nF"
-			(at 91.44 46.9835 0)
+			(at 91.44 44.4435 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4165,7 +4205,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 93.98 45.72 0)
+			(at 93.98 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4176,7 +4216,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/HMK107C7224KAHTE/6563605"
-			(at 93.98 45.72 0)
+			(at 93.98 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4187,7 +4227,7 @@
 			)
 		)
 		(property "Description" "CAP CER 0.22UF 100V X7S 0603"
-			(at 93.98 45.72 0)
+			(at 93.98 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4355,7 +4395,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 175.26 67.31 0)
+		(at 175.26 64.77 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4366,7 +4406,7 @@
 		(fields_autoplaced yes)
 		(uuid "71aef6e0-5018-49e6-ab4a-edf3555d4004")
 		(property "Reference" "#PWR023"
-			(at 175.26 73.66 0)
+			(at 175.26 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4377,7 +4417,7 @@
 			)
 		)
 		(property "Value" "PGND"
-			(at 175.26 72.39 0)
+			(at 175.26 69.85 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4387,7 +4427,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 67.31 0)
+			(at 175.26 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4398,7 +4438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 67.31 0)
+			(at 175.26 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4409,7 +4449,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 175.26 67.31 0)
+			(at 175.26 64.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4433,7 +4473,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_TVS")
-		(at 30.48 50.8 90)
+		(at 30.48 48.26 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4444,7 +4484,7 @@
 		(fields_autoplaced yes)
 		(uuid "7de88ba2-0b30-44cd-9cdf-852eea93ca94")
 		(property "Reference" "D4"
-			(at 33.02 49.5299 90)
+			(at 33.02 46.9899 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4455,7 +4495,7 @@
 			)
 		)
 		(property "Value" "36.8Vwm"
-			(at 33.02 52.0699 90)
+			(at 33.02 49.5299 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4466,7 +4506,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SMB"
-			(at 30.48 50.8 0)
+			(at 30.48 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4477,7 +4517,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/P6SMB43CA-AT-TR13/16266003"
-			(at 30.48 50.8 0)
+			(at 30.48 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4488,7 +4528,7 @@
 			)
 		)
 		(property "Description" "TVS DIODE 36.8VWM 59.3V DO214AA"
-			(at 30.48 50.8 0)
+			(at 30.48 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4593,7 +4633,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 175.26 54.61 0)
+		(at 175.26 52.07 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4604,7 +4644,7 @@
 		(fields_autoplaced yes)
 		(uuid "9262c5dd-d5ee-425f-9d26-2fca564d7584")
 		(property "Reference" "R22"
-			(at 177.8 53.3399 0)
+			(at 177.8 50.7999 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4615,7 +4655,7 @@
 			)
 		)
 		(property "Value" "22.1k"
-			(at 177.8 55.8799 0)
+			(at 177.8 53.3399 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4626,7 +4666,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 175.26 54.61 0)
+			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4637,7 +4677,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
-			(at 175.26 54.61 0)
+			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4648,7 +4688,7 @@
 			)
 		)
 		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
-			(at 175.26 54.61 0)
+			(at 175.26 52.07 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4675,7 +4715,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 104.14 55.88 0)
+		(at 104.14 53.34 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4686,7 +4726,7 @@
 		(fields_autoplaced yes)
 		(uuid "9662f697-835d-4ae9-99a4-3be73f892488")
 		(property "Reference" "R20"
-			(at 106.68 54.6099 0)
+			(at 106.68 52.0699 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4697,7 +4737,7 @@
 			)
 		)
 		(property "Value" "118k"
-			(at 106.68 57.1499 0)
+			(at 106.68 54.6099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4708,7 +4748,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 104.14 55.88 0)
+			(at 104.14 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4719,7 +4759,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT118K/1713571"
-			(at 104.14 55.88 0)
+			(at 104.14 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4730,7 +4770,7 @@
 			)
 		)
 		(property "Description" "RES 118K OHM 1% 1/10W 0603"
-			(at 104.14 55.88 0)
+			(at 104.14 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4757,7 +4797,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GDS")
-		(at 104.14 43.18 270)
+		(at 104.14 40.64 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -4768,7 +4808,7 @@
 		(dnp no)
 		(uuid "a1084a44-29d7-4c5b-8de8-94b95127a896")
 		(property "Reference" "Q2"
-			(at 104.14 34.29 90)
+			(at 104.14 31.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4778,7 +4818,7 @@
 			)
 		)
 		(property "Value" "SQM50061EL_GE3"
-			(at 104.14 36.83 90)
+			(at 104.14 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4788,7 +4828,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 106.68 38.1 0)
+			(at 106.68 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4799,7 +4839,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SQM50061EL-GE3/27788533"
-			(at 104.14 43.18 0)
+			(at 104.14 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4810,7 +4850,7 @@
 			)
 		)
 		(property "Description" "P-CHANNEL 60-V (D-S) 175C MOSFET"
-			(at 104.14 43.18 0)
+			(at 104.14 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4840,7 +4880,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Polarized_Small_US")
-		(at 139.7 50.8 0)
+		(at 139.7 48.26 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4851,7 +4891,7 @@
 		(fields_autoplaced yes)
 		(uuid "a50bf8c5-aa2a-4068-9379-755ddf7e04e0")
 		(property "Reference" "C25"
-			(at 142.24 49.0981 0)
+			(at 142.24 46.5581 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4862,7 +4902,7 @@
 			)
 		)
 		(property "Value" "430uF/100V"
-			(at 142.24 51.6381 0)
+			(at 142.24 49.0981 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4873,7 +4913,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
-			(at 139.7 50.8 0)
+			(at 139.7 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4884,7 +4924,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
-			(at 139.7 50.8 0)
+			(at 139.7 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4895,7 +4935,7 @@
 			)
 		)
 		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
-			(at 139.7 50.8 0)
+			(at 139.7 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4915,6 +4955,88 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "C25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 55.88 53.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b0bf932d-0053-4c86-a6d8-b2608f24378b")
+		(property "Reference" "R23"
+			(at 58.42 52.0699 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "118k"
+			(at 58.42 54.6099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT118K/1713571"
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 118K OHM 1% 1/10W 0603"
+			(at 55.88 53.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "8fbacb67-b91f-4342-bb97-deae48b66555")
+		)
+		(pin "2"
+			(uuid "eaf75b15-c2ec-40f2-aca7-d0c76040fe6b")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "R23")
 					(unit 1)
 				)
 			)
@@ -5002,7 +5124,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Zener")
-		(at 66.04 45.72 270)
+		(at 66.04 43.18 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5013,7 +5135,7 @@
 		(fields_autoplaced yes)
 		(uuid "b30a5743-c3c1-4dd1-97df-6d269501d33b")
 		(property "Reference" "D3"
-			(at 68.58 44.4499 90)
+			(at 68.58 41.9099 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5024,7 +5146,7 @@
 			)
 		)
 		(property "Value" "12Vz"
-			(at 68.58 46.9899 90)
+			(at 68.58 44.4499 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5035,7 +5157,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-123"
-			(at 66.04 45.72 0)
+			(at 66.04 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5046,7 +5168,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/good-ark-semiconductor/BZT52B12/18649091"
-			(at 66.04 45.72 0)
+			(at 66.04 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5057,7 +5179,7 @@
 			)
 		)
 		(property "Description" "DIODE ZENER 12V 500MW SOD123"
-			(at 66.04 45.72 0)
+			(at 66.04 43.18 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5245,89 +5367,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 55.88 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c79bb0f4-bb1e-4de2-ab04-7a7c022df54b")
-		(property "Reference" "R19"
-			(at 58.42 54.6099 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 58.42 57.1499 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 55.88 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "88bf2c54-8a0c-4475-aed0-e95f56d1bf96")
-		)
-		(pin "2"
-			(uuid "59d1a951-202d-494c-a3c7-fb8b8d5107d1")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "R19")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 175.26 46.99 0)
+		(at 175.26 44.45 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5338,7 +5378,7 @@
 		(fields_autoplaced yes)
 		(uuid "ceb79a27-096c-4f1c-8dc7-7b31404abdf7")
 		(property "Reference" "R21"
-			(at 177.8 45.7199 0)
+			(at 177.8 43.1799 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5349,7 +5389,7 @@
 			)
 		)
 		(property "Value" "22.1k"
-			(at 177.8 48.2599 0)
+			(at 177.8 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5360,7 +5400,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 175.26 46.99 0)
+			(at 175.26 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5371,7 +5411,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
-			(at 175.26 46.99 0)
+			(at 175.26 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5382,7 +5422,7 @@
 			)
 		)
 		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
-			(at 175.26 46.99 0)
+			(at 175.26 44.45 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5409,7 +5449,7 @@
 	)
 	(symbol
 		(lib_id "power:VMEM")
-		(at 175.26 21.59 0)
+		(at 175.26 19.05 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5420,7 +5460,7 @@
 		(fields_autoplaced yes)
 		(uuid "d7a5aa01-4034-48a9-a33c-97d6dce8bce5")
 		(property "Reference" "#PWR046"
-			(at 175.26 25.4 0)
+			(at 175.26 22.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5431,7 +5471,7 @@
 			)
 		)
 		(property "Value" "VM"
-			(at 175.26 16.51 0)
+			(at 175.26 13.97 0)
 			(show_name no)
 			(do_not_autoplace yes)
 			(effects
@@ -5441,7 +5481,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 175.26 21.59 0)
+			(at 175.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5452,7 +5492,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 175.26 21.59 0)
+			(at 175.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5463,7 +5503,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VMEM\""
-			(at 175.26 21.59 0)
+			(at 175.26 19.05 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5487,7 +5527,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GDS")
-		(at 55.88 43.18 90)
+		(at 55.88 40.64 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5498,7 +5538,7 @@
 		(fields_autoplaced yes)
 		(uuid "e1437de4-6ab8-4d5d-bb84-44508eca4ad0")
 		(property "Reference" "Q1"
-			(at 55.88 34.29 90)
+			(at 55.88 31.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5508,7 +5548,7 @@
 			)
 		)
 		(property "Value" "SQM50061EL_GE3"
-			(at 55.88 36.83 90)
+			(at 55.88 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5518,7 +5558,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:TO-263-2"
-			(at 53.34 38.1 0)
+			(at 53.34 35.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5529,7 +5569,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SQM50061EL-GE3/27788533"
-			(at 55.88 43.18 0)
+			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5540,7 +5580,7 @@
 			)
 		)
 		(property "Description" "P-CHANNEL 60-V (D-S) 175C MOSFET"
-			(at 55.88 43.18 0)
+			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
