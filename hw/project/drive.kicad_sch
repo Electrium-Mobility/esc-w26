@@ -1741,7 +1741,7 @@
 		)
 		(uuid "54a53c03-59b1-4423-a818-b06392f5f465")
 	)
-	(text "R2/(R1+R2) = 1/21 = 0.04762\n{60} [V] -> {2.857} [V]"
+	(text "R2/(R1+R2) = 0.04741\n{60} [V] -> {2.845} [V]"
 		(exclude_from_sim no)
 		(at 238.76 175.006 0)
 		(effects
@@ -1754,7 +1754,7 @@
 	)
 	(text "verify all with claude!!!!!!!!!!!!!!!!!!!!!!"
 		(exclude_from_sim no)
-		(at -10.16 154.686 0)
+		(at -39.116 154.686 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1789,18 +1789,6 @@
 			(justify left top)
 		)
 		(uuid "89c28cb9-e028-4585-850b-dbb42b1da7a1")
-	)
-	(text "reconcile 22 vs 22.1k??"
-		(exclude_from_sim no)
-		(at 13.97 171.196 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-			(justify left)
-		)
-		(uuid "98747509-b420-46e4-8b26-dade1af06615")
 	)
 	(text "R_eq = R1 || R2 = 2.1k, C_f = 470 pF\n=> tau = 0.985 us, f_c = 161.6 kHz"
 		(exclude_from_sim no)
@@ -1854,7 +1842,7 @@
 	)
 	(text "Layout Note: \n\nLow-Impedance Power-to-Analog Ground Planes: \nEnsure your PCB layout uses a continuous, low-impedance ground plane underneath the SoC and power stage. \nKeep the distance between the low-side shunt ground return and the STSPIN32G4 ground pins as short and wide \nas possible to minimize $I \\times R$ trace resistance and parasitic inductance ($L \\times di/dt$).\n\nKeep High-Current Paths Away: \nRoute the heavy phase current return paths on your PCB far away from the quiet analog ground traces surrounding the SoC."
 		(exclude_from_sim no)
-		(at -92.964 129.032 0)
+		(at -119.634 128.778 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4529,86 +4517,6 @@
 		(uuid "f96d0533-0f7d-4a6a-bf84-30bed5858021")
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 176.53 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "04a00e5f-dbbb-4047-b1dc-d903dd15c1a7")
-		(property "Reference" "R77"
-			(at 176.53 156.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22k"
-			(at 176.53 158.75 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 176.53 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K0/1760761"
-			(at 176.53 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 22K OHM 1% 1/10W 0603"
-			(at 176.53 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "afad6cac-2bc1-4068-9e5e-0068f977f36f")
-		)
-		(pin "1"
-			(uuid "f218a54c-8147-45f2-bae9-b5ac8a18c26d")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R77")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:VBUS")
 		(at 127 19.05 0)
 		(unit 1)
@@ -5093,6 +5001,86 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 176.53 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "27458509-ecce-4895-9824-d04f6f83fce2")
+		(property "Reference" "R30"
+			(at 176.53 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 176.53 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 176.53 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 176.53 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 176.53 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ede0f6bd-f1b1-406e-8e79-def1367ad254")
+		)
+		(pin "2"
+			(uuid "9093e259-61c7-453a-bc83-b74366c063e8")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -6782,86 +6770,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 105.41 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "69efcab1-ac0a-43c2-a131-4cbe229121ed")
-		(property "Reference" "R74"
-			(at 105.41 156.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22k"
-			(at 105.41 158.75 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 105.41 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K0/1760761"
-			(at 105.41 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 22K OHM 1% 1/10W 0603"
-			(at 105.41 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "43464e92-7404-46ae-8222-5a3bb30f5185")
-		)
-		(pin "1"
-			(uuid "6fd15b1b-029c-4889-83ab-14b2337bd2c2")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R74")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 205.74 158.75 270)
 		(unit 1)
@@ -7024,7 +6932,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 29.21 162.56 90)
+		(at 34.29 162.56 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7033,9 +6941,9 @@
 		(in_pos_files yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "7710c0ab-dc70-4cf9-8c4d-973697cd71c2")
-		(property "Reference" "R7"
-			(at 29.21 156.21 90)
+		(uuid "7373ac69-a640-4194-8043-b41394e8bc19")
+		(property "Reference" "R24"
+			(at 34.29 156.21 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7044,8 +6952,8 @@
 				)
 			)
 		)
-		(property "Value" "22k"
-			(at 29.21 158.75 90)
+		(property "Value" "22.1k"
+			(at 34.29 158.75 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -7055,7 +6963,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 29.21 162.56 0)
+			(at 34.29 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7065,8 +6973,8 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K0/1760761"
-			(at 29.21 162.56 0)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 34.29 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7076,8 +6984,8 @@
 				)
 			)
 		)
-		(property "Description" "RES 22K OHM 1% 1/10W 0603"
-			(at 29.21 162.56 0)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 34.29 162.56 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7086,97 +6994,17 @@
 					(size 1.27 1.27)
 				)
 			)
-		)
-		(pin "2"
-			(uuid "91c2104f-3af8-41c9-add0-4f15d2c1fdf7")
 		)
 		(pin "1"
-			(uuid "1cdf8358-3f57-4963-8d5d-b393a5c8b644")
+			(uuid "cf6fd4aa-c9a2-46f1-a92d-144c982e55e8")
+		)
+		(pin "2"
+			(uuid "a559e608-e118-45ff-8dc7-2ae654543be2")
 		)
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 100.33 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "795ea521-5eac-45d1-b965-7ca5e67bd802")
-		(property "Reference" "R70"
-			(at 100.33 156.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22k"
-			(at 100.33 158.75 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 100.33 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K0/1760761"
-			(at 100.33 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 22K OHM 1% 1/10W 0603"
-			(at 100.33 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "c07dafdc-9e45-4dba-933d-7caf6b323b0a")
-		)
-		(pin "1"
-			(uuid "c87602cd-580e-4ca7-8600-fd48bcd42a49")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R70")
+					(reference "R24")
 					(unit 1)
 				)
 			)
@@ -8143,6 +7971,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 171.45 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91f3f595-e6e6-4782-96c3-e60c41287415")
+		(property "Reference" "R27"
+			(at 171.45 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 171.45 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 171.45 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 171.45 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 171.45 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f5ecb6cc-bb23-4ff1-b05d-dee71ec95a4a")
+		)
+		(pin "2"
+			(uuid "c7b073c3-ec53-4aa8-a65d-ab88662cdde9")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 63.5 158.75 270)
 		(unit 1)
@@ -8546,6 +8454,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 105.41 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9ef37f8e-f5bb-40f8-b636-8acbe8924f12")
+		(property "Reference" "R26"
+			(at 105.41 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 105.41 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 105.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 105.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 105.41 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a35a47e6-aa4e-4d4e-a49c-23d50435faa5")
+		)
+		(pin "2"
+			(uuid "def360ff-776e-4c79-ac71-c9a5f782a22b")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R26")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Diode:BAT48RL")
 		(at 170.18 31.75 0)
 		(unit 1)
@@ -8620,86 +8608,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 34.29 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a14c066b-4fff-4588-8adc-0cd4d7bacad3")
-		(property "Reference" "R52"
-			(at 34.29 156.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22k"
-			(at 34.29 158.75 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 34.29 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K0/1760761"
-			(at 34.29 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 22K OHM 1% 1/10W 0603"
-			(at 34.29 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "77b94e6b-cf34-4550-9a36-b137ff4594d4")
-		)
-		(pin "1"
-			(uuid "8abfc89a-9997-49de-a74a-a4670e792a66")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -9029,6 +8937,86 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 100.33 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ae9db57f-98c2-43c7-85f4-2576eb00882f")
+		(property "Reference" "R25"
+			(at 100.33 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 100.33 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 100.33 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 100.33 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 100.33 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "c39ac6da-dceb-4827-a3c7-b03617b95415")
+		)
+		(pin "2"
+			(uuid "759d74e8-e1b0-434c-bac3-a84afc34b002")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R25")
 					(unit 1)
 				)
 			)
@@ -10819,6 +10807,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 29.21 162.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f65c076e-b172-4923-927a-4196a81111f4")
+		(property "Reference" "R19"
+			(at 29.21 156.21 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22.1k"
+			(at 29.21 158.75 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 29.21 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K1/1760764"
+			(at 29.21 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "RES 22.1K OHM 1% 1/10W 0603"
+			(at 29.21 162.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2041edb5-9317-4ca0-ae9e-cffd3d047a7a")
+		)
+		(pin "2"
+			(uuid "ea86b6a6-c3e8-413b-9262-06ace1c521d0")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 87.63 128.27 180)
 		(unit 1)
@@ -10977,86 +11045,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
 					(reference "D36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 171.45 162.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f893a93f-9698-4e14-9788-d39425d46d55")
-		(property "Reference" "R76"
-			(at 171.45 156.21 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22k"
-			(at 171.45 158.75 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 171.45 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603FT22K0/1760761"
-			(at 171.45 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 22K OHM 1% 1/10W 0603"
-			(at 171.45 162.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "d8618b8b-a7d8-4668-998a-9146b4b694fd")
-		)
-		(pin "1"
-			(uuid "c7e10012-65e5-4fb5-87e1-5d58866b0702")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138"
-					(reference "R76")
 					(unit 1)
 				)
 			)
