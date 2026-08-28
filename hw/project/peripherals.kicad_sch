@@ -147,24 +147,6 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 7.62)
-					(name "TXD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin power_in line
 					(at 0 -5.08 0)
 					(length 7.62)
@@ -183,7 +165,45 @@
 						)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "ATA6561-GAQW-N_1_1"
+				(pin input line
+					(at 0 0 0)
+					(length 7.62)
+					(name "TXD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -2.54 0)
+					(length 7.62)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
 					(at 0 -7.62 0)
 					(length 7.62)
 					(name "RXD"
@@ -201,7 +221,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 40.64 -7.62 180)
 					(length 7.62)
 					(name "VIO"
@@ -219,7 +239,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 40.64 -5.08 180)
 					(length 7.62)
 					(name "CANL"
@@ -237,7 +257,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin bidirectional line
 					(at 40.64 -2.54 180)
 					(length 7.62)
 					(name "CANH"
@@ -255,7 +275,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin input line
 					(at 40.64 0 180)
 					(length 7.62)
 					(name "STBY"
@@ -266,26 +286,6 @@
 						)
 					)
 					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "ATA6561-GAQW-N_1_1"
-				(pin power_in line
-					(at 0 -2.54 0)
-					(length 7.62)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -654,7 +654,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 0 0)
 					(length 5.08)
 					(name "1"
@@ -672,7 +672,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -2.54 0)
 					(length 5.08)
 					(name "2"
@@ -690,7 +690,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -5.08 0)
 					(length 5.08)
 					(name "3"
@@ -708,7 +708,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 -7.62 0)
 					(length 5.08)
 					(name "4"
@@ -11993,7 +11993,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691256610002/6644127"
+		(property "Datasheet" "https://www.we-online.com/catalog/datasheet/691256610002.pdf"
 			(at 40.64 30.48 0)
 			(hide yes)
 			(show_name no)

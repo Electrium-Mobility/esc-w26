@@ -260,7 +260,32 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "isolated_pin_label|1320800|952500|7376768d-82b9-4690-8c52-8c8b92b28ac7|00000000-0000-0000-0000-000000000000|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138||",
+        "minus terminal of all shunt resistors still labelled despite use of PGA for clarity"
+      ],
+      [
+        "isolated_pin_label|2006600|952500|136fcb84-c096-46f1-a063-25c098520ee9|00000000-0000-0000-0000-000000000000|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138||",
+        "minus terminal of all shunt resistors still labelled despite use of PGA for clarity"
+      ],
+      [
+        "isolated_pin_label|635000|952500|dd7a2f35-6996-4b40-adf8-6a33e6e58e77|00000000-0000-0000-0000-000000000000|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138||",
+        "minus terminal of all shunt resistors still labelled despite use of PGA for clarity"
+      ],
+      [
+        "multiple_net_names|1587500|609600|cacf4c7d-ea28-4e3e-9b40-080660c63ca2|f51fc6e2-59c6-401c-8d55-896d03e30a52|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
+        "phase name used (and connected to OUT pin of SiP) for explicitness"
+      ],
+      [
+        "multiple_net_names|215900|609600|dc21fcbd-10a0-4022-b10a-d2cf8fdc726c|f96d0533-0f7d-4a6a-bf84-30bed5858021|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
+        "phase name used (and connected to OUT pin of SiP) for explicitness"
+      ],
+      [
+        "multiple_net_names|901700|609600|a13f1347-bae3-4b59-b7d9-5173f05f2312|32483cc5-00ae-4abf-8ea7-50732c88d770|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
+        "phase name used (and connected to OUT pin of SiP) for explicitness"
+      ]
+    ],
     "meta": {
       "version": 0
     },
@@ -747,7 +772,7 @@
         "uuid": "86a17c4d-db96-42a1-af84-d43fe593f4e6"
       }
     ],
-    "used_designators": "C1-47,C63-64,C201-217,C301-308,C401-412,C501-510,J1-12,J501-512,#FLG1-6,R1-79,R201-214,R301-306,R401-433,R501-526,#PWR1-106,#PWR201-236,#PWR301-306,#PWR401-418,#PWR501-546,D1-29,D201-202,D301-303,D401-412,D501-512,FB1,FB201,JP1,JP201,H1-4,H501-504,L1-2,L201,L301,Q1-8,Q301-302,Q401-406,SW1-3,SW201-202,SW501,TH1,TH201,TP1-23,TP201-211,TP301-306,TP501-506,U1-3,U201,U301,U501,X1,X201",
+    "used_designators": "#FLG7-8",
     "variants": []
   },
   "sheets": [

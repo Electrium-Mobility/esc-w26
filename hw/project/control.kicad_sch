@@ -1733,7 +1733,9 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+			)
+			(symbol "RH100-32.000-10-F-2020-EXT-TR_1_1"
+				(pin input line
 					(at 0 0 0)
 					(length 7.62)
 					(name "1"
@@ -1751,7 +1753,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 0 -2.54 0)
 					(length 7.62)
 					(name "2"
@@ -1769,7 +1771,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin output line
 					(at 25.4 -2.54 180)
 					(length 7.62)
 					(name "3"
@@ -1787,7 +1789,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin power_in line
 					(at 25.4 0 180)
 					(length 7.62)
 					(name "4"
@@ -2014,7 +2016,7 @@
 						(type none)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 10.16 0 180)
 					(length 2.54)
 					(name ""
@@ -2032,7 +2034,7 @@
 						)
 					)
 				)
-				(pin unspecified line
+				(pin passive line
 					(at 0 0 0)
 					(length 2.54)
 					(name ""
@@ -4848,6 +4850,12 @@
 		(uuid "63a904a6-5e89-44c2-a9dc-4d11696fd7a3")
 	)
 	(junction
+		(at 101.6 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "655221a6-0ebc-4482-a44f-4b25719e9c87")
+	)
+	(junction
 		(at 127 160.02)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4864,6 +4872,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82b5b2f3-c5df-4122-872d-fcf91d44dc70")
+	)
+	(junction
+		(at 180.34 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "88107173-0a30-4d09-a9ad-1f15d45d8a7a")
 	)
 	(junction
 		(at 137.16 68.58)
@@ -4912,6 +4926,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a90d3f02-1509-4d68-8848-f34e03d62151")
+	)
+	(junction
+		(at 198.12 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab65a8f5-e069-4527-9ae9-74c8e431316e")
 	)
 	(junction
 		(at 215.9 30.48)
@@ -4966,12 +4986,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e7feaf1b-4584-4d16-8108-d827596bd30c")
-	)
-	(junction
-		(at 101.6 68.58)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f21eba47-7f6c-4380-bac8-8ca13236cd7f")
 	)
 	(junction
 		(at 162.56 30.48)
@@ -5237,7 +5251,7 @@
 	)
 	(wire
 		(pts
-			(xy 118.11 68.58) (xy 121.92 68.58)
+			(xy 115.57 68.58) (xy 121.92 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5377,7 +5391,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 68.58) (xy 170.18 68.58)
+			(xy 182.88 68.58) (xy 180.34 68.58)
 		)
 		(stroke
 			(width 0)
@@ -5434,6 +5448,16 @@
 			(type default)
 		)
 		(uuid "550a1f6c-deba-46ac-acce-96c65286bb2a")
+	)
+	(wire
+		(pts
+			(xy 180.34 68.58) (xy 170.18 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5730ca8a-125b-406c-a1ef-92593715881d")
 	)
 	(wire
 		(pts
@@ -5554,6 +5578,26 @@
 			(type default)
 		)
 		(uuid "6b1e3cbb-22e1-4723-a7cb-1f106045b4a6")
+	)
+	(wire
+		(pts
+			(xy 198.12 109.22) (xy 200.66 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d315587-b864-4243-9a30-09f8dd2185fe")
+	)
+	(wire
+		(pts
+			(xy 198.12 107.95) (xy 198.12 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70bd821f-22b8-45ab-b1e9-4174a75682b6")
 	)
 	(wire
 		(pts
@@ -5937,7 +5981,7 @@
 	)
 	(wire
 		(pts
-			(xy 101.6 68.58) (xy 110.49 68.58)
+			(xy 101.6 68.58) (xy 107.95 68.58)
 		)
 		(stroke
 			(width 0)
@@ -6435,6 +6479,16 @@
 		)
 		(uuid "fcc183ff-f5a1-4c4a-924e-1f9403e9f8ce")
 	)
+	(wire
+		(pts
+			(xy 180.34 67.31) (xy 180.34 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe786f34-9bbf-49a9-9660-bdf52c9b43a0")
+	)
 	(label "PCB_TEMP"
 		(at 33.02 48.26 180)
 		(effects
@@ -6456,7 +6510,7 @@
 		(uuid "1627ea90-629a-4e80-9930-6f6e2d588735")
 	)
 	(label "REGIN"
-		(at 180.34 68.58 0)
+		(at 182.88 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6636,7 +6690,7 @@
 		(uuid "e5c56207-7619-4206-8642-83cbca37d9a7")
 	)
 	(label "VBAT"
-		(at 198.12 109.22 0)
+		(at 200.66 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7173,6 +7227,84 @@
 		(uuid "ff4ae72b-289d-4449-8873-cb85d354b700")
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 198.12 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "052d710f-becf-440d-a6ce-b3ffc3da9f4b")
+		(property "Reference" "#FLG08"
+			(at 198.12 106.045 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 198.12 102.87 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 198.12 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 198.12 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 198.12 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "af5a2810-cd6d-4134-9d05-c478467536b6")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#FLG08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small")
 		(at 177.8 36.83 180)
 		(unit 1)
@@ -7376,7 +7508,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STSPIN32G4TR/24770965"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stspin32g4.pdf"
 			(at 33.02 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -8989,7 +9121,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STPS1H100A/654555"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stps1h100.pdf"
 			(at 101.6 80.01 0)
 			(hide yes)
 			(show_name no)
@@ -10741,7 +10873,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/raltron-electronics/RH100-32-000-10-F-2020-EXT-TR/13150837?s=N4IgTCBcDaIEoAkCMAGFBaAzGAdGjq6AYumCmegKIAaAKurXCALoC%2BQA"
+		(property "Datasheet" "RH100-32.000-10-F-2020-EXT-TR"
 			(at 36.83 177.8 0)
 			(hide yes)
 			(show_name no)
@@ -11425,6 +11557,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "C11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 180.34 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9653e184-a944-455e-9ff4-29f80e1552ce")
+		(property "Reference" "#FLG07"
+			(at 180.34 65.405 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 180.34 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 180.34 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "15db675b-0b9f-44fe-90c4-29d56566cafb")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "#FLG07")
 					(unit 1)
 				)
 			)
@@ -12910,7 +13120,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/STSPIN32G4TR/24770965"
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/stspin32g4.pdf"
 			(at 30.48 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -14334,7 +14544,7 @@
 	)
 	(symbol
 		(lib_id "Device:L")
-		(at 114.3 68.58 90)
+		(at 111.76 68.58 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14345,7 +14555,7 @@
 		(fields_autoplaced yes)
 		(uuid "f0031300-01f4-4ced-8cb0-5572b1b5431b")
 		(property "Reference" "L1"
-			(at 114.3 63.5 90)
+			(at 111.76 63.5 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14355,7 +14565,7 @@
 			)
 		)
 		(property "Value" "18uH/1A"
-			(at 114.3 66.04 90)
+			(at 111.76 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14365,7 +14575,7 @@
 			)
 		)
 		(property "Footprint" "IND_ASPI-6045S-180M-T:IND_ASPI-6045S-180M-T"
-			(at 114.3 68.58 0)
+			(at 111.76 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14376,7 +14586,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/abracon-llc/ASPI-6045S-180M-T/2343393"
-			(at 114.3 68.58 0)
+			(at 111.76 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14387,7 +14597,7 @@
 			)
 		)
 		(property "Description" "FIXED IND 18UH 1.85A 81 MOHM SMD"
-			(at 114.3 68.58 0)
+			(at 111.76 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
