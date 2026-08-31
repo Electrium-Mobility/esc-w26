@@ -5972,16 +5972,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 180.34) (xy 78.74 180.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "87434474-27ff-4004-8aa2-49c182823724")
-	)
-	(wire
-		(pts
 			(xy 20.32 137.16) (xy 30.48 137.16)
 		)
 		(stroke
@@ -6012,16 +6002,6 @@
 	)
 	(wire
 		(pts
-			(xy 184.15 109.22) (xy 187.96 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8ce89054-2522-468a-a380-f7df3c537afd")
-	)
-	(wire
-		(pts
 			(xy 99.06 33.02) (xy 111.76 33.02)
 		)
 		(stroke
@@ -6032,7 +6012,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 109.22) (xy 179.07 109.22)
+			(xy 175.26 109.22) (xy 187.96 109.22)
 		)
 		(stroke
 			(width 0)
@@ -6299,16 +6279,6 @@
 			(type default)
 		)
 		(uuid "c49cadd3-3300-41e7-8cc7-e67145ca7d07")
-	)
-	(wire
-		(pts
-			(xy 166.37 68.58) (xy 170.18 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c4cc7462-b616-4d2c-8024-5310e871d1fb")
 	)
 	(wire
 		(pts
@@ -6612,7 +6582,7 @@
 	)
 	(wire
 		(pts
-			(xy 68.58 180.34) (xy 71.12 180.34)
+			(xy 68.58 180.34) (xy 78.74 180.34)
 		)
 		(stroke
 			(width 0)
@@ -6672,7 +6642,7 @@
 	)
 	(wire
 		(pts
-			(xy 157.48 68.58) (xy 161.29 68.58)
+			(xy 157.48 68.58) (xy 170.18 68.58)
 		)
 		(stroke
 			(width 0)
@@ -8519,85 +8489,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 181.61 109.22 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2da6ec9d-d8b3-4b7a-8644-45915e1d2994")
-		(property "Reference" "R7"
-			(at 181.864 103.378 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 181.864 105.918 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 181.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
-			(at 181.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
-			(at 181.61 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "97bf7ea6-c8c3-435a-ac06-1ed65709d4b6")
-		)
-		(pin "2"
-			(uuid "050dba20-6312-4a06-a4b5-3a1c5bc94e6f")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 208.28 43.18 0)
 		(unit 1)
@@ -9525,85 +9416,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 163.83 68.58 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4ceab720-fb1f-4f51-ae7f-ce7c7ea41d5f")
-		(property "Reference" "R5"
-			(at 164.084 62.738 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 164.084 65.278 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 163.83 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
-			(at 163.83 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
-			(at 163.83 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f2045e36-7d26-42f3-9b86-3bcece039ad5")
-		)
-		(pin "2"
-			(uuid "d2c41dd2-4158-4631-9d29-e015f34e767a")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:TestPoint")
 		(at 180.34 30.48 270)
 		(unit 1)
@@ -9838,85 +9650,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "TP11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small_US")
-		(at 73.66 180.34 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "529038bf-1bfd-4674-9489-99f45e63a9d8")
-		(property "Reference" "R13"
-			(at 73.914 174.498 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 73.914 177.038 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 73.66 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stackpole-electronics-inc/RMCF0603ZT0R00/1756908"
-			(at 73.66 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "RES 0 OHM JUMPER 1/10W 0603"
-			(at 73.66 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b4a8a448-1a76-4a1d-9b97-b8888cf6f5cd")
-		)
-		(pin "2"
-			(uuid "89b4ca7e-d2ba-4af2-82b4-a08409d96aba")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R13")
 					(unit 1)
 				)
 			)
@@ -10597,7 +10330,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0201_0603Metric"
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 164.338 26.67 90)
 			(hide yes)
 			(show_name no)
@@ -11375,7 +11108,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "82d27f86-a826-4228-894a-d2c2795b34d3")
-		(property "Reference" "R12"
+		(property "Reference" "R10"
 			(at 151.13 165.862 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11437,7 +11170,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R12")
+					(reference "R10")
 					(unit 1)
 				)
 			)
@@ -11697,7 +11430,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "89e479a2-8671-4280-bc24-77e0df4a2aed")
-		(property "Reference" "R6"
+		(property "Reference" "R5"
 			(at 104.14 106.6799 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11761,7 +11494,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R6")
+					(reference "R5")
 					(unit 1)
 				)
 			)
@@ -12895,7 +12628,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5cf9202-57eb-4282-86b3-0ee84fbdd758")
-		(property "Reference" "R11"
+		(property "Reference" "R9"
 			(at 99.06 165.0999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12959,7 +12692,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R11")
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -13966,7 +13699,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d5417b5d-44bb-49ab-871e-8e64d3d5e78e")
-		(property "Reference" "R9"
+		(property "Reference" "R7"
 			(at 25.4 148.5899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14030,7 +13763,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R9")
+					(reference "R7")
 					(unit 1)
 				)
 			)
@@ -14892,7 +14625,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e8b70be9-20c1-4cc9-bf11-3a42788f60a5")
-		(property "Reference" "R8"
+		(property "Reference" "R6"
 			(at 104.14 118.1099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14956,7 +14689,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R8")
+					(reference "R6")
 					(unit 1)
 				)
 			)
@@ -15133,7 +14866,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f405ebf7-96b8-493c-9126-649ea9ee8ead")
-		(property "Reference" "R10"
+		(property "Reference" "R8"
 			(at 99.06 152.3999 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15197,7 +14930,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "R10")
+					(reference "R8")
 					(unit 1)
 				)
 			)
