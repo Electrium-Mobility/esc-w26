@@ -323,6 +323,10 @@
         "phase name used (and connected to OUT pin of SiP) for explicitness"
       ],
       [
+        "multiple_net_names|635000|965200|11422c54-22da-4724-a1c8-875225f466ea|dd7a2f35-6996-4b40-adf8-6a33e6e58e77|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
+        "minus terminal label exists for explicitness despite use of PGA"
+      ],
+      [
         "multiple_net_names|901700|609600|a13f1347-bae3-4b59-b7d9-5173f05f2312|32483cc5-00ae-4abf-8ea7-50732c88d770|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
         "phase name used (and connected to OUT pin of SiP) for explicitness"
       ]
@@ -837,6 +841,12 @@
           "label": "#",
           "name": "${ITEM_NUMBER}",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -903,7 +913,7 @@
         "uuid": "86a17c4d-db96-42a1-af84-d43fe593f4e6"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J1-12,R1-72,#FLG1-8,D1-23,#PWR1-103,C1-47,FB1,JP1,H1-4,L1-2,Q1-8,SW1-3,TH1,TP1-23,U1-3,X1",
     "variants": []
   },
   "sheets": [
