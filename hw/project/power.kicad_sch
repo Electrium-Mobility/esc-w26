@@ -5012,7 +5012,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9fbc28c7-9cc2-44b6-a837-3b89059b0dd6")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR042"
 			(at 104.14 119.38 0)
 			(hide yes)
 			(show_name no)
@@ -5072,7 +5072,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "#PWR0104")
+					(reference "#PWR042")
 					(unit 1)
 				)
 			)
@@ -5435,7 +5435,7 @@
 				)
 			)
 		)
-		(property "Footprint" "CB2518T330K:IND_TAIYO_CB2518_TAY"
+		(property "Footprint" "IND_ASPI-6045S-330M-T:IND_ASPI-6045S-330M-T"
 			(at 97.79 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5446,7 +5446,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/taiyo-yuden/CB2518T330K/2763290"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/abracon-llc/ASPI-6045S-330M-T/2343397?s=N4IgTCBcDaIIIGUAKBJAtANgAwBYCsCaAzEVgLJoAqkIAugL5A"
 			(at 97.79 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5457,7 +5457,7 @@
 				)
 			)
 		)
-		(property "Description" "FIXED IND 33UH 460MA 910 MOHM"
+		(property "Description" "FIXED IND 33UH 1.45A 137 MOHM"
 			(at 97.79 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -5803,85 +5803,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "R10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 38.1 101.6 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d6a59a14-039c-4b50-853e-c2b0d15e9308")
-		(property "Reference" "TP13"
-			(at 40.64 97.0279 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VIN(5V)"
-			(at 40.64 99.5679 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 43.18 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 43.18 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 38.1 101.6 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "73d83a44-a5b4-4706-9fd4-16f2ff73a28c")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "TP13")
 					(unit 1)
 				)
 			)
