@@ -8630,7 +8630,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2e382cf4-0e9f-4bd7-9612-37076846b32e")
-		(property "Reference" "TP6"
+		(property "Reference" "TP4"
 			(at 195.58 74.93 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8823,7 +8823,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP6")
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -9479,7 +9479,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "4de6c765-613a-40ae-b5a2-bb1083cb7b4a")
-		(property "Reference" "TP2"
+		(property "Reference" "TP1"
 			(at 185.42 29.2099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9540,7 +9540,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP2")
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -9640,7 +9640,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "501637ce-85a9-4b1d-97d8-17e798a0d007")
-		(property "Reference" "TP11"
+		(property "Reference" "TP8"
 			(at 162.56 152.9079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9701,7 +9701,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP11")
+					(reference "TP8")
 					(unit 1)
 				)
 			)
@@ -10588,85 +10588,6 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 170.18 68.58 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "74f8d3d7-e3b6-4281-86e1-0ddec75aa0d1")
-		(property "Reference" "TP4"
-			(at 172.72 64.0079 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "REGIN"
-			(at 172.72 66.5479 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 175.26 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 170.18 68.58 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "5d082a77-67df-48fe-881e-5074e21a2b49")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
 		(at 219.71 68.58 270)
 		(unit 1)
 		(body_style 1)
@@ -10677,7 +10598,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "75eb05fb-2890-4619-8b98-193a0070b76f")
-		(property "Reference" "TP5"
+		(property "Reference" "TP3"
 			(at 224.79 67.3099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10738,7 +10659,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP5")
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -12601,7 +12522,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ac25d056-1782-43c2-864e-12c97f6a1088")
-		(property "Reference" "TP10"
+		(property "Reference" "TP7"
 			(at 129.54 152.9079 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12662,86 +12583,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP10")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 187.96 109.22 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom no)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b11cb267-f513-4c18-b287-15d53a65317a")
-		(property "Reference" "TP8"
-			(at 190.5 104.6479 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "VBAT"
-			(at 190.5 107.1879 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 193.04 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 193.04 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 187.96 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "c5c13395-c38d-4393-b262-2638c66f9d1e")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP8")
+					(reference "TP7")
 					(unit 1)
 				)
 			)
@@ -13988,7 +13830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e15bf016-fc6a-4b70-bf97-12a394f4ac74")
-		(property "Reference" "TP3"
+		(property "Reference" "TP2"
 			(at 143.51 67.3099 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14049,7 +13891,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP3")
+					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -14149,7 +13991,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3af6963-0c7b-4d52-b343-b4a426302c1c")
-		(property "Reference" "TP9"
+		(property "Reference" "TP6"
 			(at 147.32 114.3 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14342,7 +14184,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP9")
+					(reference "TP6")
 					(unit 1)
 				)
 			)
@@ -14520,7 +14362,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "eaff6b8a-50b4-4c92-9684-fe709476b29c")
-		(property "Reference" "TP7"
+		(property "Reference" "TP5"
 			(at 157.48 104.6479 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14581,7 +14423,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "TP7")
+					(reference "TP5")
 					(unit 1)
 				)
 			)

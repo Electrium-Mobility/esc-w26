@@ -8717,7 +8717,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 257.81 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -8878,7 +8878,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 243.84 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -9117,7 +9117,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 243.84 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -9451,7 +9451,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 271.78 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -9505,6 +9505,84 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "D14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 257.81 55.88 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1e764923-c83a-4f3e-924f-73589a8d206a")
+		(property "Reference" "#PWR0105"
+			(at 257.81 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 257.81 60.96 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 257.81 55.88 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "282bf25d-c64a-449f-9278-8fa5d00dbbce")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "#PWR0105")
 					(unit 1)
 				)
 			)
@@ -9744,84 +9822,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "R60")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 257.81 55.88 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2114e34c-59ef-45a6-ad78-d013b19fdd09")
-		(property "Reference" "#PWR070"
-			(at 257.81 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "PGND"
-			(at 257.81 60.96 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 257.81 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 257.81 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 257.81 55.88 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "3b63435b-23b8-4b4a-b58e-1fc9556da56d")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR070")
 					(unit 1)
 				)
 			)
@@ -10749,7 +10749,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 257.81 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -11081,7 +11081,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 285.75 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -11648,7 +11648,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 257.81 49.53 0)
 			(hide yes)
 			(show_name no)
@@ -11798,7 +11798,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f95456d-9dbc-43ac-a599-ad762f53cb0e")
-		(property "Reference" "TP18"
+		(property "Reference" "TP14"
 			(at 111.76 80.5179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11859,7 +11859,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "TP18")
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -12386,7 +12386,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 271.78 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -13388,7 +13388,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 271.78 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -13634,7 +13634,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 271.78 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -14116,7 +14116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9c54e094-b570-4d7c-abb1-6c241c943cfc")
-		(property "Reference" "TP20"
+		(property "Reference" "TP16"
 			(at 124.46 80.5179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14177,7 +14177,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "TP20")
+					(reference "TP16")
 					(unit 1)
 				)
 			)
@@ -14517,7 +14517,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a7ef6845-1543-460e-aa6d-49e75b4379be")
-		(property "Reference" "TP23"
+		(property "Reference" "TP19"
 			(at 360.172 118.618 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14578,7 +14578,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "TP23")
+					(reference "TP19")
 					(unit 1)
 				)
 			)
@@ -14764,7 +14764,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ade90b76-670b-4082-bf8c-a2ad98a246da")
-		(property "Reference" "TP22"
+		(property "Reference" "TP18"
 			(at 351.79 122.4279 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14825,7 +14825,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "TP22")
+					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -15358,7 +15358,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 257.81 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -15440,7 +15440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 257.81 86.36 0)
 			(hide yes)
 			(show_name no)
@@ -15522,7 +15522,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 243.84 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -15615,7 +15615,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric_Pad1.05x0.95mm_HandSolder"
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
 			(at 285.75 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -16322,7 +16322,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cda6dec1-d202-4fa2-9d84-7590f44091f8")
-		(property "Reference" "TP21"
+		(property "Reference" "TP17"
 			(at 96.52 103.6319 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16383,7 +16383,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "TP21")
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -18100,7 +18100,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f16f5d34-9479-480d-8e94-cd0dd43f217f")
-		(property "Reference" "TP19"
+		(property "Reference" "TP15"
 			(at 118.11 80.5179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18161,7 +18161,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "TP19")
+					(reference "TP15")
 					(unit 1)
 				)
 			)
