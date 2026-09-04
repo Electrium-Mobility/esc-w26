@@ -5699,7 +5699,7 @@
 		)
 		(uuid "0ef522bc-9a3b-4728-ac9e-39f2fb4174a6")
 	)
-	(text_box "Serial (JST-PH)\n\n- Uses USART1_TX (PA9) & USART1_RX (PA10), which are 5V-tolerant\n- For sk8's Flipsky VX1's receiver module (JST-PH, soldered to JST-XH connector)"
+	(text_box "Serial (JST-XH)\n\n- Uses USART1_TX (PA9) & USART1_RX (PA10), which are 5V-tolerant\n- For sk8's Flipsky VX1's receiver module (JST-PH, soldered to JST-XH connector)"
 		(exclude_from_sim no)
 		(at 213.36 86.4126 0)
 		(size 22.86 25.3474)
@@ -5906,19 +5906,19 @@
 		(uuid "0168917b-1c95-421f-b0b2-2c7ca4afe93d")
 	)
 	(junction
-		(at 45.72 88.9)
+		(at 45.72 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "04cc1938-e30d-4cd9-88b3-84f77652d186")
 	)
 	(junction
-		(at 88.9 78.74)
+		(at 88.9 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "066975a5-6cd4-4b4b-be17-4878d26474af")
 	)
 	(junction
-		(at 99.06 93.98)
+		(at 99.06 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0e293cd9-392a-48db-91a2-8238c88a520d")
@@ -5942,13 +5942,19 @@
 		(uuid "1bda8ecc-d3bc-493d-8118-1be948584b6d")
 	)
 	(junction
+		(at 355.6 132.08)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1c6b3a00-7bc5-4df7-b4ae-f795ff4c4392")
+	)
+	(junction
 		(at 109.22 162.56)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "256b017a-8548-432f-bc58-01a48626280a")
 	)
 	(junction
-		(at 60.96 78.74)
+		(at 60.96 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2576a5bf-7885-4ad0-bc11-bbe542187206")
@@ -5966,13 +5972,13 @@
 		(uuid "290fe712-86e5-41ab-825e-dc5c2c742179")
 	)
 	(junction
-		(at 53.34 91.44)
+		(at 53.34 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2a178407-cc7e-461d-9045-ceea7885a555")
 	)
 	(junction
-		(at 88.9 91.44)
+		(at 88.9 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "37d9155e-3e9b-4e84-990b-5b96562e2467")
@@ -5984,13 +5990,13 @@
 		(uuid "50474282-00b7-4002-bb46-016731c2f469")
 	)
 	(junction
-		(at 78.74 88.9)
+		(at 78.74 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "55404b3e-560c-4e00-ad07-323278194b92")
 	)
 	(junction
-		(at 60.96 93.98)
+		(at 60.96 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "56d44d94-4025-4b0d-8123-d3d3788f1e39")
@@ -6008,7 +6014,7 @@
 		(uuid "663cacbc-b35d-43f7-915f-a2c23c31e22b")
 	)
 	(junction
-		(at 78.74 78.74)
+		(at 78.74 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "67d94d6d-12a7-4419-9bad-263162879050")
@@ -6038,7 +6044,7 @@
 		(uuid "7b7f74af-cbd9-4064-9714-88a742c4757c")
 	)
 	(junction
-		(at 121.92 93.98)
+		(at 121.92 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "82c54717-2684-45ba-add7-76b308acf7f1")
@@ -6068,7 +6074,7 @@
 		(uuid "9964799b-c58e-4014-8faa-6b175ca67bba")
 	)
 	(junction
-		(at 109.22 88.9)
+		(at 109.22 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3936317-e6d9-4ccd-96b7-58eb300ed573")
@@ -6092,7 +6098,7 @@
 		(uuid "c7e8a72b-c430-443f-8ada-f3cd4089c0c8")
 	)
 	(junction
-		(at 115.57 91.44)
+		(at 115.57 88.9)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cd371d39-835b-4240-8f99-82771b246085")
@@ -6110,7 +6116,7 @@
 		(uuid "d09f5c3d-a0f2-49a9-a2cc-818150493cc8")
 	)
 	(junction
-		(at 88.9 101.6)
+		(at 88.9 99.06)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d108adc4-5a02-4083-9e1d-2d4f3177ed10")
@@ -6128,7 +6134,13 @@
 		(uuid "e8b43732-5ed2-4ac3-b619-e2a9e5475e11")
 	)
 	(junction
-		(at 53.34 78.74)
+		(at 350.52 129.54)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e98a0996-e9be-47ce-8cba-9bffd22effc9")
+	)
+	(junction
+		(at 53.34 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fb765607-b0c3-4852-b902-34cf6af3af3c")
@@ -6171,7 +6183,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 81.28) (xy 45.72 78.74)
+			(xy 45.72 78.74) (xy 45.72 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6191,7 +6203,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 101.6) (xy 99.06 101.6)
+			(xy 88.9 99.06) (xy 99.06 99.06)
 		)
 		(stroke
 			(width 0)
@@ -6231,7 +6243,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 132.08) (xy 364.49 132.08)
+			(xy 344.17 132.08) (xy 355.6 132.08)
 		)
 		(stroke
 			(width 0)
@@ -6241,7 +6253,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 91.44) (xy 115.57 91.44)
+			(xy 88.9 88.9) (xy 115.57 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6251,7 +6263,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 96.52) (xy 31.75 96.52)
+			(xy 29.21 96.52) (xy 30.48 96.52)
 		)
 		(stroke
 			(width 0)
@@ -6261,7 +6273,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 78.74) (xy 60.96 78.74)
+			(xy 53.34 76.2) (xy 60.96 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6281,7 +6293,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 87.63) (xy 99.06 93.98)
+			(xy 99.06 85.09) (xy 99.06 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6301,7 +6313,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 78.74) (xy 60.96 81.28)
+			(xy 60.96 76.2) (xy 60.96 78.74)
 		)
 		(stroke
 			(width 0)
@@ -6351,7 +6363,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 85.09) (xy 121.92 93.98)
+			(xy 121.92 82.55) (xy 121.92 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6401,7 +6413,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 88.9) (xy 78.74 95.25)
+			(xy 78.74 86.36) (xy 78.74 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6411,7 +6423,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 88.9) (xy 45.72 88.9)
+			(xy 29.21 86.36) (xy 45.72 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6421,7 +6433,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 88.9) (xy 78.74 88.9)
+			(xy 72.39 86.36) (xy 78.74 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6531,7 +6543,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 93.98) (xy 99.06 93.98)
+			(xy 72.39 91.44) (xy 99.06 91.44)
 		)
 		(stroke
 			(width 0)
@@ -6551,7 +6563,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 78.74) (xy 78.74 78.74)
+			(xy 60.96 76.2) (xy 78.74 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6631,7 +6643,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 91.44) (xy 88.9 95.25)
+			(xy 88.9 88.9) (xy 88.9 92.71)
 		)
 		(stroke
 			(width 0)
@@ -6648,6 +6660,16 @@
 			(type default)
 		)
 		(uuid "3272cb60-b82a-4c6e-bcc2-6f7bdddd2ead")
+	)
+	(wire
+		(pts
+			(xy 350.52 128.27) (xy 350.52 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "335285ab-18bc-48ff-9784-756cdcc88426")
 	)
 	(wire
 		(pts
@@ -6668,6 +6690,16 @@
 			(type default)
 		)
 		(uuid "36390b38-2210-406f-bdc8-2798313cc397")
+	)
+	(wire
+		(pts
+			(xy 355.6 132.08) (xy 364.49 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "364676f1-b36a-484e-bd4d-74d082ada57b")
 	)
 	(wire
 		(pts
@@ -6731,7 +6763,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 78.74) (xy 88.9 78.74)
+			(xy 78.74 76.2) (xy 88.9 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6741,7 +6773,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 101.6) (xy 78.74 100.33)
+			(xy 78.74 99.06) (xy 78.74 97.79)
 		)
 		(stroke
 			(width 0)
@@ -6801,7 +6833,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 78.74) (xy 53.34 78.74)
+			(xy 45.72 76.2) (xy 53.34 76.2)
 		)
 		(stroke
 			(width 0)
@@ -6921,7 +6953,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 88.9) (xy 124.46 88.9)
+			(xy 109.22 86.36) (xy 124.46 86.36)
 		)
 		(stroke
 			(width 0)
@@ -6931,7 +6963,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 91.44) (xy 53.34 91.44)
+			(xy 29.21 88.9) (xy 53.34 88.9)
 		)
 		(stroke
 			(width 0)
@@ -6971,7 +7003,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 80.01) (xy 78.74 78.74)
+			(xy 78.74 77.47) (xy 78.74 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7011,7 +7043,7 @@
 	)
 	(wire
 		(pts
-			(xy 72.39 91.44) (xy 88.9 91.44)
+			(xy 72.39 88.9) (xy 88.9 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7031,7 +7063,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 100.33) (xy 88.9 101.6)
+			(xy 88.9 97.79) (xy 88.9 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7061,7 +7093,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 88.9) (xy 67.31 88.9)
+			(xy 45.72 86.36) (xy 67.31 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7081,13 +7113,23 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 85.09) (xy 115.57 91.44)
+			(xy 115.57 82.55) (xy 115.57 88.9)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "74730a3c-dc56-44f8-b8ef-a59305fe40e9")
+	)
+	(wire
+		(pts
+			(xy 29.21 93.98) (xy 30.48 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74c0ab26-7e46-4360-979b-bceb9522f80b")
 	)
 	(wire
 		(pts
@@ -7151,7 +7193,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 93.98) (xy 121.92 93.98)
+			(xy 99.06 91.44) (xy 121.92 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7191,7 +7233,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 78.74) (xy 88.9 78.74)
+			(xy 99.06 76.2) (xy 88.9 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7251,6 +7293,16 @@
 	)
 	(wire
 		(pts
+			(xy 355.6 133.35) (xy 355.6 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ad428e-5732-4503-926b-b537901cf777")
+	)
+	(wire
+		(pts
 			(xy 345.44 135.89) (xy 345.44 134.62)
 		)
 		(stroke
@@ -7271,7 +7323,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 80.01) (xy 99.06 78.74)
+			(xy 99.06 77.47) (xy 99.06 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7351,7 +7403,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 78.74) (xy 88.9 80.01)
+			(xy 88.9 76.2) (xy 88.9 77.47)
 		)
 		(stroke
 			(width 0)
@@ -7381,7 +7433,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 91.44) (xy 67.31 91.44)
+			(xy 53.34 88.9) (xy 67.31 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7391,7 +7443,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 86.36) (xy 60.96 93.98)
+			(xy 60.96 83.82) (xy 60.96 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7411,7 +7463,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 85.09) (xy 109.22 88.9)
+			(xy 109.22 82.55) (xy 109.22 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7491,7 +7543,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 101.6) (xy 99.06 100.33)
+			(xy 99.06 99.06) (xy 99.06 97.79)
 		)
 		(stroke
 			(width 0)
@@ -7501,7 +7553,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 86.36) (xy 45.72 88.9)
+			(xy 45.72 83.82) (xy 45.72 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7511,7 +7563,7 @@
 	)
 	(wire
 		(pts
-			(xy 31.75 96.52) (xy 31.75 99.06)
+			(xy 30.48 96.52) (xy 30.48 97.79)
 		)
 		(stroke
 			(width 0)
@@ -7521,7 +7573,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 93.98) (xy 99.06 95.25)
+			(xy 99.06 91.44) (xy 99.06 92.71)
 		)
 		(stroke
 			(width 0)
@@ -7531,7 +7583,7 @@
 	)
 	(wire
 		(pts
-			(xy 115.57 91.44) (xy 124.46 91.44)
+			(xy 115.57 88.9) (xy 124.46 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7561,7 +7613,7 @@
 	)
 	(wire
 		(pts
-			(xy 344.17 129.54) (xy 364.49 129.54)
+			(xy 344.17 129.54) (xy 350.52 129.54)
 		)
 		(stroke
 			(width 0)
@@ -7661,6 +7713,16 @@
 	)
 	(wire
 		(pts
+			(xy 350.52 129.54) (xy 364.49 129.54)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cc5ac865-101f-404e-b6d3-c5a6501ea61f")
+	)
+	(wire
+		(pts
 			(xy 185.42 76.2) (xy 185.42 74.93)
 		)
 		(stroke
@@ -7701,7 +7763,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 77.47) (xy 88.9 78.74)
+			(xy 88.9 74.93) (xy 88.9 76.2)
 		)
 		(stroke
 			(width 0)
@@ -7711,17 +7773,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 86.36) (xy 29.21 86.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d5e406d8-73a2-484d-9510-27fee82cbe0f")
-	)
-	(wire
-		(pts
-			(xy 78.74 88.9) (xy 109.22 88.9)
+			(xy 78.74 86.36) (xy 109.22 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7731,7 +7783,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 78.74) (xy 53.34 81.28)
+			(xy 53.34 76.2) (xy 53.34 78.74)
 		)
 		(stroke
 			(width 0)
@@ -7741,7 +7793,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 87.63) (xy 78.74 88.9)
+			(xy 78.74 85.09) (xy 78.74 86.36)
 		)
 		(stroke
 			(width 0)
@@ -7811,7 +7863,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 87.63) (xy 88.9 91.44)
+			(xy 88.9 85.09) (xy 88.9 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7821,7 +7873,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 101.6) (xy 88.9 101.6)
+			(xy 78.74 99.06) (xy 88.9 99.06)
 		)
 		(stroke
 			(width 0)
@@ -7851,7 +7903,7 @@
 	)
 	(wire
 		(pts
-			(xy 60.96 93.98) (xy 67.31 93.98)
+			(xy 60.96 91.44) (xy 67.31 91.44)
 		)
 		(stroke
 			(width 0)
@@ -7951,7 +8003,7 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 86.36) (xy 53.34 91.44)
+			(xy 53.34 83.82) (xy 53.34 88.9)
 		)
 		(stroke
 			(width 0)
@@ -7991,7 +8043,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 93.98) (xy 124.46 93.98)
+			(xy 121.92 91.44) (xy 124.46 91.44)
 		)
 		(stroke
 			(width 0)
@@ -8001,7 +8053,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 93.98) (xy 60.96 93.98)
+			(xy 29.21 91.44) (xy 60.96 91.44)
 		)
 		(stroke
 			(width 0)
@@ -8070,7 +8122,7 @@
 		(uuid "1dd3820d-48b1-4f2a-a748-40b2dcce8c5b")
 	)
 	(label "CAN_N"
-		(at 364.49 132.08 0)
+		(at 364.49 129.54 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8090,7 +8142,7 @@
 		(uuid "59451744-2072-47ac-b4fe-0ed856e80315")
 	)
 	(label "CAN_P"
-		(at 364.49 129.54 0)
+		(at 364.49 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8120,7 +8172,7 @@
 		(uuid "97f1d261-09d4-4d95-932e-00c871b2a2c5")
 	)
 	(label "ADC_IN"
-		(at 194.31 127 0)
+		(at 194.31 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8142,7 +8194,7 @@
 	)
 	(hierarchical_label "HC"
 		(shape output)
-		(at 124.46 88.9 0)
+		(at 124.46 91.44 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8208,7 +8260,7 @@
 	)
 	(hierarchical_label "NSS"
 		(shape output)
-		(at 35.56 133.35 0)
+		(at 35.56 125.73 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8219,7 +8271,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape bidirectional)
-		(at 128.27 134.62 0)
+		(at 128.27 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8230,7 +8282,7 @@
 	)
 	(hierarchical_label "MISO"
 		(shape output)
-		(at 35.56 128.27 0)
+		(at 35.56 130.81 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8274,7 +8326,7 @@
 	)
 	(hierarchical_label "MOTOR_TEMP"
 		(shape output)
-		(at 30.48 86.36 0)
+		(at 30.48 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8296,7 +8348,7 @@
 	)
 	(hierarchical_label "TX"
 		(shape input)
-		(at 194.31 97.79 0)
+		(at 194.31 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8340,7 +8392,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape bidirectional)
-		(at 128.27 132.08 0)
+		(at 128.27 134.62 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8373,7 +8425,7 @@
 	)
 	(hierarchical_label "HB"
 		(shape output)
-		(at 124.46 91.44 0)
+		(at 124.46 88.9 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8417,7 +8469,7 @@
 	)
 	(hierarchical_label "RX"
 		(shape output)
-		(at 194.31 132.08 0)
+		(at 194.31 127 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8439,7 +8491,7 @@
 	)
 	(hierarchical_label "SCK"
 		(shape bidirectional)
-		(at 35.56 130.81 0)
+		(at 35.56 128.27 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8461,7 +8513,7 @@
 	)
 	(hierarchical_label "MOSI"
 		(shape input)
-		(at 35.56 125.73 0)
+		(at 35.56 133.35 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8494,7 +8546,7 @@
 	)
 	(hierarchical_label "HA"
 		(shape output)
-		(at 124.46 93.98 0)
+		(at 124.46 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8505,7 +8557,7 @@
 	)
 	(hierarchical_label "RX"
 		(shape output)
-		(at 194.31 100.33 0)
+		(at 194.31 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8798,7 +8850,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0d0568a4-53c0-4f62-972d-6b1cf8371bb6")
-		(property "Reference" "R51"
+		(property "Reference" "R52"
 			(at 246.38 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8862,7 +8914,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R51")
+					(reference "R52")
 					(unit 1)
 				)
 			)
@@ -9020,6 +9072,85 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR095")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 355.6 133.35 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "163b98f9-e680-429a-b2f2-c43bed71a0c2")
+		(property "Reference" "TP17"
+			(at 358.14 135.3819 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "CANH"
+			(at 358.14 137.9219 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 350.52 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 350.52 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 355.6 133.35 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7b53bcdc-875f-4a00-9040-01d8393f7778")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "TP17")
 					(unit 1)
 				)
 			)
@@ -10017,7 +10148,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "27bb85d8-da37-4fea-8f30-9b8ba8f6a4d1")
-		(property "Reference" "J12"
+		(property "Reference" "J11"
 			(at 116.84 153.67 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10097,7 +10228,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J12")
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -10266,7 +10397,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 78.74 97.79 180)
+		(at 78.74 95.25 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -10277,7 +10408,7 @@
 		(fields_autoplaced yes)
 		(uuid "36b46f35-3667-4f12-9a41-7111cf5cd2f9")
 		(property "Reference" "C44"
-			(at 81.28 96.5135 0)
+			(at 81.28 93.9735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10288,7 +10419,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 81.28 99.0535 0)
+			(at 81.28 96.5135 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10299,7 +10430,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 78.74 97.79 0)
+			(at 78.74 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10310,7 +10441,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
-			(at 78.74 97.79 0)
+			(at 78.74 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10321,7 +10452,7 @@
 			)
 		)
 		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
-			(at 78.74 97.79 0)
+			(at 78.74 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10437,7 +10568,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c64d314-0c7e-44ae-8069-cbc24c433846")
-		(property "Reference" "#PWR076"
+		(property "Reference" "#PWR077"
 			(at 17.78 83.82 0)
 			(hide yes)
 			(show_name no)
@@ -10497,7 +10628,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR076")
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -10829,6 +10960,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 350.52 128.27 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "438c4cb5-44c7-4611-a8a5-06ef588feb8c")
+		(property "Reference" "TP16"
+			(at 353.06 123.6979 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "CANL"
+			(at 353.06 126.2379 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
+			(at 355.6 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 355.6 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 350.52 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "2f5abd10-facf-4e29-bde1-e2eaa64ef487")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 49.53 165.1 0)
 		(mirror y)
@@ -11001,7 +11211,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47fd2f95-68bd-4c5b-99d8-692ba2dbfec9")
-		(property "Reference" "R54"
+		(property "Reference" "R55"
 			(at 288.29 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11065,7 +11275,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R54")
+					(reference "R55")
 					(unit 1)
 				)
 			)
@@ -11073,7 +11283,7 @@
 	)
 	(symbol
 		(lib_id "power:VDD")
-		(at 88.9 77.47 0)
+		(at 88.9 74.93 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11083,8 +11293,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "48667235-c12c-4d96-9528-f9352961450b")
-		(property "Reference" "#PWR077"
-			(at 88.9 81.28 0)
+		(property "Reference" "#PWR075"
+			(at 88.9 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11095,7 +11305,7 @@
 			)
 		)
 		(property "Value" "VDD"
-			(at 88.9 73.66 0)
+			(at 88.9 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11105,7 +11315,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 77.47 0)
+			(at 88.9 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11116,7 +11326,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 77.47 0)
+			(at 88.9 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11127,7 +11337,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 88.9 77.47 0)
+			(at 88.9 74.93 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11143,7 +11353,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR077")
+					(reference "#PWR075")
 					(unit 1)
 				)
 			)
@@ -11313,7 +11523,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 88.9 97.79 180)
+		(at 88.9 95.25 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11324,7 +11534,7 @@
 		(fields_autoplaced yes)
 		(uuid "4d9ca7ba-543f-4d4b-9f3c-1f832ff78956")
 		(property "Reference" "C45"
-			(at 91.44 96.5135 0)
+			(at 91.44 93.9735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11335,7 +11545,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 91.44 99.0535 0)
+			(at 91.44 96.5135 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11346,7 +11556,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 88.9 97.79 0)
+			(at 88.9 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11357,7 +11567,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
-			(at 88.9 97.79 0)
+			(at 88.9 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11368,7 +11578,7 @@
 			)
 		)
 		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
-			(at 88.9 97.79 0)
+			(at 88.9 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11730,7 +11940,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 109.22 85.09 0)
+		(at 109.22 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11741,6 +11951,17 @@
 		(fields_autoplaced yes)
 		(uuid "5f95456d-9dbc-43ac-a599-ad762f53cb0e")
 		(property "Reference" "TP13"
+			(at 111.76 77.9779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HA"
 			(at 111.76 80.5179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11751,19 +11972,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "HC"
-			(at 111.76 83.0579 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 114.3 85.09 0)
+			(at 114.3 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11774,7 +11984,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 85.09 0)
+			(at 114.3 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11785,7 +11995,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 109.22 85.09 0)
+			(at 109.22 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11809,7 +12019,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 60.96 83.82 0)
+		(at 60.96 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11820,7 +12030,7 @@
 		(fields_autoplaced yes)
 		(uuid "61428f8e-1114-4395-8191-e3d3e5d68dea")
 		(property "Reference" "R50"
-			(at 63.5 82.5499 0)
+			(at 63.5 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11831,7 +12041,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 63.5 85.0899 0)
+			(at 63.5 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11842,7 +12052,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 60.96 83.82 0)
+			(at 60.96 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11853,7 +12063,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 60.96 83.82 0)
+			(at 60.96 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11864,7 +12074,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 60.96 83.82 0)
+			(at 60.96 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11981,7 +12191,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 69.85 91.44 90)
+		(at 69.85 88.9 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11991,7 +12201,7 @@
 		(dnp no)
 		(uuid "63ee9c94-7709-4940-be0a-61068bc5cc10")
 		(property "Reference" "R57"
-			(at 65.278 90.17 90)
+			(at 65.278 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12001,7 +12211,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.168 90.17 90)
+			(at 74.168 87.63 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12011,7 +12221,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 69.85 91.44 0)
+			(at 69.85 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12022,7 +12232,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 69.85 91.44 0)
+			(at 69.85 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12033,7 +12243,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 69.85 91.44 0)
+			(at 69.85 88.9 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12550,8 +12760,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 24.13 88.9 0)
-		(mirror y)
+		(at 24.13 91.44 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12561,7 +12770,7 @@
 		(dnp no)
 		(uuid "6ebf4840-e909-4761-a97f-60afb02303fa")
 		(property "Reference" "J5"
-			(at 20.32 88.9 0)
+			(at 20.32 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12571,7 +12780,7 @@
 			)
 		)
 		(property "Value" "Hall"
-			(at 19.558 91.44 0)
+			(at 19.558 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12581,7 +12790,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical"
-			(at 24.13 88.9 0)
+			(at 24.13 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12592,7 +12801,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B6B-XH-A/1000381"
-			(at 24.13 88.9 0)
+			(at 24.13 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12603,7 +12812,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 6POS 2.5MM"
-			(at 24.13 88.9 0)
+			(at 24.13 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12642,8 +12851,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x05")
-		(at 189.23 129.54 0)
-		(mirror y)
+		(at 189.23 129.54 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12652,8 +12860,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "6eca258d-9f59-4741-9367-58889b7b9db4")
-		(property "Reference" "J8"
-			(at 186.69 128.2699 0)
+		(property "Reference" "J7"
+			(at 186.69 130.8101 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12664,7 +12872,7 @@
 			)
 		)
 		(property "Value" "2.54 Comm"
-			(at 186.69 130.8099 0)
+			(at 186.69 128.2701 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12725,7 +12933,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J8")
+					(reference "J7")
 					(unit 1)
 				)
 			)
@@ -12811,7 +13019,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 53.34 83.82 0)
+		(at 53.34 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12822,7 +13030,7 @@
 		(fields_autoplaced yes)
 		(uuid "7845d621-e510-481b-9629-cae97b766400")
 		(property "Reference" "R49"
-			(at 55.88 82.5499 0)
+			(at 55.88 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12833,7 +13041,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 55.88 85.0899 0)
+			(at 55.88 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12844,7 +13052,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 53.34 83.82 0)
+			(at 53.34 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12855,7 +13063,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 53.34 83.82 0)
+			(at 53.34 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12866,7 +13074,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 53.34 83.82 0)
+			(at 53.34 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13128,7 +13336,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 78.74 83.82 270)
+		(at 78.74 81.28 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13138,7 +13346,7 @@
 		(dnp no)
 		(uuid "7ab8e99b-928f-42f2-a316-863a2b5139fd")
 		(property "Reference" "D16"
-			(at 81.28 82.2324 90)
+			(at 81.28 79.6924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13149,7 +13357,7 @@
 			)
 		)
 		(property "Value" "BAT30KFILM"
-			(at 81.28 84.7724 90)
+			(at 81.28 82.2324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13160,7 +13368,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 78.74 83.82 0)
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13171,7 +13379,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/BAT30KFILM/1207019?s=N4IgTCBcDaIEIEEAqBmADAaxAXQL5A"
-			(at 78.74 83.82 0)
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13182,7 +13390,7 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 30V 300MA SOD523"
-			(at 78.74 83.82 0)
+			(at 78.74 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13209,8 +13417,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 189.23 97.79 0)
-		(mirror y)
+		(at 189.23 100.33 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13218,10 +13425,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "7c31713d-e75f-4745-95d0-0a4b9f25fc43")
 		(property "Reference" "J6"
-			(at 186.69 97.7899 0)
+			(at 186.69 100.3301 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13232,7 +13438,7 @@
 			)
 		)
 		(property "Value" "Serial"
-			(at 186.69 100.3299 0)
+			(at 186.69 97.7901 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13243,7 +13449,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 189.23 97.79 0)
+			(at 189.23 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13254,7 +13460,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B4B-XH-A/1651047"
-			(at 189.23 97.79 0)
+			(at 189.23 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13265,7 +13471,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 4POS 2.5MM"
-			(at 189.23 97.79 0)
+			(at 189.23 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13308,7 +13514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7d1cf47d-6587-4203-a17e-c659f2be2a9c")
-		(property "Reference" "R53"
+		(property "Reference" "R54"
 			(at 274.32 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13372,7 +13578,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R53")
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -13626,8 +13832,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 104.14 132.08 0)
-		(mirror y)
+		(at 104.14 134.62 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13635,10 +13840,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "92ffcbb6-cdf7-423e-a6ba-0a8bb052fcb0")
 		(property "Reference" "J10"
-			(at 101.6 132.0799 0)
+			(at 101.6 134.6201 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13649,7 +13853,7 @@
 			)
 		)
 		(property "Value" "I2C"
-			(at 101.6 134.6199 0)
+			(at 101.6 132.0801 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13660,7 +13864,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 104.14 132.08 0)
+			(at 104.14 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13671,7 +13875,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20204VBNN/12342903"
-			(at 104.14 132.08 0)
+			(at 104.14 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13682,7 +13886,7 @@
 			)
 		)
 		(property "Description" "PIN HEADER, THR, SINGLE ROW, .10"
-			(at 104.14 132.08 0)
+			(at 104.14 134.62 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14048,7 +14252,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 121.92 85.09 0)
+		(at 121.92 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14059,6 +14263,17 @@
 		(fields_autoplaced yes)
 		(uuid "9c54e094-b570-4d7c-abb1-6c241c943cfc")
 		(property "Reference" "TP15"
+			(at 124.46 77.9779 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "HC"
 			(at 124.46 80.5179 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14069,19 +14284,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "HA"
-			(at 124.46 83.0579 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 127 85.09 0)
+			(at 127 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14092,7 +14296,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 127 85.09 0)
+			(at 127 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14103,7 +14307,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 121.92 85.09 0)
+			(at 121.92 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14127,7 +14331,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 45.72 83.82 0)
+		(at 45.72 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14138,7 +14342,7 @@
 		(fields_autoplaced yes)
 		(uuid "9df52714-5ca5-423f-a600-49c0c77e4a6f")
 		(property "Reference" "R48"
-			(at 48.26 82.5499 0)
+			(at 48.26 80.0099 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14149,7 +14353,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 48.26 85.0899 0)
+			(at 48.26 82.5499 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14160,7 +14364,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 45.72 83.82 0)
+			(at 45.72 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14171,7 +14375,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 45.72 83.82 0)
+			(at 45.72 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14182,7 +14386,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 45.72 83.82 0)
+			(at 45.72 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14220,7 +14424,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9f59aa8d-b69f-4e07-add9-23c53100028e")
-		(property "Reference" "#PWR075"
+		(property "Reference" "#PWR076"
 			(at 185.42 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -14280,7 +14484,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "#PWR075")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
@@ -14377,7 +14581,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a46a21a5-b03e-4632-b2a6-5ed0059ae8a2")
-		(property "Reference" "R55"
+		(property "Reference" "R56"
 			(at 358.14 86.3599 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14441,7 +14645,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R55")
+					(reference "R56")
 					(unit 1)
 				)
 			)
@@ -14528,8 +14732,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 34.29 162.56 0)
-		(mirror y)
+		(at 34.29 165.1 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14538,18 +14741,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ad6b412d-d826-4f70-a270-79651c3bd888")
-		(property "Reference" "J11"
-			(at 31.75 162.56 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Voltage Monitor"
+		(property "Reference" "J12"
 			(at 31.75 165.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14560,8 +14752,19 @@
 				(justify left)
 			)
 		)
+		(property "Value" "Voltage Monitor"
+			(at 31.75 162.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 34.29 162.56 0)
+			(at 34.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14572,7 +14775,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20204VBNN/12342903"
-			(at 34.29 162.56 0)
+			(at 34.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14583,7 +14786,7 @@
 			)
 		)
 		(property "Description" "PIN HEADER, THR, SINGLE ROW, .10"
-			(at 34.29 162.56 0)
+			(at 34.29 165.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14608,7 +14811,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J11")
+					(reference "J12")
 					(unit 1)
 				)
 			)
@@ -14616,8 +14819,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x06")
-		(at 30.48 128.27 0)
-		(mirror y)
+		(at 30.48 130.81 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14626,17 +14828,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "aed77955-af91-46c7-88b4-4162925ea5ad")
-		(property "Reference" "J7"
-			(at 26.67 128.27 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SPI"
+		(property "Reference" "J8"
 			(at 26.67 130.81 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14646,8 +14838,18 @@
 				)
 			)
 		)
+		(property "Value" "SPI"
+			(at 26.67 128.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical"
-			(at 30.48 128.27 0)
+			(at 30.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14658,7 +14860,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/metz-connect-usa-inc/PR20206VBNN/12342874"
-			(at 30.48 128.27 0)
+			(at 30.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14669,7 +14871,7 @@
 			)
 		)
 		(property "Description" "PIN HEADER, THR, SINGLE ROW, .10"
-			(at 30.48 128.27 0)
+			(at 30.48 130.81 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14700,7 +14902,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J7")
+					(reference "J8")
 					(unit 1)
 				)
 			)
@@ -14786,7 +14988,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 69.85 93.98 90)
+		(at 69.85 91.44 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14796,7 +14998,7 @@
 		(dnp no)
 		(uuid "b2a99d78-fdc9-4a55-8624-a4a34bbecbbc")
 		(property "Reference" "R58"
-			(at 65.278 92.71 90)
+			(at 65.278 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14806,7 +15008,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.168 92.71 90)
+			(at 74.168 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14816,7 +15018,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 69.85 93.98 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14827,7 +15029,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 69.85 93.98 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14838,7 +15040,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 69.85 93.98 0)
+			(at 69.85 91.44 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14945,7 +15147,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 99.06 83.82 270)
+		(at 99.06 81.28 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -14956,7 +15158,7 @@
 		(fields_autoplaced yes)
 		(uuid "b59d3c7c-f750-4044-993b-8f9c3cf23489")
 		(property "Reference" "D18"
-			(at 101.6 82.2324 90)
+			(at 101.6 79.6924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14967,7 +15169,7 @@
 			)
 		)
 		(property "Value" "BAT30KFILM"
-			(at 101.6 84.7724 90)
+			(at 101.6 82.2324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14978,7 +15180,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 99.06 83.82 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14989,7 +15191,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/BAT30KFILM/1207019?s=N4IgTCBcDaIEIEEAqBmADAaxAXQL5A"
-			(at 99.06 83.82 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15000,7 +15202,7 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 30V 300MA SOD523"
-			(at 99.06 83.82 0)
+			(at 99.06 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15201,7 +15403,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bee714e5-fd5a-4653-b23f-911226f3a32f")
-		(property "Reference" "R52"
+		(property "Reference" "R53"
 			(at 260.35 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15265,7 +15467,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R52")
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -15459,7 +15661,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small")
-		(at 99.06 97.79 180)
+		(at 99.06 95.25 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -15470,7 +15672,7 @@
 		(fields_autoplaced yes)
 		(uuid "c2675f0a-4a90-433e-a6af-ee0f77d9f55d")
 		(property "Reference" "C46"
-			(at 101.6 96.5135 0)
+			(at 101.6 93.9735 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15481,7 +15683,7 @@
 			)
 		)
 		(property "Value" "1nF"
-			(at 101.6 99.0535 0)
+			(at 101.6 96.5135 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15492,7 +15694,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 99.06 97.79 0)
+			(at 99.06 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15503,7 +15705,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/GRM1885C1H102JA01D/586943"
-			(at 99.06 97.79 0)
+			(at 99.06 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15514,7 +15716,7 @@
 			)
 		)
 		(property "Description" "CAP CER 1000PF 50V C0G/NP0 0603"
-			(at 99.06 97.79 0)
+			(at 99.06 95.25 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15701,7 +15903,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 88.9 101.6 0)
+		(at 88.9 99.06 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -15713,7 +15915,7 @@
 		(fields_autoplaced yes)
 		(uuid "c7b073c9-3fa1-4649-822d-de78a4a1bdbd")
 		(property "Reference" "#PWR082"
-			(at 88.9 107.95 0)
+			(at 88.9 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15724,7 +15926,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 88.9 106.68 0)
+			(at 88.9 104.14 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -15734,7 +15936,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 88.9 101.6 0)
+			(at 88.9 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15745,7 +15947,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 88.9 101.6 0)
+			(at 88.9 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -15756,7 +15958,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 88.9 101.6 0)
+			(at 88.9 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16016,7 +16218,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_Small_US")
-		(at 69.85 88.9 90)
+		(at 69.85 86.36 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16025,8 +16227,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "ca45ba28-5c87-4dd5-9525-982145752416")
-		(property "Reference" "R56"
-			(at 65.278 87.63 90)
+		(property "Reference" "R51"
+			(at 65.278 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16036,7 +16238,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 74.168 87.63 90)
+			(at 74.168 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16046,7 +16248,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 69.85 88.9 0)
+			(at 69.85 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16057,7 +16259,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/RC0603FR-0710KL/726880"
-			(at 69.85 88.9 0)
+			(at 69.85 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16068,7 +16270,7 @@
 			)
 		)
 		(property "Description" "RES 10K OHM 1% 1/10W 0603"
-			(at 69.85 88.9 0)
+			(at 69.85 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16087,7 +16289,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "R56")
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -16410,8 +16612,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
-		(at 339.09 129.54 0)
-		(mirror y)
+		(at 339.09 132.08 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -16419,10 +16620,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d4b3a14e-7b3d-4db9-a244-b776e2929b6c")
 		(property "Reference" "J9"
-			(at 336.55 129.5399 0)
+			(at 336.55 132.0801 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16433,7 +16633,7 @@
 			)
 		)
 		(property "Value" "CAN"
-			(at 336.55 132.0799 0)
+			(at 336.55 129.5401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -16444,7 +16644,7 @@
 			)
 		)
 		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
-			(at 339.09 129.54 0)
+			(at 339.09 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16455,7 +16655,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/jst-sales-america-inc/B4B-XH-A/1651047"
-			(at 339.09 129.54 0)
+			(at 339.09 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16466,7 +16666,7 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 4POS 2.5MM"
-			(at 339.09 129.54 0)
+			(at 339.09 132.08 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17208,7 +17408,7 @@
 	)
 	(symbol
 		(lib_id "Device:D_Schottky")
-		(at 88.9 83.82 270)
+		(at 88.9 81.28 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17219,7 +17419,7 @@
 		(fields_autoplaced yes)
 		(uuid "e63bfaf4-e8e7-46e9-a032-04ef4959e001")
 		(property "Reference" "D17"
-			(at 91.44 82.2324 90)
+			(at 91.44 79.6924 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17230,7 +17430,7 @@
 			)
 		)
 		(property "Value" "BAT30KFILM"
-			(at 91.44 84.7724 90)
+			(at 91.44 82.2324 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17241,7 +17441,7 @@
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-523"
-			(at 88.9 83.82 0)
+			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17252,7 +17452,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.digikey.ca/en/products/detail/stmicroelectronics/BAT30KFILM/1207019?s=N4IgTCBcDaIEIEEAqBmADAaxAXQL5A"
-			(at 88.9 83.82 0)
+			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17263,7 +17463,7 @@
 			)
 		)
 		(property "Description" "DIODE SCHOTTKY 30V 300MA SOD523"
-			(at 88.9 83.82 0)
+			(at 88.9 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17628,8 +17828,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x03")
-		(at 180.34 64.77 0)
-		(mirror y)
+		(at 180.34 64.77 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17637,10 +17836,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "efc5d45a-64c4-4814-843a-1d6c61d12ad2")
 		(property "Reference" "J4"
-			(at 177.8 63.4999 0)
+			(at 177.8 66.0401 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17651,7 +17849,7 @@
 			)
 		)
 		(property "Value" "Throttle"
-			(at 177.8 66.0399 0)
+			(at 177.8 63.5001 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17714,7 +17912,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 31.75 99.06 0)
+		(at 30.48 97.79 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -17726,7 +17924,7 @@
 		(fields_autoplaced yes)
 		(uuid "f0de9707-8981-4a4f-a72e-f92642d2bf3d")
 		(property "Reference" "#PWR081"
-			(at 31.75 105.41 0)
+			(at 30.48 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17737,7 +17935,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 31.75 104.14 0)
+			(at 30.48 102.87 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17747,7 +17945,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 31.75 99.06 0)
+			(at 30.48 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17758,7 +17956,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 99.06 0)
+			(at 30.48 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17769,7 +17967,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 31.75 99.06 0)
+			(at 30.48 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17872,7 +18070,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 115.57 85.09 0)
+		(at 115.57 82.55 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -17883,7 +18081,7 @@
 		(fields_autoplaced yes)
 		(uuid "f16f5d34-9479-480d-8e94-cd0dd43f217f")
 		(property "Reference" "TP14"
-			(at 118.11 80.5179 0)
+			(at 118.11 77.9779 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17894,7 +18092,7 @@
 			)
 		)
 		(property "Value" "HB"
-			(at 118.11 83.0579 0)
+			(at 118.11 80.5179 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -17905,7 +18103,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Pad_D1.0mm"
-			(at 120.65 85.09 0)
+			(at 120.65 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17916,7 +18114,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 85.09 0)
+			(at 120.65 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -17927,7 +18125,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 115.57 85.09 0)
+			(at 115.57 82.55 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
