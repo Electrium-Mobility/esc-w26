@@ -2448,10 +2448,10 @@
 		)
 		(uuid "c04b1b9c-4945-4484-9665-edb560f13562")
 	)
-	(text_box "Bulk Capacitor Bank\n- C_bulk(min) = [I(max)*D(1−D)]/(f_sw*deltaV_ripple(target)) = (15*0.25)/(20000*0.36) = 3.75/7200 = 520.8uF\n- I_ripple(total) > I(max)*sqrt[D(1−D)] = 15*sqrt(0.25) = 7.5A_rms => I_ripple(single) > 7.5/3 = 2.5A_rms\n\n- C_total = 3*430uF = 1290uF. ESR_total = 31mOhms/3 = 10.33mOhms (in parallel, 100kHz/20°C)\n- coefficient_log-interpolated(20 kHz) = 0.958 => I_ripple(single) = 4.61*0.958 = 4.42A_rms @ 20kHz => I_ripple(total) = 3*4.42 = 13.25A_rms @ 20kHz\n- E = 0.5*C*V^2 = 0.5*1290uF*36^2 = 0.836 J\n\n- I_bleed = 36V / 44.2kOhms = 814.5uA => P_bleed(single) = 18V*814.5uA = 14.66mW\n- tau_bleed = R_total × C_total = 44.2kOhms× 1290uF = 57.0s\n\n- T_a=70°C: T_J=150.7°C, R_DS(on)=8.96mOhms, P=2.02W => 24.3°C to 175°C(max)"
+	(text_box "Bulk Capacitor Bank\n- C_bulk(min) = [I(max)*D(1−D)]/(f_sw*deltaV_ripple(target)) = (15*0.25)/(20000*0.36) = 3.75/7200 = 520.8uF\n- I_ripple(total) > I(max)*sqrt[D(1−D)] = 15*sqrt(0.25) = 7.5A_rms => I_ripple(single) > 7.5/3 = 2.5A_rms\n\n- C_total = 3*430uF = 1290uF. ESR_total = 31mOhms/3 = 10.33mOhms (in parallel, 100kHz/20°C)\n- coefficient_log-interpolated(20 kHz) = 0.958 => I_ripple(single) = 4.61*0.958 = 4.42A_rms @ 20kHz => I_ripple(total) = 3*4.42 = 13.25A_rms @ 20kHz\n- E = 0.5*C*V^2 = 0.5*1290uF*36^2 = 0.836 J\n\n- I_bleed = 36V / 44.2kOhms = 814.5uA => P_bleed(single) = 18V*814.5uA = 14.66mW\n- tau_bleed = R_total × C_total = 44.2kOhms× 1290uF = 57.0s\n\nMOSFETs\n- T_a=70°C: T_J=150.7°C, R_DS(on)=8.96mOhms, P=2.02W => 24.3°C to 175°C(max)"
 		(exclude_from_sim no)
 		(at 190.5 27.94 0)
-		(size 91.44 35.56)
+		(size 91.44 38.1)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -3409,6 +3409,110 @@
 		(uuid "72cdc613-ecea-4428-b8d1-def9b8790ac4")
 	)
 	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 139.7 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00641b16-425b-4bd6-8c80-f51fba6427a7")
+		(property "Reference" "C20"
+			(at 142.24 46.5581 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470uF/80V"
+			(at 142.24 49.0981 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 139.7 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-industry/EEU-FS1K471L/9597020?s=N4IgTCBcDaIKJwKoDEDKBGA0gFgOzoBkQBdAXyA"
+			(at 139.7 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 470UF 20% 80V RADIAL TH"
+			(at 139.7 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C385881"
+			(at 139.7 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/PANASONIC-EEUFS1K471L/C385881"
+			(at 139.7 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3f40fdf5-64cf-4c28-93f6-73047547e3c5")
+		)
+		(pin "1"
+			(uuid "f9fe9deb-5bc6-40a3-b2ff-84f2bf76264d")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 104.14 101.6 0)
 		(unit 1)
@@ -3731,88 +3835,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 157.48 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "2d499d98-9ca4-471d-a081-94ba53a55dd4")
-		(property "Reference" "C21"
-			(at 160.02 46.5581 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "430uF/100V"
-			(at 160.02 49.0981 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
-			(at 157.48 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
-			(at 157.48 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
-			(at 157.48 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "2e49e5e1-a545-4e7b-899f-bf7ee157fc2d")
-		)
-		(pin "1"
-			(uuid "ed259386-9771-4a0f-9a94-3d9a74f931e3")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C21")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:D_Zener")
 		(at 83.82 43.18 90)
 		(mirror x)
@@ -3917,7 +3939,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "430uF/100V"
+		(property "Value" "470uF/80V"
 			(at 124.46 49.0981 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3939,7 +3961,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-industry/EEU-FS1K471L/9597020?s=N4IgTCBcDaIKJwKoDEDKBGA0gFgOzoBkQBdAXyA"
 			(at 121.92 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -3950,7 +3972,29 @@
 				)
 			)
 		)
-		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
+		(property "Description" "CAP ALUM 470UF 20% 80V RADIAL TH"
+			(at 121.92 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C385881"
+			(at 121.92 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/PANASONIC-EEUFS1K471L/C385881"
 			(at 121.92 48.26 0)
 			(hide yes)
 			(show_name no)
@@ -5240,88 +5284,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C_Polarized_Small_US")
-		(at 139.7 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a50bf8c5-aa2a-4068-9379-755ddf7e04e0")
-		(property "Reference" "C20"
-			(at 142.24 46.5581 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "430uF/100V"
-			(at 142.24 49.0981 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
-			(at 139.7 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/nichicon/UBY2A431MHL/9452719"
-			(at 139.7 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "CAP ALUM 430UF 20% 100V RADIAL"
-			(at 139.7 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "028e3a0e-ddff-4de3-ab83-54377d88b059")
-		)
-		(pin "1"
-			(uuid "d32c1a28-9d4d-44c6-855d-a110a5210655")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
-					(reference "C20")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 55.88 53.34 0)
 		(unit 1)
@@ -6043,6 +6005,110 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
 					(reference "TP11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Polarized_Small_US")
+		(at 157.48 48.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f2c4d649-91fc-49b8-86da-7391a58d5fb4")
+		(property "Reference" "C21"
+			(at 160.02 46.5581 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470uF/80V"
+			(at 160.02 49.0981 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_THT:CP_Radial_D12.5mm_P5.00mm"
+			(at 157.48 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/panasonic-industry/EEU-FS1K471L/9597020?s=N4IgTCBcDaIKJwKoDEDKBGA0gFgOzoBkQBdAXyA"
+			(at 157.48 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "CAP ALUM 470UF 20% 80V RADIAL TH"
+			(at 157.48 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C385881"
+			(at 157.48 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/PANASONIC-EEUFS1K471L/C385881"
+			(at 157.48 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "8ae0d76d-51f5-4730-b6cc-f010c571b0e1")
+		)
+		(pin "1"
+			(uuid "2d3c0cb3-bb8a-479b-b822-34ee0ee7b6dc")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/5338eeb3-4021-4459-b70f-dab93d7c7a1a"
+					(reference "C21")
 					(unit 1)
 				)
 			)

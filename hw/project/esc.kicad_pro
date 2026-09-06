@@ -913,6 +913,12 @@
           "label": "LCSC",
           "name": "LCSC",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "JLCPCB",
+          "name": "JLCPCB",
+          "show": true
         }
       ],
       "filter_string": "",
@@ -920,7 +926,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Datasheet"
+      "sort_field": "Value"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -932,6 +938,11 @@
       "field_names": [
         {
           "name": "LCSC",
+          "url": false,
+          "visible": false
+        },
+        {
+          "name": "JLCPCB",
           "url": true,
           "visible": false
         }
@@ -985,7 +996,7 @@
         "uuid": "86a17c4d-db96-42a1-af84-d43fe593f4e6"
       }
     ],
-    "used_designators": "XTAL1,#PWR104-107,C17,C48-49",
+    "used_designators": "XTAL1,#PWR104-107,C17,C20-21,C48-49",
     "variants": []
   },
   "sheets": [

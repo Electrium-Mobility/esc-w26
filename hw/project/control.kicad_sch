@@ -4757,7 +4757,7 @@
 		)
 		(uuid "bf906a37-66e2-46a3-a9d3-c5748c3e9b81")
 	)
-	(text_box "Ext. Oscillator\n\nR_ext=0 fine since STM32G4 has a low drive level"
+	(text_box "Ext. Oscillator\n- R_ext=0 fine since STM32G4 has a low drive level\n- Using SWXC5ACVF0-32.000000 instead since CX3225SB32000D0FFFCC out of stock, so note of the stale symbol/footprint/model names"
 		(exclude_from_sim no)
 		(at 91.44 185.4199 0)
 		(size 83.82 10.16)
@@ -11891,7 +11891,7 @@
 				)
 			)
 		)
-		(property "Value" "CX3225SB32000D0FFFCC"
+		(property "Value" "SWXC5ACVF0-32.000000"
 			(at 50.8 172.72 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11913,7 +11913,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/kyocera-avx/CX3225SB32000D0FFFCC/4896410?s=N4IgTCBcDaIMIA0DMYwFYDKAhFAGfAIrgGKlxwgC6AvkA"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Starwave-SWXC5ACVF0_32000000/C22399832"
 			(at 30.48 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -11925,7 +11925,7 @@
 				)
 			)
 		)
-		(property "Description" "32 MHz ±10ppm Crystal 8pF 50 Ohms 4-SMD, No Lead"
+		(property "Description" "-40℃~+85℃ 32MHz 60Ω 8pF SMD crystal oscillator ±10ppm ±30ppm SMD3225-4P Crystals ROHS"
 			(at 30.48 180.34 0)
 			(hide yes)
 			(show_name no)
@@ -11936,7 +11936,18 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C22399832"
+			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Starwave-SWXC5ACVF0_32000000/C22399832"
 			(at 30.48 180.34 0)
 			(hide yes)
 			(show_name no)
