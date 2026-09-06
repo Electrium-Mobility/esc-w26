@@ -2262,13 +2262,9 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Switch:SW_Push"
-			(pin_numbers
-				(hide yes)
-			)
+		(symbol "TS-1187A-B-A-B:TS-1187A-B-A-B"
 			(pin_names
-				(offset 1.016)
-				(hide yes)
+				(offset 0.254)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2276,49 +2272,50 @@
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
 			(property "Reference" "SW"
-				(at 1.27 2.54 0)
+				(at 12.7 7.62 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "SW_Push"
-				(at 0 -1.524 0)
+			(property "Value" "TS-1187A-B-A-B"
+				(at 12.7 5.08 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" ""
-				(at 0 5.08 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 5.08 0)
+			(property "Footprint" "TS-1187A-B-A-B_XKB"
+				(at 2.54 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 				)
 			)
-			(property "Description" "Push button switch, generic, two pins"
+			(property "Datasheet" "TS-1187A-B-A-B"
+				(at 2.54 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2329,7 +2326,17 @@
 					)
 				)
 			)
-			(property "ki_keywords" "switch normally-open pushbutton push-button"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "TS-1187A-B-A-B"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -2340,12 +2347,57 @@
 					)
 				)
 			)
-			(symbol "SW_Push_0_1"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
+			(property "ki_fp_filters" "TS-1187A-B-A-B_XKB"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "TS-1187A-B-A-B_0_1"
+				(polyline
+					(pts
+						(xy 12.7 1.27) (xy 12.7 0.254)
+					)
 					(stroke
-						(width 0)
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 12.7 1.27)
+					(radius 0.127)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 12.7 0)
+					(radius 0.254)
+					(stroke
+						(width 0.127)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 12.7 -2.54)
+					(radius 0.254)
+					(stroke
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -2354,10 +2406,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0 1.27) (xy 0 3.048)
+						(xy 12.7 -2.794) (xy 12.7 -3.81)
 					)
 					(stroke
-						(width 0)
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -2365,10 +2417,10 @@
 					)
 				)
 				(circle
-					(center 2.032 0)
-					(radius 0.508)
+					(center 12.7 -3.81)
+					(radius 0.127)
 					(stroke
-						(width 0)
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -2377,19 +2429,22 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 1.27) (xy -2.54 1.27)
+						(xy 13.716 0) (xy 12.7 -2.286)
 					)
 					(stroke
-						(width 0)
+						(width 0.127)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
+			)
+			(symbol "TS-1187A-B-A-B_1_1"
+				(pin unspecified line
+					(at 12.7 1.27 0)
+					(length 0)
+					(hide yes)
 					(name "1"
 						(effects
 							(font
@@ -2405,9 +2460,10 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
+				(pin unspecified line
+					(at 12.7 1.27 180)
+					(length 0)
+					(hide yes)
 					(name "2"
 						(effects
 							(font
@@ -2416,6 +2472,44 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 12.7 -3.81 0)
+					(length 0)
+					(hide yes)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at 12.7 -3.81 180)
+					(length 0)
+					(hide yes)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -5380,6 +5474,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 33.02) (xy 99.06 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39bb761b-0a75-49c3-a827-d44b9ade2448")
+	)
+	(wire
+		(pts
 			(xy 200.66 43.18) (xy 208.28 43.18)
 		)
 		(stroke
@@ -5730,7 +5834,7 @@
 	)
 	(wire
 		(pts
-			(xy 99.06 44.45) (xy 99.06 45.72)
+			(xy 99.06 41.91) (xy 99.06 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5917,16 +6021,6 @@
 			(type default)
 		)
 		(uuid "9e34ef06-dae2-4097-8e66-6e7dc969fce8")
-	)
-	(wire
-		(pts
-			(xy 99.06 33.02) (xy 99.06 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9e7cd0d5-2aaf-472d-b989-7acdc2d99420")
 	)
 	(wire
 		(pts
@@ -6150,7 +6244,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 34.29) (xy 134.62 35.56)
+			(xy 134.62 31.75) (xy 134.62 35.56)
 		)
 		(stroke
 			(width 0)
@@ -6160,7 +6254,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 24.13) (xy 134.62 22.86)
+			(xy 134.62 22.86) (xy 134.62 26.67)
 		)
 		(stroke
 			(width 0)
@@ -7618,6 +7712,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-STSPIN32G4/C7434864"
+			(at 33.02 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7434864"
+			(at 33.02 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "8fbe18fd-c7a5-4a0c-9ad9-a37a3ba5fdf8")
 		)
@@ -8495,6 +8611,28 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Keystone-5016/C238129"
+			(at 195.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C238129"
+			(at 195.58 81.28 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "TP"
 			(uuid "d4908938-4e68-48f3-9d15-f17d452fbf89")
 		)
@@ -8974,88 +9112,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 134.62 29.21 270)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4bd25d67-71b7-4a8d-ac4b-1156404ab387")
-		(property "Reference" "SW1"
-			(at 133.35 27.9399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "BOOT0"
-			(at 133.35 30.4799 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "SWT0220_016016GSA:SW_SWT0220-016016GSA_REVA"
-			(at 139.7 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/gct/SWT0220-016016GSA/26753069"
-			(at 139.7 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TACTILE SWITCH, SPST-NO, 5.2 X 5"
-			(at 134.62 29.21 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "309d5ed2-a7e3-4a30-9499-69fd6b66ae6a")
-		)
-		(pin "2"
-			(uuid "c936c970-2382-41c3-befd-bba7e5dd82bf")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -9557,7 +9613,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5a1de9f8-5251-40f8-97db-1deefe72af36")
-		(property "Reference" "#PWR0104"
+		(property "Reference" "#PWR033"
 			(at 29.21 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -9617,7 +9673,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "#PWR0104")
+					(reference "#PWR033")
 					(unit 1)
 				)
 			)
@@ -10832,88 +10888,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Switch:SW_Push")
-		(at 99.06 39.37 270)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "88920ddd-8d44-4737-9ec1-9d1b44252616")
-		(property "Reference" "SW2"
-			(at 102.87 38.0999 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "RESET"
-			(at 102.87 40.6399 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "SWT0220_016016GSA:SW_SWT0220-016016GSA_REVA"
-			(at 104.14 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/gct/SWT0220-016016GSA/26753069"
-			(at 104.14 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TACTILE SWITCH, SPST-NO, 5.2 X 5"
-			(at 99.06 39.37 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0010f708-4e66-463f-b87f-e20c1d5d10d7")
-		)
-		(pin "2"
-			(uuid "06ca5c80-2f5d-4601-b99a-db37a1548110")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "SW2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 101.6 107.95 0)
 		(unit 1)
@@ -11472,6 +11446,117 @@
 		)
 	)
 	(symbol
+		(lib_id "TS-1187A-B-A-B:TS-1187A-B-A-B")
+		(at 121.92 27.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9d0b5599-77b0-4684-97b3-e9bcff5c188b")
+		(property "Reference" "SW4"
+			(at 133.35 27.94 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BOOT0"
+			(at 133.35 30.48 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TS-1187A-B-A-B_XKB"
+			(at 121.92 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "TS-1187A-B-A-B"
+			(at 121.92 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "-30℃~+85℃ 1.5mm 1.6N 100,000 cycles 12V 5.1mm 5.1mm 50mA Gold No Round Button SPST Surface Mount,Vertical Without Bracket SMD-4P,5.1x5.1mm Tactile Switches ROHS"
+			(at 121.92 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C318884"
+			(at 121.92 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884"
+			(at 121.92 27.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "c6429dee-0413-4aa9-85f8-5ddc09345e22")
+		)
+		(pin "2"
+			(uuid "9dee953c-86fe-438b-8854-0b9863704e2b")
+		)
+		(pin "4"
+			(uuid "098f9dc4-70f6-4f10-9662-652d91df3c87")
+		)
+		(pin "1"
+			(uuid "e3016959-f235-4f06-a65e-9e7547d1bc04")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:D_Schottky")
 		(at 111.76 153.67 270)
 		(unit 1)
@@ -11708,6 +11793,118 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "TS-1187A-B-A-B:TS-1187A-B-A-B")
+		(at 111.76 38.1 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a2813380-6b68-4350-9c9e-e8381fea1aee")
+		(property "Reference" "SW5"
+			(at 100.33 38.1 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "RESET"
+			(at 100.33 40.64 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TS-1187A-B-A-B_XKB"
+			(at 111.76 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "TS-1187A-B-A-B"
+			(at 111.76 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "-30℃~+85℃ 1.5mm 1.6N 100,000 cycles 12V 5.1mm 5.1mm 50mA Gold No Round Button SPST Surface Mount,Vertical Without Bracket SMD-4P,5.1x5.1mm Tactile Switches ROHS"
+			(at 111.76 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C318884"
+			(at 111.76 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884"
+			(at 111.76 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "b84b33be-9a9d-485c-901a-f179849fb9d0")
+		)
+		(pin "2"
+			(uuid "e59d3518-58c7-4a03-bc20-620a38b233bd")
+		)
+		(pin "4"
+			(uuid "664e4735-9a39-4c05-a2b6-3fcc96280bed")
+		)
+		(pin "1"
+			(uuid "a7712221-d979-499c-821b-82952d9b7043")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "SW5")
 					(unit 1)
 				)
 			)
@@ -12515,6 +12712,28 @@
 			)
 		)
 		(property "Description" "3-PHASE BRUSHLESS MOTOR CONTROLL"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-STSPIN32G4/C7434864"
+			(at 30.48 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C7434864"
 			(at 30.48 129.54 0)
 			(hide yes)
 			(show_name no)
@@ -13807,6 +14026,28 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Keystone-5016/C238129"
+			(at 147.32 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C238129"
+			(at 147.32 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "TP"
 			(uuid "f6a72496-8ca7-44ec-b18c-34338d06fa77")
 		)
@@ -13991,7 +14232,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ea942be1-08cd-4244-bb8d-2761fce68f0a")
-		(property "Reference" "#PWR0106"
+		(property "Reference" "#PWR035"
 			(at 25.4 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -14051,7 +14292,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "#PWR0106")
+					(reference "#PWR035")
 					(unit 1)
 				)
 			)
@@ -14069,7 +14310,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ead2a530-15dd-437d-b4e5-9e9bc755370d")
-		(property "Reference" "#PWR0107"
+		(property "Reference" "#PWR036"
 			(at 76.2 195.58 0)
 			(hide yes)
 			(show_name no)
@@ -14129,7 +14370,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "#PWR0107")
+					(reference "#PWR036")
 					(unit 1)
 				)
 			)
@@ -14536,6 +14777,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/MurataElectronics-NCU18XH103F60RB/C440252"
+			(at 147.32 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C440252"
+			(at 147.32 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "ba2f074f-7577-4a62-aeda-d3297bd55693")
 		)
@@ -14801,7 +15064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fc9dc673-d300-4f59-a418-12c1dde3b3c0")
-		(property "Reference" "#PWR0105"
+		(property "Reference" "#PWR034"
 			(at 72.39 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -14861,7 +15124,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "#PWR0105")
+					(reference "#PWR034")
 					(unit 1)
 				)
 			)
