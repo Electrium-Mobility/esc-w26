@@ -2348,10 +2348,10 @@
 		)
 		(uuid "feab3bfc-c1cd-44a9-9a6f-9be4818fab88")
 	)
-	(text_box "RC Soft-Start\ntau(typ) = R_pd*[C_ss+C_iss(typ)] = 118kΩ*(220nF+7.5nF) = 26.8ms > 1.16ms"
+	(text_box "RC Soft-Start\ntau(typ) = R_pd*[C_ss+C_iss] = 118kOhms*(220nF+10.2nF) = 27.16ms > 1.20ms"
 		(exclude_from_sim no)
-		(at 165.1 71.12 0)
-		(size 40.64 10.16)
+		(at 147.32 71.12 0)
+		(size 58.42 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2388,10 +2388,10 @@
 		)
 		(uuid "7def7196-4272-43af-9cab-1d24feed1e78")
 	)
-	(text_box "High-side PMOS RPP\n- PMOS has R_DS(on,min) = 0.0053 Ohms @ -10V and V_GS(max)=+/-20V, so V_Z=12V\n- tau(max) = R_pd*C_iss(max) = 118 kOhms*9800 pF (typ) = 1.16ms < 27.1ms"
+	(text_box "High-side PMOS RPP\n- PMOS has R_DS(on) = 5.5mOhms typ / 6.8mOhms max @ -10V and V_GS(max)=+/-20V, so V_Z=12V\n- tau = R_pd*C_iss = 118kOhms*10200pF = 1.20ms << 27.16ms\n\n"
 		(exclude_from_sim no)
 		(at 73.66 71.12 0)
-		(size 91.44 10.16)
+		(size 73.66 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -2448,10 +2448,10 @@
 		)
 		(uuid "c04b1b9c-4945-4484-9665-edb560f13562")
 	)
-	(text_box "Bulk Capacitor Bank\n- C_bulk(min) = [I(max)*D(1−D)]/(f_sw*deltaV_ripple(target)) = (15*0.25)/(20000*0.36) = 3.75/7200 = 520.8uF\n- I_ripple(total) > I(max)*sqrt[D(1−D)] = 15*sqrt(0.25) = 7.5A_rms => I_ripple(single) > 7.5/3 = 2.5A_rms\n\n- C_total = 3*430uF = 1290uF. ESR_total = 31mOhms/3 = 10.33mOhms (in parallel, 100kHz/20°C)\n- coefficient_log-interpolated(20 kHz) = 0.958 => I_ripple(single) = 4.61*0.958 = 4.42A_rms @ 20kHz => I_ripple(total) = 3*4.42 = 13.25A_rms @ 20kHz\n- E = 0.5*C*V^2 = 0.5*1290uF*36^2 = 0.836 J\n\n- I_bleed = 36V / 44.2kOhms = 814.5uA => P_bleed(single) = 18V*814.5uA = 14.66mW\n- tau_bleed = R_total × C_total = 44.2kOhms× 1290uF = 57.0s\n\nMOSFETs\n- T_a=70°C: T_J=150.7°C, R_DS(on)=8.96mOhms, P=2.02W => 24.3°C to 175°C(max)"
+	(text_box "Bulk Capacitor Bank\n- C_bulk(min) = [I(max)*D(1−D)]/(f_sw*deltaV_ripple(target)) = (15*0.25)/(20000*0.36) = 3.75/7200 = 520.8uF\n- I_ripple(total) > I(max)*sqrt[D(1−D)] = 15*sqrt(0.25) = 7.5A_rms => I_ripple(single) > 7.5/3 = 2.5A_rms\n\n- C_total = 3*470uF = 1410uF. ESR_total = 30mOhms/3 = 10.0mOhms (in parallel, 100kHz/20°C)\n- coefficient_log-interpolated(20kHz) = 0.986 (Panasonic factor table, 390-1000uF/6.3-100V bracket) => I_ripple(single) = 2.2*0.986 = 2.17A_rms @ 20kHz => I_ripple(total) = 3*2.17 = 6.51A_rms @ 20kHz, below the 2.5A/7.5A floor above; acceptable per 100% non-continuous 15A loading\n- E = 0.5*C*V^2 = 0.5*1410uF*36^2 = 0.914 J\n\n- I_bleed = 36V / 44.2kOhms = 814.5uA => P_bleed(single) = 18V*814.5uA = 14.66mW\n- tau_bleed = R_total × C_total = 44.2kOhms× 1290uF = 57.0s\n\nMOSFETs\n- T_a=70°C, R_th(J-A)=40°C/W: R_DS(on)=9.6mOhms (graph, ~150°C), P=2.16W, T_J=156.4°C => 18.6°C to 175°C(max)"
 		(exclude_from_sim no)
 		(at 190.5 27.94 0)
-		(size 91.44 38.1)
+		(size 91.44 43.18)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5211,7 +5211,7 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a1084a44-29d7-4c5b-8de8-94b95127a896")
+		(uuid "af1fa387-7d83-4c05-a4f2-14ec689b30dd")
 		(property "Reference" "Q2"
 			(at 104.14 31.75 90)
 			(show_name no)
@@ -5222,7 +5222,7 @@
 				)
 			)
 		)
-		(property "Value" "SQM50061EL_GE3"
+		(property "Value" "SUM110P06-08L-E3"
 			(at 104.14 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5243,7 +5243,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SQM50061EL-GE3/27788533"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Tokmas-SUM110P06_08LE3/C5364638"
 			(at 104.14 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -5254,7 +5254,29 @@
 				)
 			)
 		)
-		(property "Description" "P-CHANNEL 60-V (D-S) 175C MOSFET"
+		(property "Description" "-55℃~+175℃ 1 P-Channel 10.2nF 110A 180nC@10V 250W 3V 5.5mΩ@10V 60V 840pF TO-263 MOSFETs ROHS"
+			(at 104.14 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5364638"
+			(at 104.14 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Tokmas-SUM110P06_08LE3/C5364638"
 			(at 104.14 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -5266,13 +5288,13 @@
 			)
 		)
 		(pin "3"
-			(uuid "69574193-a49f-42c3-b6b0-d4d6ca327121")
+			(uuid "78eb43b2-f519-4137-9627-e7f984d701ab")
 		)
 		(pin "1"
-			(uuid "7d25b309-a2f0-4216-950a-977a43b4ae67")
+			(uuid "14df26fb-e7b9-4884-aa7b-f8b9e5770585")
 		)
 		(pin "2"
-			(uuid "a8ef5b2b-45b0-417c-9937-1f20494fca89")
+			(uuid "54881d36-8c45-46a3-82db-d536f5cec6c7")
 		)
 		(instances
 			(project "esc"
@@ -5870,7 +5892,7 @@
 				)
 			)
 		)
-		(property "Value" "SQM50061EL_GE3"
+		(property "Value" "SUM110P06-08L-E3"
 			(at 55.88 34.29 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5891,7 +5913,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/vishay-siliconix/SQM50061EL-GE3/27788533"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Tokmas-SUM110P06_08LE3/C5364638"
 			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -5902,7 +5924,29 @@
 				)
 			)
 		)
-		(property "Description" "P-CHANNEL 60-V (D-S) 175C MOSFET"
+		(property "Description" "-55℃~+175℃ 1 P-Channel 10.2nF 110A 180nC@10V 250W 3V 5.5mΩ@10V 60V 840pF TO-263 MOSFETs ROHS"
+			(at 55.88 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5364638"
+			(at 55.88 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Tokmas-SUM110P06_08LE3/C5364638"
 			(at 55.88 40.64 0)
 			(hide yes)
 			(show_name no)
