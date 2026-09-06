@@ -12,7 +12,7 @@
 		(comment 1 "Author: Nelson Mei, Leopoldo Mendoza, Eleanor Wang, Mike Yao")
 	)
 	(lib_symbols
-		(symbol "CX3225SB32000D0FFFCC:CX3225SB32000D0FFFCC"
+		(symbol "CX3225SB32000D0FFFCC_1"
 			(pin_names
 				(offset 0.254)
 			)
@@ -21,7 +21,7 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "XTAL"
+			(property "Reference" "X"
 				(at 20.32 10.16 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -108,7 +108,7 @@
 					)
 				)
 			)
-			(symbol "CX3225SB32000D0FFFCC_0_1"
+			(symbol "CX3225SB32000D0FFFCC_1_0_1"
 				(polyline
 					(pts
 						(xy 7.62 5.08) (xy 7.62 -7.62)
@@ -4732,8 +4732,8 @@
 	)
 	(text_box "3.3V LDO Input into Logic Supply Voltage"
 		(exclude_from_sim no)
-		(at 236.22 80.01 0)
-		(size 45.72 8.89)
+		(at 236.22 81.28 0)
+		(size 45.72 7.62)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4772,8 +4772,8 @@
 	)
 	(text_box "Internal 3.3V Linear Regulator\n\nEnabled (5.1.2), VCC-REGIN jumper for external VCC cfg\n"
 		(exclude_from_sim no)
-		(at 236.22 68.58 0)
-		(size 45.72 11.43)
+		(at 236.22 71.12 0)
+		(size 45.72 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -4790,10 +4790,10 @@
 		)
 		(uuid "63a41657-c2aa-401b-8fb3-b2980d0326b4")
 	)
-	(text_box "Internal VCC Buck Regulator\n\nEnabled (5.1.1), value configured in FW (\"Disabled\" cfg not implemented)"
+	(text_box "Internal VCC Buck Regulator\n- Enabled (5.1.1), value configured in FW (\"Disabled\" cfg not implemented)\n- Note: Still uses ASPI-6045S-180M-T footprint since it matches 3d model better (same with 33uH in Power sheet)"
 		(exclude_from_sim no)
 		(at 236.22 55.88 0)
-		(size 45.72 12.7)
+		(size 45.72 15.24)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -9186,6 +9186,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-STPS1H100A/C165701"
+			(at 101.6 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C165701"
+			(at 101.6 80.01 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8f37a25c-16d7-477e-909b-c696a3ed3424")
 		)
@@ -9724,7 +9746,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/CC0603JRNPO9BN8R0/5883625"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/CC0603BRNPO9BN8R0/11491204?s=N4IgTCBcDaIMJwAwDZEGYBCAlAcgBQHkBODHADi0RAF0BfIA"
 			(at 25.4 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -9746,7 +9768,18 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C519117"
+			(at 25.4 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/YAGEO-CC0603BRNPO9BN8R0/C519117"
 			(at 25.4 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -10137,7 +10170,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/74269262601/17829853"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/tai-tech-advanced-electronics-co-ltd/HCB-1608KF-601T20/17835799?s=N4IgTCBcDaIBIGEBCBGAbABgBwGkBiAtJigCpgYgC6AvkA"
 			(at 162.56 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -10149,6 +10182,28 @@
 			)
 		)
 		(property "Description" "FERRITE BEAD 600 OHM 0603 1LN"
+			(at 162.56 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/TAITECH-HCB1608KF601T20/C304319"
+			(at 162.56 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C304319"
 			(at 162.56 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -11456,7 +11511,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "9d0b5599-77b0-4684-97b3-e9bcff5c188b")
-		(property "Reference" "SW4"
+		(property "Reference" "SW1"
 			(at 133.35 27.94 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11478,7 +11533,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TS-1187A-B-A-B_XKB"
+		(property "Footprint" "TS-1187A-B-A-B:TS-1187A-B-A-B"
 			(at 121.92 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11490,7 +11545,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TS-1187A-B-A-B"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884"
 			(at 121.92 27.94 0)
 			(hide yes)
 			(show_name no)
@@ -11550,7 +11605,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "SW4")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -11614,6 +11669,28 @@
 		)
 		(property "Description" "DIODE SCHOTTKY 30V 300MA SOD523"
 			(at 111.76 153.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-BAT30KFILM/C2926449"
+			(at 111.76 153.67 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2926449"
+			(at 111.76 153.67 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11810,7 +11887,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "a2813380-6b68-4350-9c9e-e8381fea1aee")
-		(property "Reference" "SW5"
+		(property "Reference" "SW2"
 			(at 100.33 38.1 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11832,7 +11909,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "TS-1187A-B-A-B_XKB"
+		(property "Footprint" "TS-1187A-B-A-B:TS-1187A-B-A-B"
 			(at 111.76 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11844,7 +11921,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TS-1187A-B-A-B"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884"
 			(at 111.76 38.1 0)
 			(hide yes)
 			(show_name no)
@@ -11904,7 +11981,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "SW5")
+					(reference "SW2")
 					(unit 1)
 				)
 			)
@@ -12061,116 +12138,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "#PWR013")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CX3225SB32000D0FFFCC:CX3225SB32000D0FFFCC")
-		(at 30.48 180.34 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a5c3cfaf-addb-4d8e-9022-f717f292d855")
-		(property "Reference" "XTAL1"
-			(at 50.8 170.18 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "SWXC5ACVF0-32.000000"
-			(at 50.8 172.72 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "CX3225SB32000D0FFFCC:xtal4_CX3225SB_AVX"
-			(at 30.48 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://jlcpcb.com/partdetail/Starwave-SWXC5ACVF0_32000000/C22399832"
-			(at 30.48 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "-40℃~+85℃ 32MHz 60Ω 8pF SMD crystal oscillator ±10ppm ±30ppm SMD3225-4P Crystals ROHS"
-			(at 30.48 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22399832"
-			(at 30.48 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "JLCPCB" "https://jlcpcb.com/partdetail/Starwave-SWXC5ACVF0_32000000/C22399832"
-			(at 30.48 180.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8d11da80-1b8b-4f27-b7ad-5c8471ecbc6d")
-		)
-		(pin "3"
-			(uuid "d1a067c1-bfe7-43d9-92fd-6d09211ae887")
-		)
-		(pin "4"
-			(uuid "f78a1387-54e4-4852-b966-8b2d86e03009")
-		)
-		(pin "2"
-			(uuid "e2483121-0b23-4daa-a71d-6517537fec3f")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
-					(reference "XTAL1")
 					(unit 1)
 				)
 			)
@@ -14477,7 +14444,7 @@
 				)
 			)
 		)
-		(property "Value" "18uH/1A"
+		(property "Value" "18uH"
 			(at 111.76 66.04 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14498,7 +14465,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/abracon-llc/ASPI-6045S-180M-T/2343393"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/shenzhen-sunlord-electronics-co-ltd/SWPA6045S180MT/14119073?s=N4IgTCBcDaIMoHUAKBBAbABgCwFY4EYAODAWQBUQBdAXyA"
 			(at 111.76 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -14511,6 +14478,28 @@
 		)
 		(property "Description" "FIXED IND 18UH 1.85A 81 MOHM SMD"
 			(at 111.76 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Sunlord-SWPA6045S180MT/C96954"
+			(at 111.76 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C96954"
+			(at 111.76 68.58 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -14580,7 +14569,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/CC0603JRNPO9BN8R0/5883625"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/yageo/CC0603BRNPO9BN8R0/11491204?s=N4IgTCBcDaIMJwAwDZEGYBCAlAcgBQHkBODHADi0RAF0BfIA"
 			(at 76.2 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -14602,7 +14591,18 @@
 				)
 			)
 		)
-		(property "LCSC" ""
+		(property "LCSC" "C519117"
+			(at 76.2 186.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/YAGEO-CC0603BRNPO9BN8R0/C519117"
 			(at 76.2 186.69 0)
 			(hide yes)
 			(show_name no)
@@ -15047,6 +15047,117 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
 					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "CX3225SB32000D0FFFCC_1")
+		(lib_id "CX3225SB32000D0FFFCC:CX3225SB32000D0FFFCC")
+		(at 30.48 180.34 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fbf2389c-e43a-447a-aec3-4638162f31c4")
+		(property "Reference" "X1"
+			(at 50.8 170.18 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "SWXC5ACVF0-32.000000"
+			(at 50.8 172.72 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "CX3225SB32000D0FFFCC:xtal4_CX3225SB_AVX"
+			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "https://jlcpcb.com/partdetail/Starwave-SWXC5ACVF0_32000000/C22399832"
+			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" "-40℃~+85℃ 32MHz 60Ω 8pF SMD crystal oscillator ±10ppm ±30ppm SMD3225-4P Crystals ROHS"
+			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C22399832"
+			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Starwave-SWXC5ACVF0_32000000/C22399832"
+			(at 30.48 180.34 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "3"
+			(uuid "a56fe68f-5074-4fda-848d-38e6f09f4891")
+		)
+		(pin "1"
+			(uuid "db210636-ed31-4e07-91c5-9c2200640e60")
+		)
+		(pin "2"
+			(uuid "405badae-7e87-4ca6-bcf9-1b5f1e866580")
+		)
+		(pin "4"
+			(uuid "fcf33d38-f008-41fa-956e-8fe390ad7aac")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9"
+					(reference "X1")
 					(unit 1)
 				)
 			)

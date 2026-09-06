@@ -296,1066 +296,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "CONN_691256610002_WRE:691256610002"
-			(body_styles demorgan)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 8.89 6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Value" "691256610002"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Footprint" "CONN_691256610002_WRE"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.we-online.com/catalog/datasheet/691256610002.pdf"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "691256610002"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "CONN_691256610002_WRE"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "691256610002_1_1"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -10.16) (xy 12.7 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 7.62 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.62 0)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.62 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 7.62 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.62 -5.08)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 7.62 -7.62)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 0) (xy 8.89 -0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -1.6933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 10.16 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -10.16) (xy 12.7 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "691256610002_1_2"
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 5.08 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -10.16) (xy 12.7 -10.16)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 0) (xy 6.35 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 0)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 -2.54)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 6.35 -5.08) (xy 6.35 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 -5.08)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 -7.62)
-					(radius 0.127)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 8.89 0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 0) (xy 8.89 -0.8467)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -1.6933)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -2.54) (xy 8.89 -3.3867)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -4.2333)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 8.89 -5.9267)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 5.08 -7.62)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -6.7733)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -7.62) (xy 8.89 -8.4667)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 2.54) (xy 5.08 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 12.7 -10.16) (xy 12.7 2.54)
-					)
-					(stroke
-						(width 0.127)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -2.54 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -5.08 0)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at 0 -7.62 0)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "CONN_691256610003_WRE:691256610003"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at -4.88 -0.922 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "691256610003"
-				(at -4.83 -2.58 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Footprint" "691256610003:691256610003"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify bottom)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "691256610003_0_0"
-				(rectangle
-					(start -3.81 -2.54)
-					(end 3.81 0)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(circle
-					(center -2.54 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -1.778) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.286 -1.016) (xy -2.794 -1.524)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -1.778) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 -1.016) (xy -0.254 -1.524)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.54 -1.27)
-					(radius 0.508)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.54 -1.778) (xy 2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.794 -1.016) (xy 2.286 -1.524)
-					)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -2.54 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -2.54 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A1"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A2"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 2.54 -5.08 90)
-					(length 2.54)
-					(name ""
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-					(number "A3"
-						(effects
-							(font
-								(size 1.016 1.016)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -4209,6 +3149,374 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "KFA-1016-10.16-2P:KFA-1016-10_16-2P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 5.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KFA-1016-10_16-2P"
+				(at 0 -5.81 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "KFA-1016-10.16-2P:KFA-1016-10_16-2P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303171000_Cixi-Kefa-Elec-KFA-1016-10-16-2P_C475110.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-40℃~+105℃ 1 10 10.16mm 1x2P 2 2P 300V 65A 6~26 Gray Through Hole 插件,P=10.16mm Screw Terminal Blocks ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C475110"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Cixi Kefa Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "KFA-1016-10.16-2P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C475110 CONN-TH_P10.16_KFA-1016-10.16-2P Cixi Kefa Elec KFA-1016-10.16-2P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "KFA-1016-10_16-2P_0_1"
+				(circle
+					(center -1.27 2.54)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -3.81) (xy 2.1311 -3.8002) (xy 2.2264 -3.7713) (xy 2.3142 -3.7244) (xy 2.3912 -3.6612)
+						(xy 2.4544 -3.5842) (xy 2.5013 -3.4964) (xy 2.5302 -3.4011) (xy 2.54 -3.302) (xy 2.5302 3.4011)
+						(xy 2.5013 3.4964) (xy 2.4544 3.5842) (xy 2.3912 3.6612) (xy 2.3142 3.7244) (xy 2.2264 3.7713)
+						(xy 2.1311 3.8002) (xy 2.032 3.81) (xy -2.1311 3.8002) (xy -2.2264 3.7713) (xy -2.3142 3.7244)
+						(xy -2.3912 3.6612) (xy -2.4544 3.5842) (xy -2.5013 3.4964) (xy -2.5302 3.4011) (xy -2.54 3.302)
+						(xy -2.5302 -3.4011) (xy -2.5013 -3.4964) (xy -2.4544 -3.5842) (xy -2.3912 -3.6612) (xy -2.3142 -3.7244)
+						(xy -2.2264 -3.7713) (xy -2.1311 -3.8002) (xy -2.032 -3.81) (xy 2.032 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 1.27 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -1.27 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "KFA-1016-10.16-3P:KFA-1016-10_16-3P"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 7.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "KFA-1016-10_16-3P"
+				(at 0 -7.08 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "KFA-1016-10.16-3P:KFA-1016-10_16-3P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303171000_Cixi-Kefa-Elec-KFA-1016-10-16-3P_C475111.pdf"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "-40℃~+105℃ 1 10 10.16mm 1x3P 3 300V 3P 65A 6~26 Gray Through Hole 插件,P=10.16mm Screw Terminal Blocks ROHS"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "LCSC" "C475111"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer" "Cixi Kefa Elec"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Manufacturer Part" "KFA-1016-10.16-3P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "C475111 CONN-TH_3P-P10.16_KFA-1016-10.16-3P Cixi Kefa Elec KFA-1016-10.16-3P"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "KFA-1016-10_16-3P_0_1"
+				(circle
+					(center -1.27 3.81)
+					(radius 0.381)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.032 -5.08) (xy 2.1311 -5.0702) (xy 2.2264 -5.0413) (xy 2.3142 -4.9944) (xy 2.3912 -4.9312)
+						(xy 2.4544 -4.8542) (xy 2.5013 -4.7664) (xy 2.5302 -4.6711) (xy 2.54 -4.572) (xy 2.5302 4.6711)
+						(xy 2.5013 4.7664) (xy 2.4544 4.8542) (xy 2.3912 4.9312) (xy 2.3142 4.9944) (xy 2.2264 5.0413)
+						(xy 2.1311 5.0702) (xy 2.032 5.08) (xy -2.1311 5.0702) (xy -2.2264 5.0413) (xy -2.3142 4.9944)
+						(xy -2.3912 4.9312) (xy -2.4544 4.8542) (xy -2.5013 4.7664) (xy -2.5302 4.6711) (xy -2.54 4.572)
+						(xy -2.5302 -4.6711) (xy -2.5013 -4.7664) (xy -2.4544 -4.8542) (xy -2.3912 -4.9312) (xy -2.3142 -4.9944)
+						(xy -2.2264 -5.0413) (xy -2.1311 -5.0702) (xy -2.032 -5.08) (xy 2.032 -5.08)
+					)
+					(stroke
+						(width 0.254)
+						(type solid)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 2.54 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin unspecified line
+					(at -5.08 -2.54 0)
+					(length 2.54)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Mechanical:MountingHole"
 			(pin_names
 				(offset 1.016)
@@ -5288,7 +4596,7 @@
 	)
 	(rectangle
 		(start 15.24 17.78)
-		(end 60.96 48.26)
+		(end 58.42 48.26)
 		(stroke
 			(width 0)
 			(type default)
@@ -5359,7 +4667,7 @@
 		(uuid "9b10714e-cfa4-420b-a8f4-1af111a4b3e1")
 	)
 	(rectangle
-		(start 63.5 17.78)
+		(start 60.96 17.78)
 		(end 96.52 48.26)
 		(stroke
 			(width 0)
@@ -5529,7 +4837,7 @@
 	)
 	(text "add terminal connector crimp kit to BOM"
 		(exclude_from_sim no)
-		(at 99.822 -3.048 0)
+		(at 100.838 14.478 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5716,7 +5024,7 @@
 	)
 	(text "Phase Outputs"
 		(exclude_from_sim no)
-		(at 64.262 19.304 0)
+		(at 61.722 19.304 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -5873,7 +5181,7 @@
 		)
 		(uuid "6841050d-9026-4a68-97e2-30ab89861a9d")
 	)
-	(text_box "Phase Outputs\n- High-power screw terminal block (Max 58A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-20 AWG"
+	(text_box "Phase Outputs\n- High-power screw terminal block (Max 65A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-26 AWG"
 		(exclude_from_sim no)
 		(at 99.06 33.02 0)
 		(size 68.58 15.24)
@@ -5933,7 +5241,7 @@
 		)
 		(uuid "ab53f14c-20c4-4a71-b0b6-072eec2a4dff")
 	)
-	(text_box "Battery Input\n- High-power screw terminal block (Max 58A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-20 AWG\n- User will need to hook up an adapter to the connector used by the battery"
+	(text_box "Battery Input\n- High-power screw terminal block (Max 65A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-26 AWG\n- User will need to hook up an adapter to the connector used by the battery"
 		(exclude_from_sim no)
 		(at 99.06 17.78 0)
 		(size 68.58 15.24)
@@ -6120,12 +5428,6 @@
 		(uuid "6c438a25-0b98-458f-b228-f56b7b3024ac")
 	)
 	(junction
-		(at 41.91 36.83)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "6d16bb63-6eee-4eb2-8831-e0b6341902eb")
-	)
-	(junction
 		(at 198.12 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -6154,12 +5456,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d3a549e-a082-4dbf-83af-80069d6c9b42")
-	)
-	(junction
-		(at 41.91 31.75)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "921fdfb1-ce4e-46ca-a86c-9eebb393a0de")
 	)
 	(junction
 		(at 118.11 124.46)
@@ -6284,16 +5580,6 @@
 			(type default)
 		)
 		(uuid "044ce054-4846-4655-b0c3-15a079f32048")
-	)
-	(wire
-		(pts
-			(xy 40.64 38.1) (xy 41.91 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04710e9c-7a16-4623-ba76-392eda3cbf42")
 	)
 	(wire
 		(pts
@@ -6447,16 +5733,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 36.83) (xy 49.53 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16f62ff8-d34f-4ff0-a9c1-55edae011075")
-	)
-	(wire
-		(pts
 			(xy 121.92 82.55) (xy 121.92 91.44)
 		)
 		(stroke
@@ -6567,26 +5843,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 31.75) (xy 41.91 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21b29ece-4a97-493b-bfa7-a0aeaa46f7c7")
-	)
-	(wire
-		(pts
-			(xy 81.28 33.02) (xy 90.17 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "21d7104a-a695-4e8e-91e2-cc4098848d21")
-	)
-	(wire
-		(pts
 			(xy 355.6 77.47) (xy 355.6 81.28)
 		)
 		(stroke
@@ -6624,16 +5880,6 @@
 			(type default)
 		)
 		(uuid "25fa66d2-bb7f-4f6a-9b86-4be882ac3e81")
-	)
-	(wire
-		(pts
-			(xy 41.91 33.02) (xy 41.91 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "263b041a-e804-45cd-a08b-07b96debb6c6")
 	)
 	(wire
 		(pts
@@ -6847,16 +6093,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 31.75) (xy 49.53 31.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "43c91d81-d2fa-4d96-a16d-eca0cf26d29f")
-	)
-	(wire
-		(pts
 			(xy 78.74 76.2) (xy 88.9 76.2)
 		)
 		(stroke
@@ -7027,16 +6263,6 @@
 	)
 	(wire
 		(pts
-			(xy 41.91 35.56) (xy 41.91 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5d02f967-758a-4c51-9815-834be692992a")
-	)
-	(wire
-		(pts
 			(xy 271.78 53.34) (xy 271.78 55.88)
 		)
 		(stroke
@@ -7104,16 +6330,6 @@
 			(type default)
 		)
 		(uuid "687ed3d5-057b-495b-ad5b-27220d37b106")
-	)
-	(wire
-		(pts
-			(xy 40.64 35.56) (xy 41.91 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6a8a086c-a8e9-4d97-a628-60950c64c5dd")
 	)
 	(wire
 		(pts
@@ -7197,16 +6413,6 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 30.48) (xy 41.91 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "72d67d43-dd35-4740-9866-c6f82fe6699d")
-	)
-	(wire
-		(pts
 			(xy 115.57 82.55) (xy 115.57 88.9)
 		)
 		(stroke
@@ -7224,16 +6430,6 @@
 			(type default)
 		)
 		(uuid "74c0ab26-7e46-4360-979b-bceb9522f80b")
-	)
-	(wire
-		(pts
-			(xy 41.91 36.83) (xy 41.91 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "75c3892f-9f0b-4aab-9fc8-98b0fe0413a2")
 	)
 	(wire
 		(pts
@@ -7564,16 +6760,6 @@
 			(type default)
 		)
 		(uuid "adf6fd83-637e-4729-ac0a-0c2775ec92a0")
-	)
-	(wire
-		(pts
-			(xy 81.28 30.48) (xy 90.17 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "afcb2e60-817a-4476-be00-72178db31b87")
 	)
 	(wire
 		(pts
@@ -7937,16 +7123,6 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 35.56) (xy 90.17 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "de913583-fb25-4a3a-abd4-1d30bb95d6ac")
-	)
-	(wire
-		(pts
 			(xy 264.16 127) (xy 264.16 129.54)
 		)
 		(stroke
@@ -8104,16 +7280,6 @@
 			(type default)
 		)
 		(uuid "ef77296e-0e3a-45d8-8887-e46b00e0859d")
-	)
-	(wire
-		(pts
-			(xy 40.64 33.02) (xy 41.91 33.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f0314566-503f-42b1-9d0a-e2c9af99952a")
 	)
 	(wire
 		(pts
@@ -8310,7 +7476,7 @@
 	)
 	(hierarchical_label "V"
 		(shape input)
-		(at 90.17 33.02 0)
+		(at 92.71 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8387,7 +7553,7 @@
 	)
 	(hierarchical_label "U"
 		(shape input)
-		(at 90.17 35.56 0)
+		(at 92.71 35.56 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8508,7 +7674,7 @@
 	)
 	(hierarchical_label "W"
 		(shape input)
-		(at 90.17 30.48 0)
+		(at 92.71 30.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8574,7 +7740,7 @@
 	)
 	(hierarchical_label "PGND"
 		(shape output)
-		(at 49.53 31.75 0)
+		(at 48.26 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8684,7 +7850,7 @@
 	)
 	(hierarchical_label "VM_IN"
 		(shape output)
-		(at 49.53 36.83 0)
+		(at 48.26 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8840,6 +8006,28 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 257.81 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/parts/componentSearch?searchTxt=LTST-C191KGKT"
+			(at 257.81 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C125098"
+			(at 257.81 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9465,6 +8653,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/parts/componentSearch?searchTxt=LTST-C191KGKT"
+			(at 243.84 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C125098"
+			(at 243.84 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "2e64cd7b-878f-4376-ab5b-a12bda53111d")
 		)
@@ -9475,6 +8685,124 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "D12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KFA-1016-10.16-3P:KFA-1016-10_16-3P")
+		(at 87.63 33.02 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "18639cdb-fe8f-4f4f-b742-a8686e7e11ed")
+		(property "Reference" "J2"
+			(at 83.82 31.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KFA-1016-10_16-3P"
+			(at 83.82 34.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "KFA-1016-10.16-3P:KFA-1016-10_16-3P"
+			(at 87.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303171000_Cixi-Kefa-Elec-KFA-1016-10-16-3P_C475111.pdf"
+			(at 87.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+105℃ 1 10 10.16mm 1x3P 3 300V 3P 65A 6~26 Gray Through Hole 插件,P=10.16mm Screw Terminal Blocks ROHS"
+			(at 87.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C475111"
+			(at 87.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Cixi Kefa Elec"
+			(at 87.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "KFA-1016-10.16-3P"
+			(at 87.63 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7e3882ca-b639-4ed1-ad44-e148874fd335")
+		)
+		(pin "2"
+			(uuid "38ec77a3-41e2-4ef9-b334-c1a3b328af51")
+		)
+		(pin "3"
+			(uuid "02a10066-3c8b-4702-85e1-a694963494bf")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -9613,7 +8941,7 @@
 				)
 			)
 		)
-		(property "Description" "CAP ALUM 22UF 20% 10V SMD"
+		(property "Description" "22 µF 10 V Aluminum Electrolytic Capacitors Radial, Can - SMD 2000 Hrs @ 105°C"
 			(at 312.42 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10624,6 +9952,28 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 257.81 49.53 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/parts/componentSearch?searchTxt=LTST-C191KGKT"
+			(at 257.81 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C125098"
+			(at 257.81 49.53 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11783,6 +11133,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/parts/componentSearch?searchTxt=LTST-C191KGKT"
+			(at 271.78 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C125098"
+			(at 271.78 49.53 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f67516ed-7626-456d-9b03-d260f83d1504")
 		)
@@ -11924,7 +11296,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/diotec-semiconductor/ESD5B5V0WT/22189401"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/goodwork/CESDBLC5V0D5-GK/29516192?s=N4IgTCBcDaIMIFEDKARAQgGTgVgGoAYVsBaAcQGkQBdAXyA"
 			(at 345.44 99.06 0)
 			(hide yes)
 			(show_name no)
@@ -11935,8 +11307,30 @@
 				)
 			)
 		)
-		(property "Description" "TVS DIODE 5VWM 12.5VC SOD-523"
+		(property "Description" "5VWM 8;16VC SOD-523(SC-79)"
 			(at 345.44 99.06 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/GOODWORK-CESDBLC5V0D5GK/C51912417"
+			(at 345.44 99.06 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C51912417"
+			(at 345.44 99.06 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11956,6 +11350,121 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "KFA-1016-10.16-2P:KFA-1016-10_16-2P")
+		(at 43.18 33.02 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "578c06b5-6181-4a14-ba04-e2442f4824d8")
+		(property "Reference" "J1"
+			(at 39.37 31.7499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "KFA-1016-10_16-2P"
+			(at 39.37 34.2899 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "KFA-1016-10.16-2P:KFA-1016-10_16-2P"
+			(at 43.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303171000_Cixi-Kefa-Elec-KFA-1016-10-16-2P_C475110.pdf"
+			(at 43.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "-40℃~+105℃ 1 10 10.16mm 1x2P 2 2P 300V 65A 6~26 Gray Through Hole 插件,P=10.16mm Screw Terminal Blocks ROHS"
+			(at 43.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C475110"
+			(at 43.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "MANUFACTURER" "Cixi Kefa Elec"
+			(at 43.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "KFA-1016-10.16-2P"
+			(at 43.18 33.02 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e8527aef-5eca-4f95-9385-615ff6884c11")
+		)
+		(pin "1"
+			(uuid "c38d6220-708b-4552-9c2a-0086b3cbae70")
+		)
+		(instances
+			(project "esc"
+				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -12196,96 +11705,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "R50")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CONN_691256610002_WRE:691256610002")
-		(at 40.64 30.48 0)
-		(mirror y)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "62216773-a7f9-4fd3-8405-e54fe1e46e20")
-		(property "Reference" "J1"
-			(at 26.67 33.0199 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Battery"
-			(at 26.67 35.5599 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "CONN_691256610002_WRE:CONN_691256610002_WRE"
-			(at 40.64 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691256610002/6644127"
-			(at 40.64 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-			)
-		)
-		(property "Description" "TERM BLK 2P SIDE ENT 10.16MM PCB"
-			(at 40.64 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f58f0d5b-ba96-4828-9aed-164aadcf40ee")
-		)
-		(pin "4"
-			(uuid "56568aa1-4e8f-43c0-b600-f16ab8c3645f")
-		)
-		(pin "2"
-			(uuid "27b55003-fa57-42c9-9fdb-8ee62ceff7cf")
-		)
-		(pin "3"
-			(uuid "ad06bf0e-b8fa-4c9d-b128-c24990499b7b")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -12651,7 +12070,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/liteon/LTST-C190KYKT/386821"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/broadcom-limited/HSMA-C191-T0000/7325165?s=N4IgTCBcDaIBIGUCyBBAtAYQIwE4toBUAGEokAXQF8g"
 			(at 271.78 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12662,7 +12081,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "LED AMBER TOP MNT 2SMD"
 			(at 271.78 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -12675,6 +12094,28 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 271.78 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/BroadcomLimited-HSMA_C191T0000/C5730905"
+			(at 271.78 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5730905"
+			(at 271.78 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12743,7 +12184,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/diotec-semiconductor/ESD5B5V0WT/22189401"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/goodwork/CESDBLC5V0D5-GK/29516192?s=N4IgTCBcDaIMIFEDKARAQgGTgVgGoAYVsBaAcQGkQBdAXyA"
 			(at 345.44 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -12754,8 +12195,30 @@
 				)
 			)
 		)
-		(property "Description" "TVS DIODE 5VWM 12.5VC SOD-523"
+		(property "Description" "5VWM 8;16VC SOD-523(SC-79)"
 			(at 345.44 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/GOODWORK-CESDBLC5V0D5GK/C51912417"
+			(at 345.44 73.66 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C51912417"
+			(at 345.44 73.66 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12914,6 +12377,28 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 6POS 2.5MM"
+			(at 24.13 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/JST-B6B_XH_A_LF_SN/C144397"
+			(at 24.13 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144397"
 			(at 24.13 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13502,6 +12987,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-BAT30KFILM/C2926449"
+			(at 78.74 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2926449"
+			(at 78.74 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8d02e556-109d-4234-aefc-8cecfe65adf7")
 		)
@@ -13573,6 +13080,28 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 4POS 2.5MM"
+			(at 189.23 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/JST-B4B_XH_A_LF_SN/C144395"
+			(at 189.23 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144395"
 			(at 189.23 100.33 0)
 			(hide yes)
 			(show_name no)
@@ -14136,101 +13665,6 @@
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
 					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "CONN_691256610003_WRE:691256610003")
-		(at 76.2 33.02 90)
-		(mirror x)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "9a1b9157-c974-49a1-8d69-c4f20377d3cc")
-		(property "Reference" "J2"
-			(at 74.93 31.7499 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Phases"
-			(at 74.93 34.2899 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "CONN_691256610003_WRE:CONN_691256610003_WRE"
-			(at 76.2 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/w%C3%BCrth-elektronik/691256610003/6644128"
-			(at 76.2 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "TERM BLK 3P SIDE ENT 10.16MM PCB"
-			(at 76.2 33.02 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "A1"
-			(uuid "a7fa85bd-2e7c-4c48-938d-dd7bfea43861")
-		)
-		(pin "2"
-			(uuid "de405620-80cf-4032-bd4e-00a842436e4c")
-		)
-		(pin "A2"
-			(uuid "5f0855ff-667f-4d55-ba28-3def95035920")
-		)
-		(pin "A3"
-			(uuid "04929746-2e34-4f83-aacc-62889ecc36c9")
-		)
-		(pin "1"
-			(uuid "aa91c154-2c8c-4630-8e12-d0f9dfdb6a53")
-		)
-		(pin "3"
-			(uuid "3b6780a1-95f3-405e-a352-01f17b4550e0")
-		)
-		(instances
-			(project "esc"
-				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "J2")
 					(unit 1)
 				)
 			)
@@ -15358,6 +14792,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-BAT30KFILM/C2926449"
+			(at 99.06 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2926449"
+			(at 99.06 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "d76533fc-3c2c-4deb-853a-2bab6ea057a2")
 		)
@@ -15741,6 +15197,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/LiteOn-LTSTC190KRKT/C94869"
+			(at 243.84 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C94869"
+			(at 243.84 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "79c54bcc-5b79-431a-863f-4fa273224063")
 		)
@@ -15801,7 +15279,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "https://www.digikey.ca/en/products/detail/liteon/LTST-C190KYKT/386821"
+		(property "Datasheet" "https://www.digikey.ca/en/products/detail/broadcom-limited/HSMA-C191-T0000/7325165?s=N4IgTCBcDaIBIGUCyBBAtAYQIwE4toBUAGEokAXQF8g"
 			(at 285.75 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -15812,7 +15290,7 @@
 				)
 			)
 		)
-		(property "Description" "Light emitting diode"
+		(property "Description" "LED AMBER TOP MNT 2SMD"
 			(at 285.75 96.52 0)
 			(hide yes)
 			(show_name no)
@@ -15825,6 +15303,28 @@
 		)
 		(property "Sim.Pins" "1=K 2=A"
 			(at 285.75 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/BroadcomLimited-HSMA_C191T0000/C5730905"
+			(at 285.75 96.52 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5730905"
+			(at 285.75 96.52 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -16866,6 +16366,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/JST-B4B_XH_A_LF_SN/C144395"
+			(at 339.09 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144395"
+			(at 339.09 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "016bbd1a-8101-4ffe-a0fe-9c1fcfebf678")
 		)
@@ -17663,6 +17185,28 @@
 				)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/STMicroelectronics-BAT30KFILM/C2926449"
+			(at 88.9 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C2926449"
+			(at 88.9 81.28 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "4b2d8415-1be5-4432-b4ad-748c2629a9ee")
 		)
@@ -17987,6 +17531,28 @@
 				(justify bottom)
 			)
 		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/Samtec-FTSH_107_01_L_DV_KA/C5563894"
+			(at 193.04 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C5563894"
+			(at 193.04 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "03"
 			(uuid "39971c04-2029-4bcc-bbf6-625b290f9a20")
 		)
@@ -18094,6 +17660,28 @@
 			)
 		)
 		(property "Description" "CONN HEADER VERT 3POS 2.5MM"
+			(at 180.34 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "JLCPCB" "https://jlcpcb.com/partdetail/JST-B3B_XH_A_LF_SN/C144394"
+			(at 180.34 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C144394"
 			(at 180.34 64.77 0)
 			(hide yes)
 			(show_name no)
@@ -18448,7 +18036,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f7b87db8-8260-41d5-9a88-0347db217819")
-		(property "Reference" "SW6"
+		(property "Reference" "SW3"
 			(at 256.54 121.412 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -18468,7 +18056,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TS-1187A-B-A-B_XKB"
+		(property "Footprint" "TS-1187A-B-A-B:TS-1187A-B-A-B"
 			(at 257.81 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -18480,7 +18068,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "TS-1187A-B-A-B"
+		(property "Datasheet" "https://jlcpcb.com/partdetail/XKBConnection-TS_1187A_B_AB/C318884"
 			(at 257.81 114.3 0)
 			(hide yes)
 			(show_name no)
@@ -18540,7 +18128,7 @@
 		(instances
 			(project "esc"
 				(path "/86a17c4d-db96-42a1-af84-d43fe593f4e6/84ea8536-46c8-4cae-8743-a6718dee2882"
-					(reference "SW6")
+					(reference "SW3")
 					(unit 1)
 				)
 			)

@@ -1,0 +1,222 @@
+(footprint "KFA-1016-10_16-2P"
+	(version 20260206)
+	(generator "pcbnew")
+	(generator_version "10.0")
+	(layer "F.Cu")
+	(descr "-40℃~+105℃ 1 10 10.16mm 1x2P 2 2P 300V 65A 6~26 Gray Through Hole 插件,P=10.16mm Screw Terminal Blocks ROHS")
+	(tags "C475110 CONN-TH_P10.16_KFA-1016-10.16-2P Cixi Kefa Elec KFA-1016-10.16-2P")
+	(property "Reference" "REF**"
+		(at 0 -7.68 0)
+		(layer "F.SilkS")
+		(uuid "aa2bd51c-1923-4a26-906a-a4c846ba4d42")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Value" "~"
+		(at 0 12.62 0)
+		(layer "F.Fab")
+		(uuid "6926b664-776c-4cc5-8a9d-3975805ab3bc")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Datasheet" "https://www.lcsc.com/datasheet/lcsc_datasheet_2303171000_Cixi-Kefa-Elec-KFA-1016-10-16-2P_C475110.pdf"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "b2c892ad-5432-4171-9615-175286ad8914")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "Description" "-40℃~+105℃ 1 10 10.16mm 1x2P 2 2P 300V 65A 6~26 Gray Through Hole 插件,P=10.16mm Screw Terminal Blocks ROHS"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "aee72121-2387-479e-b57c-a4926eb26b43")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(property "LCSC" "C475110"
+		(at 0 0 0)
+		(layer "F.Fab")
+		(hide yes)
+		(uuid "31f801d6-748a-486b-a366-ab9e768679a0")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+		)
+	)
+	(attr through_hole)
+	(duplicate_pad_numbers_are_jumpers no)
+	(fp_line
+		(start -10.16 -6.68)
+		(end -10.16 11.62)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "408632f4-004b-4bcc-82ec-eb2f9901214a")
+	)
+	(fp_line
+		(start -10.16 -6.68)
+		(end 10.16 -6.68)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "27ebc73f-fdb6-49ba-bd69-8469fb3a5c24")
+	)
+	(fp_line
+		(start -10.16 -5.161153)
+		(end -6.709 -5.161153)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "e912f2e6-a945-4d45-a100-d5f47bd8beac")
+	)
+	(fp_line
+		(start -10.16 -3.022194)
+		(end 10.16 -3.022194)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "adaa9108-7e2a-4314-a2dc-2604c4e56666")
+	)
+	(fp_line
+		(start -10.16 7.94)
+		(end 10.16 7.94)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "310888c6-6988-4dd2-92f9-684392c6ccc1")
+	)
+	(fp_line
+		(start -10.16 9.143)
+		(end 10.16 9.143)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "803451c6-682e-4567-887b-83a109536f3d")
+	)
+	(fp_line
+		(start -10.16 10.012)
+		(end 10.16 10.012)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d848fe57-46f6-4dab-adf3-5ce106beff57")
+	)
+	(fp_line
+		(start -10.16 11.62)
+		(end 10.16 11.62)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "695ad9e8-c042-4ab9-b302-c843f3465e92")
+	)
+	(fp_line
+		(start -3.451 -5.161153)
+		(end 3.451 -5.161153)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "d9237ff7-5cba-498c-ad4a-ab617a374d6d")
+	)
+	(fp_line
+		(start 6.709 -5.16128)
+		(end 10.16 -5.16128)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "4625f53d-09ab-41f1-856d-66ccb1337e0b")
+	)
+	(fp_line
+		(start 10.16 -6.68)
+		(end 10.16 11.62)
+		(stroke
+			(width 0.254)
+			(type solid)
+		)
+		(layer "F.SilkS")
+		(uuid "7795d69f-2d16-4f93-8f5d-d4137b5fee67")
+	)
+	(pad "1" thru_hole oval
+		(at -5.08 -5.08)
+		(size 2.8 2.8)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "846eee5e-08f9-4ce9-96db-0062be6f639b")
+	)
+	(pad "1" thru_hole oval
+		(at -5.08 5.08)
+		(size 2.8 2.8)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "a874d4e3-6ffa-46aa-a264-d688d3e4ffcc")
+	)
+	(pad "2" thru_hole oval
+		(at 5.08 -5.08)
+		(size 2.8 2.8)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "9478c836-f748-4f62-b436-096826cae950")
+	)
+	(pad "2" thru_hole oval
+		(at 5.08 5.08)
+		(size 2.8 2.8)
+		(drill 2)
+		(layers "*.Cu" "*.Mask")
+		(remove_unused_layers no)
+		(uuid "b88d9b4b-1c00-4dda-9a71-9aeb1a42f376")
+	)
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/../libs/3dmodels/KFA-1016-10_16-2P.step"
+		(offset
+			(xyz 0 -2.47 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
+)
