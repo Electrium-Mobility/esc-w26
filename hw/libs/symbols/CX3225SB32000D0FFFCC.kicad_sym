@@ -31,7 +31,7 @@
 				)
 			)
 		)
-		(property "Footprint" "xtal4_CX3225SB_AVX"
+		(property "Footprint" "CX3225SB32000D0FFFCC:xtal4_CX3225SB_AVX"
 			(at 0 0 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -147,7 +147,9 @@
 					(type none)
 				)
 			)
-			(pin unspecified line
+		)
+		(symbol "CX3225SB32000D0FFFCC_1_1"
+			(pin passive line
 				(at 0 0 0)
 				(length 7.62)
 				(name "HOT"
@@ -165,7 +167,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 0 -2.54 0)
 				(length 7.62)
 				(name "GND"
@@ -183,7 +185,7 @@
 					)
 				)
 			)
-			(pin unspecified line
+			(pin passive line
 				(at 40.64 -2.54 180)
 				(length 7.62)
 				(name "HOT"
@@ -201,7 +203,7 @@
 					)
 				)
 			)
-			(pin power_out line
+			(pin power_in line
 				(at 40.64 0 180)
 				(length 7.62)
 				(name "GND"
