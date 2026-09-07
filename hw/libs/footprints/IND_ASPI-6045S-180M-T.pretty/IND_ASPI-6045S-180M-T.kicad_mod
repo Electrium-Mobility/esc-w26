@@ -6,10 +6,10 @@
 	(property "Reference" "REF**"
 		(at -1.318 -3.9064 0)
 		(layer "F.SilkS")
-		(uuid "b07eba90-3b7e-4a3c-80a2-dd15c9d2ffb6")
+		(uuid "94c53697-3e75-4d92-98be-842a6bf3a2df")
 		(effects
 			(font
-				(size 0.64 0.64)
+				(size 1 1)
 				(thickness 0.15)
 			)
 		)
@@ -17,7 +17,7 @@
 	(property "Value" "IND_ASPI-6045S-180M-T"
 		(at 5.1844 3.9064 0)
 		(layer "F.Fab")
-		(uuid "694d3df1-d396-44f1-96a2-2855e71aeeba")
+		(uuid "da2383cf-26ae-46d1-9646-6174440dc470")
 		(effects
 			(font
 				(size 0.64 0.64)
@@ -29,7 +29,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "b881b70b-acf4-4f0c-bf5c-ce0be9570486")
+		(uuid "82fffc46-d8b0-4389-a0cd-d890f23ae47e")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -40,7 +40,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "c7b14a57-c7fa-4c55-9cbb-7f233bac9fd2")
+		(uuid "d2e71a1c-f865-4c00-aaa5-decc74125dc7")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -57,7 +57,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "6b4d9d8a-d75e-41d2-8f96-a2e3bb269312")
+		(uuid "0d6a8c65-44e2-40aa-ae17-9f46c9d34412")
 	)
 	(fp_line
 		(start -1.08 3)
@@ -67,7 +67,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "0b08372a-323b-4965-b9a8-002acb50cd8f")
+		(uuid "4b9103ff-2bbf-49ec-a9d6-ee654cfb38c9")
 	)
 	(fp_line
 		(start -3.35 -3.25)
@@ -77,7 +77,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "af709911-86cc-4c42-9b7b-26699eed689e")
+		(uuid "c1e9a859-d1c7-4b2e-bc20-26ad82711546")
 	)
 	(fp_line
 		(start -3.35 3.25)
@@ -87,7 +87,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "6e1f1752-bf5c-4a6e-94c1-6d9fd867c236")
+		(uuid "60f64f4c-6aa1-429a-bd04-b9229b878722")
 	)
 	(fp_line
 		(start 3.35 -3.25)
@@ -97,7 +97,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "95e60512-c3ea-44e5-9896-1f2fb56ea617")
+		(uuid "ffa6d30d-5637-49e7-96d1-78b18ccaad29")
 	)
 	(fp_line
 		(start 3.35 3.25)
@@ -107,7 +107,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "769c3557-d280-4bbe-b78a-d35504c09428")
+		(uuid "afc83f80-c1c1-4ebb-b6ac-abe0d85c22d0")
 	)
 	(fp_line
 		(start -3 -3)
@@ -117,7 +117,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "06f027e3-28df-465d-b843-e84a73b359e6")
+		(uuid "ce38f8c0-cede-4876-b4d1-9eab185d981e")
 	)
 	(fp_line
 		(start -3 -3)
@@ -127,7 +127,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "9c3ec0fd-d4e7-4ab7-adb2-8251ad97127b")
+		(uuid "2c7bd887-2e86-4284-9721-f213a82fa659")
 	)
 	(fp_line
 		(start -3 3)
@@ -137,7 +137,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "ac6603d5-d37e-4c44-a277-8bb236717bbf")
+		(uuid "49130aa4-41ea-4ddf-8a89-04bf12d31266")
 	)
 	(fp_line
 		(start 3 -3)
@@ -147,21 +147,21 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "d0c33f5f-eede-4c3e-ad38-711cc111a91e")
+		(uuid "814f2558-12d9-436b-bd18-103442abe740")
 	)
 	(pad "1" smd rect
 		(at -2.25 0)
 		(size 1.7 5.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.102)
-		(uuid "7ea2db12-1d51-4b48-9520-bc93eeabacb1")
+		(uuid "e9d33027-b111-4b8c-9215-af6a148f16a1")
 	)
 	(pad "2" smd rect
 		(at 2.25 0)
 		(size 1.7 5.7)
 		(layers "F.Cu" "F.Mask" "F.Paste")
 		(solder_mask_margin 0.102)
-		(uuid "95490d3b-f047-482e-8c3e-bf930bed2a80")
+		(uuid "44cc5993-cab4-4609-9729-eb29c2cd4003")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/../libs/3dmodels/ASPI-6045S-180M-T.step"
