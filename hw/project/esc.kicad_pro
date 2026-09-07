@@ -650,6 +650,21 @@
         "microvia_drill": 0.1,
         "name": "Low Power",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "priority": 4,
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.2,
+        "tuning_profile": "",
+        "via_diameter": 0.6,
+        "via_drill": 0.3
+      },
+      {
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Medium Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 3,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
@@ -748,12 +763,32 @@
         "pattern": "REGIN"
       },
       {
-        "netclass": "Low Power",
-        "pattern": "*SW"
+        "netclass": "High Power",
+        "pattern": "*VM_IN"
+      },
+      {
+        "netclass": "Medium Power",
+        "pattern": "*GHS*"
       },
       {
         "netclass": "High Power",
-        "pattern": "*VM_IN"
+        "pattern": "*GLS*"
+      },
+      {
+        "netclass": "Medium Power",
+        "pattern": "*BOOT1"
+      },
+      {
+        "netclass": "Medium Power",
+        "pattern": "*BOOT2"
+      },
+      {
+        "netclass": "Medium Power",
+        "pattern": "*BOOT3"
+      },
+      {
+        "netclass": "Medium Power",
+        "pattern": "*SW"
       }
     ]
   },
