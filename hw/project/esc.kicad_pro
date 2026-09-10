@@ -689,104 +689,14 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
+    "net_colors": {
+      "VM": "rgb(255, 0, 0)"
+    },
     "netclass_assignments": null,
     "netclass_patterns": [
       {
-        "netclass": "Current Sense",
-        "pattern": "VSHUNT_*"
-      },
-      {
-        "netclass": "Current Sense",
-        "pattern": "OPN_*"
-      },
-      {
-        "netclass": "SWD",
-        "pattern": "SWDIO"
-      },
-      {
-        "netclass": "SWD",
-        "pattern": "SWCLK"
-      },
-      {
-        "netclass": "SWD",
-        "pattern": "NRST"
-      },
-      {
-        "netclass": "SWD",
-        "pattern": "TRACESWO"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "VM"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "PGND"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "U"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "V"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "W"
-      },
-      {
-        "netclass": "Low Power",
-        "pattern": "VCC"
-      },
-      {
-        "netclass": "Low Power",
-        "pattern": "VDD"
-      },
-      {
-        "netclass": "Low Power",
-        "pattern": "VDDA"
-      },
-      {
-        "netclass": "Low Power",
-        "pattern": "VBAT"
-      },
-      {
-        "netclass": "Low Power",
-        "pattern": "VREF+"
-      },
-      {
-        "netclass": "Low Power",
-        "pattern": "REGIN"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "*VM_IN"
-      },
-      {
-        "netclass": "Medium Power",
-        "pattern": "*GHS*"
-      },
-      {
-        "netclass": "High Power",
-        "pattern": "*GLS*"
-      },
-      {
-        "netclass": "Medium Power",
-        "pattern": "*BOOT1"
-      },
-      {
-        "netclass": "Medium Power",
-        "pattern": "*BOOT2"
-      },
-      {
-        "netclass": "Medium Power",
-        "pattern": "*BOOT3"
-      },
-      {
-        "netclass": "Medium Power",
-        "pattern": "*SW"
+        "netclass": "Default",
+        "pattern": ""
       }
     ]
   },
@@ -1051,7 +961,7 @@
         "uuid": "86a17c4d-db96-42a1-af84-d43fe593f4e6"
       }
     ],
-    "used_designators": "D1-23,#PWR1-103,J1-12,R1-62,#FLG1-5,C1-47,FB1,JP1,H1-4,L1-2,Q1-8,SW1-3,TH1,TP1-17,U1-3,X1",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
