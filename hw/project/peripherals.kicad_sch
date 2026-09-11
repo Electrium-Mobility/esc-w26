@@ -4839,17 +4839,6 @@
 		)
 		(uuid "2c90f375-5033-41c3-ad92-c41ee5232ab5")
 	)
-	(text "add terminal connector crimp kit to BOM"
-		(exclude_from_sim no)
-		(at 100.838 14.478 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "487e4d94-afb0-4b1a-a8ff-cd6e19ef4871")
-	)
 	(text "Programming (SWD)"
 		(exclude_from_sim no)
 		(at 170.942 19.304 0)
@@ -5015,17 +5004,6 @@
 		)
 		(uuid "dfb8aa78-a43d-4866-b138-a160bb5749e2")
 	)
-	(text "add mounting hole stuff to BOM"
-		(exclude_from_sim no)
-		(at 236.728 167.894 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-		)
-		(uuid "f3866d73-2dee-41b7-9830-d3a6802f495c")
-	)
 	(text "Phase Outputs"
 		(exclude_from_sim no)
 		(at 61.722 19.304 0)
@@ -5187,8 +5165,8 @@
 	)
 	(text_box "Phase Outputs\n- High-power screw terminal block (Max 65A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-26 AWG"
 		(exclude_from_sim no)
-		(at 99.06 33.02 0)
-		(size 68.58 15.24)
+		(at 99.06 38.1 0)
+		(size 68.58 10.16)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5245,10 +5223,10 @@
 		)
 		(uuid "ab53f14c-20c4-4a71-b0b6-072eec2a4dff")
 	)
-	(text_box "Battery Input\n- High-power screw terminal block (Max 65A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-26 AWG\n- User will need to hook up an adapter to the connector used by the battery\n- Note: 3D model's through-hole pins do NOT match the actual product/footprint (non-issue)"
+	(text_box "Battery Input\n- High-power screw terminal block (Max 65A, 300V)\n- Expects either raw wire or terminal connector tabs crimped on the wire across 6-26 AWG\n- User will need to hook up an adapter to the connector used by the battery\n- Note: 3D model's through-hole pins do NOT match the actual product/footprint (non-issue)\n- Add terminal connector crimp kit to BOM"
 		(exclude_from_sim no)
 		(at 99.06 17.78 0)
-		(size 68.58 18.2607)
+		(size 68.58 20.3199)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0)
@@ -5285,7 +5263,7 @@
 		)
 		(uuid "c3d6a2be-f335-4451-a94f-7d53e5fe76b9")
 	)
-	(text_box "Mounting Holes\n\nUsing non-plated through-holes (NPTH) sized for screw-in rubber bumpers"
+	(text_box "Mounting Holes\n\nUsing non-plated through-holes (NPTH) sized for screw-in rubber bumpers\n\nAdd additional parts for standoffs to BOM"
 		(exclude_from_sim no)
 		(at 213.36 147.32 0)
 		(size 23.114 30.48)

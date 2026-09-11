@@ -6348,18 +6348,6 @@
 		)
 		(uuid "338c4e1e-da55-4f8c-a040-b149d458622e")
 	)
-	(text "verify in STM32CubeIDE before starting layout"
-		(exclude_from_sim no)
-		(at -2.286 73.152 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-			(justify right)
-		)
-		(uuid "35ebdd33-e6cb-4c99-8712-3789d1dd000a")
-	)
 	(text "Logic Voltage"
 		(exclude_from_sim no)
 		(at 92.202 57.404 0)
@@ -6398,18 +6386,6 @@
 			(justify left top)
 		)
 		(uuid "a98721a1-a136-4a14-b2cc-7fe476c8d304")
-	)
-	(text "*Route both at EPAD:\n\n1. Gate Drivers Power Ground (PGND)\n-> Zone near VM_IN connector and low-side MOSFETs\n2. Control Logic Ground (VSS)\n-> Zone near MCU application circuitry"
-		(exclude_from_sim no)
-		(at -4.318 151.892 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-			(justify right)
-		)
-		(uuid "e1d0dfac-e620-4762-a958-693e69f4f65a")
 	)
 	(text "External Oscillator"
 		(exclude_from_sim no)

@@ -322,6 +322,10 @@
         "minus terminal of all shunt resistors still labelled despite use of PGA for clarity"
       ],
       [
+        "multiple_net_names|1320800|965200|11422c54-22da-4724-a1c8-875225f466ea|7376768d-82b9-4690-8c52-8c8b92b28ac7|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
+        "negative terminal of shunt resistor labelled for explicitness despite use of PGA for current sensing"
+      ],
+      [
         "multiple_net_names|1320800|965200|ccddd6f7-ab10-4ef3-9a9a-9833c79c3bcd|7376768d-82b9-4690-8c52-8c8b92b28ac7|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
         "VSHUNT_x- is only there for explicitness, so fine"
       ],
@@ -338,12 +342,20 @@
         "short, so fine"
       ],
       [
+        "multiple_net_names|2006600|1092200|7add5de3-ef8a-4935-b2bf-6dc2990d7280|fc9c2d31-9482-4363-99cd-c7556a535bbc|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9",
+        "VBAT shorted to VDD"
+      ],
+      [
         "multiple_net_names|215900|609600|dc21fcbd-10a0-4022-b10a-d2cf8fdc726c|f96d0533-0f7d-4a6a-bf84-30bed5858021|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138|/86a17c4d-db96-42a1-af84-d43fe593f4e6/f702d253-729e-40c3-ac6b-420be83d0138",
         "phase name used (and connected to OUT pin of SiP) for explicitness"
       ],
       [
         "multiple_net_names|2260600|304800|282c2dc2-df54-4f19-8b8d-109d2b3157b4|b459c49d-15f4-4eac-bdcb-bccc73afe50a|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9",
         "short, so fine"
+      ],
+      [
+        "multiple_net_names|304800|1422400|cf8280ff-93a8-4afe-a325-5261efe7cf9b|c8460c14-cd80-4857-8839-838f8c3320c5|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9",
+        "VREF+ shorted to VDDA"
       ],
       [
         "multiple_net_names|330200|1117600|cf63ee1f-4356-47ff-94d2-c34890177b28|8b899923-f12d-4a65-ae4f-57c821fa7f2c|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9|/86a17c4d-db96-42a1-af84-d43fe593f4e6/50f7e8ea-49d2-4d3d-890c-dc3d94742dd9",
@@ -1034,7 +1046,7 @@
         "uuid": "86a17c4d-db96-42a1-af84-d43fe593f4e6"
       }
     ],
-    "used_designators": "",
+    "used_designators": "J1-12,R1-62,#FLG1-5,D1-23,#PWR1-103,C1-47,FB1,JP1,H1-4,L1-2,Q1-8,SW1-3,TH1,TP1-17,U1-3,X1",
     "variants": []
   },
   "sheets": [

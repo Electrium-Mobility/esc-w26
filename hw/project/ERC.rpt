@@ -1,0 +1,96 @@
+ERC report (2026-09-11T01:21:08, Encoding UTF8)
+Report includes: Errors, Warnings, Exclusions
+
+***** Sheet /
+[isolated_pin_label]: Label connected to only one pin
+    ; warning (excluded)
+    @(2500 mils, 3800 mils): Label 'VSHUNT_U-'
+    minus terminal of all shunt resistors still labelled despite use of PGA for clarity
+[isolated_pin_label]: Label connected to only one pin
+    ; warning (excluded)
+    @(5200 mils, 3800 mils): Label 'VSHUNT_V-'
+    minus terminal of all shunt resistors still labelled despite use of PGA for clarity
+[isolated_pin_label]: Label connected to only one pin
+    ; warning (excluded)
+    @(7900 mils, 3800 mils): Label 'VSHUNT_W-'
+    minus terminal of all shunt resistors still labelled despite use of PGA for clarity
+
+***** Sheet /Control/
+[multiple_net_names]: Both VDDA and VREF+ are attached to the same items; VDDA will be used in the netlist
+    ; warning (excluded)
+    @(7900 mils, 900 mils): Symbol #PWR05 Pin 1 [Power input, Line]
+    @(1200 mils, 5600 mils): Label 'VREF+'
+    VREF+ shorted to VDDA
+[multiple_net_names]: More than one name given to this bus or net
+    ; warning (excluded)
+    @(4400 mils, 5800 mils): Symbol #PWR028 Pin 1 [Power input, Line]
+    @(1300 mils, 4400 mils): Label 'VBAT'
+    short, so fine
+[multiple_net_names]: Both VCC and REGIN are attached to the same items; VCC will be used in the netlist
+    ; warning (excluded)
+    @(4800 mils, 2600 mils): Symbol #PWR010 Pin 1 [Power input, Line]
+    @(7200 mils, 2700 mils): Label 'REGIN'
+    short, so fine
+[multiple_net_names]: Both VDD and VBAT are attached to the same items; VDD will be used in the netlist
+    ; warning (excluded)
+    @(1000 mils, 5300 mils): Symbol #PWR023 Pin 1 [Power input, Line]
+    @(7900 mils, 4300 mils): Label 'VBAT'
+    VBAT shorted to VDD
+[multiple_net_names]: More than one name given to this bus or net
+    ; warning (excluded)
+    @(7000 mils, 900 mils): Symbol #PWR04 Pin 1 [Power input, Line]
+    @(8900 mils, 1200 mils): Label 'VREF+'
+    short, so fine
+
+***** Sheet /Power/
+
+***** Sheet /Drive/
+[multiple_net_names]: Both U and OUT1 are attached to the same items; U will be used in the netlist
+    ; warning (excluded)
+    @(950 mils, 6400 mils): Label 'U'
+    @(850 mils, 2400 mils): Hierarchical Label 'OUT1'
+    phase name used (and connected to OUT pin of SiP) for explicitness
+[multiple_net_names]: More than one name given to this bus or net
+    ; warning (excluded)
+    @(2800 mils, 1350 mils): Symbol #PWR046 Pin 1 [Power input, Line]
+    @(2500 mils, 3800 mils): Label 'VSHUNT_U-'
+    minus terminal label exists for explicitness despite use of PGA
+[multiple_net_names]: Both V and OUT2 are attached to the same items; V will be used in the netlist
+    ; warning (excluded)
+    @(5000 mils, 2400 mils): Label 'V'
+    @(3550 mils, 2400 mils): Hierarchical Label 'OUT2'
+    phase name used (and connected to OUT pin of SiP) for explicitness
+[multiple_net_names]: Both PGND and VSHUNT_V- are attached to the same items; PGND will be used in the netlist
+    ; warning (excluded)
+    @(2800 mils, 1350 mils): Symbol #PWR046 Pin 1 [Power input, Line]
+    @(5200 mils, 3800 mils): Label 'VSHUNT_V-'
+    negative terminal of shunt resistor labelled for explicitness despite use of PGA for current sensing
+[multiple_net_names]: More than one name given to this bus or net
+    ; warning (excluded)
+    @(7700 mils, 3950 mils): Symbol #PWR051 Pin 1 [Power input, Line]
+    @(5200 mils, 3800 mils): Label 'VSHUNT_V-'
+    VSHUNT_x- is only there for explicitness, so fine
+[multiple_net_names]: More than one name given to this bus or net
+    ; warning (excluded)
+    @(7700 mils, 2400 mils): Label 'W'
+    @(6250 mils, 2400 mils): Hierarchical Label 'OUT3'
+    phase name used (and connected to OUT pin of SiP) for explicitness
+[multiple_net_names]: Both W and OUT3 are attached to the same items; W will be used in the netlist
+    ; warning (excluded)
+    @(5550 mils, 6400 mils): Label 'W'
+    @(6250 mils, 2400 mils): Hierarchical Label 'OUT3'
+    phase name used (and connected to OUT pin of SiP) for explicitness
+[duplicate_pins]: Duplicate pins with different nets
+    ; error (excluded)
+    @(7700 mils, 3800 mils): Symbol R24 Pin 2 [Passive, Line]
+    four-pin symbol used with a pair of identical nets for explicitness
+
+***** Sheet /Peripherals/
+
+ ** ERC messages: 16  Errors 1  Warnings 15
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters

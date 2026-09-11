@@ -1467,18 +1467,6 @@
 		)
 		(uuid "e37bbdc5-4136-49f9-a05e-d84dfd6fde82")
 	)
-	(text "Layout Note: \n\nLow-Impedance Power-to-Analog Ground Planes: \nEnsure your PCB layout uses a continuous, low-impedance ground plane underneath the SoC and power stage. \nKeep the distance between the low-side shunt ground return and the STSPIN32G4 ground pins as short and wide \nas possible to minimize $I \\times R$ trace resistance and parasitic inductance ($L \\times di/dt$).\n\nKeep High-Current Paths Away: \nRoute the heavy phase current return paths on your PCB far away from the quiet analog ground traces surrounding the SoC."
-		(exclude_from_sim no)
-		(at -124.46 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(color 255 4 4 1)
-			)
-			(justify left)
-		)
-		(uuid "f1199beb-64c3-4280-add7-d0eb9d9ef914")
-	)
 	(text "Current Sense U"
 		(exclude_from_sim no)
 		(at 26.162 110.744 0)
