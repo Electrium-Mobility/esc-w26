@@ -46,9 +46,10 @@ This repository contains all the firmware and hardware for Electrium Mobility's 
 - Partitioned Grounding Scheme (separates high-power PGND and logic GND)
 
 ## Schematic
-<img src="docs/hw/schem/esc.png" width="80%"> 
-<img src="docs/hw/schem/esc-Control.png" width="40%"> <img src="docs/hw/schem/esc-Power.png" width="40%"> 
-<img src="docs/hw/schem/esc-Drive.png" width="40%"> <img src="docs/hw/schem/esc-Peripherals.png" width="40%"> 
+<img src="docs/hw/schem/esc.png" width="90%"> 
+
+<img src="docs/hw/schem/esc-Control.png" width="45%"> <img src="docs/hw/schem/esc-Power.png" width="45%"> 
+<img src="docs/hw/schem/esc-Drive.png" width="45%"> <img src="docs/hw/schem/esc-Peripherals.png" width="45%"> 
 
 ## Routing
 
