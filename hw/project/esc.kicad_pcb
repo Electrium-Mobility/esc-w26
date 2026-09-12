@@ -57993,12 +57993,32 @@
 			)
 		)
 	)
-	(gr_text_box "4 layers, 2oz outer copper, 0.5oz inner copper\n\n1.6mm board thickness (1.6mm, as dielectric readjusted when increasing outer copper width from 0.035mm to 0.07mm)\n\nPartition Grounding (star ground) scheme to separate high-power 'PGND' and logic 'GND'\n\nIn general, vias with solid, exposed copper (but via-in-pads must be plugged and filled)\n- On JLCPCB, select Epoxy Filled & Capped (POFV)\n\n8 by 20 mil direct-connect, thermal vias\n\nNet class clearance and trace width values are all default since necking down will still throw DRC errors, so refer to internal notes for actual minimums required!"
+	(gr_text_box "4 layers: Signal/Power, Ground, Ground, Signal\n\n2oz outer copper, 0.5oz inner copper\n\n1.6mm board thickness (dielectric readjusted when increasing outer copper widths from 0.035mm to 0.07mm)\n\nPartition Grounding scheme to separate high-power 'PGND' and logic 'GND'\n\nOn JLCPCB, select Epoxy Filled & Capped (POFV) for Via Covering \n\nNet class clearance and trace width values are all default since track width switching/necking down will still throw DRC errors, so refer to pre-defined sizes and internal notes for actual minimums required!"
 		(start 139.7 12.7)
-		(end 185.42 44.45)
+		(end 185.42 45.72)
 		(margins 1.0025 1.0025 1.0025 1.0025)
 		(layer "Cmts.User")
 		(uuid "cd85dd8b-f5ec-4381-bf8f-e9ce9a3fecbb")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
+		)
+		(border yes)
+		(stroke
+			(width 0.05)
+			(type solid)
+		)
+		(knockout no)
+	)
+	(gr_text_box "Absolute Maximum Ratings\n- Supply Voltage: 36V. Continuous Current: 15A. Worst Load: 36V, 250W E-bike Motor."
+		(start 139.7 45.72)
+		(end 185.42 53.34)
+		(margins 1.0025 1.0025 1.0025 1.0025)
+		(layer "Cmts.User")
+		(uuid "70a5fd09-fc42-47c2-a926-6850d641a57a")
 		(effects
 			(font
 				(size 1 1)
