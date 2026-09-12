@@ -57993,9 +57993,9 @@
 			)
 		)
 	)
-	(gr_text_box "4 layers,\n2oz outer copper,\n1oz inner copper (but 0.5oz fine too),\n1.67mm board thickness (not 1.6mm, as dielectric not readjusted when increasing outer copper width from 0.035mm to 0.07mm)\n\nPartition grounding scheme to separate high-power 'PGND' and logic 'GND'\n\nIn general, vias with solid, exposed copper (but via-in-pads must be plugged and filled)\n- On JLCPCB, select Epoxy Filled & Capped (POFV) or Via-in-Pad\n\n8 by 20 mil direct-connect, thermal vias\n\nNet class clearance and trace width values are all default since necking down will still throw DRC errors, so refer to pre-defined sizes and notes for actual minimums required"
+	(gr_text_box "4 layers, 2oz outer copper, 0.5oz inner copper\n\n1.6mm board thickness (1.6mm, as dielectric readjusted when increasing outer copper width from 0.035mm to 0.07mm)\n\nPartition Grounding (star ground) scheme to separate high-power 'PGND' and logic 'GND'\n\nIn general, vias with solid, exposed copper (but via-in-pads must be plugged and filled)\n- On JLCPCB, select Epoxy Filled & Capped (POFV)\n\n8 by 20 mil direct-connect, thermal vias\n\nNet class clearance and trace width values are all default since necking down will still throw DRC errors, so refer to internal notes for actual minimums required!"
 		(start 139.7 12.7)
-		(end 185.42 48.60038)
+		(end 185.42 44.45)
 		(margins 1.0025 1.0025 1.0025 1.0025)
 		(layer "Cmts.User")
 		(uuid "cd85dd8b-f5ec-4381-bf8f-e9ce9a3fecbb")
