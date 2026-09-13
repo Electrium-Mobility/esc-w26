@@ -1,5 +1,5 @@
 # Electrium Mobility 2026 ESC
-This repository contains all the firmware and hardware for Electrium Mobility's 2026 ESC, which is a 36V/15A 3-phase BLDC motor controller built around the STSPIN32G4 SiP's integrated gate driver and STM32G4 MCU, supporting 6-step commutation and FOC!
+This repository contains all the firmware and hardware for Electrium Mobility's 2026 ESC, which is a 36V/15A 3-phase BLDC motor controller built around the STSPIN32G4 SiP's integrated gate driver and STM32G4 MCU, supporting 6-step and FOC commutation!
 
 <img src="docs/hw/3d/spinning_white_bg_croppressed.gif" width="90%"> 
 
