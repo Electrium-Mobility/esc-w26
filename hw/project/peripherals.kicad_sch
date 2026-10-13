@@ -5043,7 +5043,7 @@
 		)
 		(uuid "fd47e29d-e76f-4b74-b759-96f7b3e7a270")
 	)
-	(text_box "Hall Sensor Inputs\n\nAssume VH required by motor hall sensors is 5V, but expose pad to switch to 3V3, if desired (XOR)\n\nUM2896 5.4: Use CH1-3 of TIM3 (PB4, PB5, PB0) for HA, HB, HC (built-in XOR)\n\nOptional MOTOR_TEMP pin if chosen motor provides winding temps (Note: This is different from the one in Control sheet)\n\nDC12_IN6 on PC0 used for MOTOR_TEMP based on availability\n\nNotes: \n- Only open-drain sensors are supported so added pull-up resistors and diodes to clamp voltage at 3V3 to protect MCU\n- Active 5V push-pull hall sensors are NOT supported, as the pins couldn't be mapped such that they are 5V-tolerant"
+	(text_box "Hall Sensor Inputs\n\nAssume VH required by motor hall sensors is 5V, but expose pad to switch to 3V3, if desired (XOR)\n\nUM2896 5.4(?): Use CH1-3 of TIM2 (PA0, PA1, PA2) for HA, HB, HC (built-in XOR)\n\nOptional MOTOR_TEMP pin if chosen motor provides winding temps (Note: This is different from the one in Control sheet)\n\nADC1_IN12 on PB1 used for MOTOR_TEMP\n\nNotes: \n- Only open-drain sensors are supported so added pull-up resistors and diodes to clamp voltage at 3V3 to protect MCU\n- Active 5V push-pull hall sensors are NOT supported, as the pins couldn't be mapped such that they are 5V-tolerant"
 		(exclude_from_sim no)
 		(at 132.08 50.8 0)
 		(size 35.56 60.9599)
@@ -5183,7 +5183,7 @@
 		)
 		(uuid "945f6eda-bc12-4081-8fe6-fe20c007c0d0")
 	)
-	(text_box "I2C (Optional)\n\nUses I2C1_SDA (PB9), I2C1_SCL (PA15)\n\nMay expect a display? Just exposing it to future-proof"
+	(text_box "I2C (Optional)\n\nUses I2C1_SDA (PB7), I2C1_SCL (PA15)\n\nMay expect a display? Just exposing it to future-proof"
 		(exclude_from_sim no)
 		(at 142.24 114.3 0)
 		(size 25.4 30.48)
@@ -5203,7 +5203,7 @@
 		)
 		(uuid "aa919859-994f-4f30-bc1b-c28e2908e2ff")
 	)
-	(text_box "Throttle (JST-XH)\n\n- Uses ADC2 or ADC12_IN7 (PC1)\n- For bike's thumb throttle (wire cut off & stripped)\n- Expects 5V ADC for full range\n- Can also use an external pot"
+	(text_box "Throttle (JST-XH)\n\n- Uses ADC2_IN5 (PC4)\n- For bike's thumb throttle (wire cut off & stripped)\n- Expects 5V ADC for full range\n- Can also use an external pot"
 		(exclude_from_sim no)
 		(at 218.44 50.8 0)
 		(size 17.78 33.0199)
